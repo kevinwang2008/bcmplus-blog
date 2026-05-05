@@ -23,12 +23,12 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/bcmplus-blog/",
     dir: {
       input: ".",
       output: "_site",
       includes: "_includes"
     },
-    // Use .html for output (clean URLs with directories)
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk"
   };
