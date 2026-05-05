@@ -1,11 +1,11 @@
 module.exports = function(eleventyConfig) {
-  // Pass through images directory
-  eleventyConfig.addPassthroughCopy("content/images");
+  // Pass through images to root level
+  eleventyConfig.addPassthroughCopy({ "content/images": "images" });
 
-  // Fix image paths in HTML output (images/ -> /images/)
+  // Fix image paths in HTML output (images/ -> /bcmplus-blog/images/)
   eleventyConfig.addTransform("fix-images", function(content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
-      return content.replace(/(src|href)="images\//g, '$1="/images/');
+      return content.replace(/(src|href)="images\//g, '$1="/bcmplus-blog/images/');
     }
     return content;
   });
