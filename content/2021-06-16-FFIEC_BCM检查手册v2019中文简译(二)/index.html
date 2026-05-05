@@ -1,0 +1,735 @@
+<p>第二部分 From Ⅴ 业务连续性计划 To Ⅸ 董事会报告
+(因中英文对照翻译版约7.8万字，内容较多，故将其分为三部分发布)</p>
+<p>写在前面
+：金融业是业务连续性管理监管要求和实践水平最高的行业之一，FFIEC业务连续性管理检查分册是美国联邦金融机构检查委员会(FFIEC)为协助检查人员评估金融机构和服务提供商的业务连续性管理提供的指导。2019年11月，FFIEC发布了该检查分册的第3个版本，“反映了客户和行业对运营韧性期望的变化”。本中文简译稿是为了方便关注金融行业业务连续性管理的朋友们了解、学习国外行业监管要求和最佳实践，由多名专业人员组成的公益翻译团队共同翻译完成。2020年底前，我在公众号和朋友圈征集公益翻译人员，很快由陈燕、陈阳、董晓礼、傅盛、康馨月、米顺强、刘松林、刘宇、马骏、卜善梅、盛琳、孙书强、燕波涛、袁洪波、翟红波、翟晓羽、张锋等专业人员组成了翻译团队，在2021年3月完成翻译初稿。</p>
+<p>以下是公益翻译团队成员
+(排名不分前后，按姓氏拼音排序)：
+陈燕(深圳，cheny105@163.com)
+陈阳(中国银行欧洲信息中心，chenyang@bankofchina.com)
+董晓礼(上海，db2forz@qq.com)
+傅盛(广州赛宝认证中心，sanarcher@qq.com)
+康馨月(天津外国语大学，2368074522@qq.com)
+米顺强(北京)
+刘松林(渤海银行，lslinbest@163.com)
+刘宇(北京，13316880733@189.cn)
+马骏(大连，patrick.ma2018@outlook.com)
+卜意淳(和君咨询，653809172@qq.com)
+盛琳(杭州，linmuxuanzi@163.com)
+孙书强(中科博安，HSDJL2@126.com)
+燕波涛(华北科技学院，18618264196@qq.com)
+袁洪波(环球影城，yuanhongbobo@126.com)
+翟红波(北京，25354646@qq.com)
+翟晓羽(北京，zxy0264@126.com)
+张锋(北京，zhangfeng76@wo.cn)
+王曙(新常安科技，kevinwang@vip.sina.com)</p>
+<p>感谢公益翻译团队的各位专业人员在疫情期间抽出个人休息时间进行翻译工作。以下译文由我负责最终统一审校定稿，如译文中有任何不准确或理解错误的地方，都是由于我的原因造成，与诸位翻译人员无关。如对译文有意见或修改建议，请给我留言。</p>
+<p>王曙(kevinwang) 2021.06.10</p>
+<hr>
+<p>Ⅴ 业务连续性计划(Business Continuity Plan)</p>
+<p>行动概要Action Summary</p>
+<p>管理层宜制定与实体规模和复杂程度相关且足够详细的业务连续性计划(business continuity plan，BCP)。BCP宜解决关键业务需要，并整合所有业务部门的输入。
+Management should develop business continuity plan(s) (BCP) with sufficient detail in relation to the entity’s size and complexity. The BCP should address key business needs and incorporate inputs from all business units.</p>
+<p>检查人员宜从以下方面审查计划：
+权限，职责和迁移策略；
+沟通协议，事件管理，业务连续性和灾难恢复；
+不利事件发生之前和期间的流动性问题
+[29]
+；
+灾难期间支付系统、设施和基础设施、数据中心以及分支机构迁移的备选方案。
+Examiners should review the plan for the following:
+Authorities, responsibilities, and relocation strategies.
+Communications protocols, event management, business continuity, and disaster recovery.
+Liquidity concerns before and during an adverse event.
+[29]
+Alternatives for payment systems, facilities and infrastructure, data center(s), and branch relocation during a disaster.
+注29：请参阅《NIST SP 800-61，计算机安全事件处理指南》(Computer Security Incident Handling Guide)。</p>
+<p>如图2
+所示，BCP是BCM的重要组成部分。BCP记录了中断期间继续业务运营的实践(实际行动)和程序。BCP聚集关键业务功能，因实体规模和复杂程度而有所不同。BCP包含事件响应、灾难恢复和危机管理等特定要素。较小实体可以制定包含这些元素的单一BCP，而大型复杂实体可以制定由业务功能、地理位置或部门分计划支持的多个计划。此外，BCP宜是一个动态文档，定期更新，以便与系统增强和组织变更保持同步。
+[30]
+As shown in
+figure 2
+, a BCP is an important component of BCM. The BCP documents the practices and procedures for continuing business operations during a disruption. The BCP focuses on critical business functions and varies according to the entity’s size and complexity. The BCP includes specific elements, such as incident response, disaster recovery, and crisis management. Smaller entities may have a single BCP that includes these elements whereas large, complex entities may have multiple plans supported by subsidiary components for business functions, locations, or departments. Furthermore, the BCP should be a living document, regularly updated so that it remains current with system enhancements and organizational changes.
+[30]
+注30：请参考“BCP策略概念”(BCP Strategy Concept)，NIST SP 800-34修订１，《联邦信息系统应急规划指南》(Contingency Planning Guide for Federal Information Systems)。注：虽然此文件属于联邦信息系统，但原则适用于非联邦信息系统。</p>
+<p>一个综合的计划描述了权限、职责、程序和迁移策略。计划的组成部分宜包括：
+实体人员和第三方服务提供商的角色、职责和必需的技能；
+包括来自网络威胁等各种类型可预见中断的解决方案；
+升级阈值；
+为保护人员、客户并最大程度减少损坏而立即采取的措施；
+恢复功能、服务和流程的优先顺序和流程；
+关键信息保护(如物理的、电子的，混合的，以及使用场外存储等)；
+恢复地点人员的后勤安排(如住房、运输、或饮食等)；
+网络设备，连通性和通信需求，包括实体所有和个人的移动设备；
+备选站点的人员，包括那些一直在备选设施的人员的安排；
+测试的范围和频率；
+恢复业务流程至正常状态。
+A comprehensive plan describes the authorities, responsibilities, procedures, and relocation strategies. Components of the plan should include:
+Roles, responsibilities, and required skills for entity personnel and third-party service providers.
+Solutions to various types of foreseeable disruptions, including those emanating from cyber threats.
+Escalation thresholds.
+Immediate steps to protect personnel and customers and minimize damage.
+Prioritization and procedures to recover functions, services, and processes.
+Critical information protection (e.g., physical, electronic, hybrid, and use of off-site storage).
+Logistical arrangements (e.g., housing, transportation, or food) for personnel at the recovery locations.
+Network equipment, connectivity, and communication needs, including entity-owned and personal mobile devices.
+Personnel at alternate sites, including arrangements for those permanently located at the alternate facility.
+Scope and frequency of testing.
+Resumption of a normalized state for business processes.</p>
+<p>所有业务部门的代表都宜为BCP编制和实施做出贡献。BCP可以是内部编制和维护，也可以外包。无论哪种情况，实体董事会和高级管理层均宜对BCP负责。在外包BCP编制时，管理层宜核实第三方服务提供商的资格和专业能力。管理层宜与第三方服务提供商一起设计可执行且行得通的策略。不论编制流程如何，都宜存储BCP和支持文档，以便人员在发生不利事件时易于获取这些资料。
+Representatives from all business units should contribute to BCP development and implementation. The BCP may be developed and maintained internally or outsourced. In either case, the entity’s board and senior management should be responsible for the BCP. Management should verify the third-party service provider’s qualifications and expertise when outsourcing BCP development. Management should work with the third-party service provider to design executable and viable strategies. Regardless of its development process, the BCP and supporting documentation should be stored so that it is readily accessible by personnel during adverse events.</p>
+<p>Ⅴ.A 事件管理Event Management</p>
+<p>BCP可以将各种情况定义为事件、中断或触发事件。事件是可能影响运营的情况发生或变化。事态可以是物理事件、网络事件或两者的结合。中断是指导致运营降级或失败超过了可接受时间范围的预期或计划外事件(如轻微或长时间停电，长时间断网，或设备或设施损坏或破坏等)。触发事件是一个激发管理层做出响应的事态。预定义升级阈值的触发事件是BCP的关键要素，宜设计响应以缓解不利事件的影响。
+The BCP may define various situations as events, disruptions, or triggers. An event is an occurrence or change in circumstances that may affect operations. An event can be physical, cyber, or a combination of both. A disruption is either an anticipated or unplanned event that causes operations to degrade or fail for an unacceptable length of time (e.g., a minor or extended power outage, an extended unavailable network, or equipment or facility damage or destruction). A trigger is an event that prompts management’s response. Predefined threshold escalation triggers are a key element of a BCP, and responses should be designed to mitigate the impact from adverse events.</p>
+<p>BCP宜包括事件管理程序，详细说明可合理预见的事件类型并提供阈值和响应。程序宜说明如何向管理层报告事件，以及需要通知事件处理者的情况。管理层宜考虑建立团队
+[31]
+处理事件。事件管理人员可因事件性质和团队成员的可用情况而变化。虽然团队宜管理事件并与相关方沟通，但事件监控是整个实体的责任(如董事会、高级管理层和其他人员等)。
+The BCP should include event management procedures that detail reasonably foreseeable event types and provide thresholds and responses. Procedures should describe how to report an event to management and the situations that warrant notification to those who address events. Management should consider establishing a team(s)
+[31]
+to address events. Individuals managing the event may change depending on the nature of the event and team member availability. While the team should manage the event and communicate with stakeholders, event monitoring is an entity-wide responsibility (e.g., board, senior management, and other personnel).
+注31：根据实体的规模和复杂程度，对事件做出响应的权限可能属于个人、团队或多个团队。本分册使用“团队”一词。</p>
+<p>响应可包括保护生命财产、满足人的基本需要并保持实体的运营能力的活动、项目或系统。事件响应的示例包括：
+在软件升级和随后的回滚失败后，将运营切换到备用设施；
+当本地变得不安全时，将人员重新安排到更安全的地理位置或授权远程办公；
+当事件造成运营中断时授权远程办公；
+一旦管理层确定了重大的网络攻击，启动灾难恢复程序；
+一旦飓风威胁到本地区，启动应急响应程序。
+Responses may include activities, programs, or systems that protect life and property, meet basic human needs, and preserve the entity’s operational capability. Examples of event responses include:
+Switching operations to a backup facility after a software upgrade and subsequent rollback fail.
+Rerouting personnel to a safer location or authorizing telecommuting when the local area becomes unsafe.
+Authorizing telecommuting when an event causes disruptions to operations.
+Invoking disaster recovery procedures once management has identified a significant cyber attack.
+Activating emergency response procedures once a hurricane threatens the local region.</p>
+<p>Ⅴ.B 连续性和恢复Continuity and Recovery</p>
+<p>管理层宜建立运营连续性和系统恢复的协议。BCP可包括：
+在停机期间处理客户服务请求；
+跟踪日常交易；
+核对总帐科目；
+记录操作任务；
+系统恢复后追加记账；
+维护备份记录，提供客户帐户信息(如帐户号，客户名称，地址，帐户状态和帐户余额等)；
+记录系统软理件恢复和重启的步骤。
+Management should establish protocols for operations continuity and system recovery. The BCP may include:
+Addressing customer service requests during downtime.
+Tracking daily transactions.
+Reconciling general ledger accounts.
+Documenting operational tasks.
+Posting entries after system recovery.
+Maintaining backup records to provide customer account information (e.g., account numbers, customer names, addresses, account status, and account balances).
+Documenting steps for system hardware and software recovery and restart.</p>
+<p>适当时，程序宜处理关键功能的手工步骤，如后台操作，贷款操作和客户支持等。业务连续性计划和程序宜清晰、简洁，紧急情况下易于实施，
+[32]
+如检查清单和分步骤程序。
+When appropriate, procedures should address manual steps for critical functions, such as back-office operations, loan operations, and customer support. Business continuity plans and procedures should be clear, concise, and easy to implement in an emergency,
+[32]
+such as checklists and step-by-step procedures.
+注32：请参阅NIST SP 800-34修订1，《联邦信息系统应急规划指南》(Contingency Planning Guide for Federal Information Systems)。注：虽然此文件属于联邦信息系统，但原则适用于非联邦信息系统。</p>
+<p>无家可归的客户可能无法获取其正常身份和个人记录。BCP宜包括其他身份验证方法，管理层宜警惕欺诈或其他可疑活动。根据协议和法律要求[35]，程序宜处理欺诈识别
+[33]
+和可疑活动报告
+[34]
+。
+Displaced customers may not have access to their normal identification and personal records. The BCP should include alternate identity verification methods, and management should be alert for fraud or other suspicious activities. Procedures should address fraud identification
+[33]
+and suspicious activity reporting
+[34]
+according to protocols and legal requirements.
+[35]
+注33：请参阅金融犯罪执法网络(FinCEN)FIN-2006-A001，《金融机构飓风相关福利欺诈指南》(Guidance to Financial Institutions Regarding Hurricane-Related Benefit Fraud)。
+注34：请参阅FinCEN的FIN-2013-G002，《向FinCEN提交电子报告的管理困难》(Administrative Difficulties in Submitting Electronic Reports to FinCEN)。
+注35：请参阅美国联邦法规31第220部分(CFR 1020.220)，《银行、储蓄协会、信用合作社和某些非联邦监管银行的客户识别计划》(Customer Identification Programs for Banks, Savings Associations, Credit Unions, and Certain Non-Federally Regulated Banks)。</p>
+<p>在恢复期间，管理层宜与各方实体协调电力和通信系统的接入和可用性。管理层宜与警察、消防部门以及地方和州政府机构配合，以推动及时、安全的韧性策略。根据灾害的严重程度，管理层还宜与其他联邦机构如联邦应急管理署(FEMA)配合。有关更多信息，请参阅IT手册的“运营”分册。
+During the recovery phase, management should coordinate access and availability of power and telecommunications systems with various entities. Management should coordinate with the police and fire departments and local and state government agencies to facilitate timely, secure resilience strategies. Management may also coordinate with other federal agencies, such as the Federal Emergency Management Agency, depending on the disaster severity. Refer to the IT Handbook’s “Operations” booklet for additional information.</p>
+<p>Ⅴ.C 设施和基础设施Facilities and Infrastructure</p>
+<p>BCP宜确定核心运营、设施、基础设施系统、供应商、公用事业、相互依赖的业务合作伙伴和关键人员的备选方案。备用站点可镜像主站点的运营功能。管理层宜考虑短期、中期和长期情境的站点迁移。选择设施时，管理层宜规划可伸缩性，因为事件可能会持续很长时间。此外，管理层宜考虑实体与警察、消防和医疗设施的距离，并宜在恢复策略中考虑预期的响应时间范围。管理层宜争取州和地方机构的协助，以加快建筑许可和临时设施的检查。管理层宜核实恢复备选方案是否可以容纳影响关键运营的服务和处理能力，包括：
+核心处理；
+支票影像；
+商业现金管理；
+支付；
+邮件、传真和打印；
+客户识别。
+The BCP should identify alternatives for core operations, facilities, infrastructure systems, suppliers, utilities, interdependent business partners, and key personnel. The backup site may mirror the operational functionality of the primary site. Management should consider site relocation for short-, medium-, and long-term scenarios. When selecting a facility, management should plan for scalability because an event may last for an extended period of time. In addition, management should consider the entity’s proximity to police, fire, and medical facilities, and the expected response time frames should be factored into recovery strategies. Management should enlist the assistance of state and local agencies to expedite building permits and inspections for temporary facilities. Management should verify that recovery alternatives can accommodate the services and processing capabilities affecting critical operations, including:
+Core processing.
+Check processing and imaging.
+Commercial cash management.
+Payments.
+Mailing, faxing, and printing.
+Customer identification.</p>
+<p>Ⅴ.C.1 数据中心恢复备选方案Data Center Recovery Alternatives</p>
+<p>数据中心恢复备选方案因基础设施、配置、运行状态和数据迁移而异。管理层宜记录选择备选方案的原因(如成本，服务水平等)以及为什么根据该实体的风险状况和复杂程度选择是合适的。启用备选站点所需的干预水平会影响重续运营的成本和持续时间。恢复备选方案可以有几种形式，如备选站点全冗余系统，基于云的恢复解决方案(内部开发或外包)，另一个数据中心，或第三方服务提供商。数据中心和备选站点的开发很复杂，管理层宜在分析和设计流程中考虑约束条件。主要目标是使数据可用并且能远程访问。无论解决方案如何，管理层都宜保持适当的控制。备选恢复站点的示例可包括：
+冷站
+：具有计算机设施必需的电气和物理部件，但并未实际配备计算机设备的备用设施。当人员从其主计算地点转移至备用设施时，该设施已准备接收计算机设备。由于安装和启用基础设施需要大量时间，因此通常该设施不被视为金融服务行业中的主要恢复选项。直到基础设施建立完成才能进行全面测试。
+温站
+：一个环境条件良好的工作空间，部分配备了信息系统和通信设备，在重大中断事件时支持迁移运营。这些系统未加载重续运营所需的软件或数据，为重续关键流程，通常需要手动干预进行故障切换和系统重启。因此，最终用户会体验到一些中断。
+热站
+：一个完全可运行的场外数据中心，配备有在信息系统中断事件时使用的软硬件。热站开发很复杂，管理层宜在分析和设计流程中考虑其限制条件。
+镜像数据恢复站点
+：两个或多个独立的活动站点，彼此互为备份，每个站点独立支持关键业务功能。这些站点提供几乎即时重续的能力，且对最终用户来说是无缝的。物理距离及其相应延迟对使用实时数据镜像备份技术的数据中心提出了限制。与热站类似，这些站点包含所有设备和连接能力；它们还有数据的复制副本。这种高可用性方法通常称为“双活”。
+移动站点
+：一种能力介于热站和冷站之间的站点，具有移动式结构，配备了可供客户或人员使用的计算设备。完全启用移动站点取决于其交付和备份还原的速度。
+托管设施
+：为多个非相关租户提供空间、电力、基础设施、环境控制和通信能力的设施。如果管理层依靠托管设施来交付资源，在区域性或大规模事件中，存在托管服务提供商能力可能无法支持该实体运营的风险。
+互惠协议
+：允许两个实体互相备份的协议。虽然这些协议可能具有成本效益，但只有对等的金融机构有充足额外的容量且两者运行相同版本和配置的核心软件时，它们才可行。宜考虑安全和隐私，因为敏感的客户信息可能会暴露给对等金融机构的人员。虽然这些协议作为短期解决方案是可接受的，但管理层不宜将其作为长期的恢复解决方案。
+灾难恢复即服务（DRaaS）
+：一种复制和托管基础设施、应用和数据的云计算解决方案，提供故障切换和恢复服务。
+Data center recovery alternatives vary for infrastructure, configuration, operational state, and data migration. Management should document the reasons (e.g., cost and service level) for choosing an alternative and why it is appropriate based on the entity’s risk profile and complexity. The level of intervention required to activate the alternate sites affects both the cost and duration to resume operations. Recovery alternatives may take several forms, such as fully redundant systems at alternate sites, cloud-based recovery solutions (either internally developed or outsourced), another data center, or a third-party service provider. Data center and alternate site development is complex, and management should consider constraints in the analysis and design process. The primary objectives are for data to be available and remotely accessible. Management should maintain appropriate controls, regardless of solution. Alternative recovery site examples may include:
+Cold site: A backup facility that has the necessary electrical and physical components of a computer facility, but does not have the computer equipment in place. The facility is ready to receive computer equipment when personnel move from their main computing location to the backup facility. This facility is usually not considered as the primary recovery option within the financial services industry because of the significant time necessary to install and activate the infrastructure. Comprehensive testing cannot occur until the infrastructure is established.
+Warm site: An environmentally conditioned work space that is partially equipped with information systems and telecommunications equipment to support relocated operations in the event of a significant disruption. The systems are not loaded with the software or data required to resume operations and typically require manual intervention for failover and system reboots to resume critical processes. Therefore, end users may experience some disruption.
+Hot site: A fully operational off-site data center equipped with hardware and software used in the event of an information system disruption. Hot site development is complex, and management should consider constraints in the analysis and design process.
+Mirrored data recovery sites: Two or more separate, active sites that back up one another with each site independently supporting critical business functions. These sites provide almost immediate resumption capacity and are seamless for end users. Physical distance and its related latency present limitations for data centers that use real-time, data mirroring backup technologies. Similar to a hot site, these sites contain all of the equipment and connectivity capabilities; however, they also have a duplicate copy of the data. This method of high availability is commonly referred to as “Active-Active.”
+Mobile site: A site that possesses capabilities between what a warm and a cold site offer and has portable structures equipped with computing equipment available to customers or personnel. Completely activating a mobile site depends on how quickly it can be delivered and backups restored.
+Colocation facility: A facility that provides space, power, infrastructure, environmental controls, and telecommunications capabilities for multiple non-related tenants. If management relies on a colocation facility to deliver resources, there is a risk that the capacity at the colocation service provider may not be able to support the entity’s operations during a regional or large-scale event.
+Reciprocal agreement: An agreement that allows two entities to back up each other. While these agreements may be cost-effective, they are viable only if there is adequate excess capacity at the reciprocal financial institution and both operate on the same version and configuration of core software. Consideration should be given to security and privacy, as sensitive customer information could be exposed to the staff at the reciprocal financial institution. While these arrangements may be acceptable as a short-term solution, management should not rely on them as a long-term recovery solution.
+Disaster recovery as a service (DRaaS): A cloud-computing solution for replicating and hosting infrastructure, applications, and data that provides failover and recovery services.</p>
+<p>Ⅴ.C.2 分支机构迁移Branch Relocation</p>
+<p>不良事件可导致管理层临时限制或停止分支机构运营，或将分支机构运营临时转移到备选地理位置。BCP的一个重要部分就是建立人员和客户可以开展业务的物理地理位置。对金融机构而言，关闭、迁移或建立额外的分支机构设施，可能需要相应监管机构的批准。
+[36]
+An adverse event may lead management to temporarily limit or cease branch operations or temporarily transfer a branch’s operations to alternate locations. An important BCP component is establishing a physical location where personnel and customers can go to conduct business. For financial institutions, approval by the appropriate regulator may be required to close, relocate, or establish additional branch facilities.
+[36]
+注36：请参阅美国法典第12卷1831r-1,“分支机构关闭通知；美国联邦规则第64卷34833，“货币监理署、美联储理事会、联邦存款保险公司和储蓄监管办公室关于分支机构关闭的政策声明”；《美国联邦法规》第12卷第303部分，C子部分，“国内分支机构和办事处的设立和迁移”(FDIC)；美国联邦汇典12卷第208.6部分，“分支机构的设立和维护”(FRB)；《美国联邦法规》第12卷第5.30节，“国民银行分支机构的设立、收购和迁移”(货币监理署)；《美国联邦法规》第12卷第5.31节，“联邦储蓄协会分支机构的设立、收购和迁移以及机构办公室的设立”(货币监理署)。</p>
+<p>Ⅴ.D 支付系统Payment Systems</p>
+<p>BCP宜处理支付系统(如ATM、转账、电子银行、远端存款(remote deposit capture),或移动支付)故障的备选安排。备选解决方案可包括向代理金融机构发起电话、传真或自动清算中心等请求的手工程序。此外，基于Web的系统或第三方软件可用于执行交易。管理层宜核实在恢复站点包括冗余的电子支付系统和设备(如令牌和路由器)可供启用，并保留好文档以在系统恢复后及时分录过账。
+The BCP should address alternate arrangements if payment systems fail (e.g., automated teller machines (ATM), funds transfers, electronic banking, remote deposit capture, or mobile capabilities). Alternate solutions may include manual procedures for calling in or faxing wire or automated clearing house requests to correspondent financial institutions. In addition, web-based systems or third-party software may be used to perform transactions. Management should verify that redundant electronic payment systems and equipment (e.g., tokens and routers) are included at recovery sites for activation and that documentation is maintained for timely posting of entries when systems are recovered.</p>
+<p>BCP还宜解决现金需求增加和通过电子系统(包括互联网和移动银行)转移资金的问题。根据金融机构与客户的关系，管理层可考虑制定程序预先设定提款限额。此外，当ATM不可用时，管理层宜为分支机构交易量的可能增加做准备。还宜考虑与本地区内外的各种现金交付服务预先达成协议，以便在服务返回时ATM可以满足客户需求。
+The BCP should also address increased cash demands and moving funds through electronic systems, including internet and mobile banking. Management may consider developing procedures for pre-established withdrawal limits based on the financial institution’s relationships with customers. In addition, management should prepare for a potential increase in branch traffic when ATMs are unavailable. Pre-established agreements with various cash delivery services within and outside of the local area should also be considered so that ATMs can meet customer demand when service returns.</p>
+<p>Ⅴ.E 流动性考虑Liquidity Considerations</p>
+<p>BCP宜详细说明不利事件期间处理潜在的现金和流动性需求的流程。在灾难期间，电力和通信系统可能发生故障(如ATM、或借记卡和信用卡系统不能用等)，需要现金来满足客户和业务需求。帮助满足流动性需求的安排可包括：
+紧急拆借通道；
+备选现金交割；
+保管、交割和分配现金的程序；
+临时采购授权准则；
+人员费用报销方案；
+更高限额的信用卡或单独的支票账户，指定人员可在紧急情况下签署支票
+The BCP should detail processes to address potential cash and liquidity needs during adverse events. During a disaster, power and communications systems may fail (e.g., inoperable ATMs or debit and credit card systems), requiring cash to fulfill customer and business needs. Arrangements to help meet liquidity needs may include:
+Emergency borrowing access.
+Alternative cash delivery.
+Procedures to secure, deliver, and distribute cash.
+Temporary purchase authority guidelines.
+Expense reimbursement options for personnel.
+Higher-limit credit cards or separate checking accounts, with designated individuals who can sign checks in emergency situations.</p>
+<p>Ⅴ.F 其他部分Other Components</p>
+<p>BCP专注于在事件期间和之后维持业务流程。BCP可纳入其他计划和程序，以最大程度地减少中断的影响。这些部分可包括事件响应、灾难恢复以及危机或应急管理。
+The BCP focuses on sustaining business processes during and after an event. The BCP may incorporate other plans and procedures to minimize a disruption’s impact. Components may include incident response, disaster recovery, and crisis or emergency management.</p>
+<p>Ⅴ.F.1 事件响应Incident Response</p>
+<p>事件响应帮助管理层将不良事件造成的服务中断或信息丢失降至最低。事件响应优先事项包括保护生命，保护财产，稳定事件，以及与相关方(如受影响人员、第三方服务提供商、客户、监管机构、执法部门等)进行沟通。如图4所示，事件响应团队宜协调与指定相关方的沟通。管理层宜使事件响应程序与其他相关流程(如网络安全，网络运营和物理安全等)、外包服务(如合同规定的事件响应义务)保持一致，并核实在规划和BCP编制流程中是否考虑了这些程序。
+Incident response helps management minimize the disruption of services or loss of information from an adverse event. Incident response priorities include preservation of life, preservation of property, incident stabilization, and communicating with stakeholders (e.g., impacted personnel, third-party service providers, customers, regulators, law enforcement). As shown in figure 4, the incident response team should coordinate communication with the noted stakeholders. Management should align incident response procedures with other related processes (e.g., cybersecurity, network operations, and physical security), outsourced services (e.g., contracted incident response obligations), and verify that the procedures are considered during planning and BCP development.</p>
+<p>图4：事件响应团队Incident Response Team(改编自NIST SP 800-61，Rev. 2)</p>
+<p><img src="/bcmplus-blog/images/tM8DuKX4orYc-uDPyUk4kQ_01.jpg" alt=""></p>
+<p>管理层宜指定发言人与新闻媒体沟通。管理层宜考虑董事会和高级管理层批准的各种预先计划的响应情景。与新闻媒体以及通过社交媒体的沟通对于传播准确的信息很重要。事件期间的社交媒体监测能帮助管理层解决冲突的消息，并主动应对问题和关切。管理层宜培训人员在接触新闻媒体或通过社交媒体沟通时遵守计划。
+Management should designate a spokesperson(s) to communicate with the news media. Management should consider various, pre-planned response scenarios approved by the board and senior management. Communication with the news media and via social media may be important for disseminating accurate information. Social media monitoring during an event can help management resolve conflicting messages and proactively respond to issues and concerns. Management should train personnel to adhere to the plan when approached by the news media or communicating via social media.</p>
+<p>此外，管理层宜利用例行流程(如漏洞管理和网络监控等)预测潜在事件，包括网络事件，并与任何第三方服务提供商计划协调事件响应计划。并且，管理层宜考虑预先安排第三方取证和应急响应服务。管理层宜定期更新和测试实体的事件响应项目(incident response program)，以核实其在迅速变化的威胁面前是否符合预期。有关更多信息，请参阅IT手册的“信息安全”分册。
+Furthermore, management should leverage routine processes (e.g., vulnerability management and network monitoring) to anticipate potential incidents, including cyber incidents, and coordinate incident response planning with any third-party service provider plans. Furthermore, management should consider prearranging third-party forensic and incident response services. Management should periodically update and test the entity’s incident response program to verify that it functions as intended, given rapidly changing threats. Refer to the IT Handbook’s “Information Security” booklet for additional information.</p>
+<p>Ⅴ.F.2 灾难恢复Disaster Recovery</p>
+<p>灾难恢复是IT基础设施、数据和系统的恢复。管理层宜确定在IT系统和应用不可用时要维护的关键业务流程和活动，并确定恢复这些系统的优先顺序，这些宜反映在BIA中。此外，管理层宜为数据中心、网络、服务器、存储、服务监控、用户支持和相关软件制定协调的策略。
+Disaster recovery is the restoring of IT infrastructure, data, and systems. Management should identify key business processes and activities to be maintained while IT systems and applications are unavailable and prioritize the order in which these systems are restored, which should be reflected in the BIA. In addition, management should develop a coordinated strategy for the recovery of data centers, networks, servers, storage, service monitoring, user support, and related software.</p>
+<p>恢复计划宜能应对广泛的不良事件(如自然灾害，基础设施故障，技术故障，人员不可用或网络攻击等)。灾难恢复宜以最小化中断来恢复运营至正常状态为指导方针。
+Recovery plans should address a broad range of adverse events (e.g., natural disasters, infrastructure failures, technology failures, unavailability of staff, or cyber attacks). Disaster recovery should address guidelines for returning operations back to a normalized state with minimum disruption.</p>
+<p>灾难恢复还宜解决以下问题：
+用于恢复系统的实施和运行的安全控制和协议，包括物理的和逻辑的；
+恢复积压活动或丢失事务的程序，使交易记录在预期恢复时间范围成为最新的；
+当主设施不可用时，访问关键信息存储库和其他资源的说明。
+Disaster recovery should also address the following:
+Security controls and protocols, including physical and logical, for implementation and operation of recovery systems.
+Procedures for restoring backlogged activity or lost transactions to identify how transaction records will be brought current within expected recovery time frames.
+Instructions to access critical information repositories and other resources when the primary facility is unavailable.</p>
+<p>在制定灾难恢复计划时，管理层宜审慎确定关键和非关键系统。举个例子，在系统正常运行时，电话银行，网上银行或ATM似乎并不重要；但是，中断期间，这些系统在向客户提供服务方面起着关键作用。同样，电子邮件系统可能看起来并不重要，但在不良事件期间可能是可用于沟通的主要系统。
+When developing disaster recovery plans, management should exercise caution when identifying critical and non-critical systems. For example, telephone banking, internet banking, or ATMs may not seem critical when systems are operating normally; however, these systems play a critical role in delivering services to customers during a disruption. Similarly, an email system may not appear critical but may be the primary system available for communication during an adverse event.</p>
+<p>Ⅴ.F.3 危机或应急管理Crisis and Emergency Management</p>
+<p>危机或应急管理
+[37]
+是识别危机、启用BCP和管理紧急情况的流程。危机或应急管理包括通过预先确定的领导和沟通从重大事件恢复的能力。并非每个事件都需要危机或应急管理响应。管理层宜考虑危机或紧急情况对实体声誉和人员的影响。举个例子，在自然灾害、网络攻击或其它引人注目的事件期间，管理层可调用危机或应急响应程序。
+Crisis or emergency management
+[37]
+is the process that allows the recognition of a crisis, activation of a BCP, and management of emergencies. Crisis or emergency management includes the ability to recover from a major event through predefined leadership and communication. Not every event warrants a crisis or emergency management response. Management should consider the impact of a crisis or emergency on the entity’s reputation and personnel. For example, management may invoke crisis or emergency response procedures during a natural disaster, cyber attack, or other high-profile event.</p>
+<p>BCP的危机或应急管理部分宜处理与监管机构、地方和州官员、执法部门和第一响应者的协调问题。情景宜详细说明中断，而不是局限于单个事件、设施或地理区域。同样，危机或应急管理计划宜处理通信和电子通讯同时中断的问题，包括实体与第三方服务提供商之间的通信。
+The crisis or emergency management portion of the BCP should address coordination with regulatory agencies, local and state officials, law enforcement, and first responders. Scenarios should detail disruptions, and not be confined to a single event, facility, or geographic area. Also, crisis or emergency management plans should address simultaneous disruptions of telecommunications and electronic messaging, including between the entity and third-party service providers.</p>
+<p>管理层宜根据实体的规模和复杂程度，从相应部门指派关键人员在危机或紧急情况期间采取行动。宜授权指派人员及时做出决定。关键人员可包括：
+起领导作用的高级管理人员；
+负责安全和物理安保的设施管理人员；
+负责人事、差旅和迁移的人力资源人员；
+管理沟通的媒体关系人员；
+负责资金支出、财务决策(包括意外开支)的财务和会计人员；
+负责法律法规问题的法律和合规人员；
+包括信息安全以及针对特定战术响应行动的IT人员。
+Management should designate key personnel from applicable departments to act during a crisis or emergency situation, commensurate with the entity’s size and complexity. Designated personnel should be authorized to make decisions in a timely manner. Key personnel may include:
+Senior management for leadership.
+Facilities management for safety and physical security.
+Human resources for personnel issues, travel, and relocation.
+Media relations for managing communications.
+Finance and accounting for funds disbursement and financial decisions, including unanticipated expenses.
+Legal and compliance for legal and regulatory concerns.
+IT, including information security, and operations for specific tactical responses.</p>
+<p>危机或紧急事件的沟通协议宜包括联络清单和其他可行方法，以联系上人员和其它在危机期间要求的相关方。联络清单宜分发给关键人员，并宜定期核实和更新。管理层宜能够与位于偏远地区或分散在多个地点的人员进行沟通。程序宜使员工能够集中报告其状态并获取最新信息。危机或应急管理沟通协议宜包括在正常沟通渠道不能运作时与实体联系的规定。
+Communication protocols for a crisis or emergency event should include contact lists and other viable methods to reach personnel and other stakeholders who may be called upon during a crisis. The contact list should be distributed and accessible to key personnel and should be verified and updated regularly. Management should be able to communicate with personnel located in isolated areas or dispersed across multiple locations. Procedures should enable employees to report their status in a centralized manner and obtain current information. Crisis or emergency management communication protocols should include provisions to contact the entity when normal communication channels are inoperable.</p>
+<p>通知系统可以是人工或自动的。在不太复杂的环境中，通常使用如呼叫树的人工沟通方式；但是，信息收集可能耗时，并且危机中得到的回应可能不可靠。对大型实体而言，维护联系信息可能变得很麻烦，因此，可以使用自动化解决方案。
+Notification systems can be manual or automated. In less complex environments, manual communication techniques, such as call trees, are often used; however, information gathering can be time consuming, and responses can be unreliable in a crisis. Maintaining contact information can become unwieldy for large entities; therefore, automated solutions may be used.</p>
+<p>Ⅵ 培训Training</p>
+<p>行动概要Action Summary</p>
+<p>管理层宜为所有相关方实施一个业务连续性培训项目(program)。
+Management should implement a business continuity training program for all stakeholders.</p>
+<p>检查人员宜审查以下内容：
+业务连续性培训的目标；
+业务连续性培训与策略的一致；
+提供给相关方(如人员、业务连续性项目人员和董事会等)定向业务连续性培训的范围；
+业务连续性培训项目的构成(format)；
+审查和更新业务连续性培训项目的流程。
+Examiners should review for the following:
+Objectives of business continuity training.
+Alignment of business continuity training with strategies.
+Extent of targeted business continuity training provided to stakeholders, such as personnel, business continuity program staff, and the board.
+Format of the business continuity training program.
+Process for reviewing and updating the business continuity training program.</p>
+<p>管理层宜将培训作为有效的业务连续性项目的一部分，对相关方进行韧性、业务连续性目标、公司级目标、政策以及人员个人角色和职责的教育。董事会或高级管理层委托一个委员会或个人监督培训项目；但是，董事会宜对培训项目的有效性负责。有关更多信息，请参阅IT手册的“管理”分册。
+Management should include training as part of an effective business continuity program to educate stakeholders on resilience, business continuity goals, corporate-wide objectives, policies, and individual personnel roles and responsibilities. The board or senior management delegates a committee or individual to oversee the training program; however, the board should be responsible for the training program’s effectiveness. Refer to the IT Handbook’s “Management” booklet for additional information.</p>
+<p>培训项目宜与实体的策略保持一致，并使用综合的、基于风险的多年方法，包括相互关联的项目(如灾难恢复和第三方风险管理等)。演练的频度宜取决于实体的规模和复杂程度以及培训项目的要素、风险、测试项目的迭代，并及时覆盖所有要素。管理层宜清点实现业务连续性的最新的技能集，找出并解决任何差距。适当时，管理层宜建立支持实体业务连续性计划的目标，作为绩效管理流程的一部分。培训项目的某些要素可包括：
+演练；
+当前的风险；
+未来的风险；
+最近的故障；
+新项目/技术；
+组织变更；
+先前(演练)的经验教训。
+The training program should align with the entity’s strategy and use a comprehensive, risk-based, multi-year approach, including interrelated programs (e.g., disaster recovery and third-party risk management). The frequency of exercises should depend on the size and complexity of the entity and the elements of the training program, risks, and testing program iteration, with all elements covered in a timely manner. Management should take inventory of the current skill sets for business continuity and identify and address any gaps. When appropriate, management should establish goals and objectives for supporting the entity’s business continuity program as part of the performance management process. Some elements of the training program may include:
+Exercises.
+Current risks.
+Future risks.
+Recent failures.
+New programs/technologies.
+Organizational changes.
+Previous (exercise) lessons learned.</p>
+<p>培训通常涉及对业务连续性的概念理解，包括测试方法、测试结果和关键业务功能。培训项目宜包括启用BCP的条件以及关键人员不可用时该做什么。培训宜有选择地、有目的地通过在无需承担后果的演练环境中测试人员、流程、技术风险和脆弱性的相互作用来验证计划和假设。
+Training generally involves a conceptual understanding of business continuity, including testing methods, test results, and critical business functions. The training program should include conditions for activating the BCP and what to do when key personnel are unavailable. Training should selectively and purposely seek to validate plans and assumptions by testing the interactions of people, processes, and technology risks and vulnerabilities in a consequence-free exercise environment.</p>
+<p>培训宜针对目标受众定制，应对特定群体的需求。培训参与者宜包括董事会、高级管理层、业务流程负责人和一线人员。举个例子，对管理业务连续性项目的人员的培训宜不同于对不直接参与恢复行动的人员的培训。培训宜包括重要的业务连续性概念、相互依赖关系，中断影响以及运营韧性。适用时，参与业务连续性项目的承包商也宜接受适当的培训。
+Training should be tailored to the target audience, addressing the needs of specific groups. Training participants should include the board, senior management, business process owners, and frontline personnel. For example, training for personnel who manage the business continuity program should be different than training for personnel not directly involved in recovery operations. Training should include significant business continuity concepts, interdependencies, disruption impacts, and operational resilience. When applicable, contractors involved with the business continuity program should also receive appropriate training.</p>
+<p>董事会宜了解业务连续性项目，测试计划以及业务连续性相关的关键报告。董事会培训宜根据业务流程的重大变化、风险、BIA结果、或影响实体的事件中吸取的教训，定期或更频繁地进行。培训方法可以包括教学课程，基于计算机的培训，动手体验，经验教训，以及与其他组织的合作。基于角色的培训包括交叉培训人员，以抵消在事件期间可能出现的严重缺勤或运营中断。培训宜反映业务连续性项目正在发生的变化。
+The board should understand the business continuity program, testing initiatives, and key business continuity-related reports. Board training should occur regularly, or more frequently, based on significant changes to business processes, risks, BIA results, or lessons learned from incidents that have impacted the entity. Training methods may involve instructional classes, computer-based training, hands-on experience, lessons learned, and collaborating with other organizations. Role-based training includes cross-training personnel to compensate for significant absenteeism or operational disruptions, which may occur during an event. Training should reflect changes to the business continuity program as they occur.</p>
+<p>Ⅶ 演练和测试Exercises and Tests</p>
+<p>行动概要Action Summary</p>
+<p>董事会和高级管理层宜提供适当的演练和测试，以核实业务连续性程序是否支持业务连续性目标。演练和测试宜用于验证实体BCP的一个或多个方面。
+The board and senior management should provide for appropriate exercises and tests to verify that business continuity procedures support business continuity objectives. Exercises and tests should be used to validate one or more aspects of the entity’s BCP.</p>
+<p>检查人员宜在演练和测试计划中审查以下内容：
+在适当的时间间隔和重大变化影响实体运营环境时进行演练和测试的规定；
+全面的项目目标、演练和测试计划，以验证及时复原关键业务功能的能力；
+不影响生产环境，为关键业务功能的连续性和韧性提供保证的演练和测试流程；
+演练和测试的授权和控制；
+证明实体使用备选设施能力的演练和测试的政策、预期和策略；
+针对业务功能和关键系统组件的韧性、系统监视以及恢复的演练和测试目标；
+演练和测试情景，包括演练和测试假设、目标、预期，以及评估指标；
+演练(如全面、有限规模，或桌面等)和测试的类型；
+与第三方互动、行业级测试、以及核心和重要机构有关的演练和测试；
+演练和测试中发现问题、行动计划以及解决的目标日期的文档；
+董事会对整体业务连续性能力的预期，包括实现既定业务连续性目标的指南方针。
+Examiners should review for the following in exercise and testing plans:
+Provisions for exercises and tests occurring at appropriate intervals and when significant changes affect the entity’s operating environment.
+Comprehensive program objectives and plans of exercises and tests to validate the ability to restore critical business functions in a timely manner.
+An exercise and test process that provides assurance for the continuity and resilience of critical business functions, without compromising production environments.
+Authorities and control over exercises and tests.
+Exercise and test policies, expectations, and strategies that demonstrate the entity’s ability to utilize alternate facilities.
+Exercise and test objectives for resilience, system monitoring, and the recovery of business processes and critical system components.
+Exercise and test scenarios, including exercise and test assumptions, objectives, expectations, and assessment metrics.
+Types of exercises (e.g., full scale, limited scale, or tabletop) and tests.
+Exercises and tests related to interaction with third parties, industry-wide testing, and core and significant firms.
+Documentation of issues identified through exercises and tests, and action plans and target dates for resolution.
+Board expectations for overall business continuity capabilities, including guidelines to achieve defined business continuity objectives.</p>
+<p>演练和测试
+[38]
+有助于确保业务连续性程序支持业务连续性目标。演练是一项涉及人员和流程的任务或活动，旨在验证BCP或相关程序的一个或多个方面。有许多不同类型的演练，具体取决于预期的目的和目标。演练可包括情景驱动的BCP要素模拟。举个例子，演练可以包括在模拟环境中执行任务(即功能演练)，或基于讨论的(即桌面演练)。
+Exercises and tests
+[38]
+help ensure that business continuity procedures support business continuity objectives. An exercise is a task or activity involving people and processes that is designed to validate one or more aspects of the BCP or related procedures. There are many different types of exercises, depending on the intended goals and objectives. Exercises may include scenario-driven simulations of BCP elements. For example, exercises may include performing duties in a simulated environment (i.e., functional) or be discussion based (i.e., tabletop).
+注38：在本分册中，“演练”代表演练和测试，除非特别提及“测试”。</p>
+<p>测试是一种旨在核实运营环境中系统韧性的质量、绩效或可靠性的演练。测试是使用量化指标来验证IT系统或系统组件在运营环境中可操作性的评估工具(如将系统或系统组件断开电源会发生什么)。测试可聚集在系统的备份和恢复选项。测试的程度可以不同，从单个系统组件到支持业务运营的所有系统组件的全面测试。实际上，两者区别在于演练针对人员、流程和系统，而测试针对一个系统的特定方面。
+A test is a type of exercise intended to verify the quality, performance, or reliability of system resilience in an operational environment. Tests are evaluation tools that use quantifiable metrics to validate the operability of an IT system or system component in an operational environment (e.g., what happens as a result of removing power from a system or system component). Tests may focus on backup and recovery options of systems. The degree of testing can vary, from individual system components up to comprehensive tests of all system components that support business operations. Effectively, the distinction between the two is that exercises address people, processes, and systems whereas tests address specific aspects of a system.</p>
+<p>Ⅶ.A 演练和测试项目Exercise and Test Program</p>
+<p>管理层宜制定一个全面的演练和测试项目，包括目标、以及验证实体恢复关键业务功能能力的计划。实体的风险状况宜影响整个演练时间表(exercise schedule)的频度、目标和文件编制。实体的综合演练和测试时间表宜反映演练和测试目标以及整个演练和测试域。
+[39]
+Management should develop a comprehensive exercise and testing program including objectives, and plans to validate the entity’s ability to restore critical business functions. The entity’s risk profile should influence the frequency, objectives, and documentation of the overall exercise schedule. The entity’s consolidated exercise and test schedule should be reflective of exercise and test objectives and the overall exercise and test universe.
+[39]
+注39：与审计域(audit universe)类似，实体的演练和测试域由所有业务流程和系统组件的清单组成，这些流程和系统组件清单经编辑和维护，以确定演练和测试规划流程的区域。</p>
+<p>管理层宜指派有权控制演练或测试的人员，并确认达到了里程碑。业务条线管理层宜保留测试业务运营韧性(包括应用程序和流程(内部和外部))的所有权和责任。业务条线管理层宜负责测试其特定的业务流程和相关的相互依赖关系，而管理人员宜与参与企业级业务连续性流程和支持领域(如IT和设施管理等)的人员进行协调。结果宜报告给董事会和高级管理层，以便纳入企业级的业务连续性流程。
+Management should designate personnel with the authority to control the exercise or test and confirm milestones are met. Business line management should retain ownership and accountability for testing resilience of business operations, including applications and processes (both internal and external). While business line management should be responsible for testing its specific business processes and related interdependencies, managers should coordinate with personnel involved in the enterprise-wide business continuity process and support areas, such as IT and facilities management. Results should be reported to the board and senior management for inclusion in the enterprise-wide business continuity process.</p>
+<p>演练和测试宜在适当的时间间隔、发现新的风险、或重大变更影响实体的运营环境时进行。重大变更可能会使现有测试计划过时，因此在变更后宜立即重新测试BCP。全面的项目让管理层评估业务的相互依赖关系并改进连续性和韧性。
+Exercises and tests should occur either at appropriate intervals, when new risks are identified, or when significant changes affect the entity’s operating environment. Significant changes can render existing test plans obsolete, so BCP(s) should be retested soon after the change. A comprehensive program allows management to evaluate business interdependencies and improve continuity and resilience.</p>
+<p>管理层的主要目标宜是制定一个测试流程，以验证实体业务连续性项目的有效性，并识别可能存在的任何缺陷。因此，演练和测试项目宜包含以下内容：
+包括演练和测试规划的策略和期望的方针；
+实施的角色和责任；
+有足够的人员进行演练或测试，提供监督，并记录结果；
+保护生产数据的预防措施，例如在测试环境测试前执行备份，或在非高峰时段进行测试；
+紧急停止的规定(即管理层有权在发生实际事件时停止演习)以及结束演练和测试；
+核实连续性和韧性流程假设以及在不利的运行条件下处理足够工作量的能力；
+与业务流程重要性以及关键金融市场相称的活动；
+将结果与BCP进行比较，以确定演练或测试流程与恢复指导方针之间的差距，并酌情修订；
+对业务连续性项目以及演练和测试(内部和外部)的独立审查。
+A key objective for management should be to develop a testing process that validates the effectiveness of the entity’s business continuity program, and identifies any deficiencies that may exist. Therefore, the exercise and test program should incorporate the following:
+A policy that includes strategies and expectations for exercise and test planning.
+Roles and responsibilities for implementation.
+Sufficient personnel to perform the exercise or test, provide oversight, and document the results.
+Precautions to safeguard production data, such as performing a backup before performing a test in a test environment, or testing during non-peak hours.
+Provisions for emergency stops (i.e., management’s authority to stop an exercise if a real-life event occurs) and concluding exercises and tests.
+Verification of continuity and resilience process assumptions and the ability to process a sufficient volume of work during adverse operating conditions.
+Activities commensurate with the importance of the business process, as well as to critical financial markets.
+Result comparison against the BCP to identify gaps between the exercise or test process and recovery guidelines, with revisions incorporated where appropriate.
+Independent review of business continuity program and exercises and tests (internal and external).</p>
+<p>Ⅶ.B 演练和测试方针Exercise and Test Policy</p>
+<p>实体的政策宜明确演练和测试的期望和策略。方针(政策)宜：
+确定关键角色和职责；
+确立最低频度、范围和报告要求；
+明确与跨业务流程一致的文档期望；
+包括纠正在演练或测试期间发现的缺陷的流程；
+解决实体与第三方服务提供商之间的沟通和连通性测试；
+详细说明关键的第三方服务提供商的参与情况，以确认实体人员了解与恢复流程的集成。
+The entity’s policies should define exercise and testing expectations and strategies. The policies should:
+Identify key roles and responsibilities.
+Establish minimum frequency, scope, and reporting requirements.
+Define documentation expectations that are consistent across business processes.
+Include a process for correcting deficiencies identified during exercises or tests.
+Address testing of communication and connectivity between the entity and third-party service providers.
+Detail participation with critical third-party service providers to confirm that entity personnel understand integration with recovery processes.</p>
+<p>Ⅶ.C 演练和测试策略Exercise and Test Strategies</p>
+<p>管理层宜制定演练和测试策略，以证明实体使用备选设施支持连通性、功能、容积和容量的能力。这些策略宜包括对各个业务条线的期望，以及演练和测试方法及情景的使用。测试策略宜包括内外部依赖关系，包括外包给国内外的第三方服务提供商的活动。管理层宜测试实体BCP的所有方面。策略可包括：
+一个多年计划，通过使用不同的方法和情景，执行特定深度和广度的演练和测试，以发现项目中的漏洞；
+对测试内外部恢复依赖关系的期望；
+用于制定测试策略的假设、方法和练习。
+Management should develop exercise and testing strategies that demonstrate the entity’s ability to support connectivity, functionality, volume, and capacity using alternate facilities. The strategies should include expectations for individual business lines and use of exercise and testing methodologies and scenarios. Testing strategies should encompass internal and external dependencies, including activities outsourced to domestic and foreign-based third-party service providers. Management should test all aspects of the entity’s BCP. Strategies may include:
+A multi-year plan to execute the specific depth and breadth of exercises and tests to identify gaps in the program by using different methodologies and scenarios over time.
+Expectations for testing internal and external recovery dependencies.
+Assumptions, methodologies, and exercises used to develop the test strategies.</p>
+<p>从自然灾害和其他事件中吸取的经验教训表明，对于关键业务功能，测试策略宜包括事务处理和功能测试，以评估基础设施、容量和数据完整性的可恢复性。无论采用何种恢复策略，管理层都宜定期测试与实体风险相称的恢复准备金，如适用，还应测试整个金融服务行业的恢复准备金。
+Lessons learned from natural disasters and other events show that for critical business functions, testing strategies should include transaction processing and functional testing to assess the recoverability of infrastructure, capacity, and data integrity. Regardless of the recovery strategy used, management should regularly test recovery provisions commensurate with the risk to the entity and, where applicable, the overall financial service sector.</p>
+<p>Ⅶ.D 演练和测试目标Exercise and Test Objectives</p>
+<p>演练和测试目标宜包括业务流程和关键系统组件的韧性、系统监控和恢复。测试范围从恢复单个文件到全面故障切换到另一个数据中心。测试宜包括物理安全、关键系统、多个部门和第三方关系。演练宜足够彻底，以测试系统与第三方服务提供商之间的依赖关系和相互关系。随着演练和测试流程的成熟，它宜变得越来越复杂，包括全面恢复演练。演练和任何相关的测试宜实现以下目标：
+建立信心，确保韧性和恢复策略满足业务需求；
+证明可在商定的恢复目标(RTO和RPO，包括客户SLAs)和MTD以内恢复关键服务；
+确定在事件发生时可在恢复位置恢复关键服务；
+使人员熟悉恢复流程；
+核实人员是否得到充分培训，并熟知恢复计划和程序；
+确认演练和测试计划与BCP和实体的基础设施相容；
+找出差距和不足。
+The exercise and testing objectives should include resilience, system monitoring, and the recovery of business processes and critical system components. Tests can range from recovering a single file to a full-scale failover to another data center. Tests should include physical security, critical systems, multiple departments, and third-party relationships. Exercises should be sufficiently thorough to test dependencies and interrelationships among systems and third-party service providers. As the exercise and test process matures, it should become increasingly complex up to and including full-scale recovery exercises. Exercises and any associated tests should accomplish the following objectives:
+Build confidence that resilience and recovery strategies meet business requirements.
+Demonstrate that critical services can be recovered within agreed upon recovery objectives (RTOs and RPOs), including customer SLAs, and within MTDs.
+Establish that critical services can be restored in the event of an incident at the recovery location.
+Familiarize staff with recovery processes.
+Verify that personnel are adequately trained and knowledgeable of recovery plans and procedures.
+Confirm exercise and test plans remain compatible with the BCP and the entity’s infrastructure.
+Identify gaps and deficiencies.</p>
+<p>Ⅶ.E 演练和测试计划Exercise and Test Plans</p>
+<p>计划阐述了演练或测试的目标和期望，并概述了情景以及可能存在的任何假设或约束。演练和测试计划宜包括评估目标是否达到的指标。计划宜确定参演者、支持人员和观察员的角色和职责。
+[40]
+演练和测试计划宜与恢复目标的性质、规模和复杂程度相称。
+Plans address the objectives and expectations of the exercise or test and outline the scenario and any assumptions or constraints that may exist. Exercises and test plans should include metrics to assess whether objectives are met. Plans should identify roles and responsibilities for participants, support personnel, and observers.
+[40]
+Exercise and test plans should be commensurate with the nature, scale, and complexity of the recovery objectives.
+注40：就本分册而言，“观察员”并不构成独立审查或审计职能。</p>
+<p>无论实体的参与程度如何，管理层宜接收并审查第三方服务提供商的演练结果。管理层宜在实体的BCP中考虑这些演练的范围和结果。管理层宜评估第三方服务提供商的韧性，以及在发生事件时恢复实体使用的关键服务的能力。有关更多信息，请参阅IT手册的“外包技术服务”分册。
+Management should receive and review third-party service provider exercise results, regardless of the entity’s extent of participation. Management should consider the scope and results of these exercises in the entity’s BCP. Management should evaluate third-party service providers’ resilience and ability to recover critical services used by the entity if an event occurs. Refer to the IT Handbook’s “Outsourcing Technology Services” booklet for additional information.</p>
+<p>测试计划通常包括以下内容：
+所有测试参与者(包括支持人员)的角色和职责；
+涵盖所有目标的演练和测试的汇总时间表；
+目标和方法的具体描述；
+确定决策者和继任计划；
+演练和测试的地理位置；
+演练和测试升级程序以及针对模拟情景进行调整的能力；
+联络信息；
+衡量演练或测试成功或否的指标。
+Test plans generally include the following:
+Roles and responsibilities for all test participants, including support personnel.
+A consolidated exercise and test schedule that encompasses all objectives.
+A specific description of objectives and methods.
+Identification of decision makers and succession plans.
+Exercise and test locations.
+Exercise and test escalation procedures and the ability to adjust for simulated scenarios.
+Contact information.
+Metrics to measure the success or failure of the exercise or test.</p>
+<p>管理层宜审查演练和测试结果，酌情更新BCP，并将结果报告给董事会或董事会指定的委员会。测试参与者提供的改进测试情景、计划和脚本的建议宜被酌情纳入测试周期。
+Management should review the exercise and test results, update the BCP where appropriate, and report the results to the board or board-designated committee. Suggestions for improving test scenarios, plans, or scripts provided by test participants should be incorporated into the testing cycle, where appropriate.</p>
+<p>Ⅶ.F 演练和测试情景Exercise and Test Scenarios</p>
+<p>管理层宜根据风险制定切合实际的演练和测试情景，模拟业务功能中断，帮助管理层确定满足业务需求和客户期望的能力。目标不宜是毫无问题地进行“完美的”演练；相反，它宜是不断加强业务连续性项目并验证BCPs。管理层宜确定并记录用于开发每个情景的假设。这些情景宜包括可能影响第三方服务提供商和其它方(如重要业务合作伙伴等)的威胁。演练和测试宜包括与适用相关方的沟通流程。演练不仅证明故障转移到备选站点的能力，还验证恢复目标。管理层宜考虑到实体设施、第三方服务提供商设施以及与其进行重大或关键业务交易的适用对手方(即金融交易另一方的实体)之间的连通性和服务水平协议的所有合理可预见风险。
+Management should develop realistic exercise and test scenarios, based on risks, which simulate disruptions in business functions and help management determine the ability to meet both business requirements and customer expectations. The goal should not be to execute “perfect” exercises without issues; instead, it should be to continuously strengthen the business continuity program and validate the BCP(s). Management should identify and document assumptions used in developing each scenario. The scenarios should include threats that could affect third-party service providers and others, such as significant business partners. Exercises and tests should include communication processes with applicable stakeholders. Exercises demonstrate not only the ability to failover to an alternate site but also validate recovery objectives. Management should consider all reasonably foreseeable risks to connectivity and service-level agreements between the entity’s facility(ies), third-party service provider facilities, and with any applicable counterparties (i.e., entities on the other side of a financial transaction) with whom they transact significant or critical business.</p>
+<p>情景可包括：
+同时影响实体和第三方服务提供商的攻击；
+网络相关事件(如孤立的恶意软件攻击、DDoS攻击、数据损坏或全面的数据中心停工等)；
+使用镜像站点来证明备选站点可以有效地支持特定于客户的需求、工作量和特定于站点的业务流程；
+以峰值量处理一整天的工作。
+Scenarios may include:
+Simultaneous attacks affecting both the entity and a third-party service provider.
+Cyber-related events (e.g., isolated malware attack, DDoS attack, data corruption, or a full-scale data center outage).
+Use of mirrored sites to demonstrate that alternate sites can effectively support customer-specific requirements, work volumes, and site-specific business processes.
+Processing a full day’s work at peak volumes.</p>
+<p>情景宜尽可能只包括事件期间可用的资源(如备选站点的备份文件或设备)。考虑数据和系统有助于管理层核实数据备份的完整性(包括对加密数据的访问)以及场外系统和物资(如工作站和操作手册等)的充分性。
+To the extent possible, scenarios should include only resources that would be available during an event (e.g., backup files or equipment at the alternate site). Considering data and systems helps management verify the integrity of data backups (including access to encrypted data) and the adequacy of off-site systems and supplies, such as workstations and procedure manuals.</p>
+<p>管理层宜制定演练和测试脚本，以指导参与者并实现目标。每个脚本都宜记录程序，其中可包括：
+审查的应用程序、业务流程，系统或设施；
+员工或外部方执行的连续步骤；
+指导手动操作的程序；
+详细的完工时间表；
+参与者记录结果、量化指标和任何问题的方法。
+Management should develop exercise and test scripts to guide participants and meet objectives. Each script should document the procedures, which may include:
+Applications, business processes, systems, or facilities reviewed.
+Sequential steps for employees or external parties to perform.
+Procedures to guide manual work-around processes.
+A detailed schedule for completion.
+Methods for participants to record results, quantifiable metrics, and any issues.</p>
+<p>Ⅶ.G 演练与测试方法Exercise and Test Methods</p>
+<p>演练和测试有助于管理层验证支持关键业务功能的技术组件(包括系统、网络、应用程序和数据)的连续性和韧性。方法的类型或组合宜根据实体的规模、复杂程度以及其业务性质来确定。国土安全部(DHS)提供了测试方法的指导和示例，
+[41]
+所有实体都可以使用它们，并且在开发演练和测试时可能会有所帮助。严格的演练方法和增加的频率有助于增强对业务功能的连续性和韧性的信心。虽然全面演练需要投入更多的时间、资源和协调，但其好处是可以更准确地评估灾难发生时的恢复能力。这有助于管理层评估系统的韧性和参与恢复流程的个人的响应能力。对所有关键功能和应用程序进行全面测试，使管理层可以发现潜在问题；因此，管理层宜使用本节中讨论的更彻底的测试方法之一来核实BCP的可行性。
+Exercises and tests help management validate continuity and resilience of technology components, including systems, networks, applications, and data, that support critical business functions. The type or combination of methods should be determined by the entity’s size and complexity and the nature of its business. The DHS offers assistance and examples of testing methods,
+[41]
+which are available to all entities and may be helpful when developing exercises and tests. Rigorous exercise methods and increased frequency help provide greater confidence in the continuity and resilience of business functions. While comprehensive exercises involve greater investments of time, resources, and coordination, the benefit is a more accurate assessment of recovery capabilities if a disaster occurs. This assists management in assessing the resilience of systems and responsiveness of the individuals involved in the recovery process. Comprehensive testing of all critical functions and applications allows management to identify potential problems; therefore, management should use one of the more thorough testing methods discussed in this section to verify the BCP’s viability
+注41：作为关键基础设施既定部门的成员，金融机构可以利用国土安全部实施的测试结构。国土安全演练和评估项目(The Homeland Security Exercise and Evaluation Program)是国土安全部设计、开发、实施和评估演练的政策和指南。通过一系列四本参考手册，建立演练项目(exercise program)以及设计、开发、实施和评估演练,该项目提供了一个基于威胁(threat-based)且基于绩效(performance-based)的演练流程，包括混合的系列演练活动。</p>
+<p>尽管演练和测试的名称可能不同，或者可以互换使用，但本分册在以下小节中列出了最常见的元素。
+While names for exercises and tests may be different, or used interchangeably, this booklet lists the most commonly encountered elements in the following subsections.</p>
+<p>Ⅶ.G.1 全面演练Full-Scale Exercise</p>
+<p>全面演练(有时称为全面中断或全面演练)有助于管理层验证关键业务功能、信息系统和网络之间的内部和外部互依赖关系(例如，对于关键功能，演练宜包括事务处理和功能测试)。集成的演练包括与内外部各方以及支持系统、流程和资源的测试，超越了全面演练。管理层宜定期重新评估并更新演练和测试计划，以反映业务和运营环境的变化。
+Full-scale exercises (sometimes called a full interruption or comprehensive exercise) help management validate internal and external interdependencies between critical business functions, information systems, and networks (e.g., for critical functions, exercises should include transaction processing and functional testing). Integrated exercises move beyond comprehensive exercises to include testing with internal and external parties and the supporting systems, processes, and resources. Management should periodically reassess and update exercise and test plans to reflect changes in the business and operating environment.</p>
+<p>全面演练模拟了可用资源(人员和系统)的充分利用，从而促进业务流程的全面恢复。全面演练的目的是确定是否可以在备选处理站点恢复所有关键系统，以及人员是否可以执行BCP中规定的程序。举个例子，一个全面的恢复演练可能会模拟主设施的完全损失。全面演练的特点可包括：
+让所有业务单元的人员参与并与内外部管理响应团队互动；
+验证危机或应急管理流程是否按设计运行；
+核实人员的知识和技能；
+验证管理层的响应和决策能力；
+协调参与者和决策者；
+验证沟通协议；
+在备选地理位置或设施进行活动；
+使用备份媒介或替代方法处理数据；
+完成实际交易量或例证性子集；
+在足够长的时间内进行恢复演练，让问题像在危机中一样展现。
+A full-scale exercise simulates full use of available resources (personnel and systems) prompting a full recovery of business processes. The goal of a full-scale exercise is to determine whether all critical systems can be recovered at the alternate processing site and whether personnel can implement the procedures defined in the BCP. For example, a full-recovery exercise might simulate the complete loss of primary facilities. Features of a full-scale exercise may include the following:
+Engaging personnel from all business units to participate and interact with internal and external management response teams.
+Validating the crisis or emergency management process is operating as designed.
+Verifying personnel knowledge and skills.
+Validating management response and decision-making capability.
+Coordinating participants and decision makers.
+Validating communication protocols.
+Conducting activities at alternate locations or facilities.
+Processing data using backup media or alternative methods.
+Completing actual transactional volumes or an illustrative subset.
+Performing recovery exercises over a sufficient length of time to allow issues to unfold as they would in a crisis.</p>
+<p>Ⅶ.G.2 有限规模演练Limited-Scale Exercise</p>
+<p>有限规模演练是一种涉及适用资源(人员和系统)来恢复目标业务流程的模拟。有限规模演练的目的是确定是否能够恢复目标系统以及人员是否了解其在计划中规定的责任。有限规模演练的特点可包括：
+实施适合情景的计划；
+核实人员的知识和技能；
+验证管理层响应和决策能力；
+执行现场协调和决策角色；
+核实参与者是否可以连接到备选系统；
+在备选地理位置或设施进行活动；
+测试通信和远程访问能力(如切换到备用设备或远程办公等)。
+A limited-scale exercise is a simulation involving applicable resources (personnel and systems) to recover targeted business processes. The goal of a limited-scale exercise is to determine whether targeted systems can be recovered and whether personnel understand their responsibilities as defined in the plan. Features of a limited-scale exercise may include the following:
+Implementing a plan appropriate to the scenario.
+Verifying personnel knowledge and skills.
+Validating management response and decision-making capability.
+Executing on-the-scene coordination and decision-making roles.
+Verifying whether participants can connect to alternate system(s).
+Conducting activities at alternate locations or facilities.
+Testing communication and remote access capability (e.g., switching to alternate equipment or telecommuting).</p>
+<p>尽管有限范围演练很重要，但它们通常参与度有限(如仅限部门人员)或范围有限，不一定允许管理层衡量互连性以及系统和容量如何支持日常活动和工作量。
+While limited-scope exercises are important, they often have limited participation (e.g., departmental personnel only) or scope and do not necessarily allow management to gauge interconnectivity and how systems and capacity would support daily activities and workloads.</p>
+<p>Ⅶ.G.3 桌面演练Tabletop Exercise</p>
+<p>桌面演练(有时称为走查)是一种讨论，在此过程中，人们审查BCP规定的角色，并在不良事件模拟过程中讨论他们的响应。桌面演练的目的是确定目标计划和程序是否合理，人员是否了解其职责以及不同部门或业务单元计划是否彼此相容。就其本身而言，桌面演练可能不足以验证恢复能力，因为其仅限于对政策和程序进行基于讨论的分析。
+A tabletop exercise (sometimes referred to as a walk-through) is a discussion during which personnel review their BCP-defined roles and discuss their responses during an adverse event simulation. The goal of a tabletop exercise is to determine whether targeted plans and procedures are reasonable, personnel understand their responsibilities, and different departmental or business unit plans are compatible with each other. By themselves, tabletop exercises are likely insufficient to validate recovery capabilities, because they are limited to a discussion-based analysis of policies and procedures.</p>
+<p>桌面演练的特点可包括：
+让负责实施BCP的运营和支持人员参与进来；
+练习和验证特定的功能响应能力；
+证明知识、技能、团队互动和决策能力。
+通过模拟响应、关键步骤、发现困难和解决问题进行角色扮演；
+澄清关键计划要素，以及演练期间注意到的问题；
+制定纠正问题的行动计划。
+Features of a tabletop exercise may include the following:
+Engaging operational and support personnel who are responsible for implementing the BCP.
+Practicing and validating specific functional response capabilities.
+Demonstrating knowledge, skills, team interaction, and decision-making capabilities.
+Role playing with simulated responses, critical steps, recognizing difficulties, and resolving problems.
+Clarifying critical plan elements, as well as problems noted during exercises.
+Creating action plans to correct issues.</p>
+<p>Ⅶ.G.4 测试Tests</p>
+<p>管理层使用测试来核实系统韧性的量化绩效和可靠性。测试的目的是确定系统韧性是否符合BCP和宣称的恢复目标。测试方法和频度宜与业务功能相关的风险以及实体的测试策略和目标保持一致。管理层宜清楚地定义成功测试的特征，其中可包括：
+验证RPO、RTO和MTD；
+证明峰值量下的可恢复性；
+确认系统可以支持关键业务流程(如转移到备选站点、增加工作量、手工解决方法以及沟通等)；
+集成技术以支持关键业务活动，包括数据复制、恢复和场外存储；
+测试备份数据以评估完整性和可用性；
+核证设施控制(如环境、备用电力、以及物理安全等)；
+核实工作空间恢复(如网络连接和通信等)。
+Management uses tests to verify the quantifiable performance and reliability of system resilience. The goal of testing is to determine whether system resilience conforms to the BCP and stated recovery objectives. Test methodologies and frequencies should align with the risk associated with the business function as well as the entity’s testing strategies and objectives. Management should clearly define the characteristics of a successful test, which may include the following:
+Validating RPOs, RTOs, and MTDs.
+Demonstrating recoverability at peak volumes.
+Confirming that systems can support critical business processes (e.g., transfer to alternate sites, increased workloads, manual workarounds, and communication).
+Integrating technologies that support critical business activities, including data replication, recovery, and off-site storage.
+Testing backup data to assess integrity and availability.
+Certifying facility controls (e.g., environmental, backup power, and physical security).
+Verifying workspace restoration (e.g., network connectivity and communications).</p>
+<p>Ⅶ.H 行业演练和韧性Industry Exercises and Resilience</p>
+<p>考虑到广泛和系统性破坏事件的可能性和性质，公共和私营部门团体
+[42]
+及其成员进行演练，以核实整个金融行业的韧性。这些演练模拟重大的区域或行业级的紧急情况，鼓励成员使用备份站点并测试其恢复能力。除金融机构外，这些协同测试通常还包括第三方服务提供商和政府机构的参与。各种规模的实体都有几种参与方式，例如通过第三方服务提供商用户群体或行业计划(industry initiatives)。举个例子，行业计划包括美国财政部的汉密尔顿系列(国家和地区系列)和FS-ISAC的支付系统网络攻击(CAPS)。这些演练的结果通常可供行业和监管团体的成员使用，并可向公众提供摘要。
+Given the potential for and nature of widespread and systemic disruptive events, public and private sector groups
+[42]
+conduct exercises with their members to verify resilience across the financial industry. These exercises simulate significant regional or industry-wide emergencies, and members are encouraged to use backup sites and test their recovery capabilities. In addition to financial institutions, these coordinated tests often include participation by third-party service providers and government agencies. There are several methods for entities of all sizes to participate, such as through third-party service provider user groups or industry initiatives. For example, industry initiatives include the U.S. Department of the Treasury’s Hamilton Series (national and regional series) and the FS-ISAC’s Cyber-Attack Against Payment Systems (CAPS). The results of these exercises are usually available to members of industry and regulatory groups, and summaries may be available to the public.
+注42：公共和私营团体包括FS-ISAC、金融服务业协调委员会(Financial Services Sector Coordinating Council，FSSCC)、金融系统分析与恢复中心(Financial Systemic Analysis &amp; Resilience Center，FSARC)、金融和银行信息基础设施委员会(Financial and Banking Information Infrastructure Committee，FBIIC)以及一些区域联盟。</p>
+<p>检查人员宜明白，参加这种演习的机会可能是有限的。金融行业网络演习模板
+[43]
+可从美国财政部公开获取，管理层可使用该模板来帮助核实实体自身的响应能力，并评估其在类似情况下如何响应。此外，模板和结果可以用作验证演练和测试假设和情景的资源。
+Examiners should understand that opportunities to participate in such exercises may be limited. The Financial Sector Cyber Exercise Template
+[43]
+is publicly available from the U.S. Department of the Treasury, and management can use it to help verify the entity’s own response capabilities and evaluate how it would respond during similar situations. Additionally, the template and results may be used as resources to validate exercise and testing assumptions and scenarios.
+注43：请参阅美国财政部的金融部门网络演习模板，链接在：https://www.fbiic.gov/public/2017/Financial_Sector_Cyber_Exercise_Template.pdf。</p>
+<p>Ⅶ.I 第三方服务提供商测试Third-Party Service Provider Testing</p>
+<p>第三方服务提供商向许多实体交付关键服务，宜将其纳入企业级的演练和测试项目。纳入实体项目的程度宜基于第三方服务提供商和业务功能的重要性。管理层宜确保第三方服务提供商具有韧性，并有足够的基础设施和人员来恢复符合业务和合同要求的关键服务。与第三方服务提供商进行测试或参与测试的权利宜包含在管理实体与第三方关系的合同中。
+Third-party service providers deliver critical services to many entities and should be included in the enterprise-wide exercise and testing program. The extent of inclusion in the entity’s program should be based on the criticality of the third-party service provider and the business function. Management should obtain assurance that third-party service providers are resilient and have adequate infrastructure and personnel to restore critical services consistent with business and contractual requirements. The right to perform or participate in testing with third-party service providers should be included in the contract governing the entity’s relationship with the third party.</p>
+<p>管理层宜积极参与实体的第三方服务提供商测试项目，并宜核实测试策略包括可能的重大破坏性事件。第三方服务提供商宜对测试参数和结果保持透明，因为并非所有客户都能参加每个测试活动(如当客户量很大时),而且某些演练和测试可能与提供给特定客户的服务无关。管理层宜要求并接收测试结果和报告、修复措施计划和(完成后的)状态报告，以及相关的分析或建模。管理层宜根据问题的严重程度，及时跟踪和解决演练期间发现的任何问题。任何影响实体的测试结果都宜提交给董事会。在大多数情况下，将一个实体的恢复经验等同于另一个实体的恢复经验并不能保证类似的结果；因此，管理层宜进行自己的分析。有关更多信息，请参阅IT手册的“外包技术服务”分册。
+Management should actively participate in the entity’s third-party service providers’ testing programs and should verify that testing strategies include likely significant disruptive events. Third-party service providers should be transparent about testing parameters and results because not all clients can participate in every testing activity (e.g., when there is a large client volume) and some exercises and tests may not be relevant to the services provided to a specific customer. Management should request and receive test results and reports, remediation action plans and status reports upon their completion, and related analysis or modeling. Management should track and resolve any issues identified during the exercise in a timely manner, according to the severity of the issues. Any test results that affect the entity should be presented to its board. In most instances, equating one entity’s recovery experience with another’s does not guarantee similar results; therefore, management should perform its own analysis. Refer to the IT Handbook’s “Outsourcing Technology Services” booklet for additional information.</p>
+<p>Ⅶ.J 对核心和重要机构的测试Testing for Core and Significant Firms</p>
+<p>核心和重要机构的管理层宜制定核实策略，并进行演练和测试活动，以验证该实体已实施与该实体在行业中的角色一致的稳健的恢复实践。此外，管理层宜考虑其实体发生的事件对整个金融行业的影响。稳健实践白皮书中讨论的要素补充了机构各自关于业务连续性规划的政策和其它指导。未被指定为核心和重要机构的实体也可以考虑将“稳健实践白皮书”中的指导作为加强其测试流程的模型。
+Management at core and significant firms should develop verification strategies and execute exercise and testing activities to validate that the entity implemented sound recovery practices consistent with the entity’s role in the industry. Additionally, management should consider the impact of an event at its entity on the entire financial sector. The elements discussed in the Sound Practices Paper supplement the agencies’ respective policies and other guidance on business continuity planning. Entities not designated as core and significant firms may also consider guidance from the Sound Practices Paper as a model for enhancing their testing processes.</p>
+<p>考虑到行业对核心和重要机构的依赖，识别外部相互依赖关系非常重要。内部测试活动宜包括支持关键市场活动的系统，这些机构在其中是核心或重要的。演练和测试活动宜确认这些关键的清算和结算活动可以在RTO内恢复。行业标准的时间范围根据可用的技术、相关的风险以及行业计划，不断地调整。管理层宜调整其RTO，使其符合行业标准时间范围。此外，管理层宜设计测试活动，以证明在大范围中断影响关键人员的可得性时执行以下活动的能力：
+完成待处理的重大支付交易；
+获得资金；
+管理重大未平仓风险头寸；
+对帐簿和档案进行相关记录；
+验证内外部沟沟通协议；
+确保连通性、功能和卷容量。
+Identification of external interdependencies is important given the sector’s reliance on core and significant firms. Internal testing activities should include systems that support critical market activities in which these firms are core or significant. Exercise and testing activities should confirm that such critical clearing and settlement activities could be recovered within RTOs. Industry standard time frames are continually adjusted based on available technology, pertinent risks, and industry initiatives. Management should adjust its RTOs to be in line with industry standard time frames. Furthermore, management should design testing activities to demonstrate the ability to perform the following activities if a wide-scale disruption affects the accessibility of key personnel:
+Complete pending material payments and transactions.
+Access funding.
+Manage material open risk positions.
+Make related entries to books and records.
+Validate internal and external communication protocols.
+Ensure connectivity, functionality, and volume capacity.</p>
+<p>管理层宜与相关核心机构在其备选站点进行测试，并满足核心机构专门为重要机构和更广泛的参与者制定的测试标准。核心和重要机构的管理层宜进行测试，以评估其恢复策略的有效性。在可行的范围内，还鼓励管理层参与相关的市场级和跨市场测试
+[44]
+，以验证备选站点的连通性，并包括交易、结算和支付流程。
+Management should test with the relevant core firms from their alternate sites and meet testing standards the core firms establish specifically for significant firms and for participants more generally. Management at core and significant firms should perform testing to assess the effectiveness of their recovery strategies. Management is also encouraged, to the extent practical, to participate in pertinent market-wide and cross-market tests
+[44]
+that validate connectivity from alternate sites and include transaction, settlement, and payment processes.
+注44：行业和跨市场测试通常由证券业协会、债券市场协会和期货业协会等协会进行。提及这些关联只是为了说明目的；本注释并非对任何此类协会的认可。</p>
+<p>检查和监督活动可包括评价核实策略和测试计划，以评估核心和重要机构(这是稳健实践白皮书的重点)是否已实现了保护金融系统免受大规模破坏的韧性。
+Examination and supervisory activities may include evaluations of verification strategies and testing plans to assess whether core and significant firms, which are the focus of the Sound Practices Paper, have achieved the resilience to protect the financial system from a wide-scale disruption.</p>
+<p>Ⅶ.K 演练后和测试后行动Post-Exercise and Post-Test Actions</p>
+<p>管理层宜记录演练和测试期间发现的问题，并制定行动计划，确定解决问题的目标日期。演练和测试结果宜被分析，与演练和测试计划中的目标和成功标准进行比较，并报告给适当的管理层级。对那些未纠正项(items)，管理层宜记录接受演练期间发现风险的决定。
+Management should document issues identified during exercises and tests and create action plans with target dates for resolving issues. Exercise and test results should be analyzed and compared with the objectives and success criteria in the exercise and test plans, and reported to appropriate levels of management. For those items not remediated, management should document decisions to accept risks identified during the exercises.</p>
+<p>此外，管理层宜测试因恢复目标失败而实施的纠正措施，或解决遇到的重大问题。管理层可根据问题的严重程度，选择在下次定期演练期间或之前重新测试。业务条线管理层宜根据测试结果更新BCP，并调整BCM流程，包括演练和测试项目。最后，管理层宜向董事会提交关于演练和测试活动以及BCP是否符合实体的恢复和韧性目标的定期报告。
+Additionally, management should test corrective actions implemented as a result of a failed recovery objective or to address major issues encountered. Management may choose to retest during or before the next regularly scheduled exercise depending on an issue’s severity. Business line management should update the BCP based on test results and adjust the BCM process, including the exercise and testing program. Finally, management should submit regular reports to the board on the exercise and testing activities and whether the BCP meets the entity’s recovery and resilience objectives.</p>
+<p>演练和测试结果可包括以下资料：
+日期和地理位置；
+比较目标和结果的执行摘要；
+与计划的重大偏差，包括预期参与是否实现；
+发现的问题和经验教训；
+分配及时解决所发现的问题的责任。
+Exercise and test results may include the following documentation:
+Dates and locations.
+An executive summary comparing objectives and results.
+Material deviations from the plans, including whether intended participation was achieved.
+Problems identified and lessons learned.
+Assignment of responsibility for timely resolution of issues identified.</p>
+<p>管理层宜定期分析结果和问题，以确定问题是否可以追溯到一个共同的来源，如不当的变更控制程序。解决问题的根本原因会有助于解决许多潜在的问题。
+Management should periodically analyze results and issues to determine whether problems can be traced to a common source, such as inadequate change control procedures. Fixing the root cause of the problem may help resolve many underlying issues.</p>
+<p>Ⅷ 维护与改进Maintenance and Improvement</p>
+<p>由于风险和技术经常变化，管理层宜定期审查和更新业务连续性项目以反映当前的环境。定期审查使管理层能够让业务连续性流程与业务目标保持一致。管理层宜使用这些信息确定优先级，并将重点放在系统和流程的纠正和增强上。促使维护和改进业务连续性项目的触发因素可包括以下内容：
+企业战略的变化；
+新的或重新配置的产品、服务或基础设施；
+第三方服务提供商提供的产品和服务的变化；
+第三方服务提供商业务连续性流程中发现的缺陷；
+新的法律法规要求，或韧性实践；
+运营指标分析的结果(如关键风险指标，关键绩效指标等)；
+可识别潜在连续性事件、危机或事件的早期预警指标(如风暴的频率和严重程度、网络攻击的增加或客户服务电话的增加等)；
+预算与实际业务连续性费用之间的差异；
+演练和测试的结果，以及经验教训；
+威胁态势的变化(如新的能力，威胁行为者的意图等)；
+建议(如审计、脆弱性评估和渗透测试等)。
+Because risks and technology often change, management should regularly review and update the business continuity program to reflect the current environment. Periodic reviews allow management to align the business continuity processes with business objectives. Management should use this information to prioritize and focus on system and process corrections and enhancements. Triggers that prompt maintenance and improvement of the business continuity program may include the following:
+Changes in enterprise strategies.
+New or reconfigured products, services, or infrastructure.
+Changes in products and services offered by third-party service providers.
+Deficiencies identified in third-party service provider business continuity processes.
+New legislation, regulatory requirements, or resilience practices.
+Results of operational metric analysis (e.g., key risk indications, key performance indicators).
+Early warning indicators that may identify potential continuity events, crises, or incidents (e.g., frequency and severity of storms, increased cyber attacks, or increases in customer service calls).
+Variances between budgeted and actual business continuity expenses.
+Results from exercises and tests, and lessons learned.
+Changes in the threat landscape (e.g., new capabilities, intent of threat actors).
+Recommendations (e.g., from audits, vulnerability assessments, and penetration tests).</p>
+<p>为确定业务连续性项目的变更程度，BCM项目人员宜定期联系业务单元经理，以评估业务、结构、系统、软件、硬件、人员或设施的任何更改的性质。较小、较不复杂实体的管理层可以非正式地执行这一职能；然而，维护和改进概念对于这些实体仍然有效。
+To determine the extent of changes to the business continuity program, BCM program personnel should contact business unit managers regularly to assess the nature of any changes to the business, structure, systems, software, hardware, personnel, or facilities. Management at smaller, less complex entities may perform this function informally; however, the maintenance and improvement concepts remain valid for those entities.</p>
+<p>宜定期审查业务连续性项目的准确性和完整性。BCP内宜被调整的可能领域
+[45]
+可包括：
+运营要求；
+安全要求；
+技术程序；
+软硬件和其它设备；
+团队成员联系信息；
+厂商联系信息；
+备选和场外设施要求；
+重要记录。
+The business continuity program should be reviewed for accuracy and completeness at periodic intervals. Likely areas
+[45]
+that should be adjusted within the BCP may include:
+Operational requirements.
+Security requirements.
+Technical procedures.
+Hardware, software, and other equipment.
+Team member contact information.
+Vendor contact information.
+Alternate and off-site facility requirements.
+Vital records.
+注45：业务连续性项目评审要素的概念与NIST SP 800-34 Rev 1《联邦信息系统应急规划指南》一致，虽然该文件与联邦信息系统有关，但原则适用于非联邦信息系统。</p>
+<p>更新业务连续性项目时，管理层宜记录、跟踪和解决所有变更。管理层宜记录、分析和审查从不良事件的经验教训。理解这些教训让管理层为未来的不良事件做好准备。纳入经验教训的成文程序宜包括：
+识别故障；
+确定原因；
+评估潜在解决方案；
+酌情及时实施纠正措施；
+记录和审查所采取的纠正措施。
+When updating the business continuity program, management should document, track, and resolve any changes. Management should document, analyze, and review lessons learned from adverse events. Understanding these lessons allows management to prepare for future adverse events. Documented procedures for incorporating lessons learned should include:
+Identifying the failure(s).
+Determining the cause(s).
+Evaluating potential solutions.
+Implementing timely corrective actions as appropriate.
+Recording and reviewing corrective actions taken.</p>
+<p>作为维护和改进流程的一部分，管理层宜维护关键业务连续性文档的版本控制，并确保最新版本随时可供相关人员使用。文件的详细程度宜与实体运营的性质相称。这些信息宜在事件期间可得到，并由BCM项目管理层和项目人员维护。BCM文档宜包括证明BIA、风险评估和BCP定期更新的证据。
+As part of the maintenance and improvement process, management should maintain version control of key business continuity documents and ensure that the latest versions are readily available to appropriate personnel. The level of detail in documentation should be commensurate with the nature of the entity’s operations. This information should be accessible during an event and can be maintained by BCM program management and personnel. The BCM documentation should include evidence substantiating periodic updates of the BIA, risk assessment, and BCP(s).</p>
+<p>业务连续性文档管理流程可包括以下内容：
+角色和职责；
+文件控制；
+版本控制；
+存储和处置。
+Business continuity document management processes may include the following:
+Roles and responsibilities.
+Document control.
+Version control.
+Storage and disposal.</p>
+<p>对于业务连续性文档中包含的机密和敏感信息，管理层宜遵循实体的信息安全标准。此外，在主存储库不可访问的事件中，管理层宜维护相关业务连续性文档的备份副本。
+Management should follow the entity’s information security standards for confidential or sensitive information contained within business continuity documentation. Additionally, management should maintain backup copies of relevant business continuity documentation in the event that the primary repository becomes inaccessible.</p>
+<p>Ⅸ 董事会报告Board Reporting</p>
+<p>行动概要Action Summary</p>
+<p>董事会宜建立对管理层业务连续性报告的期望，定期监测业务连续性和韧性活动，并向管理层提出可信的挑战。
+The board should establish expectations for management’s business continuity reporting, regularly monitor business continuity and resilience activities, and provide credible challenges to management.</p>
+<p>检查人员宜审查报告和会议记录，并与管理层就以下事项进行讨论：
+业务影响分析；
+风险评估；
+BCP；
+韧性；
+演练和测试结果；
+发现的问题；
+策略更新；
+审计结果；
+指标，包括BCM和韧性的关键风险指标和关键绩效指标。
+Examiners should review reports and meeting minutes and conduct discussions with management on the following:
+BIA.
+Risk assessment.
+BCP.
+Resilience.
+Exercise and test results.
+Identified issues.
+Strategy updates.
+Audit results.
+Metrics, including key risk indicators and key performance indicators for BCM and resilience.</p>
+<p>如图1所示，管理层宜向董事会报告业务连续性状态，完成BCM周期。报告宜包括提供BIA、风险评估、BCP、演练和测试结果以及发现问题的书面陈述。此外，报告宜包括基于人员、角色和职责以及业务运营变化的定期策略更新。董事会宜定期监测业务连续性和韧性活动，以核实它们按设想进行，并定期审查或按变化要求执行。董事会宜根据经验教训及时更新。董事会会议记录宜反映业务连续性讨论(包括可信挑战)和批准情况。
+As illustrated in Figure 1, management should report on the status of business continuity to the board, completing the BCM cycle. Reports should include a written presentation providing the BIA, risk assessment, BCP, exercise and test results, and identified issues. Additionally, reports should include regular strategy updates based on changes in personnel, roles and responsibilities, and business operations. The board should monitor business continuity and resilience activities regularly to verify that they are implemented as envisioned and reviewed periodically or as changes dictate. The board should be updated in a timely manner based on lessons learned. Board minutes should reflect business continuity discussion (including credible challenges) and approvals.</p>
+<hr>
+<p>本公众号
+(ID: bcmplus)
+专注于业务连续性管理知识的传播和普及，关注应急、连续性和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时正处于腾讯政策调整，未能开通留言功能，希望交流和讨论业务连续性管理问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(公众号1月只能发4次文章，也会有一些小观点直接在知识星球而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/tM8DuKX4orYc-uDPyUk4kQ_02.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/tM8DuKX4orYc-uDPyUk4kQ">原文链接</a></em></p>

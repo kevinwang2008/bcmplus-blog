@@ -1,0 +1,232 @@
+<p>企业在开展情境构建（Scenario
+Construction
+）或进行演练设计（Exercise Design）时
+，如何
+将
+攻击者视角（Kill Chain）和防守者视角（Incident Response Lifecycle）有效耦合
+，形成清晰、完整、有结构的事件演化路径。这对于理解像勒索软件（Ransomware）
+攻击
+这类多阶段、高互动的攻击尤其重要。</p>
+<ol>
+<li>如何融合 Kill Chain 和 Incident Response</li>
+</ol>
+<p>Kill Chain：攻击者视角（“他们怎么进来的”）</p>
+<p>Kill Chain 模型主要分为以下阶段：</p>
+<p><img src="/bcmplus-blog/images/nSPv4X4JJPfZzAYU3kqXrw_01.jpg" alt=""></p>
+<ol>
+<li></li>
+</ol>
+<p>Reconnaissance
+（侦查）
+2.
+Weaponization
+（武器化）
+3.
+Delivery
+（投递）
+4.
+Exploitation
+（利用）
+5.
+Installation
+（安装）
+6.
+Command and Control
+（C2）
+7.
+Actions on Objectives
+（达成目标，比如加密、窃取数据）</p>
+<p>Incident Response：防守方视角（“我们如何响应”）</p>
+<p>I
+ncident
+R
+esponse
+生命周期通常包括以下阶段：</p>
+<p><img src="/bcmplus-blog/images/nSPv4X4JJPfZzAYU3kqXrw_02.jpg" alt=""></p>
+<ol>
+<li></li>
+</ol>
+<p>Preparation
+（准备）
+2.
+Detection &amp; Analysis
+（发现与分析）
+3.
+Containment, Eradication, and Recovery
+（遏制、清除和恢复）
+4.
+Post-Incident Activity
+（事后回顾）</p>
+<ol start="2">
+<li>构建勒索软件事件的分阶段模型（双视角融合）</li>
+</ol>
+<p>将勒索软件攻击情境分为
+六
+个
+阶段
+，在每个阶段用“双视角”呈现攻击者与企业的互动逻辑
+，
+如下
+表所示
+：
+阶段
+攻击者视角（Kill Chain）
+企业方视角（Incident Response）
+1
+潜伏与准备
+Recon / Weaponization / Delivery：</p>
+<ul>
+<li>网络扫描、社会工程、钓鱼邮件等</li>
+<li>准备恶意载荷
+Preparation：</li>
+<li>是否存在有效的钓鱼防护、SOC监测、用户培训？</li>
+<li>有无资产基线、异常识别机制？
+2
+初始入侵与权限获取
+Exploitation / Installation：</li>
+<li>利用漏洞或凭据进入终端</li>
+<li>安装后门，横向移动
+Detection &amp; Analysis（初始失败）：</li>
+<li>企业未及时发现行为异常</li>
+<li>安全日志无效、SIEM无规则
+3
+扩展与内网渗透
+C2 / Actions on Objectives（初期）：</li>
+<li>横向移动，提权，域控渗透，识别关键资产
+Detection &amp; Analysis（尝试开始）：</li>
+<li>零星检测告警触发</li>
+<li>安全团队分析但未联想为整体攻击
+4
+加密与勒索行为启动
+Actions on Objectives（正式）：</li>
+<li>加密数据，删除备份，发出勒索通知
+Containment：</li>
+<li>发现勒索信息，启动应急流程</li>
+<li>隔离受影响资产，初步遏制传播
+5
+外部沟通与决策
+与企业沟通勒索要求，威胁泄露数据，谈判阶段
+Eradication &amp; Recovery：</li>
+<li>判定影响范围，是否支付赎金？</li>
+<li>开始数据恢复，系统清除，法律合规响应
+6
+善后调查与防御强化
+可尝试再次渗透或出售数据
+Post-Incident：</li>
+<li>根因分析、修复漏洞</li>
+<li>与执法机构合作，内部复盘，更新BCP/IR计划</li>
+</ul>
+<ol start="3">
+<li>整合模型：用“事件时间线</li>
+</ol>
+<ul>
+<li>双视角互动
+”方式呈现</li>
+</ul>
+<p>将上述
+分阶段模型
+整理为一张
+事件
+时间线
+，横轴为事件阶段（如上六阶段），纵轴为“攻击者行动”与“企业反应”，形成如下结构：
+阶段
+阶段
+1
+阶段
+2
+阶段
+3
+阶段
+4
+阶段
+5
+阶段
+6
+攻击者行为
+钓鱼邮件、钓鱼网站、伪装供应商
+利用漏洞入侵，部署恶意DLL
+横向移动，提权，获取AD控制权
+加密文件、删除备份、
+弹出勒索
+发出赎金要求，谈判威胁外泄
+退出，或继续控制残留后门
+企业反应
+用户未警觉，邮件系统无拦截
+无日志告警，EDR未启用
+零星告警未关联，缺乏事件关联分析
+启动应急流程
+，隔离网络
+法务介入，是否支付？与
+执法
+/
+监管机构
+沟通
+修补漏洞，更新IR计划与培训</p>
+<p>在这个模型中
+，
+阶段4（
+加密与勒索行为启动
+）
+和
+阶段5（
+外部沟通与决策
+）
+对应于
+Kill Chain的第7步“
+Actions on Objectives
+（达成目标，比如加密、窃取数据）
+”
+和
+Incident Response的第3步“
+Containment, Eradication, and Recovery
+（遏制、清除和恢复）
+”
+，在使用时需要注意
+。在现实中，情
+况可能会更复杂，各阶段不是线性推进的，如在2024年的CDK Global遭勒索攻击事件中，发生了二次攻击。</p>
+<ol start="4">
+<li>实际应用建议：用于演练、BIA、或演练设计中</li>
+</ol>
+<p>无论怎么说，
+这个
+简要的分阶段
+模型
+结合了攻击者行为和企业反应两重视角，并用事件时间线呈现了事件剖面图和两者的互动逻辑，有助于我们理解勒索软件攻击事件。这个模型
+可
+用于：
+勒索
+软件
+攻击场景的剧本演练设计（Tabletop/Simulation）
+事件驱动型BIA建模（即反推业务影响）
+应急响应
+成熟度
+评估（在哪一阶段暴露出问题）
+演练辅助平台中场景模块的事件流定义</p>
+<p>在接下来的企业级重大事件情景构建中，我将用这个模型来分析一些重大的勒索软件攻击事件。</p>
+<p>总结一句话：
+Kill Chain让
+我们
+知道“他们是怎么打进来的”，Incident Response让
+我们
+知道“
+企业
+是怎么挨打的”，把两者结合起来，你就能知道——你到底哪一步掉链子了
+，
+相应地，
+也
+就能知道，该如何改进。</p>
+<hr>
+<p>本公众号“
+业务连续性+
+”（
+ID: bcmplus
+）专注于业务连续性和韧性知识的传播和推广，关注业务连续性、应急和危机管理的朋友可关注本公众号。</p>
+<p>随着腾讯重新开启留言功能，公众号已获得留言资格，欢迎对文章内容感兴趣的朋友踊跃留言，也让更多的朋友了解到你的意见和想法。</p>
+<p>此外，需要获取更多相关资料的朋友，可长按以下二维码加入知识星球：“
+业务连续性实践社群”
+进行更多讨论。请注意，原免费知识星球：“业务连续性管理问与答”已满1000名成员，成员政策按计划调整为：退出1人进入1人，希望加入知识星球者可选择在原免费星球排队等待，或者加入新知识星球“
+业务连续性实践社群”
+（目前年费为79元，后续可能会涨价），两个星球所发布和共享的内容会尽可能保持同步。</p>
+<p><img src="/bcmplus-blog/images/nSPv4X4JJPfZzAYU3kqXrw_03.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/nSPv4X4JJPfZzAYU3kqXrw">原文链接</a></em></p>

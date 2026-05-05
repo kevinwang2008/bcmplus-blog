@@ -1,0 +1,105 @@
+<p>写在前面：在探讨“BCM核心概念的演变”过程中，意外发现了一个值得关注的翻译问题，即对“disruption”的翻译，会直接影响到我们对BCM的整体理解，所以增加了这篇补遗。</p>
+<ol start="4">
+<li>关于“disruption”的翻译</li>
+</ol>
+<p>4.1 “disruption”= 中断？！</p>
+<p>“Disruption不就是中断吗？！”老实说，我也是一直这么认为的，目前的国家/行业标准规范也一直这么用。</p>
+<p>比如，ISO 22301:2012虽没有给出“disruption”的定义，但有如下使用：</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_01.jpg" alt=""></p>
+<p>与该标准对应的《GB/T 30146-2013》(等同采用ISO 22301:2012)翻译如下：</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_02.jpg" alt=""></p>
+<p>相应的，还有：</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_03.jpg" alt=""></p>
+<p>与</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_04.jpg" alt=""></p>
+<p>遍历ISO 22301:2012，“disruption”共出现15次
+[1]
+，在等同采用的GB/T 30146-2013中，全部翻译为“中断”。而在ISO 22313:2012中，“disruption”共出现35次
+[2]
+，等同采用的GB/T 31595-2015中，有1个未译出，另外34个全部翻译为“中断”或“中断事件”。</p>
+<p>再比如，在《商业银行业务连续性监管指引》(即著名的104号文)中：</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_05.jpg" alt=""></p>
+<p>BCM是管理“业务/运营中断”的一整套管理过程，这应该已是行业共识。</p>
+<p>4.2 “disruption”的定义</p>
+<p>在对国际流行的BCM标准跟进的过程中，发现多数标准已给出“disruption”的定义(如下表2)，并且这些定义基本一致。</p>
+<p>表2 标准中“disruption”的定义情况
+PAS 56
+BS 25999
+ISO 22399:2007
+ISO 22301:2012
+ISO 22313:2012
+ISO 22300:2012
+NFPA 1600:2019
+FFIEC BCM检查手册v2019
+ISO 22300:2018
+ISO 22301:2019
+ISO 22313:2020
+ISO 22300:2021
+无
+BS 25999-1 2.13
+BS 25999-2 2.16
+ISO 22399 3.5
+无
+无
+有
+ISO 22300:2018 3.70
+ISO 22301:2019 3.10
+ISO 22300:2021 3.1.75</p>
+<p>BS 25999-1和BS 25999-2对“disruption”的定义完全相同：“预期(如工人罢工或飓风)或非预期(如断电或地震)的、引起产品或服务预期交付与组织目标非计划、负偏离的事件”(event, whether anticipated (e.g. a labour strike or hurricane) or unanticipated (e.g. a blackout or earthquake), which causes an unplanned, negative deviation from the expected delivery of products or services according to the organization’s objectives)。</p>
+<p>ISO 22399对“disruption”的定义：“预期(如飓风)或非预期(如断电或地震)的、打乱组织所在地正常运营过程的事件”(incident, whether anticipated (e.g. hurricane) or unanticipated (e.g. a blackout or earthquake) which disrupts the normal course of operations at an organization location”，并进一步解释：disruption可能由干扰正常运营的积极或消极因素引起(a disruption can be caused by either positive or negative factors that will disrupt normal operations)，这个定义与BS 25999基本一致。</p>
+<p>FFIEC BCM检查手册采用的“disruption”的定义是：“导致运营降级或故障达到不可接受时长的预期或计划外事件”(an anticipated or unplanned event that causes operations to degrade or fail for an unacceptable length of time)。</p>
+<p>ISO 22300:2018采用了与BS 25999几乎完全一致的定义；“预期(如工人罢工或飓风)或非预期(如停电或地震)的、引起产品或服务预期交付与组织目标非计划、负偏离的事件”(event, whether anticipated (e.g. a labour strike or hurricane) or unanticipated (e.g. a blackout or earthquake), that causes an unplanned, negative deviation from the expected delivery of products or services according to the organization’s objectives)。</p>
+<p>ISO 22301:2019对ISO 22300:2018的定义进行微调：“预期或非预期的、引起产品和服务交付与组织目标非计划、负偏离的事件”(incident, whether anticipated or unanticipated, that causes an unplanned, negative deviation from the expected delivery of products and services according to an organization’s objectives)。ISO 22300:2021直接沿用ISO 22301:2019中的定义。</p>
+<p>显然，以上各标准对“disruption”的定义完全一致。</p>
+<p>4.3 对“disruption”的理解</p>
+<p>根据“disruption”的定义，它有3个特征：
+(1) disruption是一个事件/事态；
+(2) disruption可以是预期的、也可以是非预期的；
+(3) disruption引起产品和服务交付与组织目标非计划的、负偏离。
+(是否可以是正偏离，不一定不可以，但多数标准中的定义未支持这种理解)
+毫无疑问，我们前面提到的“业务/运营中断”符合这3个特征，因此，业务/运营中断是“disruption”。</p>
+<p>但“disruption”就是中断吗？
+我们来看两种情况：</p>
+<p>例如，因为大型节日活动安检等原因造成供应链拥塞，某企业生产用原材料到货不足，生产产量下降40%。这种情况已造成生产/服务能力水平的“非计划的负偏离”，按照定义，应属于“disruption”，但它并未形成运营中断。因此，对“disruption”的理解，应考虑是否与实际运营能力(capacity of operations)的“计划外波动”有关。</p>
+<p>此外，考虑间歇式/离散型的产品或服务，如某企业有超大显示屏产品定制业务，该业务是按订单生产，即有订单就根据订单生产要求规格的显示屏，没有订单就生产其它产品。该企业接到订单，要求未来1个月，每周交付100台(指定规格的)超大显示器(企业实际生产能力是1天可生产完成50台)，近期由于“能耗双控”指标压力，该企业被临时停电2天。这种情况是否属于“disruption”呢？如果造成了实际交货延迟，显然应该属于“disruption”；但如果未造成实际交货延迟，即未形成与“与组织目标非计划的负偏离”呢？按照定义，应该不属于“disruption”。</p>
+<p>所以，对“disruption”的理解，要聚焦在与组织目标“非计划的负偏离”上。通常而言，可用两个角度来衡量，一个是生产/服务提供能力，即运营能力的波动情况，这方面有相应的术语“最小业务连续性目标”(MBCO)；另一个是生产/服务提供过程的时间间隔上
+(特别是对离散性生产而言)
+,这方面有相应的术语“最大可接受中断时间”(MTPD)。也就是说，这种对“组织目标非计划的负偏离”，长度超过了“最大可接受中断时间”，能力低于“最小业务连续性目标”，就属于“disruption”。
+(在实务中，有企业干脆直接定义了关键业务的正常运营状态，对该状态“非计划的负偏离“就可以视为“disruption”了)
+。</p>
+<p>总结一下，BCM是管理“disruption”的一整套管理过程。
+(这个提法，比前述“BCM是管理业务/运营中断的一整套管理过程”更准确)</p>
+<p>4.4 对“disruption”的翻译建议</p>
+<p>据英汉词典，“disruption”有“中断、干扰、混乱、破坏、分裂”等意思，结合其定义，可将其翻译为“干扰”、“扰乱”或“混乱”。
+(本文暂选用“干扰”)</p>
+<p>ISO 22313:2020中有一段描述业务连续性的语句，下面使用“干扰”尝试一下翻译：</p>
+<p>“能够打乱活动的事件非常多，其中许多是难以预测和分析的。由于业务连续性关注
+干扰
+带来的影响不是其产生的原因，所以业务连续性使组织能够确定对其履行责任重要的活动。通过业务连续性，组织可以认识到
+干扰
+发生前可采取哪些措施保护其资源(如人员，场地、技术、信息)、供应链、相关方和声誉。有了这样的认知，组织就能准备好一个响应结构，从而有信心管理好
+干扰
+的影响。”</p>
+<p>ISO 22313:2020指出，业务连续性对于突然的干扰(sudden disruption)和渐进的干扰(gradual disruption)都是有效的，如下图12和图13：</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_06.jpg" alt=""></p>
+<p>图12 BCM对突然干扰有效的图示
+(见ISO 22313:2019之图2)</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_07.jpg" alt=""></p>
+<p>图13 BCM对渐进干扰有效的图示
+(见ISO 22313:2019之图3)</p>
+<p>似乎，“混乱”比“干扰”更适合，但“混乱”会有其它歧义；那“扰乱”呢？</p>
+<p>此外，“disruptive incident”当然也不适于译为“中断事件”了，是译为“破坏性事件”还是其它？</p>
+<p>你有什么好的翻译或建议，可在文后留言，给出你的意见及理由！</p>
+<p>谢谢您的参与！！！共同推动BCM在我国的发展和应用！！！</p>
+<hr>
+<p>本公众号
+(ID: bcmplus)
+专注于业务连续性管理知识的传播和普及，关注应急、连续性和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时正处于腾讯政策调整，未能开通留言功能，希望交流和讨论业务连续性管理问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(公众号1月只能发4次文章，也会有一些小观点直接在知识星球而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/A--lOnq4DSR_P-E7TZcjkQ_08.jpg" alt=""></p>
+<p>在术语和定义部分出现6次，涉及业务连续性计划(BCP)、业务影响分析(BIA)、事件(incident)、最长可接受中断时间(MAO)、最长可接受中断时间(MTPD)以及最小业务连续性目标(MBCO)；在正文部分出现9次，包括7.4 沟通出现1次，8.2.3 风险评估出现2次，8.3.3 保护和缓解出现3次，8.4.1 (建立和实施业务连续性程序)总则出现1次，8.4.4 业务连续性计划出现1次，以及8.5演练和测试出现1次。
+↑
+在引言部分(包括图示)出现9次，正文部分出现26次。
+↑</p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/A--lOnq4DSR_P-E7TZcjkQ">原文链接</a></em></p>

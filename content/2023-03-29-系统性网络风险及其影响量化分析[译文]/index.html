@@ -1,0 +1,772 @@
+<p>系统性网络风险及其影响量化分析[译文]
+乔纳森•W•维尔伯恩
+[1]
+亚伦•M•斯特朗
+译者：
+随着数字化转型和风险评估从定性向定量分析的发展，系统性风险及其量化分析在企业风险管理发挥着越来越重要的作用，我们将跟踪国内外在此领域的研究和实践进展。本文侧重于系统性网络风险（systemic cyber risk）及其影响的量化分析，作者Jonathan W. Welburn和Aaron M. Strong来自美国著名智库兰德公司
+，原文：
+https://doi.org/10.1111/risa.13715
+。
+摘要
+：随着近年来（从2010年到2019年）发生的一些最大的网络攻击，我们才刚刚开始全面了解网络风险。因为企业努力应对网络事件的风险及其不完善的预防能力，人们的注意力转向了风险管理和保险。虽然人们一直在努力了解网络攻击的损失，但与网络攻击相关的系统性风险（风险在相互依赖的系统中传播的结果）仍然是一个关键问题，需要进一步研究。我们提出了一个理论框架，将系统性网络风险描述为网络事件后级联（cascading）、共因（common cause）或独立故障的结果。我们构造了一个级联故障的定量模型，以估算与给定网络事件相关的潜在经济损失。我们提出了一种跨学科的方法，将标准的行业级投入产出分析扩展到网络领域（尚未完成）。我们估算了与公司级事件相关的总损失，这对风险分析和计算经济模型有贡献。我们使用该模型来估算潜在网络事件的影响，并将模型结果与已知损失的案例进行比较。最后，我们使用系统性网络故障模型来探讨不断增长的网络保险市场的影响以及更广泛网络政策的需求。虽然我们讨论系统性网络风险的主题，但我们使用投入产出分析来估算公司级事件总损失的贡献适用于从环境到健康的各种风险分析应用。
+关键词：
+网络保险；网络政策；网络风险；系统性风险</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_01.jpg" alt=""></p>
+<ol>
+<li>引言
+通过网络空间建立一个高度互联的世界带来的好处越来越多地伴随着代价
+[2]
+。网络事件对个人、企业和政策造成的破坏，其普遍性和重要性都有所上升。2015年，对Saudi Aramco（沙特阿美）的网络攻击让国家行动者摧毁了这家国家石油公司的35000个工作站（Pagliery，2015）。2016年，国家行动者试图通过黑客攻击民主党全国委员会来干预美国选举（国家情报总监办公室，2017）。2017年，针对Equifax的黑客攻击让网络行动者窃取了1.455亿条敏感记录，包括社会保障号、信用卡和地址（SEC，2018）。这些例子是众多提供了网络攻击潜在深远影响证据中的3个，提醒人们关注网络空间中不断升级的风险，在网络空间中，复杂的、通常与国家有关联的行动者，有能力规避甚至是最好的防御，一个超出这3个例子的问题（例如，Lynn III（2010）讨论的美国国防部机密计算网络安全事件）造成了重大破坏和财务损失。然而，网络风险的潜在危险可能比这些例子更糟。
+网络空间中恶意活动的问题是其不仅仅是独立事件。其它的网络事件即使没有增长，也已经扩散到相关的系统。在2016年的一次网络攻击中，被广泛认为是黑客活动分子的黑客利用僵尸网络对DNS服务提供商Dyn发动了分布式拒绝服务DDoS攻击。依赖Dyn服务的许多重要客户因此遭受了中断；Amazon、Netflix、PayPal和BBC都中断了一段时间（Meyer &amp; Lafrance，2016）。此外，在2017年，两次网络攻击—WannaCry和NotPetya—导致了勒索软件的迅速传播，扰乱了世界各地从医疗卫生到交通运输、电信和基础设施等多个行业（Collins，2017）。损失是巨大的。大型全球航运公司Maersk（马士基）报告称，NotPetya攻击造成了3亿美元的收入损失（Thomson，2017）。也许所有网络事件中最令人担忧的是正在出现的利用网络工具破坏民用电网。2018年3月，美国国土安全部（DHS）和联邦调查局发布了一份联合报告，概述了对美国电网的蓄意网络入侵，这可能会让国家行动者破坏大量平民的电力。如果攻击完全实现（这已不是第一次），2015年对乌克兰电网的攻击破坏了22.5万居民的电力（ICS-CERT，2016）。与网络事件孤立影响不同的是，这些事件造成了巨大的影响和尚未为人了解的级联故障
+[3]
+，例证了网络空间存在系统性风险的可能性。
+本文讨论了网络风险的新形式：
+系统性网络风险（systemic cyber risk）
+。我们试图阐明系统性网络风险的规模，特别是系统性网络故障的潜在经济后果。也就是说，我们区分了系统性网络风险更广泛的术语，包括可能性、不确定性和后果，以及更具体的系统性网络故障。本文侧重于风险的后一部分，我们试图理解系统性网络故障和潜在影响。在这样做时，我们特别关注网络保险是否是管理网络风险的充分工具，或者系统性网络风险是否需要就网络政策进行新的对话。在第2部分，我们在系统性网络风险当前定义和讨论的基础上，通过系统性网络风险的理论框架推进讨论，并在第3部分中使用该理论框架开发系统性网络故障的量化模型。在第4部分，我们使用该模型分析具体网络事件场景及其潜在损失。然后，我们使用第3和第4部分中关于系统性网络故障的经济后果的洞见，在第5部分讨论系统性网络风险对网络保险和网络政策的影响。最后，在第6部分，我们给出了一系列关于系统性网络风险的结论。</li>
+<li>理解系统性网络风险的工作
+在金融网络的背景下，De Bandt和Hartmann（2000）对系统性风险的定义如下：
+“一种事件，即金融机构的‘坏消息’，甚至其破产，或金融市场崩溃的发布，以连续方式对一个或多个其他金融机构或市场产生重大不利影响，如它们破产或崩溃”。
+在De Bandt和Hartmann（2000）的定义中，系统性事件是有限的特质冲击（idiosyncratic shock）之后的“多米诺效应”或广泛的系统性冲击导致的“同时不利影响”的结果。2008年全球金融危机后，对金融系统性风险进行了大量研究，其中许多集中在网络结构（例如，Acemoglu，Ozdaglar和Tahhaz-Salehi（2015））以及“大或相互连接而不能倒”的金融机构的广泛的金融政策挑战上。
+推动2008年金融危机后对系统性风险研究的金融网络的相互连接与网络空间的相互连接高度相似。与金融网络一样，网络空间是一个通过网络联接（依据供应链网络和网络空间中的计算机网络）连接起来的高度相互依赖的组织系统。这就产生了“
+系统性网络风险
+”这一词语，它是系统性风险和网络风险领域的刻意组合。因此，对网络空间中系统性风险的研究本质上是跨学科的；它建立在网络安全、金融、经济和风险分析的基础上。在本部分，我们利用这些领域来促进对系统性网络风险的统一理解。
+不过，在定义系统性网络风险之前，为本文建立一个网络词汇是有意义的。我们在广泛使用的C-I-A框架
+[4]
+下将术语
+网络事件
+定义为
+数字信息和信息系统的保密性、机密性和完整性的损失
+。在此背景下，术语
+黑客攻击（hacking）
+是造成网络事件的行动。作为特定类型的事件，我们将术语
+数据泄露
+定义为
+网络事件后机密数据的丢失或泄露
+，这些事件来自未授权用户或内部威胁对数据的访问或传输。此外，我们将术语
+网络攻击（cyber attack）
+定义为
+数字信息和信息系统的降级、扰乱（disruption）或损坏
+，在许多情况下（如分布式拒绝服务攻击）会导致失去可用性。我们假设所有网络事件都可以归类为数据泄露或网络攻击（两者之间可能存在重叠）。因此，2017年Equifax
+[5]
+的网络事件属于数据泄露，因为黑客未经授权访问了敏感数据并将其传输到未授权系统，而2016年破坏乌克兰电网
+[6]
+的网络事件则是网络攻击，因为黑客能够破坏提供电力的信息系统的关键功能。
+2.1 表示系统性网络风险的方法
+为达成“系统性网络风险”一词的共同定义，已经做出了多项努力。世界经济论坛（2016）对其定义如下：
+“系统性网络风险是指在关键基础设施生态系统的单个组件上发生的网络事件（攻击或其他不利事件）造成重大延迟、拒绝、崩溃、破坏或损失的风险，以至不仅原发组件的服务受到影响，而且后果还会影响相关（逻辑和/或地理）的生态系统组成部分，对公众健康或安全、经济安全或国家安全造成重大不利影响。已实现的系统性风险对真实经济、安全和安保的不利影响通常被视为对服务和/或关键数据（即数据完整性）的信任或确定性的重大破坏，运营中断以及可能的物理资产丧失能力或破坏引起的。”
+国土安全系统工程与发展研究所（HSSEDI）和国土安全部（DHS）也在努力定义系统性网络风险。虽然他们对系统性网络风险的描述符合世界经济经坛的广义定义，但对潜在的系统性网络事件的描述更具体。他们将风险分析中的现有概念应用到网络风险领域，生成了网络威胁模型，并确定了11种系统性网络攻击模式：共模/重复攻击（common mode/repeated attacks），共模/散点攻击（common mode/scattershot attacks）, 共模/普适攻击（common mode/pervasive attacks）, 滚动攻击（rolling attacks）,传递攻击（transitive attacks）,级联攻击（cascading attacks）, 共享资源消耗攻击（shared resource consumption attacks）,关键功能攻击（critical function attacks）,区域攻击（regional attacks）,服务依赖性攻击（service dependency attacks）和协同供应链攻击（coordinated supply chain attacks）（Bodeau和McCollum，2018）。这11种系统性风险模式为开始对系统性网络事件的可能性进行建模迈出了一步。
+此外，其他人了也为理解系统性网络事件的潜在影响做出了贡献。例如，美国财政部金融研究办公室（OFR）指出，系统性网络风险可能是系统性金融风险的一个来源，系统性重要性机构的网络事件可能导致重大溢出效应或向外传播（OFR，2017）。经济合作与发展组织（OECD）的一份报告赞同这一观点，并确定了可能成为国家级和全球级冲击潜在驱动因素的系统性网络事件的特定类型（Sommer &amp; Brown，2011）。值得注意的是，OFR（2017）确定了网络风险影响金融稳定的3个关键渠道：关键机构服务缺乏可替代性、潜在的信心丧失以及潜在的数据完整性丧失。此外，OFR（2017）建议使用“网络压力测试”作为监管工具。
+2.2 建模网络风险的经济影响的方法
+网络风险的经济后果建模是一个不断发展的领域，并以不同的方式利用了风险分析的方法。例如，这项工作的一个日益增长的分支采用博弈论方法来建模网络风险和防御性投资（例如，Acemoglu， Malekian和Ozdaglar（2016）；Hausken（2009）；Kovenock和Roberson（2018）；Nagurney和Shukla（2017）；Simon和Omar（2020））以及通用网络安全（例如，参见Roy等人（2010）和Do（2017）等人的调查）。其它研究则提出了需要加强建模，以适应数字时代的新风险；“由于量化全面网络风险所涉及的复杂性，企业和保险公司倾向于采用相对初级的建模方法”（SwissRe，2017）。因此，关于估算网络事件相关损失范围的文献正在扩大。使用实证方法，Romanosky（2016）通过描述性统计分析了12000多起网络事件的数据，发现中间事件导致的损失略低于200000美元。在探讨特定类型事件的影响时，劳合社和AIR估算了网络攻击对一家主要云提供商的潜在财务影响，该网络攻击造成的停机扰乱了用户服务。利用行业风险数据和“假如……”(what-if)情景评估，他们使用模拟方法来估算可能的财务损失。他们估计，持续3至6天停机（outage）的总损失在50亿到150亿美元之间（AIR和劳合社，2018）。其他人估算了事件的总损失。为此，网络风险价值（cyber value-at-risk）模型得到了广泛应用，该模型借鉴了金融风险管理中流行的风险价值（VAR）技术，用于估算特定时间段内可能由网络事件导致的损失（世界经济论坛和德勤，2015）。使用网络风险价值方法，德勤的一项研究估算，荷兰经济每年预计损失100亿欧元，或GDP的1.5%（van Wieren，van Luit，Estourgie，Jacobs和Bulters，2016）。劳合社估计，网络攻击每年给企业造成4000亿美元的损失（Gandel，2015）。这些方法中的每一种因方法不同对网络事件损失的估计也不同，从中到高，它们也受到对数据驱动的网络风险分析的固有的观察偏差的质疑。
+其他人则转向事件数据。Romanosky（2016）和最近的Aldasoro等人（2020）对Advisen数据集中的网络事件样本进行了研究，以展现网络事件及其损失的变化和趋势。例如，Aldasoro等人（2020）指出，网络事件在金融行业的发生率很高，结合Eisenbach，Kovner和Lee（2020）对网络事件后金融系统内传染的分析，这是值得关注的。然而，Aldasoro等人（2020）也指出，该行业的低损失表明监管的成功以及对网络安全实践增加的投资。然而，尽管这些研究可能代表了大量网络事件，但令人不安的现实是，这些数据可能会未抓住完整分布，尤其是上尾部（upper tail）。很有可能，一些事件要么未被发现，未被报告，要么尚未发生。因此，对部分观察到的事件的描述性统计有低估尾部风险的风险。相反，结构模型具有理解可能导致未观察到的风险的机制的潜力。
+使用结构模型，即通过使用结构关系而非统计数据来估计经济影响的模型，在估算网络事件的经济影响方面，在很大程度上尚未得到研究。Dreyer等人（2018）创建了一个工具，用于估算60多个国家经济部门网络事件的潜在总损失。在这种情况下，Dreyer等人（2018）估算了事件造成的直接损失和系统性损失。重要的是，为了估计系统性损失，他们使用了部门级投入产出分析来估算网络事件后损失在后向链或
+上游
+供应链链接之间的传播。虽然Dreyer等人（2018）的分析发现，输入参数的敏感度很高，其损失可能从每年数千亿到数万亿，他们还发现，网络事件相关的直接损失与系统性损失（包括上游和
+下游
+）相比可能相形见绌，这是供应链、损失正向链接传播的结果。然而，考虑到下游成本可能超过上游成本，作者将这一领域留作未来研究。
+2.3 表示系统性网络风险的框架
+我们以系统性网络风险的现有定义为基础，引入了一个用于理解和建模系统性网络风险的框架，该框架利用了风险分析和经济学中的常见概念，比Bodeau和Mc Collum（2018）讨论的DHS框架更简洁。单个网络事件可以利用一个或多个漏洞，通过多种方式发生。我们定义了3类系统性故障：
+级联（cascading）
+故障，
+共因（common cause）
+故障和
+独立（independent）
+故障，如图1所示。</li>
+</ol>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_02.jpg" alt=""></p>
+<p>图1
+系统性网络风险的类型
+图1显示了3类系统性网络故障。级联故障是由特定公司发生网络事件后扰断跨网络连接传播造成的，共因故障是由对许多公司共同漏洞的利用造成的，独立故障是由同时发生的许多公司的单个和孤立的网络事件造成的。
+级联网络故障（cascading cyber failures）
+是一个网络事件向外传播并造成许多扰断的结果。它们会在通过供应链相互联系的公司和组织之间产生多米诺效应。针对Dyn的DDoS网络攻击，依赖Dyn服务的公司由于对Dyn网络的单一攻击而遭受停机和业务混乱（Meyer &amp; Lafrance，2016），是导致级联网络故障的网络事件的典型案例。在这个级联网络故障的定义中，我们特指公司级扰断的传播，而不一定是网络漏洞的传播。也就是说，在Dyn示例中，由于业务服务和运营扰断，初始攻击造成了级联故障。
+共因网络故障(common cause cyber failures)
+是由一个网络漏洞触发多家公司造成的多个网络事件。与级联故障不同，共因故障利用了多家公司和组织持有的一个共同漏洞，同时或者快速连续地引发大量网络事件。WannaCry网络攻击提供了一个著名的例子，软件漏洞被黑客利用，几天内危害了全球数千台电脑以勒索赎金（Collins，2017）。
+值得注意的是，在网络空间中，级联和共因故障并不互相排斥。例如，一个快速传播的蠕虫可能会利用单机上广泛持有的漏洞，从源头向外传播到许多直接或间接连接的系统。虽然这类事件具有级联故障的特征，但我们将此类故障归类为具有级联后果的共因网络故障。对于级联故障，我们主要关注业务中断直接和间接影响形成的级联，即客户不能访问，供应链损失收入。
+最后，
+独立网络故障(independent cyber failures)
+是利用单个公司或组织的独立漏洞的网络事件的结果。理论上，许多单独的网络事件可能同时发生，从而形成一个系统性事件。但在实践中，这种类型的事件目前不太可能发生。然而，在后量子密码学没有进展的情况下，量子计算的出现可能会导致同时的加密破解，从而引发对大规模独立故障的关注（Vermeer和Peet，2020）。
+因此，级联和共因网络故障是系统性网络风险的驱动因素。本文将特别关注级联网络故障，下一部分将提供量化它们的方法。
+3. 量化模型
+Brenner等人（2017）指出，虽然潜在的级联故障是行业、学术界和政策专家的一个重要关注点，但行业特定的模型在揭示级联故障的损失和后果方面仍然不足。这种不足在很大程度上源于将传统的结构建模方法应用于公司级风险的挑战。也就是说，经济部门之间的投入产出流动数据使行业层面分析成为可能，但关于生产网络（即确定公司之间完整连接网络）的公司级数据却没有
+[7]
+。Carvalho和Tahbza-Salenhi（2019）最近对生产网络文献的评论中强调了这一现实，他们发现缺乏公司级数据可能是公司级生产网络研究不足的原因。
+这一挑战已通过不同的方式得到解决。一些作者（如Carrera，Standardi，Bosello和Mysiak（2015）；Rose，Oladosu和Liao（2007））依靠部门级可计算一般均衡（CGE）模型来估算自然或人为引起的业务中断造成的经济影响。这种方法明确地假设，在发生重大扰断和公司调整生产以适应价格变化之后，经济会随着价格调整立即进入新的均衡状态。然而，在现实世界中，从供应链角度看，价格往往具有粘性，签约成本很高（contracting is costly）。因此，假设经济在扰断之后处于均衡状态可能并不合适。根据定义，扰断应会引起需要顾及的不均衡，由于合同，价格可能不会调整。我们的方法只考虑足够小到公司不用重新签订合同的冲击。因此，我们需要一种不同于传统CGE模型的方法，这种方法允许即时调整价格，并且不考虑供应链内的合同。
+因此，在估算特质冲击（网络攻击）即时经济影响的情况下，投入产出（I/O）模型比CGE模型具有优势。由里昂惕夫（1966）首创的I/O模型描述了部门之间的商品流动，是经常用于估算部门波动对经济广泛影响的经济相互依赖的模型。所以，网络环境中投入产出建模的使用已经增加；Andrijcic和Horowitz（2006）；Santos和Haimes（2004）；Santos，Haimes和Lian（2007）；以及Dreyer等人都提供了I/O建模在网络安全中应用的例子。但重要的是，传统的I/O建模方法不能表现下游影响。可计算一般均衡分析可以通过价格变化表现这些下游供应链的影响。由于带有里昂惕夫生产函数的I/O模型的性质，投入部分的损失对应于相同的生产损失（Leontief，1966）。从短期来看，对于持续数天至数周的中断，这可能是适当的假设，因为重新签订合同（即为新供应商创建新合同）在这个时间范围内不一定可行。目前的工作考虑的是对经济有重大影响但时间足够短的中断，如此公司可能无法与替代供应商或客户重签合同。
+此外，公司在网络攻击期间保持运营和之后恢复的能力各不相同，这种能力因此被称为韧性。短期使用I/O分析相对于长期使用CGE建模的好处已经被普遍接受，公司的韧性和抵御并从网络攻击恢复的能力，可能取决于从网络成熟度到业务性质等诸多因素。考虑到这些因素中有许多是未知的，以及静态和动态韧性的不同性质，估计单个公司的韧性并非易事。然而，我们可以着眼于努力在经济部门层面估计韧性均值。Rose等人（2007）研究了恐怖袭击导致电力中断的影响，校准了不同行业部门对电力中断的韧性。在影响方面存在一些差异的情况下，电力中断和网络中断会导致受影响公司的生产或服务可用性出现类似的临时性损失，从而使Rose等人（2007）的结果可用于网络环境。
+因此，我们使用本部分定义了一个基于传统I/O建模的结构模型，以估算网络事件对单个公司的潜在影响。具体而言，本部分提出的定量模型估算了网络事件的潜在经济后果（就整个经济体的总销售损失而言），这是由对特定公司的网络攻击造成的，其影响通过其供应链向上游和下游传播。我们使用Rose等人（2007）在行业层面的结果，纳入了公司层面的韧性以管理暂时替代和其它业务运营，从而最大程度的减少业务中断对公司产出和收入的影响。
+3.1 特质公司风险的网络攻击基础
+为了解网络攻击导致的停机对单个公司造成的总影响，我们使用类似于Acemoglu，Carvalho, Ozdaglar和Tahbaz-Salehi（2012）的方法对经济进行建模。因此，经济由元组
+ε
+= {
+S，
+W
+，∊
+}定义，其中
+S
+是部门的集合，
+W
+是加权邻接矩阵，
+∊
+是部门级冲击的向量。在该经济中，每个部门都由公司组成，其中每个公司
+ƒ
+生产产出为
+y
+ƒ
+，
+因此部门总产出
+Y
+i
+由其公司的总和(
+Y
+i
+= )确定，总产出
+Y
+由所有公司的总和(
+Y
+= )确定。
+为建模经济
+ε
+，我们首先关注总冲击的微观根源。我们提出了一种方法，使用具有代表性行业联系的公司模型来估算由公司级中断造成的总冲击的微观基础。这种方法从以下假设开始：
+假设1.
+代表性公司连接
+我们假设每个行业的流入和流出代表了该行业中的公司。也就是说，每个公司都是该行业中的代表性公司，只是在产出上有所不同，而在基础生产过程上没有差异。
+假设1意思是，对于行业
+i
+中的任何给定公司
+ƒ
+，它流入和流出所有其他行业
+j
+的流量与它在行业级产出中的份额成比例，如下所示：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_03.jpg" alt=""></p>
+<p>其中
+w
+ij
+是行业
+i
+到行业
+j
+的流量，
+ω
+ƒi
+是公司
+ƒ
+在行业
+i
+中的产出（由收入决定）份额，
+u
+ƒj
+是公司
+ƒ
+作为行业
+j
+生产投入的产出流量，关系如下图2所示。注意，
+u
+jƒ
+可以类似于公司
+ƒ
+用于生产投入的行业
+j
+的产出流来确定。重要的是，考虑到公司之间和公司内部的异质性，我们并不认为假设1是估算贸易流的理想方法，而是认为它对估算公司级冲击的总损失有重要贡献。</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_04.jpg" alt=""></p>
+<p>图2 从技术到通信的代表性公司连接
+图2提供技术和通信行业之间的3个连接示例，其中Apple、Cisco和Intel与通信行业的投入产出联接与其2017年的产出份额成正例，因此每个联接ω
+ƒi
+分别占行业级投入产出连接总量的13%，2.7%和3.5%。
+接下来，通过引入公司级的特质冲击
+Φ
+ƒ
+,行业级的冲击
+∊
+i
+可以用以下微观基础来解释：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_05.jpg" alt=""></p>
+<p>其中，
+ω
+i
+= [ω
+1i
+... ω
+mi
+] ∈ ℝ
+m
+是公司产出份额的向量，
+Φ = [Φ
+1
+... Φ
+m
+] ∈ ℝ
+m
+是特质公司级冲击的向量。注意，向量
+Φ
+在概念上类似于Santos和Haimes（2004）和Santos等人（2007）使用的非正常向量（inoperability vector）。而且，我们将特质公司级冲击定义为持续
+Λ
+天的网络攻击的结果，其中
+ω
+i
+= [ω
+1i
+... ω
+mi
+] ∈ ℝ
+m
+是公司产出份额的向量，
+Φ = [Φ
+1
+... Φ
+m
+] ∈ ℝ
+m
+是特质公司级冲击的向量。进而，我们将特质公司级冲击定义为持续
+Λ
+天的网络攻击的结果，如下所示：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_06.jpg" alt=""></p>
+<p>其中
+M
+ƒ
+是每个公司
+ƒ
+的行业韧性乘数。此外，我们做了一个简化的假设，即产出在日历年的每一天都是平均分配，从而将年收入除以365（实际上，产出可能表现出不同程度的非季节性）。由此，在这种情况下，我们将特质冲击
+Φ
+定义为对单个公司
+ƒ
+的独立网络攻击的结果，这些公司具有异质韧性水平
+M
+ƒ
+，持续时间为
+Λ
+天。因此，韧性乘数在决定冲击的影响方面发挥着核心作用。当
+M
+ƒ
+= 0时，公司
+ƒ
+是完全韧性的，不受冲击的影响。随着
+M
+ƒ
+的增加，韧性降低，更多的冲击被吸收。因此，当
+M
+ƒ
+=1时，公司
+ƒ
+承受了全部冲击。值得注意的是，Rose等人（2007）在根据电力中断影响校准的模型中估算了行业韧性乘数
+M
+ƒ
+。电力中断的应用与网络攻击的韧性有相当大的相似性，因此为量化潜在网络事件的影响提供了良好的初步估算。
+考虑到公司级的生产网络（公司之间商品和服务的实际流动）数据并不存在，假设每个公司都代表其所处的特定行业，我们就可以使用标准I/O分析并利用经济分析局（Bureau of Economic Analysis）提供的I/O网络
+[8]
+。隐含的地，我们假设该公司相对于该行业中的其它公司而言规模较大，因为小公司的供应链可能只包括几个行业。I/O模型假设生产是按照工艺进行的（take place with a recipe），当没有投入或价格变化时，不允许在投入之间进行置换。因而，我们提出以下假设：
+假设2.
+每次攻击的持续时间都足够短。
+我们假设，每次网络攻击的持续时间Λ都足够短，不允许在保持网络关系不变的情况下重新签订业务关系。
+在短期扰断的情况下，I/O模型中嵌入的完美互补假设可能适合讨论短期扰断，而不是像一般均衡模型那样允许价格调整到市场出清。
+3.2 上游影响
+我们首先通过使用传统的I/O建模来利用I/O模型，通过隐含乘数来估计经济
+ε
+中的后向连接或上游供应链连接。也就是说，我们定义
+W
+= w
+ij
+i,j ∈ ℝ
+n*n
+作为行业级加权邻接矩阵，其中
+w
+ij
+是行业
+i - j
+的流。注意
+i,j ∈ S ，
+其中
+n
+是行业的数量，
+m
+是公司的数量。此外，我们定义
+x = [x
+1
+... x
+n
+]
+∈ ℝ
+n
+为行业级产出向量，
+d = [d
+1
+... d
+n
+] ∈ ℝ
+n
+为行业需求向量。回想一下，行业级产出
+x
+i
+是每个行业
+s
+内所有公司
+ƒ
+的公司级产出
+y
+ƒ
+之和。因此，行业级产出可以确定为流量和需求的总和，如下所示：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_07.jpg" alt=""></p>
+<p>通过矩阵运算从I/O模型中产生以下规范关系：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_08.jpg" alt=""></p>
+<p>其中
+I
+是单位矩阵，
+L = (I − W)
+−1
+被定义为逆Leontief矩阵。逆Leontief矩阵定义了与一个行业的外源（外生）产出变化相关的间接影响，以及它如何通过上游相互作用影响其他行业。也就是说，如果我们将行业i的产出减少，那么间接影响由
+L
+-1
+[0, …0, ,0, …,0]’
+给出
+。
+这种标准方法可以估算源自行业级冲击及其在经济各行业传播的总损失。在这种情况下，
+∊
+= [
+∊
+1
+... ∊
+n
+]
+∈ ℝ
+n
+是由（2）中的特质公司级冲击
+Φ
+决定的行业级冲击的向量。因此，行业冲击的上游总影响确定如下：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_09.jpg" alt=""></p>
+<p>图3提供了乘法过程的可视化表示。</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_10.jpg" alt=""></p>
+<p>图3 经济中的后向联系
+来源：Schnaubelt，Christopher，Craig A. Bond，Frank Camm，Joshua Klimas，Beth E. Lachman，Laurie L. McDonald，Judith D. Mele，Paul Ng，Meagan Smith，Cole Sutera和Christopher Skeels。陆军的地方经济影响，Santa Monica，CA，Rand Corporation，2015年。
+https://www.rand.org/pubs/research_reports/RR1119.html.
+3.3 下游影响
+公司不仅通过上游供应链从其他公司采购商品和服务用于生产，而且还向其他公司提供商品和服务。因此，冲击不仅影响上游公司，还会影响供应链中的下游或前向连接。我们的方法与Ghosh（1958）的方法相似。
+[9]
+为了估计中断对下游的影响，我们首先通过识别与受到攻击和业务中断的公司相关的北美行业分类系统（NAICS）代码来确定受影响的经济部门。我们通过计算因扰断而损失的年产量的比例来估算公司的直接收入损失。目前，我们假设中断持续时间与收入损失直接相关，如等式（3）所示。公司可能会采取缓解活动来减少这种损失，但最终损失是中断持续时间的函数。这种中断具有由供应链决定的网络效应。如前所述，理想情况下，我们希望确定因网络攻击而经历停机的公司的客户，但这样的网络还没有开发出来。因此，我们使用NAICS代码来识别产出减少的行业以及将该产出作为投入的相应行业。
+在I/O建模的命名法中，我们确定了与经历冲击
+∊
+i
+对应的行业行（投入）产出。Leontief生产函数假设所有的投入都是完美互补的。因此，冲击
+∊
+i
+造成行业
+i
+的产出与所有其他行业
+j、X
+ji
+的生产成比例减少，这些行业将该产出作为投入，也就是说，我们根据行业投入占该行业总经济投入的比率，将损失的产出分配到每个行业。因此，生产的变化等于冲击
+∊
+i
+和行业
+i
+投入到行业
+j
+生产的百分比的乘积，如下所示：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_11.jpg" alt=""></p>
+<p>其中
+∊
+i
+是对导致
+Φ
+i
+的行业
+i
+中的公司
+ƒ
+的特质冲击的结果，造成冲击
+∊
+i
+= Φ’ ω
+i
+，其中对于行业
+i
+中所有其他公司
+g
+，
+Φ
+g
+= 0。等式（7）表明冲击
+∊
+i
+均匀地传播到所有上游供应商。此外，流动的这种变化导致了行业
+j、Y
+j
+产出减少。考虑到总投入减少的百分比/，在冲击
+∊
+i
+和完全互补的假设下，产出
+Y
+j
+的变化为：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_12.jpg" alt=""></p>
+<p>因此，就特定部门的投入来说，每个行业都经历了一场相当于公司
+ƒ
+对整体经济相对重要性相等的级联冲击。考虑到对公司
+ƒ
+的攻击对行业j带来的损失，以及等式（2）和（3），则对公司
+ƒ
+进行网络攻击造成的冲击
+∊
+i
+的上游经济总损失表示为：</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_13.jpg" alt=""></p>
+<p>因此，如果一家公司在其行业内规模较大，或者该行业在整体经济中发挥着重要作用，那么它可能对整体经济产生重大影响。在下一部分，我们将使用本部分的定量模型来估算网络攻击对几家大公司造成的短暂停机的潜在影响。
+4. 网络事件分析
+4.1 潜在事件分析
+为了了解网络事件的潜在损失，我们分析了网络攻击对大型和可能目标的潜在影响。为此，我们选择了一家大型电信公司、一家硬件公司、一家零售银行公司和一家销售网点公司，因为它们的多样些、规模和潜在的网络风险敞口。其中包括AT&amp;T、Cisco、JP Mogan Chase（摩根大通）
+[10]
+和Visa。此外，我们还将全球汽车制造商福特和AT&amp;T进行了比较，因为它们的规模相似，但行业不同。因此，这份公司名单旨在指供一系列例子，但不是所有公司和所有行业的详尽样本。为了分析异常大型但仍难以理解的事件的影响，我们假设每家公司的所有运营和服务（受韧性影响）停止1天。此外，使用表1中所示的关于收入、行业、攻击持续时间和韧性的公司特定数据，我们的分析估算了与每次事件相关的
+潜在
+损失，而不是（实际损失可能较小的）损失的统计预期（事实上，由于单个公司的网络风险管理策略和整个供应链的韧性，实际损失
+可能
+小于此处估计的潜在损失）。
+表1 分析的输入数据
+Visa
+Cisco
+JP Morgan Chase
+AT&amp;T
+Ford
+2017年收入(百万),
+y
+ƒ
+$18,358
+$48,005
+$93,689
+$160,546
+$156,800
+NAICS行业,
+i
+44-45，零售
+51信息
+52金融和保险
+51信息
+31-33制造
+持续时间,
+Λ
+1
+1
+1
+1
+1
+韧性乘数,
+M
+ƒ
+0.661
+0.700
+0.217
+0.700
+0.712
+表1显示了用于分析Visa、Cisco、JP Morgan Chase、AT&amp;T和Ford遭受1天网络攻击潜在影响的所有输入值（收入、行业、持续时间和韧性）。我们使用北美行业分类系统（NAICS）来划分行业。对对特定行业的韧性乘数，我们使用Rose等人（2007）的校准结果。也就是说，虽然Rose等人（2007）在行业层面而不是公司层面估算了韧性乘数，但假设公司与其所在行业具有相同的韧性乘数。因此，虽然分析认为攻击会中断每家公司的整个业务运营1天，但每家公司都有一定程度的韧性来防止完全中断。公司收入数据来自标准普尔资本IQ NetAdvantage。作者选择了最接近各自冲击的直接影响的公司行业。
+这5家公司都规模庞大，相互关联。Visa是一家大型支付服务公司，2017年收入为180亿美元；Cisco是一家信息技术产品和服务的生产商，其收入是480亿美元；金融服务公司摩根大通的收入为940亿美元；电信公司AT&amp;T的收入是1600亿美元；汽车制造商福特的收入是1570亿美元。1天网络攻击的直接影响
+Φ
+ƒ
+由等式（3）确定，很大程度上与收入成正比。结果如图4中绿色实线所示，估计Visa的潜在的直接影响可能达到近3300万美元，Cisco为9200万美元，JP Mogan为5600万美元，AT&amp;T和Ford超过3亿美元。虽然这些损失可以通过风险管理和保险进行管理，但系统性网络故障可能会改变局面。</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_14.jpg" alt=""></p>
+<p>图4 1天网络攻击的潜在影响
+图4显示了为期1天的网络攻击对Visa、Cisco、JP Mogan Chase、AT&amp;T和Ford的潜在影响。每个场景的直接损失、上游损失和下游损失显示为堆叠图。在底部，公司的直接成本显示为一个实心的绿色区域；在中间，供应商的上游总损失用蓝色横线表示。在顶部，下游总成本用灰色圆点表示。
+每一种网络攻击场景都可能产生影响，并在整个经济中传播。因此，如图4中的蓝色虚线所示，每个事件的上游影响可能超过每个公司产生的直接成本。对于Visa而言，1天中断产生的3300万美元的直接成本可能会导致7700万美元的上游损失。对其它公司的攻击结果类似：Cisco、JP Mogan Chase、AT&amp;T和Ford的上游损失可能分别达到2.09亿美元、1.45亿美元、7亿美元和7.06亿美元。虽然这一结果确实很大，但在很大程度上与之前关于网络事件和系统性损失的研究得出的估计一致。
+然而，如图4所示，潜在的下游影响完全改变了这一局面，远远超过了直接和上游成本。下游损失反映了这样一个事实，即网络攻击的影响会从每家公司向下传播到其客户，并产生重要影响。在我们的情景中，AT&amp;T是最大的公司，其下游影响最大，除了直接和上游影响外，还可能造成200亿美元的损失。值得注意的是，虽然Visa是我们设想中最小的公司，但它有可能因下游的级联故障产生第二大的总影响，达到130亿美元。此外，与规模相似的AT&amp;T形成鲜明对比的是，福特的潜在下游影响要低得多，为64亿美元。Cisco和JP Mogan Chase分别有近60亿美元和的40亿美元的潜在下游影响。值得注意的是，在某些情况下，我们的分析甚至可能低估了总影响。以摩根大通为例，影响银行服务的停机可能导致传染效应，尽管本文未对此进行讨论，但Eisenbach等人（2020）最近对其进行了研究。
+对这4家公司中每一家遭受1天网络攻击的损失进行估算，揭示了系统性网络风险的惊人潜在影响。每家公司直接产生的潜在损失都很大，但可以控制。然而，对于Visa、Cisco、JP Mogan Chase和AT&amp;T等重度相互关联的公司来说，级联故障可能会导致其它公司、组织和个人遭受相当大的损失。就AT&amp;T而言，我们的方法估计，为期1天的攻击的影响可能达到近200亿美元，这一价值本身相当于2017年美国国内生产总值的0.1%。然而，直接损失和系统性损失的差异因公司类型、行业及其相互关联程度而异。Ford是一家生产最终产品而非中间产品的公司，其相互关联程度较低，导致下游影响与其成本的比例较小。因此，攻击Ford的总潜在成本为74亿美元，大约是攻击规模相似的AT&amp;T的的潜在成本的三分之一。此外，尽管我们注意到业务运营的韧性可能会减轻网络攻击驱动的中断的潜在影响（例如，见Baker，Ramirez-Marquez和Sansavini，2019），但本部分的分析揭示了网络攻击级联故障导致的系统性风险的重要性。
+4.2 Maersk Case（马士基事件案例）
+我们现在将2017年扰乱马士基运营的NotPetya网络攻击作为一个案例，将我们的模型与真实事件进行比较。马士基从攻击开始花了10天时间才完全重建其信息系统，估计花了2个时间才完全恢复（Greenbert，2018）。马士基估计，由于该事件，其总收入损失2.5到3亿美元之间（马士基，2018）。在本部分中，我们在第3节定量模型的背景下，讨论该案例的特征及其已知和未知特征。
+正如我们在4.1部分中所做的那样，我们使用第3部分中导出的定量模型来分析马士基中断案例，并估计潜在的影响。虽然有几个关键的输入参数是已知的，但马士基对网络攻击导致中断的真实韧性却不是。因此，我们使用表II中的参数来估计潜在影响的范围，我们在Rose等人（2007）校准的交通行业韧性值（
+M
+i
+= 0.052）和无韧性（
+M
+i
+= 1）之间调整韧性水平。NotPetya攻击对马士基及其网络造成的潜在损害范围非常大。
+表II 马士基案例的输入数据
+Maersk（马士基）
+2017年收入(百万),
+y
+ƒ
+$30,945
+NAICS行业,
+i
+48-49，运输和仓储
+持续时间,
+Λ
+10-60
+韧性指标,
+M
+ƒ
+0.052
+本表显示了收入、行业、持续时间和韧性的所有输入值，用于分析网络攻击对Maersk的潜在影响，范围从10到60天不等，其中北美行业分类系统（NAICS）用于行业、特定行业的韧性乘数来自Rose等人的校准结果（2007）。
+图5中的左侧方框显示了直接（红色实线）和上游（红色虚线）影响的范围。我们对直接影响的估算从Rose等人的4400万美元（2007）到8.48亿美元（无韧性）。上游值的范围更广；最小和最大上游影响分别是1.15亿美元和22亿美元。潜在影响的范围表明了韧性对不同影响的核心重要性。</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_15.jpg" alt=""></p>
+<p>图5 NotPetya对马士基及其供应链潜在影响的范围
+这一数字显示了NotPetya网络攻击对马士基以及依赖上下游公司的数百万美元潜在影响的估计范围，这些影响因公司韧性的价值而不同。
+图5左侧的红色实心框显示了相对较窄的潜在直接影响估计范围。马士基案件造成了2.5到3亿美元的实际收入损失（直接成本）（马士基2018年年度财务报告中披露的价值）落在这个窗口的下端，这表明Rose等人（2007）对行业级的韧性值过于乐观。在这个具体案例中，马士基确实从某种程度的韧性中受益。事实上，与马士基（2018）报告的2.5亿到3亿美元之间的实际损失相对应的韧性值在
+M
+i
+= [0.3, 0.35]之间，而不是
+M
+i
+= 0.052，这是一个有意义的差异。虽然Rose等人的韧性是对一个行业进行校准的，但行业内的公司异质性会导致显著的变化。如果不努力估算单个公司的韧性，这可能会导致进一步的不确定性。
+图5的右侧方框显示了下游（蓝色实线）和总（蓝色虚线）冲击的范围。NotPetya事件的两种潜在影响差异很大。在极端情况下，下游损失为28亿美元（最低）至540亿美元，而总损失为30亿美元（最低）至570亿美元。虽然由于不适当的韧性（或缺乏韧性）值，高端估算值明显较高，但低端估算值表明，马士基案例的潜在影响在其损失本中仍然很大。
+此外，假设实际损失的相应韧性值在
+M
+i
+= [0.3, 0.35]的范围内，我们可以估计实际马士基案例的总损失。表III中的结果显示了与估计在2.5亿到3亿美元之间的实际损失相对应的韧性值范围内的潜在影响范围（马士基，2018）。如表中所示，上游损失在6.63亿美元到7.73亿美元之间，而下游损失在160亿美元到190亿美元之间。考虑到马士基的中心地位和巨大的下游影响，结果估计，造成3亿美元直接收入损失的事件，其潜在总损夫可能达到200亿美元。
+表III 2017年NotPetya网络攻击对马士基及依赖公司的估计总影响
+直接
+上游
+下游
+合计
+M
+i
+= 0.3
+$254,34
+$663
+$16,348
+$17,625
+M
+i
+= 0.35
+$296.73
+$773
+$19,073
+$20,143
+表III显示了针对Maersk的NotPetya攻击的估算的直接、上游、下游和总损失的范围，这些损失是根据直接损失对应的韧性值调整的。所有价值均以2017年的百万美元为单位显示。
+尽管考虑到持续时间和韧性的不确定性，很难将本案例视为对第3部分定量模型的详尽确认和验证，但本案例确实证明了这种方法估算潜在网络攻击影响的能力。除了第1个近似值之外，对马士基案件的分析与马士基的报告一致，同时提供了洞见。无论如何，该分析通过估算级联故障导致的潜在总损失，超越了已量化的NotPetya事件的影响。
+5. 对网络保险和网络政策的影响
+我们估算与系统性网络故障相关的潜在损失的动机之一是回答网络保险是否是管理网络风险的充分工具，或者系统性网络风险是否需要就网络政策进行新的对话。在本部分，我们将讨论第3和第4部分中讨论的网络保险和政策的经济后果的含义。
+在创建网络保单时，许多保险承保人通过安全问题和投资组合多元化来管理其投资组合风险。为了理解安全问题，Romanosky、Ablon、Kuehn和Johes（2019）研究了承保人用于评估风险的网络保险问卷以及用于定价保费的实际费率表。他们发现不同保单收集的各种安全信息，以及将这些信息纳入保险定价的方式各不相同。例如，虽然一些保单可能在定价等式中包括一些安全控制参数，但其他保单包括十几个或更多（并且有些费率表根本不包括安全信息）。对这些承保人来说，更大的问题是确定可能导致系统性（与保险实践中的累计、累积和相关风险的概念密切相关）失败的公司的特征，破坏多样化隐含的独立性假设，以及可能导致灾难性损失的问题。
+少数公司寻求开发更好的数据建模技术，以理解和预测聚集（特别是灾难性）风险。例如，剑桥风险研究和风险管理解决方案中心（RMS）开发了网络累积管理系统（CAMS）和网络保险暴露数据方案（Cyber Insurance Exposure Data Schema），试图将网络事件收集的信息标准化（剑桥研究中心）。希望只有通过共同的语言，被保险公司、承保人和再保险公司才能正确地记录关键指标，并区分不同的事件。另一家风险建模公司AIR也不甘落后，于2016年开发了VERISK网络暴露数据标准（cyber exposure data standard），该标准提供了一个竞争框架。AIR还开发了网络风险分析（ARC）平台，该平台试图开发和充实由一系列网络事件造成的综合损失。AIR声称已经对18种独特（专有）场景进行了建模，如数据盗窃（信用卡，个人健康信息等）、业务中断
+[11]
+、对关键基础设施（电力、水）的10次攻击、以及在常用软件或硬件设备中发现的漏洞。
+虽然典型的网络攻击（例如，Aldasoro等人研究的网络攻击，2020；Romanosky，2016）可能属于可保损失的范围，但保险公司可能比表面上更容易受到系统性损失的影响。以我们对Cisco遭受的为期1天的网络攻击的分析为例。假设保险单覆盖了这一事件，根据我们在第4.1部分对潜在影响的估计，保险组合的初始损失可能达到9200万美元。直接损失很可能分散在多家保险公司，而不是一个单一的投资组合中，从而减少每家保险公司的风险敞口。然而，思科上下游的级联故障可能会给保险公司带来潜在的投资组合风险，因为最初的网络事件会触发其它合同（最明显的是，或有营业中断保险）。最初似乎是一起影响单一保单的网络事件，随后同时发生保单损失的投资组合风险可能并非微不足道。
+然而，当我们审视包括下游损失在内的网络事件的总损失时，就需要进行更广泛的政策讨论。在对AT&amp;T中断1天的分析中，我们在第4.1部分对经济的总潜在影响估计达到近200亿美元。2015年俄罗斯对乌克兰电网的网络攻击提醒我们，潜在影响可能超过本文所考虑的情景。其结果是，系统性网络风险有可能超过私营部门的解决方案，这表明有必要进一步考虑政策问题。考虑到相关风险保险不足的趋势，这尤其令人担忧（Ög˘ üt，Raghunathan和Menon，2011）。此外，虽然我们讨论了未来研究单个公司对网络事件的韧性的必要性，但我们在第4.2部分中对韧性作用的探索表明，增强韧性可能是对抗系统性网络风险的最大因素之一。随着围绕网络空间系统性风险的政策讨论不断增多，应该考虑加强网络韧性工作。
+6. 结论
+本文基于风险分析和计算经济学，提出了一个表示系统性网络风险的理论框架。在这个框架中，系统性风险是由级联和共因故障以及大量独立的孤立网络事件造成的。本文为估算系统性网络风险迈出了第一步。在此过程中，我们使用I/O建模来估算公司级冲击的总影响，并估算上游和下游影响。结果表明，上下游连接的乘数效应大大超过了与网络事件相关的潜在直接损失。尽管这种担忧可能适用于任何公司级的冲击，但考虑到网络空间的高度互联性，这一点尤其重要。
+事实上，虽然我们在本文中估算了级联网络故障，但这只是日益严重的网络风险问题的一部分。本文没有量化共因故障，但很明显，网络空间对共享软件、硬件、供应商和数字网络的相互依赖性有很大贡献。就WannaCry和NotPetya而言，这种相互依赖性使事件迅速蔓延，导致高昴的全球损失。网络空间及其隐蔽的网络连接和不断变化的威胁性质的增加，构成了高风险和高不确定性的挑战。
+因此，我们认为需要新的政策方法来管理和减轻网络风险及其系统性影响。鉴于我们对潜在网络事件损失的分析和估算，对包括网络风险管理和保险在内的私营部门解决方案的依赖可能不足以应对日益严重的风险。值得注意的是，系统性风险政策的教训可以从2008年金融危机后政策变化的兴起中借鉴。借鉴金融监管，OFR（2017）建议使用网络压力测试，联邦金融机构检查委员会（2017）在其网络成熟度模型中纳入使用压力测试，这种类比是有道理的；正如金融危机开始后，金融行业认为公司太或强相互关联性而不能倒，很明显，对强相互关联的公司的网络攻击可能会导致无法容忍的损失。然而，实际上实施压力测试需要在本文的基础上进一步改进，更多地关注公司间网络和单个公司的韧性。不过，互联互通的挑战可能会留下一线希望；Sommer和Brown（2011）认为，导致级联故障的相互依赖性也可能是缓解问题的解决方案。Sommer和Brown（2011）认为，网络基础设施可能会传播网络攻击的影响，也可能为攻击后交付信息和服务提供替代途径。这一想法指出了可能的解决方案，以减轻日益依赖数字化系统而可能产生的系统性风险。
+讨论和建模网络空间系统性风险的理论框架的贡献，是在连接网络安全、风险分析和经济学科以进一步建模系统性网络风险的复杂性质及其总体影响方面向前迈出的一步。而且，该框架强调了未来分析的机会。也就是说，衡量共因的网络风险是一项公开挑战，可以需要创新地使用信息系统上的数据。对可能缓解大规模事件的政策工具的考虑是未来发展的一个关键领域。此外，虽然本文的重点是网络事件，但本文提供了一种使用I/O分析来估算公司级事件总损失的方法，该方法可以在各种风险分析应用程度中找到有价值的应用。
+致谢
+作者要感谢兰德民事司法研究所、其董事会成员和主任James Anderson对这项工作的支持以及他们的有益评论。我们还要感谢Sasha Romanosky对网络保险的见解，Nirab Koirala的研究协助，Sydney Newberry的评论和编辑，以及John Davis，Geoffrey McGovern和Zev Winkelman在这项工作的各个阶段提供的有用反馈。我们还要感谢哥伦比亚大学和纽约联邦储备银行主办的2020年金融稳定状况现场会议、纽约大学主办的2020年风险波动性会议以及布法罗大学主办的2019年风险分析、决策分析和安全会议的与会者。最后，我们感谢Craig Bond和Joost Santos对本文早期版本的全面评论，以及本期刊的两位匿名审稿人的有用见解和评论，他们提供了本出版物的质量。
+参考文献
+Acemoglu, D., Carvalho, V. M., Ozdaglar, A., &amp; Tahbaz-Salehi, A. (2012). The network origins of aggregate fluctuations.
+Econometrica
+,
+80
+(5), 1977–2016.
+Acemoglu, D., Malekian, A., &amp; Ozdaglar, A. (2016). Network security and contagion.
+Journal of Economic Theory
+,
+166
+, 536–585.
+https://doi.org/10.1016/j.jet.2016.09.009
+Acemoglu, D., Ozdaglar, A., &amp; Tahbaz-Salehi, A. (2015). Systemic risk and stability in financial networks.
+The American Economic Review
+,
+105
+(2), 564–608.
+AIR, &amp; Lloyd’s. (2018). Cloud down: Impacts on the US economy.
+Technology
+. Retrieved from https://www.lloyds.
+com/∼/media/files/news-and-insight/risk-insight/2018/cloud-
+down/aircyberlloydspublic2018final.pdf
+Aldasoro, I., Gambacorta, L., Giudici, P., &amp; Leach, T. (2020). The drivers of cyber risk. BIS Working Papers, No 865.
+Andress, J. (2014).
+The basics of information security: Understanding the fundamentals of InfoSec in theory and practice
+. Rockland, MA: Syngress.
+Andrijcic, E., &amp; Horowitz, B. (2006). A macro-economic framework for evaluation of cyber security risks related to protection of intellectual property.
+Risk Analysis
+,
+26
+(4), 907–923.
+https://doi.org/10.1111/j.1539-6924.2006.00787.x
+Barker, K., Ramirez-Marquez, J. E., &amp; Sansavini, G. (2019). Introduction to resilience analytics for cyber–physical–social networks.
+Risk Analysis
+,
+39
+(9), 1867–1869.
+https://doi.org/10.1111/risa.13392
+Bodeau, D. J., &amp; McCollum, C. D. (2018).
+System-of-systems threat model
+. McLean. VA: Homeland Security Systems Engineering and Development Institute (HSSEDI).
+https://www.mitre.org/sites/default/files/publications/pr_18-1631-ngci-system-of-systems-threat-model.pdf.
+Brenner, J., Weitzner, D., Clark, D. C., Ableson, H., Hung, S., Reynolds, T., … Samuels, R. J. (2017).
+Keeping America safe: Toward more secure networks for critical sectors
+. Cambridge, MA: MIT Center for International Studies.
+Cambridge Centre for Risk Studies. Cyber exposure data schema v0.9
+Cambridge Risk Framework
+. Retrieved from
+https://www.jbs.cam.ac.uk/fileadmin/user_upload/research/
+centres/risk/downloads/crs-cyber-data-schema-v0.9.pdf
+Carrera, L., Standardi, G., Bosello, F., &amp; Mysiak, J. (2015). Assessing direct and indirect economic impacts of a flood event through the integration of spatial and computable general equilibrium modelling.
+63
+, 109–122.
+https://doi.org/10.1016/j.envsoft.2014.09.016
+Carvalho, V. M., &amp; Tahbaz-Salehi, A. (2019). Production networks: A primer.
+Annual Review of Economics
+,
+11
+(1), 635–663.
+https://doi.org/10.1146/annurev-economics-080218-030212
+Collins, K. (2017, May 21). Inside the digital heist that terrorized the world—and only made $100 k. Quartz.
+De Bandt, O., &amp; Hartmann, P. (2000). Systemic risk: A survey. Working paper No. 35. European Central Bank.
+Diamond, D. W., &amp; Dybvig, P. H. (1983). Bank runs, deposit insurance, and liquidity.
+Journal of Political Economy
+,
+91
+(3), 401– 419.
+https://doi.org/10.2307/1837095
+Do, C. T., Tran, N. H., Hong, C., Kamhoua, C. A., Kwiat, K. A., Blasch, E., … Iyengar, S. S. (2017). Game theory for cyber security and privacy.
+ACM Computing Surveys (CSUR)
+,
+50
+(2), 30.
+Dreyer, P., Jones, T., Klima, K., Oberholtzer, J., Strong, A., Welburn, J. W., &amp; Winkelman, Z. (2018). Estimating the global cost of cyber risk: Methodology and examples. Santa Monica, CA: RAND Corporation.
+Eisenbach, T. M., Kovner, A., &amp; Lee, M. J. (2020). Cyber risk and the us financial system: A pre-mortem analysis. FRB of New York Staff Report(909).
+Federal Financial Institutions Examination Council. (2017).
+Cybersecurity assessment tool
+. Retrieved from
+https://www.ffiec.gov/pdf/cybersecurity/FFIEC_CAT_May_2017.pdf
+Gandel, S. (2015). Lloyd’s CEO: Cyber attacks cost companies $400 billion every year. Retrieved from http://fortune.com/
+2015/01/23/cyber-attack-insurance-lloyds/
+Ghosh, A. (1958). Input-Output Approach in an Allocation System.
+Economica
+,
+25
+(97), 58.
+https://doi.org/10.2307/2550694
+Greenberg, A. (2018). The untold story of Notpetya, The most devastating cyberattack in history. Wired. Retrieved from
+https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/
+Hausken, K. (2009). Security investment and information sharing for defenders and attackers of information assets and networks.
+Information Assurance, Security and Privacy Services
+,
+4
+, 503– 534.
+ICS-CERT. (2016). Cyber-Attack Against Ukrainian Critical Infrastructure.
+NCCIC DHS, Alert (IR-ALERT-H-16-056-01)
+.
+Kovenock, D., &amp; Roberson, B. (2018). The optimal defense of networks of targets.
+Economic Inquiry
+,
+56
+(4), 2195–2211.
+https://doi.org/10.1111/ecin.12565
+Leontief, W. (1966).
+Input-output economics
+. Oxford, UK: Oxford University Press.
+Lynn, III, W. F. (2010). Defending a new domain-the Pentagon’s cyberstrategy.
+Foreign Affairs
+,
+89
+, 97.
+Maersk. (2018). 2017 Annual report.
+A.P. Møller - Mærsk A/S
+. Retrieved from
+http://investor.maersk.com/news-releases/news-release-details/annual-report-2017
+Meyer, R., &amp; Lafrance, A. (2016). When the Entire Internet Seems to Break at Once: The easiest way to take down the web is to attack people’s access to it. Retrieved from
+https://www.theatlantic.com/technology/archive/2016/10/when-the-entire-internet-seems-to-break-at-once/504956/
+Nagurney, A., &amp; Shukla, S. (2017). Multifirm models of cybersecurity investment competition vs. cooperation and network vulnerability.
+European Journal of Operational Research
+,
+260
+(2), 588–600.
+Office of the Director of National Intelligence. (2017). Assessing Russian activities and intentions in recent us Elections. Intelligence Community Assessment: U.S. Office of the Director of National Intelligence Retrieved from
+https://www.dni.gov/files/
+documents/ICA_2017_01.pdf
+OFR. (2017). Cybersecurity and financial stability: Risks and resilience. Office of Financial Research, Viewpoint, 17–01.
+Ög˘ üt, H., Raghunathan, S., &amp; Menon, N. (2011). Cyber security risk management: Public policy implications of correlated risk, imperfect ability to prove loss, and observability of self- protection.
+Risk Analysis
+,
+31
+(3), 497–512.
+https://doi.org/10.1111/j.1539-6924.2010.01478.x
+Pagliery, J. (2015, August 5). The inside story of the biggest hack in history.
+CNN
+.
+Richardson, H. W. (1985). Input-output and economic base multipliers: Looking backward and forward.
+Journal of Regional science
+,
+25
+(4), 607–661.
+Romanosky, S. (2016). Examining the costs and causes of cyber incidents.
+Journal of Cybersecurity
+,
+2
+(2), 121–135.
+https://doi.org/10.1093/cybsec/tyw001
+Romanosky, S., Ablon, L., Kuehn, A., &amp; Jones, T. (2019). Content analysis of cyber insurance policies: How do carriers price cyber risk?
+Journal of Cybersecurity
+,
+5
+(1).
+https://doi.org/10.1093/
+cybsec/tyz002
+Rose, A., Oladosu, G., &amp; Liao, S.-Y. (2007). Business interruption impacts of a terrorist attack on the electric power system of Los Angeles: Customer resilience to a total blackout.
+27
+(3), 513– 531.
+https://doi.org/10.1111/j.1539-6924.2007.00912.x
+Roy, S., Ellis, C., Shiva, S., Dasgupta, D., Shandilya, V., &amp; Wu,
+Q. (2010). A survey of game theory as applied to network security. Paper presented at the 2010 43rd Hawaii International Conference on System Sciences, January 5—8, Koloa, Kauai, Hawaii.
+Santos, J. R., &amp; Haimes, Y. Y. (2004). Modeling the demand re- duction input-output (I-O) inoperability due to terrorism of interconnected infrastructures*.
+Risk Analysis
+,
+24
+(6), 1437–1451.
+https://doi.org/10.1111/j.0272-4332.2004.00540.x
+Santos, J. R., Haimes, Y. Y., &amp; Lian, C. (2007). A framework for linking cybersecurity metrics to the modeling of macroeconomic interdependencies.
+Risk Analysis
+,
+27
+(5), 1283–1297.
+https://doi.org/10.1111/j.1539-6924.2007.00957.x
+SEC. (2018). Equifax’s statement for the record regarding the extent of the cybersecurity incident announced on September 7, 2017. SEC. Exhibit 99.91.
+Simon, J., &amp; Omar, A. (2020). Cybersecurity investments in the supply chain: Coordination and a strategic attacker.
+European Journal of Operational Research
+,
+282
+(1), 161–171.
+https://doi.
+org/10.1016/j.ejor.2019.09.017
+Sommer, P., &amp; Brown, I. (2011). Reducing systemic cybersecurity risk. Organisation for Economic Cooperation and Development, Working Paper No. IFP/WKP/FGS(2011).
+SwissRe. (2017). Cyber: Getting to grips with a complex risk.
+Sigma
+. Retrieved from
+http://www.aiadc.org/File%20Library/Home/Swiss-Re-Sigma-Paper-030717.pdf
+Thomson, I. (2017). NotPetya ransomware attack cost us $300 m–shipping giant Maersk. Forbes.
+US-CERT. (2018). Russian government cyber activity targeting energy and other critical infrastructure sectors.
+NCCIC DHS, Alert (TA18-074A)
+.
+van Wieren, M., van Luit, E., Estourgie, R., Jacobs, V., &amp; Bulters, J. (2016). Cyber value at risk in the Netherlands. London, UK: Deloitte.
+Vermeer, M. J. D., &amp; Peet, E. D. (2020).
+Securing communications in the quantum computing age: Managing the risks to encryption
+. Santa Monica, CA: RAND Corporation.
+World Economic Forum. (2016). Understanding systemic cyber risk.
+Global Agenda Council on Risk &amp; Resilience, White Paper
+.
+World Economic Forum, &amp; Deloitte. (2015). Partnering for cyber resilience: Towards the quantification of cyber threats.
+World Economic Forum, Industry Agenda
+.
+美国，加州圣莫尼卡市迈因大街1776号兰德公司。乔纳森•W•维尔伯恩（Jonathan W. Welburn）的公司地址：RAND Corporaton, 1776 Main St., Santa Monica, CA 90401；jwelburn@rand.org。
+↑
+Romanosky（2016）和Aldasoro、Gambacorta、Giudici和Leach（2020）提供了网络事件成本上升的经验证据。
+↑
+可参见，如Brenner等人（2017）举办的研讨会的结果，强调了对级联网络故障影响的担忧以及当前模型在展现这些影响方面的不足。
+↑
+例如，参见Andress（2014）对C-I-A框架的讨论。
+↑
+参见美国证券交易委员会（SEC，2018）对事件的详细描述。
+↑
+参见US-CERT（2018）对事件的详细描述。
+↑
+Cyence、CyberCube、BitSight和Security Scorecard等厂商目前正在努力收集有关网络连接的信息。
+↑
+https://www.bea.gov/industry/input-output-accounts-data。
+↑
+也有其他人采用类似方法研究下游影响，如Santos和Haimes（2004）和Richardson（1985）。
+↑
+摩根大通是一家复杂的公司，有几个独立的业务活动。在这里，我们认为它的业务是零售银行业务，而不是投资服务。对其任何活动的扰断都可能造成许多系统性影响，尤其是银行挤兑。考虑到对这些影响的大量文献（例如，Diamond和Dybvig，1983），我们在此不考虑这些作用。
+↑
+与之相关的是或有营业中断（CBI），这是一个行业术语，指的是上游/供应链供应商中断导致公司业务损失。
+↑</p>
+<hr>
+<hr>
+<p>本公众号（ID：bcmplus）专注于业务连续性和运营韧性知识的传播和普及，关注业务连续性、应急和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时腾讯已调整政策，未能开通留言功能，希望交流和讨论业务连续性和韧性相关问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(另，公众号每月只能发4次文章，会有一些内容直接在知识星球分享而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/TF8yo3xbH9gmgPhapeilqw_16.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/TF8yo3xbH9gmgPhapeilqw">原文链接</a></em></p>

@@ -1,0 +1,947 @@
+<p>写在前面
+：越来越多的人们开始关注运营韧性。事实上，虽然该领域还在快速的发展中，但已经凝聚了一些共识。金融行业是最为关注运营韧性的行业之一，近几年来，英美等国的金融监管机构以及巴塞尔银行监管委员陆续发布/修订了运营韧性(Operational Resilience)和业务连续性管理方面的正式文件。为让更多的专业人员者和爱好者了解国外运营韧性领域的进展，学习并实践运营韧性的良好实践，在2021年中期，我组织了一个公益翻译小组，对运营韧性相关资料进行翻译。目前，翻译已取得了一些进展，接下来我会根据翻译和审校进展、陆续发布一些资料的翻译稿供大家参考，也欢迎有一定翻译能力和闲暇时间的朋友申请加入公益翻译小组(可以在公众号给我发信息)。</p>
+<p>以下是参与本文的公益翻译小组成员
+(排名不分前后，按姓氏拼音排序)：
+彭水娟(江阴长电先进，shuijuan2006@126.com)
+刘松林(渤海银行，lsinbest@163.com)
+马骏(大连埃森哲，patrick.ma2018@outlook.com)
+吴小林(苏州银行，66886629@163.com)
+徐文静(DNV，wen.jing.xu@dnv.com))
+周可政(上海，wkikivv@gmail.com)
+王曙(新常安科技，kevinwang@vip.sina.com)</p>
+<p>感谢公益翻译小组的各位专业人员在疫情期间抽出个人休息时间进行翻译工作。以下译文由我负责最终统一审校定稿，如译文中有任何不准确或理解错误的地方，都是由于我的原因造成，与诸位翻译人员无关。如对译文有意见或修改建议，请给我留言。</p>
+<p>王曙(kevinwang) 2021.11.27</p>
+<hr>
+<p>这份文件由巴塞尔委员会于2021年3月31日发布，原文见：https://www.bis.org/bcbs/publ/d515.pdf。
+《操作风险稳健管理原则》(PSMOR)于2003年发布，为吸取大金融危机的教训，在2011年进行修订。2014年，委员会对其落实情况进行了审查，结果表明，有几项原则没有得到充分落实，并且没有充分抓住某些重要的操作风险源。
+这份《操作风险稳健管理原则修订版》进行的技术修订主要有：
+(i) 使这些原则与最近的巴塞尔Ⅲ操作风险框架保持一致；
+(ii) 更新(必要的)变更管理和信息科技(ICT)方面的指导；以及
+(iii) 提高原则的整体清晰度。</p>
+<hr>
+<ol>
+<li>引言(Introduction)</li>
+</ol>
+<p>巴塞尔银行监管委员会(以下简称“委员会”)于2003年推出了操作风险稳健管理原则(以下简称“原则”)，随后于2011年对其进行了修订,以吸收2007-09年大金融危机的教训。2014年，委员会审查了《原则》的落实情况
+[1]
+。这次审查的目的是：(i)评估银行落实《原则》的程度；(ii)找出落实中的重大缺漏；(iii)强调《原则》当时未涉及的银行新兴和值得注意的操作风险管理实践。
+The Basel Committee on Banking Supervision (“the Committee”) introduced its Principles for the Sound Management of Operational Risk (“the Principles”) in 2003, and subsequently revised them in 2011 to incorporate the lessons from the Great Financial Crisis of 2007–09. In 2014, the Committee conducted a review of the implementation of the Principles.
+[1]
+The purpose of this review was to (i) assess the extent to which banks had implemented the Principles; (ii) identify significant gaps in implementation; and (iii) highlight emerging and noteworthy operational risk management practices at banks not currently addressed by the Principles.</p>
+<p>2014年的审查发现，有几项原则尚未得到充分落实，需要进一步的指导，以促进这些原则在以下领域中落实：
+a) 风险识别和评估工具，包括风险和控制自评估(RCSA)、关键风险指标、外部损失数据、业务流程映射、比较分析，以及对各种操作风险管理工具生成的行动计划的监控；
+b) 变更管理方案和过程(及其有效监控)；
+c) 落实三道防线，特别是完善角色和职责分配；
+d) 董事会和高级管理层监督；
+e) 操作风险偏好和容忍度声明的表述；
+f) 风险披露。
+The 2014 review identified that several principles had not been adequately implemented, and further guidance would be needed to facilitate their implementation in the following areas:
+a) Risk identification and assessment tools, including risk and control self-assessments (RCSAs), key risk indicators, external loss data, business process mapping, comparative analysis, and the monitoring of action plans generated from various operational risk management tools.
+b) Change management programmes and processes (and their effective monitoring).
+c) Implementation of the three lines of defence, especially by refining the assignment of roles and responsibilities.
+d) Board of directors and senior management oversight.
+e) Articulation of operational risk appetite and tolerance statements.
+f) Risk disclosures.</p>
+<p>委员会还认识到，2011年《原则》没有充分抓住某些重要的操作风险来源，例如信息科技(ICT)风险产生的风险
+[2]
+，因此有必要引入关于信息科技风险管理的具体原则。还进行了其他修订，以确保与巴塞尔协议Ⅲ
+[3]
+改革中的新操作风险框架保持一致。
+The Committee also recognised that the 2011 Principles did not sufficiently capture certain important sources of operational risk, such as those arising from information and communication technology (ICT) risk,
+[2]
+thus warranting the introduction of a specific principle on ICT risk management. Other revisions were made to ensure consistency with the new operational risk framework in the Basel III reforms.
+[3]</p>
+<p>认识到大流行病、自然灾害、破坏性网络安全事件或技术故障对银行运营造成重大扰乱的可能性增加，委员会还制定了运营韧性原则
+[4]
+，其中反映了本文件包含的若干原则。
+Recognising the increased potential for significant disruptions to bank operations from pandemics, natural disasters, destructive cyber security incidents or technology failures, the Committee has also developed principles for operational resilience,
+[4]
+which reflect several of the principles contained in this document.</p>
+<ol start="2">
+<li>操作风险管理的组成部分(Components of operational risk management)</li>
+</ol>
+<p>本文件中关于银行的原则涵盖了治理，风险管理环境，信息和通信技术，业务连续性规划，以及披露的作用。不应孤立地看待这些要素；相反，它们是操作风险管理框架(ORMF)和总体风险管理框架(包括运营韧性)集体的集成部分。
+The Principles in this document for banks cover governance; the risk management environment; information and communication technology; business continuity planning; and the role of disclosure. These elements should not be viewed in isolation; rather, they are integrated components of the operational risk management framework (ORMF) and the overall risk management framework (including operational resilience) of the group.</p>
+<p>通过本文件的发布，委员会希望提高整个银行系统操作风险管理的有效性。委员会认为，这些原则反映了与所有银行相关的稳健实践。尽管如此，委员会建议银行在落实《原则》时应当考虑其活动的性质、规模、复杂程度和风险状况。
+Through the publication of this document, the Committee desires to promote the effectiveness of operational risk management throughout the banking system. The Committee believes that the Principles reflect sound practices relevant to all banks. Nonetheless, the Committee recommends that banks should take account of the nature, size, complexity and risk profile of their activities when implementing the Principles.</p>
+<ol start="3">
+<li>
+<p>操作风险管理(Operational risk management)</p>
+</li>
+<li>
+<p>操作风险在资本框架下定义为因不完善或有问题的内部流程、人员、系统或外部事件导致损失的风险。这一定义包含了法律风险，但不包括战略风险和声誉风险。</p>
+</li>
+<li>
+<p>Operational risk is defined in the capital framework as the risk of loss resulting from inadequate or failed internal processes, people and systems or from external events. This definition includes legal risk, but excludes strategic and reputational risk.</p>
+</li>
+<li>
+<p>操作风险是所有银行产品、活动、流程和系统固有的，有效管理操作风险是银行风险管理方案的基础要素。稳健的操作风险管理反映了董事会和高级管理层在管理其产品、活动、流程和系统组合方面的有效性。在适当情况下，银行操作风险管理部门应当考虑战略风险和声誉风险管理。</p>
+</li>
+<li>
+<p>Operational risk is inherent in all banking products, activities, processes and systems, and the effective management of operational risk is a fundamental element of a bank’s risk management programme. Sound operational risk management is a reflection of the effectiveness of the board of directors and senior management in administering their portfolio of products, activities, processes and systems. Where appropriate, strategic and reputational risks should be considered by banks’ operational risk management.</p>
+</li>
+<li>
+<p>尽管操作风险管理和运营韧性面向不同的目标，但它们紧密相连。有效的操作风险管理体系和稳健的运营韧性水平共同降低操作风险事件的频率和影响</p>
+</li>
+<li>
+<p>Although operational risk management and operational resilience address different goals, they are closely interconnected. An effective operational risk management system and a robust level of operational resilience work together to reduce the frequency and the impact of operational risk events.</p>
+</li>
+<li>
+<p>健全的风险管理使银行能够更好地了解和降低其风险状况。风险管理包括识别银行面临的风险，测量和评估这些风险敞口(如可能)，持续监测风险敞口和相应的资本需求，采取措施控制或减轻风险，并向高级管理层和董事会报告银行的风险敞口和资本状况。内部控制通常融入银行的日常业务，旨在确保银行活动的效率和有效性，信息可靠、及时和完整，以及银行遵守适用的法律法规。</p>
+</li>
+<li>
+<p>Sound risk management allows the bank to better understand and mitigate its risk profile. Risk management encompasses identifying risks to the bank; measuring and assessing exposures to those risks (where possible); monitoring exposures and corresponding capital needs on an ongoing basis; taking steps to control or mitigate exposures; and reporting to senior management and the board of directors on the bank’s risk exposures and capital positions. Internal controls are typically embedded in a bank’s day-to-day business and are designed to ensure, to the extent possible, that the bank’s activities are efficient and effective; that information is reliable, timely and complete; and that the bank is compliant with applicable laws and regulations.</p>
+</li>
+</ol>
+<p>5、健全的内部治理是有效的操作风险管理框架(ORMF)的基础。与信用或市场风险管理相比，操作风险管理的治理既有相似，也有不同。银行的操作风险治理职能应当充分融入其总体风险管理治理结构。
+5. Sound internal governance forms the foundation of an effective ORMF. Governance of operational risk management has similarities but also differences relative to the management of credit or market risk. Banks’ operational risk governance function should be fully integrated into their overall risk management governance structure.</p>
+<ol start="6">
+<li>
+<p>银行通常依靠三道防线：(i)业务单元管理
+[5]
+；(ii)独立的法人操作风险管理职能(CORF)
+[6]
+；和(iii)独立的鉴证
+[7]
+。根据银行的性质、规模和复杂程度，以及银行活动的风险状况，这三道防线的实施形式会有所不同。</p>
+</li>
+<li>
+<p>Banks commonly rely on three lines of defence:(i)business unit management;
+[5]
+(ii) an independent corporate operational risk management function (CORF);
+[6]
+and (iii) independent assurance.
+[7]
+Depending on the bank’s nature, size and complexity, and the risk profile of a bank’s activities, the degree of formality of how these three lines of defence are implemented will vary.</p>
+</li>
+<li>
+<p>银行应当确保每道防线：
+a) 在预算、工具和人员方面配置充足的资源；
+b) 明确规定角色与职责；
+c) 有持续和充分的培训；
+d) 在整个组织内促进良好的风险管理文化；和
+e）与其它防线沟通，以加强操作风险管理框架(ORMF)。
+如果在一个业务单元同时存在第一道和二道防线的职能，则银行应当记录并区分第一道和第二道防线中这些职能的责任，强调第二道防线的独立性。</p>
+</li>
+<li>
+<p>Banks should ensure that each line of defence:
+a) is adequately resourced in terms of budget, tools and staff;
+b) has clearly defined roles and responsibilities;
+c) is continuously and adequately trained;
+d) promotes a sound risk management culture across the organisation; and
+e) communicates with the other lines of defence to reinforce the ORMF.
+If in one business unit there are functions of both the first and second line of defence, then banks should document and distinguish the responsibilities of such functions in the first and second line of defence, emphasising the independence of the second line of defence.</p>
+</li>
+<li>
+<p>委员会强调，尽管银行广泛采用三道防线模型，但角色和责任的混淆有时会妨碍其有效性
+[8]
+。因此，对《原则》的审查也是一次机会，可以强调金融机构应当充分和适当地使用该模型来管理各种操作风险子类别，包括信息科技风险。</p>
+</li>
+<li>
+<p>The Committee has highlighted that, despite the three lines of defence model being widely adopted by banks, confusion around roles and responsibilities sometimes hampers its effectiveness.
+[8]
+Thus, the review of the Principles is also the opportunity to stress that this model should be adequately and proportionally used by financial institutions to manage every kind of operational risk subcategory, including ICT risk.</p>
+</li>
+<li>
+<p>在行业实践中，第一道防线是业务单元管理。健全的操作风险治理认为，业务单元管理负责识别和管理其负责产品、活动、流程和系统中的固有风险。银行应当制定政策，明确相关业务单元中的角色和责任
+[9]
+。为促进良好的操作风险管理文化，第一道防线的责任应当包括：
+a) 通过使用操作风险管理工具，识别和评估其各自业务单元中固有的操作风险的重要性；
+b) 建立适当的控制以缓解固有的操作风险，并通过使用操作风险管理工具评估这些控制的设计和有效性；
+c) 报告业务单元是否缺乏足够的资源、工具和培训，以确保操作风险的识别和评估；
+d) 监测和报告业务单元的操作风险状况
+[10]
+，并确保其遵守既定的操作风险偏好和容忍度声明；以及
+e) 报告未通过控制缓解的剩余操作风险，包括操作损失事件、控制缺陷、流程不足，以及操作风险容忍度的不符合项。</p>
+</li>
+<li>
+<p>In industry practice, the first line of defence is business unit management. Sound operational risk governance recognises that business unit management is responsible for identifying and managing the risks inherent in the products, activities, processes and systems for which it is accountable. Banks should have a policy that defines clear roles and responsibilities in relevant business units.
+[9]
+The responsibilities of an effective first line of defence in promoting a sound operational risk management culture should include:
+a) identifying and assessing the materiality of operational risks inherent in their respective business units through the use of operational risk management tools;
+b) establishing appropriate controls to mitigate inherent operational risks, and assessing the design and effectiveness of these controls through the use of the operational risk management tools;
+c) reporting whether the business units lack adequate resources, tools and training to ensure identification and assessment of operational risks;
+d) monitoring and reporting the business units’ operational risk profiles,
+[10]
+and ensuring their adherence to the established operational risk appetite and tolerance statement; and
+e) reporting residual operational risks not mitigated by controls, including operational loss events, control deficiencies, process inadequacies, and non-compliance with operational risk tolerances.</p>
+</li>
+<li>
+<p>功能独立的法人操作风险管理职能通常是第二道防线。有效的第二道防线的责任应当包括：
+a) 对业务单元的(i)已识别的重大操作风险，(ii)关键控制的设计和有效性，(iii)风险容忍度，形成独立的观点：
+b) 挑战业务单元实施操作风险管理工具、计量活动和报告系统的相关性与一致性，并提供该有效挑战的证据；
+c） 制定和维护操作风险管理和计量政策、标准和指南；
+d） 审查并协助监测和报告操作风险状况；以及
+e） 设计和提供操作风险培训，并宣贯风险意识。</p>
+</li>
+<li>
+<p>A functionally independent CORF is typically the second line of defence. The responsibilities of an effective second line of defence should include:
+a) developing an independent view regarding business units’(i) identified material operational risks, (ii) design and effectiveness of key controls, and (iii) risk tolerance;
+b) challenging the relevance and consistency of the business unit’s implementation of the operational risk management tools, measurement activities and reporting systems, and providing evidence of this effective challenge;
+c) developing and maintaining operational risk management and measurement policies, standards and guidelines;
+d) reviewing and contributing to the monitoring and reporting of the operational risk profile; and
+e) designing and providing operational risk training and instilling risk awareness.</p>
+</li>
+<li>
+<p>法人操作风险管理职能(CORF)的独立程度可能因银行而异。在小型银行，可以通过职责分离和对流程和职能的独立审查来实现独立性。在大型银行，法人操作风险管理职能(CORF)应当独立于风险产生业务单元的报告结构，并负责设计、维护和持续优化操作风险管理框架(ORMF)。法人操作风险管理职能(CORF)通常会用相关的公司控制团体(如合规、法务、财务和IT)来支持其对操作风险和控制的评估。银行应当根据组织的规模和复杂程度制定政策，明确法人操作风险管理职能(CORF)的角色和责任。</p>
+</li>
+<li>
+<p>The degree of independence of the CORF may differ among banks. At small banks, independence may be achieved through separation of duties and independent review of processes and functions. In larger banks, the CORF should have a reporting structure independent of the risk-generating business units and be responsible for the design, maintenance and ongoing development of the ORMF within the bank. The CORF typically engages relevant corporate control groups (eg Compliance, Legal, Finance and IT) to support its assessment of the operational risks and controls. Banks should have a policy which defines clear roles and responsibilities of the CORF, reflective of the size and complexity of the organisation.</p>
+</li>
+<li>
+<p>第三道防线向董事会提供银行操作风险管理框架(ORMF)适宜性的独立鉴证。该职能的员工不应当参与其他两道防线操作风险管理流程的制定、实施和运作。第三道防线审查通常由银行的内部和/或外部审计进行，但也可能涉及其他适当的、有资格的独立第三方。审查的范围和频率应当足以涵盖银行的所有活动和法律实体。有效的独立审查应当：
+a) 审查操作风险管理系统和贯穿第一和第二道防线的相关治理流程的设计和实施(包括第二道防线的独立性)；
+b) 审查确认流程，确保其独立性，并以符合既定银行政策的方式实施；
+c) 确保银行使用的量化系统足够稳健，如：(i)它们提供了输入、假设、流程和方法的完整性的保证；以及(ii)能够可靠地反映银行操作风险状况的操作风险的评估的结果；
+d) 确保业务单元的管理层及时、准确、充分地回应提出的问题，并定期向董事会或其相关委员会报告未决和已解决的问题；以及
+e) 就操作风险管理框架(ORMF)和全行相关治理流程的整体适宜性和充分性发表意见。除了检查是否符合董事会批准的政策和程序外，独立审查还应当评估操作风险管理框架(ORMF)是否满足组织的需要和期望(如考虑公司风险偏好和容忍度，以及根据不断变化的经营环境调整框架)，并遵守法律和立法规定、合同安排、内部规则和道德操守。</p>
+</li>
+<li>
+<p>The third line of defence provides independent assurance to the board of the appropriateness of the bank’s ORMF. This function’s staff should not be involved in the development, implementation and operation of operational risk management processes by the other two lines of defence. The third line of defence reviews generally are conducted by the bank’s internal and/or external audit, but may also involve other suitably qualified independent third parties. The scope and frequency of reviews should be sufficient to cover all activities and legal entities of a bank. An effective independent review should:
+a) review the design and implementation of the operational risk management systems and associated governance processes through the first and second lines of defence (including the independence of the second line of defence);
+b) review validation processes to ensure they are independent and implemented in a manner consistent with established bank policies;
+c) ensure that the quantification systems used by the bank are sufficiently robust as (i) they provide assurance of the integrity of inputs, assumptions, processes and methodology and (ii) result in assessments of operational risk that credibly reflect the operational risk profile of the bank;
+d) ensure that business units’ management promptly, accurately and adequately responds to the issues raised, and regularly reports to the board of directors or its relevant committees on pending and closed issues; and
+e) opine on the overall appropriateness and adequacy of the ORMF and the associated governance processes across the bank. Beyond checking compliance with policies and procedures approved by the board of directors, the independent review should also assess whether the ORMF meets organisational needs and expectations (such as respect of the corporate risk appetite and tolerance, and adjustment of the framework to changing operating circumstances) and complies with statutory and legislative provisions, contractual arrangements, internal rules and ethical conduct.</p>
+</li>
+<li>
+<p>由于操作风险管理在不断演变，业务环境也在不断变化，高级管理层应当确保操作风险管理框架(ORMF)的政策、流程和系统保持足够稳健，以管理和确保及时充分解决运营损失。操作风险管理的改进很大程度上取决于高级管理层是否采取积极主动的态度，并及时和适当地解决操作风险管理者的关切。</p>
+</li>
+<li>
+<p>Because operational risk management is evolving and the business environment is constantly changing, senior management should ensure that the ORMF’s policies, processes and systems remain sufficiently robust to manage and ensure that operational losses are adequately addressed in a timely manner. Improvements in operational risk management depend heavily on senior management’s willingness to be proactive and also act promptly and appropriately to address operational risk managers’ concerns.</p>
+</li>
+<li>
+<p>操作风险稳健管理原则(Principles for the sound management of operational risk)</p>
+</li>
+</ol>
+<p>原则1：董事会应当带头建立由高级管理层落实的强大风险管理文化。
+[11]
+董事会和高级管理层应当建立以强有力的风险管理为指导的企业文化，为专业和负责任的行为制定标准和激励措施，并确保员工接受适当的风险管理和道德培训。
+Principle 1: The board of directors should take the lead in establishing a strong risk management culture, implemented by senior management.
+[11]
+The board of directors and senior management should establish a corporate culture guided by strong risk management, set standards and incentives for professional and responsible behaviour, and ensure that staff receives appropriate risk management and ethics training.</p>
+<ol start="14">
+<li>
+<p>拥有强大的风险管理文化和商业道德规范的银行不太可能经历破坏性的操作风险事件，即便事件发生也能有效处理。董事会和高级管理层的行为以及银行的风险管理政策、流程和系统为健全的风险管理文化提供了基础。</p>
+</li>
+<li>
+<p>Banks with a strong culture of risk management and ethical business practices are less likely to experience damaging operational risk events and are better placed to effectively deal with those events that occur. The actions of the board of directors and senior management as well as the bank’s risk management policies, processes and systems provide the foundation for a sound risk management culture.</p>
+</li>
+<li>
+<p>董事会应当制定行为准则或伦理政策，以应对行为风险。该准则或政策应当适用于员工和董事会成员，为最高标准的诚信和道德价值设定明确的期望，确认可接受的商业实践，并禁止利益冲突或不当提供金融服务(无论故意还是疏忽)。准则或政策应当由董事会定期审查和批准，并由员工证明；其实施应当由一个高级道德委员会或另一个董事会级别的委员会监督，并应当公开(如在银行网站上)。可以为银行的特定职位(如资金交易员、高级管理层)制定单独的行为准则。</p>
+</li>
+<li>
+<p>The board of directors should establish a code of conduct or an ethics policy to address conduct risk. This code or policy should be applicable to both staff and board members, set clear expectations for integrity and ethical values of the highest standard, identify acceptable business practices, and prohibit conflicts of interest or the inappropriate provision of financial services (whether wilful or negligent). The code or policy should be regularly reviewed and approved by the board of directors and attested by employees; its implementation should be overseen by a senior ethics committee, or another board-level committee, and should be publicly available (eg on the bank’s website). A separate code of conduct may be established for specific positions in the bank (eg treasury dealers, senior management).</p>
+</li>
+<li>
+<p>管理层应当建立明确的期望和问责制，以确保银行员工了解他们在风险管理方面的角色和责任，以及他们采取行动的权力。</p>
+</li>
+<li>
+<p>Management should set clear expectations and accountabilities to ensure bank staff understands their roles and responsibilities for risk management, as well as their authority to act.</p>
+</li>
+<li>
+<p>薪酬政策应当与银行的风险偏好和容忍度声明以及总体安全性和稳健性保持一致，并适当平衡风险和回报。
+[12]</p>
+</li>
+<li>
+<p>Compensation policies should be aligned to the bank’s statement of risk appetite and tolerance as well as overall safety and soundness, and appropriately balance risk and reward.
+[12]</p>
+</li>
+<li>
+<p>高级管理层应当确保在整个组织的所有级别(如业务单元负责人、内部控制负责人和高级管理人员)提供适当水平的操作风险培训。所提供的培训应当反映培训对象的资历，角色和责任。</p>
+</li>
+<li>
+<p>Senior management should ensure that an appropriate level of operational risk training is available at all levels throughout the organisation, such as heads of business units, heads of internal controls and senior managers. Training provided should reflect the seniority, role and responsibilities of the individuals for whom it is intended.</p>
+</li>
+<li>
+<p>董事会和高级管理层对操作风险管理及道德行为的强有力且一致的支持有力地加强了行为和道德准则、薪酬政策和培训方案。</p>
+</li>
+<li>
+<p>Strong and consistent board of directors and senior management support for operational risk management and ethical behaviour convincingly reinforces codes of conduct and ethics, compensation strategies, and training programmes.</p>
+</li>
+</ol>
+<p>原则2：银行应当制定、实施和维护一个完全融入银行总体风险管理流程的操作风险管理框架。一家银行采用的操作风险管理框架(ORMF)取决于一系列因素，包括银行的性质、规模、复杂程度和风险状况。
+Principle 2: Banks should develop, implement and maintain an operational risk management framework that is fully integrated into the bank’s overall risk management processes. The ORMF adopted by an individual bank will depend on a range of factors, including the bank’s nature, size, complexity and risk profile.</p>
+<ol start="20">
+<li>
+<p>董事会和银行管理层应当了解银行产品、服务、活动和系统组合中固有风险的性质和复杂程度，这是健全操作风险管理的基本前提。鉴于操作风险是所有业务产品、活动、流程和系统中固有的，这对于操作风险尤其重要。</p>
+</li>
+<li>
+<p>The board of directors and bank management should understand the nature and complexity of the risks inherent in the portfolio of bank products, services, activities, and systems, which is a fundamental premise of sound risk management. This is particularly important for operational risk, given operational risk is inherent in all business products, activities, processes and systems.</p>
+</li>
+<li>
+<p>操作风险管理框架(ORMF)的组成部分应当将第一道防线完全纳入银行的总体风险管理流程，由第二道防线充分审查和挑战，并由第三道防线独立审查。操作风险管理框架(ORMF)应当融入组织的各个层面，包括集团和业务单元以及新业务计划的产品、活动、流程和系统。此外，银行操作风险评估的结果应当纳入银行的总体业务战略制定流程。</p>
+</li>
+<li>
+<p>The components of the ORMF should be fully integrated into the overall risk management processes of the bank by the first line of defence, adequately reviewed and challenged by the second line of defence, and independently reviewed by the third line of defence. The ORMF should be embedded across all levels of the organisation including group and business units as well as new business initiatives’ products, activities, processes and systems. In addition, results of the bank’s operational risk assessment should be incorporated into the bank’s overall business strategy development process.</p>
+</li>
+<li>
+<p>操作风险管理框架(ORMF)应当全面、适度地记录在董事会批准的政策中，并包括操作风险和运营损失的定义。未充分描述和分类操作风险和损失敞口的银行可能会显著降低其操作风险管理框架(ORMF)的有效性。</p>
+</li>
+<li>
+<p>The ORMF should be comprehensively and appropriately documented in board of directors approved policies and include definitions of operational risk and operational loss. Banks that do not adequately describe and classify operational risk and loss exposure may significantly reduce the effectiveness of their ORMF.</p>
+</li>
+<li>
+<p>操作风险管理框架(ORMF)文件应当明确：
+a) 确定用于管理操作风险的治理结构，包括报告路径和问责，以及操作风险治理委员会的权力和成员；
+b) 参考相关操作风险管理政策和程序；
+c) 描述风险和控制的识别和评估工具，以及三道防线在使用这些工具时的角色和责任；
+d) 描述银行可接受的操作风险偏好和容忍度；固有和剩余风险的阈值、重要活动触发点或限额；以及已批准的风险缓解策略和工具；
+e) 描述银行确保控制措施有效设计、实施和运行的方法；
+f) 描述银行制定和监测固有和剩余风险敞口的阈值或限额的方法；
+g) 编制所有业务单元实施的风险和控制目录(如在控制库中)；
+h) 建立风险报告和管理信息系统(MIS)，及时、准确地生成数据；
+i) 提供操作风险术语的通用分类法，以确保所有业务单元的风险识别、敞口评级和风险管理目标的一致性。
+[13]
+分类法可以根据事件类型、原因、重要性和发生的业务单元区分操作风险敞口；它还可以标记那些部分或全部代表法律、行为、模型和信息科技(包括网络)风险以及信用或市场风险边界的操作敞口；
+j) 对风险管理过程的结果进行适当的独立审查和挑战；以及
+k) 根据对控制环境质量的持续评估，要求对政策进行适当的审查和修订，以应对内部和外部环境变化，或在银行操作风险状况发生重大变化时进行。</p>
+</li>
+<li>
+<p>ORMF documentation should clearly:
+a) identify the governance structures used to manage operational risk, including reporting lines and accountabilities, and the mandates and membership of the operational risk governance committees;
+b) reference the relevant operational risk management policies and procedures;
+c) describe the tools for risk and control identification and assessment and the role and responsibilities of the three lines of defence in using them;
+d) describe the bank’s accepted operational risk appetite and tolerance; the thresholds, material activity triggers or limits for inherent and residual risk; and the approved risk mitigation strategies and instruments;
+e) describe the bank’s approach to ensure controls are designed, implemented and operating effectively;
+f) describe the bank’s approach to establishing and monitoring thresholds or limits for inherent and residual risk exposure;
+g) inventory risks and controls implemented by all business units (eg in a control library);
+h) establish risk reporting and management information systems (MIS) producing timely, and accurate data;
+i) provide for a common taxonomy of operational risk terms to ensure consistency of risk identification, exposure rating and risk management objectives across all business units.
+[13]
+The taxonomy can distinguish operational risk exposures by event types, causes, materiality and business units where they occur; it can also flag those operational exposures that partially or entirely represent legal, conduct, model and ICT (including cyber) risks as well as exposures in the credit or market risk boundary;
+j) provide for appropriate independent review and challenge of the outcomes of the risk management process; and
+k) require the policies to be reviewed and revised as appropriate based on continued assessment of the quality of the control environment addressing internal and external environmental changes or whenever a material change in the operational risk profile of the bank occurs</p>
+</li>
+</ol>
+<p>治理(Governance
+[14]
+)</p>
+<p>董事会(Board of directors)</p>
+<p>原则3：董事会应当批准并定期审查操作风险管理框架，并确保高级管理层在所有决策层有效落实操作风险管理框架的政策、流程和系统。
+Principle 3: The board of directors should approve and periodically review the operational risk management framework, and ensure that senior management implements the policies, processes and systems of the operational risk management framework effectively at all decision levels.</p>
+<ol start="24">
+<li>
+<p>董事会应当：
+a) 建立风险管理文化，确保银行有充分的流程，以了解银行当前、规划战略和活动中固有操作风险的性质和范围；
+b) 确保操作风险管理流程受到全面和动态的监督，并与管理企业所有风险的总体框架完全整合或协调；
+c) 向高级管理层提供有关操作风险管理框架(ORMF)基本原则的明确指导，批准高级管理层为符合这些原则制定的相关政策；
+d) 定期审查和评估操作风险管理框架(ORMF)的有效性，批准操作风险管理框架(ORMF)，以确保银行已识别并管理外部市场变化和其他环境因素引起的操作风险，以及与新产品、活动、流程或系统相关的操作风险，包括风险状况和优先事项的变化(如业务量的变化)；
+e) 确保银行的操作风险管理框架(ORMF)受到第三道防线(审计或其他经适当培训的外部独立第三方)的有效独立审查；以及
+f) 确保管理层能随着最佳实践的发展而利用这些进步。
+[15]</p>
+</li>
+<li>
+<p>The board of directors should:
+a) establish a risk management culture and ensure that the bank has adequate processes for understanding the nature and scope of the operational risk inherent in the bank’s current and planned strategies and activities;
+b) ensure that the operational risk management processes are subject to comprehensive and dynamic oversight and are fully integrated into, or coordinated with, the overall framework for managing all risks across the enterprise;
+c) provide senior management with clear guidance regarding the principles underlying the ORMF, and approve the corresponding policies developed by senior management to align with these principles;
+d) regularly review and evaluate the effectiveness of, and approve the ORMF to ensure the bank has identified and is managing the operational risk arising from external market changes and other environmental factors, as well as those operational risks associated with new products, activities, processes or systems, including changes in risk profiles and priorities (eg changing business volumes);
+e) ensure that the bank’s ORMF is subject to effective independent review by a third line of defence (audit or other appropriately trained independent third parties from external sources); and
+f) ensure that, as best practice evolves, management is availing themselves of these advances.
+[15]</p>
+</li>
+<li>
+<p>强有力的内部控制是操作风险管理的一个关键方面。董事会应当建立明确的管理职责和问责体系，以落实强有力的控制环境。应当定期审查、监测和测试控制措施，以确保持续有效。控制环境应当在操作风险管理职能、业务单元和支撑职能之间提供适当的独立性/职责分离。</p>
+</li>
+<li>
+<p>Strong internal controls are a critical aspect of operational risk management. The board of directors should establish clear lines of management responsibility and accountability for implementing a strong control environment. Controls should be regularly reviewed, monitored, and tested to ensure ongoing effectiveness. The control environment should provide appropriate independence/separation of duties between operational risk management functions, business units and support functions.</p>
+</li>
+</ol>
+<p>原则4：董事会应当批准并定期审查操作风险偏好和容忍度声明
+[16]
+，该声明阐明了银行愿意承担的操作风险的性质、类型和水平。
+Principle 4: The board of directors should approve and periodically review a risk appetite and tolerance statement
+[16]
+for operational risk that articulates the nature, types and levels of operational risk the bank is willing to assume.</p>
+<ol start="26">
+<li>
+<p>操作风险的风险偏好和容忍度声明应当在董事会授权下制定，并与银行的短期及长期战略以及财务计划相关联。考虑到银行客户和股东的利益以及监管要求，有效的风险偏好和容忍度声明应当：
+a) 容易沟通，因此易于被所有相关方理解；
+b) 包含在批准时告知银行业务计划的关键背景信息和假设；
+c) 包含明确阐明承担或规避某些类型风险的动机的声明，并建立边界或指标(可定量或非定量)以监测这些风险；
+d) 确保业务单元和法律实体的战略及风险限额(如相关)与全行风险偏好声明一致；以及
+e) 有前瞻性并(在适用时)接受情景和压力测试，以确保银行了解哪些事件可能会突破其风险偏好和容忍度声明。</p>
+</li>
+<li>
+<p>The risk appetite and tolerance statement for operational risk should be developed under the authority of the board of directors and linked to the bank’s short- and long-term strategic and financial plans. Taking into account the interests of the bank’s customers and shareholders as well as regulatory requirements, an effective risk appetite and tolerance statement should:
+a) be easy to communicate and therefore easy for all stakeholders to understand;
+b) include key background information and assumptions that informed the bank’s business plans at the time it was approved;
+c) include statements that clearly articulate the motivations for taking on or avoiding certain types of risk, and establish boundaries or indicators (which may be quantitative or not) to enable monitoring of these risks;
+d) ensure that the strategy and risk limits of business units and legal entities, as relevant, align with the bank-wide risk appetite statement; and
+e) be forward-looking and, where applicable, subject to scenario and stress testing to ensure that the bank understands what events might push it outside its risk appetite and tolerance statement.</p>
+</li>
+<li>
+<p>董事会应当批准并定期审查限额与整体操作风险偏好以及容忍度声明的适宜性。这种审查应当考虑外部环境的当前及预期变化(包括机构提供服务的所在司法管辖区的监管环境)；业务或活动量持续或即将重大增长；控制环境的质量；风险管理或缓释策略的有效性；损失经验；违反限额的频率、数量或性质。董事会应当监督管理层遵守风险偏好和容忍度声明，并及时发现和纠正违反情况。</p>
+</li>
+<li>
+<p>The board of directors should approve and regularly review the appropriateness of limits and the overall operational risk appetite and tolerance statement. This review should consider current and expected changes in the external environment (including the regulatory context across all jurisdictions where the institution provides services); ongoing or forthcoming material increases in business or activity volumes; the quality of the control environment; the effectiveness of risk management or mitigation strategies; loss experience; and the frequency, volume or nature of limit breaches. The board of directors should monitor management adherence to the risk appetite and tolerance statement and provide for timely detection and remediation of breaches.</p>
+</li>
+</ol>
+<p>高级管理层(Senior management)</p>
+<p>原则5：高级管理层应当制定一个明确、有效和稳健的治理结构，并具有清晰、透明和一致的职责范围，以供董事会批准。高级管理层负责在整个组织内始终如一地落实和管理银行所有重大产品、活动、流程和系统的操作风险的政策、流程和系统，以符合银行的风险偏好和容忍度声明。
+Principle 5: Senior management should develop for approval by the board of directors a clear, effective and robust governance structure with well-defined, transparent and consistent lines of responsibility. Senior management is responsible for consistently implementing and maintaining throughout the organisation policies, processes and systems for managing operational risk in all of the bank’s material products, activities, processes and systems consistent with the bank’s risk appetite and tolerance statement.</p>
+<ol start="28">
+<li>
+<p>高级管理层负责建立和维护稳健的挑战机制和有效的问题解决流程。这些应当包括报告、跟踪以及必要时升级问题确保解决的系统。银行应当能够证明三道防线方法的运行令人满意，并解释董事会、董事会独立审计委员会和高级管理层如何确保以适当的方式落实和运作这一方法。</p>
+</li>
+<li>
+<p>Senior management is responsible for establishing and maintaining robust challenge mechanisms and effective issue resolution processes. These should include systems to report, track and, when necessary, escalate issues to ensure resolution. Banks should be able to demonstrate that the three-lines-of-defence approach is operating satisfactorily and to explain how the board of directors, independent audit committee of the board, and senior management ensure that this approach is implemented and operating in an appropriate manner.</p>
+</li>
+<li>
+<p>高级管理层应当将董事会批准的操作风险管理框架(ORMF)转化为可在不同业务单元内落实和验证的具体政策和程序。高级管理层应当明确分配权力、责任和报告关系，以鼓励和维持问责机制，并确保有必要的资源根据银行的风险偏好和容忍度声明管理操作风险。此外，高级管理层应当确保管理监督流程适合于业务单元活动中固有的风险。</p>
+</li>
+<li>
+<p>Senior management should translate the ORMF approved by the board of directors into specific policies and procedures that can be implemented and verified within the different business units. Senior management should clearly assign authority, responsibility and reporting relationships to encourage and maintain accountability, and to ensure the necessary resources are available to manage operational risk in line with the bank’s risk appetite and tolerance statement. Moreover, senior management should ensure that the management oversight process is appropriate for the risks inherent in a business unit’s activity.</p>
+</li>
+<li>
+<p>高级管理层应当确保负责管理操作风险的员工与负责管理信用风险、市场风险和其他风险的人员，以及负责采购外部服务(如保险风险转移、其他第三方协议(包括外包))的银行内部人员进行有效协调和沟通。如果不这样做，可能会导致银行整体风险管理方案出现重大缺失或重叠。</p>
+</li>
+<li>
+<p>Senior management should ensure that staff responsible for managing operational risk coordinate and communicate effectively with staff responsible for managing credit, market, and other risks, as well as with those in the bank who are responsible for the procurement of external services such as insurance risk transfer and other third-party arrangements (including outsourcing). Failure to do so could result in significant gaps or overlaps in a bank’s overall risk management programme.</p>
+</li>
+<li>
+<p>操作风险管理框架(ORMF)的管理者在银行内部应当具有足够的地位，以有效履行其职责，最好由与其它风险管理职能(如信用、市场和流动性风险)相称的头衔证明。</p>
+</li>
+<li>
+<p>The managers of the ORMF should be of sufficient stature within the bank to perform their duties effectively, ideally evidenced by a title that is commensurate with other risk management functions such as credit, market and liquidity risk.</p>
+</li>
+<li>
+<p>高级管理层应当确保银行活动由具有必要经验、技术能力和资源使用权的员工进行。负责监督和执行机构风险政策合规性的员工应当拥有独立于其所监督单位的权力。</p>
+</li>
+<li>
+<p>Senior management should ensure that bank activities are conducted by staff with the necessary experience, technical capabilities and access to resources. Staff responsible for monitoring and enforcing compliance with the institution’s risk policy should have authority independent from the units they oversee.</p>
+</li>
+<li>
+<p>银行的治理结构应当与其活动的性质、规模、复杂程度和风险状况相称。在设计操作风险治理结构时，银行应当考虑以下方面：
+a) 委员会架构 - 稳健的行业实践适用于具有中央集团职能和独立业务单元的较大、较复杂的组织，利用董事会设立的企业级风险委员会监督所有风险，管理层级别的操作风险委员会向其报告。根据银行的性质、规模和复杂程度，企业级风险委员会可能会收到操作风险委员会按国家、业务或职能领域提供的信息。较小且不太复杂的组织可采用更扁平的组织结构，直接在董事会风险管理委员会内监督操作风险。
+b) 委员会组成 - 稳健的行业实践是操作风险委员会(或小型银行的风险委员会)包括具有各种专业知识的成员，这些专业知识应当涵盖业务活动、财务活动、法律、技术和监管事项以及独立的风险管理方面的专业知识。
+[17]
+c) 委员会运作 - 委员会会议应当以适当的频率举行，并有充足的时间和资源进行富有成效的讨论和决策。委员会记录应当足以审查和评估委员会的有效性。</p>
+</li>
+<li>
+<p>A bank’s governance structure should be commensurate with the nature, size, complexity and risk profile of its activities. When designing the operational risk governance structure, a bank should take the following into consideration:
+a) Committee structure – Sound industry practice is for larger and more complex organisations with a central group function and separate business units to utilise a board-created enterprise-level risk committee for overseeing all risks, to which a management level operational risk committee reports. Depending on the nature, size and complexity of the bank, the enterprise-level risk committee may receive input from operational risk committees by country, business or functional area. Smaller and less complex organisations may utilise a flatter organisational structure that oversees operational risk directly within the board’s risk management committee.
+b) Committee composition – Sound industry practice is for operational risk committees (or the risk committee in smaller banks) to include members with a variety of expertise, which should cover expertise in business activities, financial activities, legal, technological and regulatory matters, and independent risk management.
+[17]
+c) Committee operation – Committee meetings should be held at appropriate frequencies with adequate time and resources to permit productive discussion and decision-making. Records of committee operations should be adequate to permit review and evaluation of committee effectiveness.</p>
+</li>
+</ol>
+<p>风险管理环境(Risk management environment)</p>
+<p>识别和评估(Identification and assessment)</p>
+<p>原则6：高级管理层应当确保全面识别和评估所有重要产品、活动、流程和系统中固有的操作风险，以确保充分理解固有风险和激励因素。
+Principle 6: Senior management should ensure the comprehensive identification and assessment
+of the operational risk inherent in all material products, activities, processes and systems to make
+sure the inherent risks and incentives are well understood.</p>
+<ol start="34">
+<li>
+<p>风险识别和评估是有效的操作风险管理系统的基本特征，并直接有助于运营韧性能力。有效的风险识别既考虑内部因素，也考虑外部因素。健全的风险评估允许银行更好地了解其风险状况，并最有效地分配风险管理资源和策略。</p>
+</li>
+<li>
+<p>Risk identification and assessment are fundamental characteristics of an effective operational risk management system, and directly contribute to operational resilience capabilities. Effective risk identification considers both internal factors and external factors. Sound risk assessment allows the bank to better understand its risk profile and allocate risk management resources and strategies most effectively.</p>
+</li>
+<li>
+<p>用于识别和评估操作风险的工具示例如下：
+[18]
+a) 事件管理 — 当银行遇到操作风险事件时，遵循一套预定的协议，识别、分析、端到端地管理和报告事件。健全的事件管理方法通常包括分析事件以识别新的操作风险，了解根本原因和控制弱点，并制定适当的应对措施，防止类似事件再次发生。这些信息是自评估的输入，尤其是控制有效性评估的输入。
+b) 操作风险事件数据 — 银行通常维护一个全面的运营风险事件数据集，收集银行经历的所有重大事件，并作为操作风险评估的基础。事件数据集通常包括内部损失数据、未遂事件，以及(可行时)外部操作损失事件数据(因为外部数据提供了整个行业常见风险的信息)。事件数据通常根据操作风险管理框架(ORMF)政策中定义的分类法进行分类，并在整个银行内一致应用。事件数据通常包括事件日期(发生日期、发现日期和记录日期)以及损失事件的财务影响。当事件的其他根本原因信息可用时，理想情况下，它也可以包含在操作风险数据集中。在可行时，鼓励银行也寻求收集外部操作风险事件数据，并在其内部分析时使用这些数据，因为这些数据通常是关于整个行业常见风险的信息。
+c) 自评估 — 银行通常在不同层面对其操作风险进行自评估。评估通常评估固有风险(考虑控制之前的风险)、控制环境的有效性和剩余风险(考虑控制后的风险敞口)，并包含定量和定性因素。定性因素反映了银行在确定其固有和剩余风险评级时对风险事件的可能性和后果的考虑。评估可利用业务流程映射来识别业务流程的关键步骤、活动和组织职能，以及相关风险和控制薄弱领域。评估包含有关业务环境、操作风险、根本原因、控制和控制有效性评估的足够详细的信息，以使独立的审查人员能够确定银行如何达到其评级。可以维护风险登记簿，以整理这些信息，形成对控制总体有效性的有意义的看法，并促进高级管理层、风险委员会和董事会的监督。
+d) 控制监控和保障框架 — 结合适当的控制监控和保障框架有助于采用结构化方法对关键控制进行评估、审查以及持续监控和测试。对控制的分析确保这些控制针对已识别的风险进行适当设计，并有效运作。分析还应当考虑控制范围的充分性，包括充足的预防、检测和响应策略。控制监控和测试应当适用于不同的操作风险和跨业务领域的关键控制。
+e) 指标 — 银行通常使用操作风险事件数据和风险与控制评估制定指标，以评估和监控其操作风险敞口。这些指标可能是简单的指标，如事件计数，或在适当情况下由更复杂的暴露模型得出。指标提供预警信息，以监测业务和控制环境的持续绩效，并报告操作风险状况。有效的指标将相关操作风险和控制明确地联系起来。通过商定的阈值或限额监测指标和相关趋势，为风险管理和报告目的提供有价值的信息。
+f) 情景分析 — 情景分析是一种识别、分析和测量一系列情景的方法，包括低频高损事件，其中一些可能导致极端的操作风险损失。情景分析通常以研讨会的方式邀请主题专家(包括高级管理层、业务管理层和资深操作风险员工)以及其他职能领域(如合规、人力资源和IT风险管理)，阐释和分析潜在事件的驱动因素和后果范围。情景分析的输入通常包括(如使用)相关的内部和外部损失数据、自评估信息、控制监控与保障框架、前瞻性指标、根本原因分析和流程框架。情景分析过程可用于开发潜在事件的一系列后果，包括风险管理目的的影响评估，补充基于历史数据或当前风险评估的其他工具。它还可以与灾难恢复和业务连续性计划集成，用在运营韧性的测试中。鉴于情景流程的主观性，稳健的治理框架和独立审查对于确保流程的完整性和一致性非常重要。
+g) 基准和比较分析 — 基准和比较分析是对银行内部部署的不同风险测量和管理工具的结果进行比较，以及对银行与行业内其他机构的指标进行比较。可进行此类比较，以增进对银行操作风险状况的了解。例如，将内部损失的频率和严重程度与自评估进行比较，可以帮助银行确定其自评估流程是否有效运作。情景数据可与内部和外部损失数据进行比较，以更好地了解银行面临潜在风险事件的严重程度。</p>
+</li>
+<li>
+<p>Examples of tools used for identifying and assessing operational risk are:
+[18]
+a) Event management – When banks experience an operational risk event, the process of identification, analysis, end-to-end management and reporting of the event follows a predetermined set of protocols. A sound event management approach typically includes analysis of events to identify new operational risks, understanding the underlying causes and control weaknesses, and formulating an appropriate response to prevent recurrence of similar events. This information is an input to the self-assessment and, in particular, to the assessment of control effectiveness.
+b) Operational risk event data – Banks often maintain a comprehensive operational risk event dataset that collects all material events experienced by the bank and serves as basis for operational risk assessments. The event dataset typically includes internal loss data, near misses, and, when feasible, external operational loss event data (as external data is informative of risks that common across the industry). Event data is typically classified according to a taxonomy defined in the ORMF policies and consistently applied across the bank. Event data typically include the date of the event (occurrence date, discovery date and accounting date) and, in the case of loss events, financial impact. When other root cause information for events is available, ideally it can also be included in the operational risk dataset. When feasible, banks are encouraged to also seek to gather external operational risk event data and use this data in their internal analysis, as it is often informative of risks that are common across the industry.
+c) Self-assessments – Banks often perform self-assessments of their operational risks and controls on various different levels. The assessments typically evaluate inherent risk (the risk before controls are considered), the effectiveness of the control environment, and residual risk (the risk exposure after controls are considered) and contain both quantitative and qualitative elements. The qualitative element reflects consideration of both the likelihood and consequence of the risk event in the bank’s determination of its inherent and residual risk ratings. The assessments may utilise business process mapping to identify key steps in business processes, activities, and organisational functions, as well as the associated risks and areas of control weakness. The assessments contain sufficiently detailed information on the business environment, operational risks, underlying causes, controls and evaluation of control effectiveness to enable an independent reviewer to determine how the bank reached its ratings. A risk register can be maintained to collate this information to form a meaningful view of the overall effectiveness of controls and facilitate oversight by senior management, risk committees, and the board of directors.
+d) Control monitoring and assurance framework – Incorporating an appropriate control monitoring and assurance framework facilitates a structured approach to the evaluation, review and ongoing monitoring and testing of key controls. The analysis of controls ensures these are suitably designed for the identified risks and operating effectively. The analysis should also consider the sufficiency of control coverage, including adequate prevention, detection and response strategies. The control monitoring and testing should be appropriate for the different operational risks and key controls across business areas.
+e) Metrics – Using operational risk event data and risk and control assessments, banks often develop metrics to assess and monitor their operational risk exposure. These metrics may be simple indicators, such as event counts, or result from more sophisticated exposure models when appropriate. Metrics provide early warning information to monitor ongoing performance of the business and the control environment, and to report the operational risk profile. Effective metrics clearly link to the associated operational risks and controls. Monitoring metrics and related trends through time against agreed thresholds or limits provides valuable information for risk management and reporting purposes.
+f) Scenario analysis – Scenario analysis is a method to identify, analyse and measure a range of scenarios, including low probability and high severity events, some of which could result in severe operational risk losses. Scenario analysis typically involves workshop meetings of subject matter experts including senior management, business management and senior operational risk staff and other functional areas such as compliance, human resources and IT risk management, to develop and analyse the drivers and range of consequences of potential events. Inputs to the scenario analysis would typically include relevant internal and external loss data, information from self-assessments, the control monitoring and assurance framework, forward-looking metrics, root-cause analyses and the process framework, where used. The scenario analysis process could be used to develop a range of consequences of potential events, including impact assessments for risk management purposes, supplementing other tools based on historical data or current risk assessments. It could also be integrated with disaster recovery and business continuity plans, for use within testing of operational resilience. Given the subjectivity of the scenario process, a robust governance framework and independent review are important to ensure the integrity and consistency of the process.
+g) Benchmarking and comparative analysis – Benchmarking and comparative analysis are comparisons of the outcomes of different risk measurement and management tools deployed within the bank, as well as comparisons of metrics from the bank to other firms in the industry. Such comparisons can be performed to enhance understanding of the bank’s operational risk profile. For example, comparing the frequency and severity of internal losses with selfassessments can help the bank determine whether its self-assessment processes are functioning effectively. Scenario data can be compared to internal and external loss data to gain a better understanding of the severity of the bank’s exposure to potential risk events.</p>
+</li>
+<li>
+<p>银行应当确保操作风险评估工具的输出为：
+a) 基于准确的数据，其完整性由强有力的治理和稳健的验证和确认程序保证；
+b) 在内部定价和绩效衡量机制以及商业机会评估中充分考虑；以及
+c) 由法人操作风险管理职能(CORF)监控的计划修正或补救(必要时)。</p>
+</li>
+<li>
+<p>Banks should ensure that the operational risk assessment tools’ outputs are:
+a) based on accurate data, whose integrity is ensured by strong governance and robust verification and validation procedures;
+b) adequately taken into account in the internal pricing and performance measurement mechanisms as well as for business opportunities assessments; and
+c) subject to CORF-monitored action plans or remediation plans when necessary.</p>
+</li>
+<li>
+<p>这些操作风险评估工具还可以直接促进银行的运营韧性方案，特别是事件管理、自评估和情景分析程序，因为它们允许银行识别和监测其关键运营的威胁和漏洞。银行应当使用这些工具的输出，改进其运营韧性控制和程序，见委员会
+《运营韧性原则》
+[19]
+所述。</p>
+</li>
+<li>
+<p>These operational risk assessment tools can also directly contribute to a bank’s operational resilience approach, in particular event management, self assessment and scenario analysis procedures, as they allow banks to identify and monitor threats and vulnerabilities to their critical operations. Banks should use the outputs of these tools to improve their operational resilience controls and procedures, as identified in the Committee’s
+Principles for operational resilience
+.
+[19]</p>
+</li>
+</ol>
+<p>原则7：高级管理层应当确保银行的变更管理流程全面、资源充足，并在相关防线之间充分阐明。
+Principle 7: Senior management should ensure that the bank’s change management process is comprehensive, appropriately resourced and adequately articulated between the relevant lines of defence.</p>
+<ol start="38">
+<li>
+<p>一般来说，银行的操作风险敞口随着银行发起变更而变化，例如从事新活动或开发新产品或服务；进入不熟悉的市场或司法管辖区；实施新的或修改的业务流程或技术系统；和/或从事地理位置远离总部的业务。变更管理应当评估相关风险从开始到终止(如贯穿产品的全生命周期
+[20]
+)随时间的演变。</p>
+</li>
+<li>
+<p>In general, a bank’s operational risk exposure evolves when a bank initiates change, such as engaging in new activities or developing new products or services; entering into unfamiliar markets or jurisdictions; implementing new or modifying business processes or technology systems; and/or engaging in businesses that are geographically distant from the head office. Change management should assess the evolution of associated risks across time, from inception to termination (eg throughout the full life cycle of a product).
+[20]</p>
+</li>
+<li>
+<p>银行应当制定政策和程序，规定根据商定的客观标准识别、管理、挑战、批准和监控变更的流程。变更实施应当通过具体的监督控制进行监控。变更管理政策和程序应当接受独立和定期的审查和更新，并根据三道防线模型明确分配角色和责任，特别是：
+a) 第一道防线应当对新产品、活动、流程和系统进行操作风险和控制评估，包括识别和评估(贯穿决策、规划阶段到实施和实施后审查过程)所需的变更。
+b) 第二道防线(法人操作风险管理职能(CORF))应当挑战第一道防线的操作风险和控制评估监督适当控制或补救措施的实施。法人操作风险管理职能(CORF)应当涵盖该过程的所有阶段。此外，法人操作风险管理职能(CORF)应当确保所有相关控制团体(如财务、合规、法务、业务、信息科技、风险管理)酌情参与。</p>
+</li>
+<li>
+<p>A bank should have policies and procedures defining the process for identifying, managing, challenging, approving and monitoring change on the basis of agreed objective criteria. Change implementation should be monitored by specific oversight controls. Change management policies and procedures should be subject to independent and regular review and update, and clearly allocate roles and responsibilities in accordance with the three-lines-of-defence model, in particular:
+a) The first line of defence should perform operational risk and control assessments of new products, activities, processes and systems, including the identification and evaluation of the required change through the decision-making and planning phases to the implementation and post-implementation review.
+b) The second line of defence (CORF) should challenge the operational risk and control assessments of first line of defence, as well as monitor the implementation of appropriate controls or remediation actions. CORF should cover all phases of this process. In addition, CORF should ensure that all relevant control groups (eg finance, compliance, legal, business, ICT, risk management) are involved as appropriate.</p>
+</li>
+<li>
+<p>银行应当制定审查和批准新产品、活动、流程和系统的政策和程序。审查和批准流程应当考虑：
+a) 固有风险 — 包括法律、信息科技和模型风险 — 在不熟悉市场推出新产品、服务、活动和运营，以及实施新流程、人员和系统(尤其是外包时)。
+b) 银行操作风险状况、偏好和容忍度的变化，包括现有产品或活动的风险的变化。
+c) 必要的控制、风险管理流程和风险缓解策略。
+d) 剩余风险。
+e) 相关风险阈值或限额的变化。
+f) 评估、监控和管理新产品、服务、活动、市场、司法管辖区、流程和系统风险的程序和指标。</p>
+</li>
+<li>
+<p>A bank should have policies and procedures for the review and approval of new products, activities, processes and systems. The review and approval process should consider:
+a) Inherent risks – including legal, ICT and model risks – in the launch of new products, services, activities, and operations in unfamiliar markets, and in the implementation of new processes, people and systems (especially when outsourced).
+b) Changes to the bank’s operational risk profile, appetite and tolerance, including changes to the risk of existing products or activities.
+c) The necessary controls, risk management processes, and risk mitigation strategies.
+d) The residual risk.
+e) Changes to relevant risk thresholds or limits.
+f) The procedures and metrics to assess, monitor, and manage the risk of new products, services, activities, markets, jurisdictions, processes and systems.</p>
+</li>
+<li>
+<p>审查和批准过程应当包括确保在引入变更之前对人力资源和技术基础设施进行适当的投资。在实施期间和之后，应当监控变更，以识别与预期操作风险状况的任何重大差异，并管理任何意外风险。</p>
+</li>
+<li>
+<p>The review and approval process should include ensuring that appropriate investment has been made for human resources and technology infrastructure before changes are introduced. Changes should be monitored, during and after their implementation, to identify any material differences to the expected operational risk profile and manage any unexpected risks.</p>
+</li>
+<li>
+<p>银行应当尽可能保留其产品和服务(包括外包的)的中央记录，以便于监控变化。</p>
+</li>
+<li>
+<p>Banks should maintain a central record of their products and services to the extent possible (including the outsourced ones) to facilitate the monitoring of changes.</p>
+</li>
+</ol>
+<p>监测和报告(Monitoring and reporting)</p>
+<p>原则 8：高级管理层应当落实定期监测操作风险状况和重大操作敞口的流程。董事会、高级管理层和业务单元应当建立适当的报告机制，以支持主动管理操作风险。
+Principle 8: Senior management should implement a process to regularly monitor operational risk
+profiles and material operational exposures. Appropriate reporting mechanisms should be in place
+at the board of directors, senior management, and business unit levels to support proactive
+management of operational risk.</p>
+<ol start="43">
+<li>
+<p>银行应当确保其报告的全面性、准确性、一致性以及跨业务单元和产品的可操作性。为此，第一道防线应当确保报告任何剩余操作风险，包括操作风险事件、控制缺陷、流程缺陷和操作风险容忍度的不合规项。报告的范围和数量应当便于管理，通过提供对银行的运营风险状况的展望以及遵守操作风险偏好和容忍度声明的情况；数据量过多和数据匮乏都阻碍有效的决策。</p>
+</li>
+<li>
+<p>A bank should ensure that its reports are comprehensive, accurate, consistent and actionable across business units and products. To this end, the first line of defence should ensure reporting on any residual operational risks, including operational risk events, control deficiencies, process inadequacies, and non-compliance with operational risk tolerances. Reports should be manageable in scope and volume by providing an outlook on the bank’s operational risk profile and adherence to the operational risk appetite and tolerance statement; effective decision-making is impeded by both excessive amounts and paucity of data.</p>
+</li>
+<li>
+<p>报告应当及时，银行应当能够编制正常和压力市场情况下的报告。
+[21]
+报告频度应当反映所涉及的风险以及经营环境变化的速度和性质。监测活动的结果应当包括在定期管理和董事会报告中，内部/外部审计和/或风险管理职能部门对法人操作风险管理职能(ORMF)的评估也应当包括在内。由监管机构编制或为监管机构编制的报告也应当(适当时)向高级管理层和董事会进行内部报告。</p>
+</li>
+<li>
+<p>Reporting should be timely and a bank should be able to produce reports in both normal and stressed market conditions.
+[21]
+The frequency of reporting should reflect the risks involved and the pace and nature of changes in the operating environment. The results of monitoring activities should be included in regular management and board reports, as should assessments of the ORMF performed by the internal/external audit and/or risk management functions. Reports generated by or for supervisory authorities should also be reported internally to senior management and the board of directors, where appropriate.</p>
+</li>
+<li>
+<p>操作风险报告应当通过提供内部财务、运营，合规指标，以及决策相关事件和条件的外部市场或环境信息，来描述银行的操作风险状况。操作风险报告应当包括：
+a) 对银行风险偏好和容忍度声明的违反，以及阈值、限额或定性要求。
+b) 对关键和新兴风险的讨论和评估。
+c) 近期重大内部操作风险事件和损失的详细信息(包括根本原因分析)。
+d) 相关外部事件或监管变化以及对银行的任何潜在影响。</p>
+</li>
+<li>
+<p>Operational risk reports should describe the operational risk profile of the bank by providing internal financial, operational, and compliance indicators, as well as external market or environmental information about events and conditions that are relevant to decision making. Operational risk reports should include:
+a) Breaches of the bank’s risk appetite and tolerance statement, as well as thresholds, limits or qualitative requirements.
+b) A discussion and assessment of key and emerging risks.
+c) Details of recent significant internal operational risk events and losses (including root cause analysis).
+d) Relevant external events or regulatory changes and any potential impact on the bank.</p>
+</li>
+<li>
+<p>应当定期分析数据采集和风险报告流程，以提高风险管理绩效，推进风险管理政策、程序和实践。</p>
+</li>
+<li>
+<p>Data capture and risk reporting processes should be analysed periodically with the goal of enhancing risk management performance as well as advancing risk management policies, procedures and practices.</p>
+</li>
+</ol>
+<p>控制和缓解(Control and mitigation)</p>
+<p>原则9：银行应当具有利用政策、流程和系统的强大控制环境；适当的内部控制；以及适当的风险缓解和/或转移策略。
+Principle 9: Banks should have a strong control environment that utilises policies, processes and
+systems; appropriate internal controls; and appropriate risk mitigation and/or transfer strategies.</p>
+<ol start="47">
+<li>
+<p>内部控制的设计应当合理保证银行将有效率和有效地运营；保护其资产；编制可靠的财务报告；并遵守适用的法律法规。健全的内部控制方案由风险管理过程中不可或缺的四个部分组成：风险评估、控制活动、信息和沟通，以及监测活动。
+[22]</p>
+</li>
+<li>
+<p>Internal controls should be designed to provide reasonable assurance that a bank will have efficient and effective operations; safeguard its assets; produce reliable financial reports; and comply with applicable laws and regulations. A sound internal control programme consists of four components that are integral to the risk management process: risk assessment, control activities, information and communication, and monitoring activities.
+[22]</p>
+</li>
+<li>
+<p>控制过程和程序应当包括确保遵守政策、法规和法律的系统。政策合规性评估的主要要素示例如下：
+a) 对实现既定目标的进展进行高层复核。
+b) 验证是否符合管理控制。
+c) 审查不合规实例的处理和解决方法。
+d) 评估规定的批准和授权，以确保对适当的管理层追责。
+e) 跟踪阈值或限额例外情况审批、管理层否决以及其它对政策、法规和法律的偏差的报告。</p>
+</li>
+<li>
+<p>Control processes and procedures should include a system for ensuring compliance with policies, regulations and laws. Examples of principle elements of a policy compliance assessment are:
+a) Top-level reviews of progress towards stated objectives.
+b) Verification of compliance with management controls.
+c) Review of the treatment and resolution of instances of non-compliance.
+d) Evaluation of the required approvals and authorisations to ensure accountability to an appropriate level of management.
+e) Tracking of reports for approved exceptions to thresholds or limits, management overrides and other deviations from policy, regulations and laws.</p>
+</li>
+<li>
+<p>控制流程和程序应当说明银行如何确保在正常情况下和扰乱事件中保持运营韧性，反映各职能恪尽职守，符合银行的运营韧性方案。</p>
+</li>
+<li>
+<p>Controls processes and procedures should address how the bank ensures operational resilience is maintained in both normal circumstances and in the event of disruption, reflecting respective functions’ due diligence, consistent with the bank’s operational resilience approach.</p>
+</li>
+<li>
+<p>有效的控制环境还需要适当的职责分离。在没有双重控制(例如使用两个或多个单独实体(通常是个人)协同工作以保护敏感职能或信息的过程)或其他对策的情况下，为个人或团队确定相互冲突的职责的任务，可能会导致隐瞒损失、错误或其他不当行为。因此，应当识别、尽量减少可能产生利益冲突的领域，并对其进行仔细的独立监测和审查。</p>
+</li>
+<li>
+<p>An effective control environment also requires appropriate segregation of duties. Assignments that establish conflicting duties for individuals or a team, without dual controls (eg a process that uses two or more separate entities (usually persons) operating in concert to protect sensitive functions or information) or other countermeasures, may result in concealment of losses, errors or other inappropriate actions. Therefore, areas where conflicts of interest may arise should be identified, minimised, and be subject to careful independent monitoring and review.</p>
+</li>
+<li>
+<p>除了职责分离和双重控制外，银行还应当确保酌情实施其他传统内部控制，以应对操作风险。这些控制的示例如下：
+a) 明确制定的审批权限和/或流程。
+b) 密切监控指定风险阈值或限制的遵守情况。
+c) 访问和使用银行资产和记录的保障措施。
+d) 适当的人员配备水平和培训，以保持专业技术。
+e) 识别回报与合理预期不符所属业务单元或产品的持续过程。
+[23]
+f) 交易和账户的定期验证和对账。
+g) 规定管理层和员工连续不在不少于两周的休假政策。</p>
+</li>
+<li>
+<p>In addition to segregation of duties and dual controls, banks should ensure that other traditional internal controls are in place, as appropriate, to address operational risk. Examples of these controls are:
+a) Clearly established authorities and/or processes for approval.
+b) Close monitoring of adherence to assigned risk thresholds or limits.
+c) Safeguards for access to, and use of, bank assets and records.
+d) Appropriateness of staffing level and training to maintain technical expertise.
+e) Ongoing processes to identify business units or products where returns appear to be out of line with reasonable expectations.
+[23]
+f) Regular verification and reconciliation of transactions and accounts.
+g) Vacation policy that provides for officers and employees being absent from their duties for a period of not less than two consecutive weeks.</p>
+</li>
+<li>
+<p>有效使用和合理实施技术有助于控制环境。例如，自动化流程比手动流程更不容易出错。然而，自动化流程带来的风险必须通过健全的技术治理和基础设施风险管理方案加以解决。</p>
+</li>
+<li>
+<p>Effective use and sound implementation of technology can contribute to the control environment. For example, automated processes are less prone to error than manual processes. However, automated processes introduce risks that must be addressed through sound technology governance and infrastructure risk management programmes.</p>
+</li>
+<li>
+<p>使用与技术相关的产品、活动、流程和交付渠道使银行面临操作风险和重大财务损失的可能性。因此，银行应当遵循与操作风险管理相同的原则，采用综合方法识别、测量、监测和管理技术风险。</p>
+</li>
+<li>
+<p>The use of technology related products, activities, processes and delivery channels exposes a bank to operational risk and the possibility of material financial loss. Consequently, a bank should have an integrated approach to identifying, measuring, monitoring and managing technology risks along the same precepts as operational risk management.</p>
+</li>
+<li>
+<p>虽然求助于(但不限于第三方服务提供商)实体有助于管理成本、提供专业知识、扩大产品范围和改进服务，但也引入了管理层应当解决的风险。董事会和高级管理层负责了解与外包协议相关的操作风险，并确保制定有效的风险管理政策和实践来管理外包活动中的风险。除其他外，应当仔细考虑风险的集中度和外包的复杂程度。第三方风险政策(作为操作风险管理框架(ORMF)政策的一部分)和风险管理活动
+[24]
+应当包括：
+a) 确定是否以及如何外包活动的程序。
+b) 在选择潜在服务提供商时进行尽职调查的流程。
+c) 外包协议的合理构成，包括数据的所有权和保密性，以及终止权。
+d) 管理和监控外包协议相关风险的方案，包括服务提供商的财务状况。
+e) 在银行和服务提供商处建立有效的控制环境，其中应当包括外包活动、指标和报告的登记册，以便于监督服务提供商。
+f) 制定可行的应急计划。
+g) 执行全面合同和/或服务水平协议，明确分配外包供应商和银行之间的责任。
+h) 银行对与第三方接触的监督和处置权。</p>
+</li>
+<li>
+<p>While recourse to entities such as, but not limited to third-party service providers can help manage costs, provide expertise, expand product offerings, and improve services, it also introduces risks that management should address. The board of directors and senior management are responsible for understanding the operational risks associated with outsourcing arrangements and ensuring that effective risk management policies and practices are in place to manage the risk in outsourcing activities. Amongst others, the concentration of risk and the complexity of outsourcing should be taken into account. Thirdparty risk policies (as a part of the ORMF’s policies) and risk management activities
+[24]
+should encompass:
+a) Procedures for determining whether and how activities can be outsourced.
+b) Processes for conducting due diligence in the selection of potential service providers.
+c) Sound structuring of the outsourcing arrangement, including ownership and confidentiality of data, as well as termination rights.
+d) Programmes for managing and monitoring the risks associated with the outsourcing arrangement, including the financial condition of the service provider.
+e) Establishment of an effective control environment at the bank and the service provider, that should include a register of outsourced activities and metrics and reporting to faciliate oversight of the service provider.
+f) Development of viable contingency plans.
+g) Execution of comprehensive contracts and/or service level agreements with a clear allocation of responsibilities between the outsourcing provider and the bank.
+h) Banks’ supervisory and resolution authorities’ access to third parties.</p>
+</li>
+<li>
+<p>在内部控制不能充分解决风险且退出风险不是一种合理选择的情况下，管理层可以通过寻求将风险转移给另一方(如通过保险)来补偿控制。董事会应当确定银行愿意且有财力承担的最大损失敞口，并应当对银行的风险和保险管理方案进行年度审查。虽然银行的具体保险或风险转移需求应当根据个别情况确定，但在许多司法管辖区都有必须考虑的监管要求。</p>
+</li>
+<li>
+<p>In those circumstances where internal controls do not adequately address risk and exiting the risk is not a reasonable option, management can complement controls by seeking to transfer the risk to another party such as through insurance. The board of directors should determine the maximum loss exposure the bank is willing and has the financial capacity to assume, and should perform an annual review of the bank's risk and insurance management programme. While the specific insurance or risk transfer needs of a bank should be determined on an individual basis, many jurisdictions have regulatory requirements that must be considered.</p>
+</li>
+<li>
+<p>由于风险转移不能完全替代健全的控制和风险管理计划，银行应当将风险转移工具视为对彻底的内部操作风险控制的补充，而不是替代。建立机制快速确认、识别和纠正不同的操作风险错误 - 或特定法律风险暴露 - 可以大大减少风险敞口。还需要仔细考虑保险等风险缓解工具在多大程度上真正降低风险，将风险转移至另一个业务部门或领域，或产生新的风险(如对手方风险)。</p>
+</li>
+<li>
+<p>Because risk transfer is an imperfect substitute for sound controls and risk management programmes, banks should view risk transfer tools as complementary to, rather than a replacement for, thorough internal operational risk control. Having mechanisms in place to quickly identify, recognise and rectify distinct operational risk errors – or specific legal risk exposure - can greatly reduce exposures. Careful consideration also needs to be given to the extent to which risk mitigation tools such as insurance truly reduce risk, transfer the risk to another business sector or area, or create a new risk (eg counterparty risk).</p>
+</li>
+<li>
+<p>银行应当具有由法人操作风险管理职能(CORF)制定的操作风险管理的统一分类、方法和程序。</p>
+</li>
+<li>
+<p>Banks should have unified classification, methodology, and procedures of operational risk management established by the CORF.</p>
+</li>
+</ol>
+<p>信息科技(Information and communication technology)</p>
+<p>原则10：银行应当根据其操作风险管理框架实施稳健的信息科技
+[25]
+风险管理方案。
+Principle 10: Banks should implement a robust ICT
+[25]
+risk management programme in alignment
+with their operational risk management framework.</p>
+<ol start="58">
+<li>
+<p>有效的信息科技性能和安全性对银行正常开展业务至关重要。适当使用和实施健全的信息科技风险管理有助于控制环境的有效性，对实现银行战略目标的基础。银行的信息科技风险评估应当确保其信息科技完全支撑和促进其运营。信息科技风险管理应当降低银行在直接损失、法律索赔、声誉损害、信息科技扰乱和技术误用方面的操作风险敞口，并与其风险偏好和容忍度声明保持一致。</p>
+</li>
+<li>
+<p>Effective ICT performance and security are paramount for a bank to conduct its business properly. The appropriate use and implementation of sound ICT risk management contributes to the effectiveness of the control environment and is fundamental to the achievement of a bank’s strategic objectives. A bank’s ICT risk assessment should ensure that its ICT fully supports and facilitates its operations. ICT risk management should reduce a bank’s operational risk exposure to direct losses, legal claims, reputational damage, ICT disruption and misuse of technology in alignment with its risk appetite and tolerance statement.</p>
+</li>
+<li>
+<p>信息科技风险管理包括：
+a) 信息科技风险识别和评估
+b) 符合评估风险水平的信息科技风险缓解措施(如网络安全、响应和恢复方案、信息科技变更管理流程、信息科技事件管理流程，包括及时向用户传递相关信息)。
+c) 监控这些缓解措施(包括定期测试)。</p>
+</li>
+<li>
+<p>ICT risk management includes:
+a) ICT risk identification and assessment.
+b) ICT risk mitigation measures consistent with the assessed risk level (eg cybersecurity, response and recovery programmes, ICT change management processes, ICT incident management processes, including relevant information transmission to users on a timely basis).
+c) Monitoring of these mitigation measures (including regular tests).</p>
+</li>
+<li>
+<p>为确保数据和系统的机密性、完整性和可用性，董事会应当定期监督银行信息科技风险管理的有效性，高级管理层应当例行评估银行信息科技风险管理的设计、实施和有效性。这需要定期调整业务、风险管理和信息科技战略，以符合银行的风险偏好和容忍度声明以及隐私和其他适用法律。银行应当持续监测其信息科技，并定期向高级管理层报告信息科技风险、控制和事件。</p>
+</li>
+<li>
+<p>To ensure data and systems’ confidentiality, integrity and availability, the board of directors should regularly oversee the effectiveness of the bank’s ICT risk management and senior management should routinely evaluate the design, implementation and effectiveness of the bank’s ICT risk management. This requires regular alignment of the business, risk management and ICT strategies to be consistent with the bank’s risk appetite and tolerance statement as well as with privacy and other applicable laws. Banks should continuously monitor its ICT and regularly report to senior management on ICT risks, controls and events.</p>
+</li>
+<li>
+<p>信息科技风险管理以及银行制定的补充流程应当：
+a) 根据相关行业标准和最佳实践以及不断演变的威胁(如网络的)和不断发展的或新的技术定期审查完整性；
+b) 作为方案的一部分，定期进行测试，以确定与既定的风险容忍目标之间的差距，并促进改进信息科技风险识别、保护、检测和事件管理；和
+c) 使用可行动情报，不断增强其对信息科技系统、网络和应用的漏洞的态势感知，并促进风险或变更管理方面的有效决策。</p>
+</li>
+<li>
+<p>ICT risk management together with complementing processes set by the banks should:
+a) be reviewed on a regular basis for completeness against relevant industry standards and best practices as well as against evolving threats (eg cyber) and evolving or new technologies;
+b) be regularly tested as part of a programme to identify gaps against stated risk tolerance objectives and facilitate improvement of the ICT risk identification, protection, detection and event management; and
+c) make use of actionable intelligence to continuously enhance their situational awareness of vulnerabilities to ICT systems, networks and applications and facilitate effective decision making in risk or change management.</p>
+</li>
+<li>
+<p>银行应当制定信息科技准备方法应对压力情景，这些压力情景从外部破坏性事件(如需要促进实施大规模远程接入、快速部署实物资产和/或大幅扩展带宽)到支持远程用户连接和客户数据保护。银行应当确保:
+a) 针对与信息科技系统、网络和应用扰乱或受损相关的潜在风险，制定合适的风险缓解策略。银行应当评估这些风险以及这些策略是否符合银行的风险偏好和风险容忍度；
+b) 已为特权用户管理和应用程序开发制定了明确的流程；和
+c) 定期更新信息科技，包括网络安全，以保持适当的安全态势。</p>
+</li>
+<li>
+<p>Banks should develop approaches to ICT readiness for stressed scenarios from disruptive external events, such as the need to facilitate the implementation of wide-scale remote-access, rapid deployment of physical assets and/or significant expansion of bandwidth to support remote user connections and customer data protection. Banks should ensure that:
+a) appropriate risk mitigation strategies are developed for potential risks associated with a disruption or compromise of ICT systems, networks and applications. Banks should evaluate whether the risks, taken together with these strategies, fall within the bank’s risk appetite and risk tolerance;
+b) well defined processes for the management of privileged users and application development are in place; and
+c) regular updates are made to ICT including cyber security in order to maintain an appropriate security posture.</p>
+</li>
+</ol>
+<p>业务连续性规划(Business continuity planning)</p>
+<p>原则11：银行应当制定业务连续性计划，以确保其持续运营的能力，并在严重业务扰乱事件时限制损失。
+[26]
+业务连续性计划应与当银行的操作风险管理框架相关联。
+Principle 11: Banks should have business continuity plans in place to ensure their ability to operate
+on an ongoing basis and limit losses in the event of a severe business disruption.
+[26]
+Business
+continuity plans should be linked to the bank’s operational risk management framework.</p>
+<ol start="63">
+<li>
+<p>银行业务连续性政策
+[27]
+的健全和有效治理要求：
+a) 董事会定期审查和批准。
+b) 高级管理层和业务单元负责人积极参与其实施。
+c) 第一道和第二道防线对其设计的承诺。
+d) 第三道防线定期审查。</p>
+</li>
+<li>
+<p>Sound and effective governance of banks’ business continuity policy
+[27]
+requires:
+a) Regular review and approval by the board of directors.
+b) The strong involvement of the senior management and business units leaders in its implementation.
+c) The commitment of the first and second lines of defence to its design.
+d) Regular review by the third line of defence.</p>
+</li>
+<li>
+<p>银行应当编制有前瞻性的业务连续性计划(BCP)，并结合相关影响评估和恢复程序进行情景分析：
+a) 银行应当将其业务连续性政策建立在对潜在扰乱进行情景分析的基础上，以识别和分类关键业务运营和关键的内部或外部依赖关系。在此过程中，银行应当涵盖其所有业务单元，以及关键供应商和主要第三方(如中央银行、清算所)。
+b) 每种场景都应当进行关于其财务、运营、法律和声誉后果的定量和定性影响评估或业务影响分析(BIA)。
+c) 扰乱情景应当包含启动业务连续性程序的阈值或限制(如最大可容忍中断)。该程序应当解决恢复方面的问题，设定恢复时间目标(RTO)和恢复点目标(RPO)，以及通知管理层、雇员、监管当局、客户、供应商和(在适当时)民事当局的沟通指南。</p>
+</li>
+<li>
+<p>Banks should prepare forward-looking business continuity plans (BCP) with scenario analyses associated with relevant impact assessments and recovery procedures:
+a) A bank should ground its business continuity policy on scenario analyses of potential disruptions that identify and categorise critical business operations and key internal or external dependencies. In doing so, banks should cover all their business units as well as critical providers and major third parties (eg central banks, clearing house).
+b) Each scenario should be subject to a quantitative and qualitative impact assessment or business impact analysis (BIA) with regards to its financial, operational, legal and reputational consequences.
+c) Disruption scenarios should be subject to thresholds or limits (such as maximum tolerable outage) for the activation of a business continuity procedure. The procedure should address resumption aspects, set recovery time objectives (RTO) and recovery point objectives (RPO) as well as communication guidelines for informing management, employees, regulatory authorities, customers, suppliers, and – where appropriate – civil authorities.</p>
+</li>
+<li>
+<p>银行应当定期审查其业务连续性计划和政策，以确保应急策略符合当前业务、风险和威胁。应当根据具体角色定制培训和意识培训方案，以确保员工能够有效执行应急计划。应当定期测试业务连续性程序，以确保能够达到恢复和重续的目标和时间范围。银行应当尽可能参与关键服务提供商的业务连续性测试。正式测试和评审活动的结果应当报告给高级管理层和董事会。</p>
+</li>
+<li>
+<p>A bank should periodically review its business continuity plans and policies to ensure that contingency strategies remain consistent with current operations, risks and threats. Training and awareness programmes should be customised based on specific roles to ensure that staff can effectively execute contingency plans. Business continuity procedures should be tested periodically to ensure that recovery and resumption objectives and timeframes can be met. Where possible, a bank should participate in business continuity testing with key service providers. Results of formal testing and review activities should be reported to senior management and the board of directors.</p>
+</li>
+</ol>
+<p>信息披露的作用(Role of disclosure)</p>
+<p>原则12：银行的公开披露应当使相关方能够评估其操作风险管理方案及其操作风险敞口。
+Principle 12: A bank’s public disclosures should allow stakeholders to assess its approach to
+operational risk management and its operational risk exposure.</p>
+<ol start="66">
+<li>
+<p>银行公开披露相关操作风险管理信息，可以通过市场纪律提高透明度，促进更好的行业实践。披露的数量和类型应当与银行运营的规模、风险状况和复杂程度以及不断演变的行业实践相称。</p>
+</li>
+<li>
+<p>A bank’s public disclosure of relevant operational risk management information can lead to transparency and the development of better industry practice through market discipline. The amount and type of disclosure should be commensurate with the size, risk profile and complexity of a bank’s operations, and evolving industry practice.</p>
+</li>
+<li>
+<p>银行应当向其相关方披露相关操作风险敞口信息(包括重大操作损失事件)，同时不得通过该披露产生操作风险(如未解决控制漏洞的描述)。
+[28]
+[29]
+银行应当披露其操作风险管理框架(ORMF)，使相关方能够确定银行是否有效识别、评估、监测和控制/缓解操作风险。</p>
+</li>
+<li>
+<p>Banks should disclose relevant operational risk exposure information to their stakeholders (including significant operational loss events), while not creating operational risk through this disclosure (eg description of unaddressed control vulnerabilities).
+[28][29]
+A bank should disclose its ORMF in a manner that allows stakeholders to determine whether the bank identifies, assesses, monitors and controls/mitigates operational risk effectively.</p>
+</li>
+<li>
+<p>银行应当制定正式的披露政策，接受高级管理层和董事会的定期独立审查和批准。该政策应当说明银行确定披露何种操作风险的方法，以及披露过程的内部控制。此外，银行应当实施评估其披露和披露政策适当性的流程。</p>
+</li>
+<li>
+<p>Banks should have a formal disclosure policy that is subject to regular and independent review and approval by the senior management and the board of directors. The policy should address the bank’s approach for determining what operational risk disclosures it will make and the internal controls over the disclosure process. In addition, banks should implement a process for assessing the appropriateness of their disclosures and disclosure policy.</p>
+</li>
+</ol>
+<p>监管机构的角色(Role of supervisors)</p>
+<ol start="69">
+<li>
+<p>监管机构应当通过评估银行与操作风险相关的政策、流程和系统，定期评估银行的操作风险管理框架(ORMF)。监管机构应当确保有适当的机制，使他们能够随时了解银行的操作风险动态。</p>
+</li>
+<li>
+<p>Supervisors should regularly assess banks’ ORMF by evaluating banks’ policies, processes and systems related to operational risk. Supervisors should ensure that there are appropriate mechanisms in place allowing them to remain apprised of banks’ operational risk developments.</p>
+</li>
+<li>
+<p>操作风险的监管评估应当包括《操作风险健全管理原则》中描述的所有领域。如果银行是金融集团的一部分，监管者应当确保有适当的流程，以确保整个集团以适当和综合的方式管理操作风险。在评估银行的操作风险管理框架(ORMF)时，可能需要按照既定程序与其他监管机构进行合作和交换信息。
+30
+[30]
+在特定情况下，监管机构可以选择在这些评估过程中使用外部审计师。
+[31]</p>
+</li>
+<li>
+<p>Supervisory evaluations of operational risk should include all areas described in the Principles for the sound management of operational risk. Where banks are part of a financial group, supervisors should ensure that there are processes in place to ensure that operational risk is managed in an appropriate and integrated manner across the group. In assessing banks’ ORMF, cooperation and exchange of information with other supervisors, in accordance with established procedures, may be necessary.
+[30]
+In certain circumstances, supervisors may choose to use external auditors in these assessment processes.
+[31]</p>
+</li>
+<li>
+<p>监管机构应当采取措施，确保银行解决在银行操作风险管理框架(ORMF)的监管审查中发现的缺陷。监管机构应当使用最适合银行特殊情况及其经营环境的工具。为确保监管机构收到有关操作风险的最新信息，监管机构可能希望直接与银行和外部审计师建立报告机制(例如，可能例行向监管机构提供关于操作风险的银行内部管理报告)。</p>
+</li>
+<li>
+<p>Supervisors should take steps to ensure that banks address deficiencies identified through the supervisory review of banks’ ORMF. Supervisors should use the tools most suited to the particular circumstances of banks and their operating environment. To ensure that supervisors receive current information on operational risk, supervisors may wish to establish reporting mechanisms directly with banks and external auditors (eg internal bank management reports on operational risk could be made routinely available to supervisors).</p>
+</li>
+<li>
+<p>监管机构应当通过监测、比较和评估银行最近的改进和未来发展计划，鼓励银行持续的内部发展努力。</p>
+</li>
+<li>
+<p>Supervisors should encourage banks’ ongoing internal development efforts by monitoring, comparing and evaluating banks’ recent improvements and plans for prospective developments.</p>
+</li>
+</ol>
+<hr>
+<p>本公众号
+(ID: bcmplus)
+专注于业务连续性管理知识的传播和普及，关注业务连续性、应急和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时正处于微信政策调整，未能开通留言功能，希望交流和讨论业务连续性管理问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(公众号1月只能发4次文章，也会有一些重要内容直接在知识星球而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/AO629ac7d74THYOEs15DxA_01.jpg" alt=""></p>
+<p>巴塞尔银行监管委员会，《操作风险稳健管理原则》审查报告，2014年10月，www.bis.org/publ/bcbs292.pdf。
+↑
+行为和法律风险(包括与洗钱或恐怖融资有关的风险)仍然是重要的关注事项。在此背景下，金融机构应当继续提高其管理操作风险的能力。
+↑
+巴塞尔银行监管委员会，《巴塞尔协议Ⅲ：后危机改革》终稿，2017年12月，www.bis/org/bcbs/pub1/d424.pdf。
+↑
+“运营韧性”被定义为银行经历扰乱时提供关键运营的能力。这种能力使银行能够识别并保护自己免受威胁和潜在故障的影响，应对和适应破坏性事件，以及从破坏性事件中恢复和吸取教训，从而最大限度地减少经历扰乱时对关键运营交付的影响。在考虑其运营韧性时，银行应当假定会发生扰乱，并考虑其整体风险偏好和扰乱容忍度。在运营韧性的背景下，委员会将“扰乱容忍度”定义为在假定一系列极端但合理可信的情景下，银行愿意接受的任何类型操作风险的扰乱程度。有关更多详细信息，请参阅巴塞尔银行监管委员会，《运营韧性原则》，2021年3月，www.bis.org/BCBS/publ/d516.htm。
+↑
+术语“业务单元”含义广泛，包括所有支持、公司和/或共享服务相关职能，如财务、人力资源，以及运营和技术。除非另有明确说明，否则不包括风险管理和内部审计。
+↑
+除了独立的操作风险管理职能外，第二道防线通常还包括合规职能。
+↑
+独立鉴证包括验证和确认：操作风险管理框架(ORMF)的验证通常由银行内部和/或外部审计定期进行，也可能涉及来自外部的其他合适的、有资格的独立第三方。验证活动测试根据董事会批准的政策测试总体操作风险管理框架(ORMF)的有效性，也测试验证过程，以确保其独立性，并以符合既定银行政策的方式实施。确认保证银行使用的量化系统足够稳健，并保证输入、假设、方法、过程和输出的完整性。确认对于运行良好的操作风险管理框架(ORMF)至关重要。
+↑
+8
+参见巴塞尔银行监管委员会，《网络韧性：实践范围》，2018年12月，
+https://www.bis.org/bcbs/publ/d454.pdf
+。
+↑
+在复杂的银行结构中，“相关业务单元”可能包括信息系统部门等支持职能。
+↑
+操作风险状况描述业务单元的操作风险敞口和控制环境评估，并考虑从预期估计到严重损失可能产生的潜在影响的范围。风险状况通常表示向管理层和董事会报告的操作风险敞口，以支持其决策和履行监督责任。
+↑
+本文件指由董事会和高级管理层组成的管理结构。委员会意识到，不同国家在董事会和高级管理层职能方面的立法和监管框架存在重大差异。在一些国家，董事会的主要职能(如果不是排他性的话)是监督执行机构(高级管理人员、一般管理人员)，以确保后者完成任务。因此，在某些情况下，它被称为监事会。这意味着董事会没有执行职能。在其他国家，董事会的职权范围更广，因为它制定了银行管理的总体框架。由于这些差异，本文使用“董事会”和“高级管理层”这两个术语不是为了确定法律结构，而是为了标记银行内部的两个决策职能。
+↑
+另见巴塞尔银行监管委员会，《薪酬风险和绩效调整方法范围报告》，2011年5月；金融稳定论坛，《合理薪酬实践原则》，2009年4月；金融稳定委员会，《金融稳定委员会合理薪酬实践原则—实施标准》，2009年9月；以及金融稳定委员会的工具箱《加强治理框架以降低不当行为风险》，2018年4月。
+↑
+操作风险术语分类不一致可能会增加未能识别和分类风险、或未能分配风险评估、监测、控制和缓解责任的可能性。对于网络风险的特殊情况，应以2018年11月出版的金融稳定委员会网络词典为起始点。
+↑
+另见巴塞尔银行监管委员会，《加强共公司治理的原则》，2010年10月。
+↑
+见委员会2006年《资本计量和资本标准的国际趋同：修订框架-综合版本》第718段(xci)。
+↑
+参见委员会2015年《公司治理指引》，该指引使用金融稳定委员会2013年的《有效风险偏好框架原则》中风险偏好的定义：银行为实现其战略目标和业务计划而事先决定、在其风险能力范围内愿意承担的风险的总水平和类型。“风险容忍度”指银行愿意容忍并预先设定的风险偏好变量。
+↑
+有关委员会组成的其他要求，请参见巴塞尔银行监管委员会2015年《银行业公司治理原则》。
+↑
+该列表并不全面，也没有反映出可能分析的复杂程度的完全多样性。应将其视为参考(而不是限定)。
+↑
+这些控制和程序应当与风险和脆弱性的识别保持一致，并作为银行运营韧性方案的一部分与之同时进行，如委员会《运营韧性原则》(2021年3月)原则2所述。
+↑
+产品或服务的生命周期包括从开发、持续变化、分配到结束的各个阶段。事实上，当新产品、活动、流程或系统从导入期过渡到代表收入或关键业务运营的重要来源时，风险水平可能会升级。
+↑
+报告应当符合委员会《有效风险数据汇总和风险报告的原则》(https://www.bis.org/publ/bcbs239.pdf)。
+↑
+委员会在 1998 年 9 月的《银行组织内部控制系统框架》文件中详细地讨论了内部控制。
+↑
+例如，假设一项低风险、低保证金的交易活动产生了高回报，这可能会让人怀疑这种回报是否是由于违反内部控制而实现的。
+↑
+这些风险政策和风险管理活动应当与关键运营管理和运营韧性依赖关系管理保持一致，并与之一起进行。巴塞尔银行监管委员会，《运营韧性原则》，2021年3月。
+↑
+“信息科技”是指信息技术和通信系统、单个硬件和软件组件、数据，以及运行环境的基础物理和逻辑设计。
+↑
+委员会文件《业务连续性的高级原则》(2006年8月)更详细地讨论了健全的连续性原则。
+↑
+业务连续性计划应当与《运营韧性原则》中规定的关键运营的业务连续性规划和测试保持一致，并与之一起进行。巴塞尔银行监管委员会，《运营韧性原则》，2021年3月。
+↑
+国际活跃银行必须遵守巴塞尔协议Ⅲ第三支柱操作风险披露要求。
+↑
+披露重大操作损失事件的建议不包括披露机密和专有信息，包括有关法定准备金的信息。
+↑
+请参阅委员会文件《跨境实施新协定的高级原则》(2003年8月)和《高级测量方法背景下母国监管合作和分配机制原则》（2007年11月）。
+↑
+如需进一步讨论，请参阅委员会文件《银行监管者与银行外部审计师之间的关系》，2002年1月。
+↑</p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/AO629ac7d74THYOEs15DxA">原文链接</a></em></p>

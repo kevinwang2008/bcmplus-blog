@@ -1,0 +1,958 @@
+<p>写在前面
+：在全球供应链加速重构的当下，供应链连续性管理（SCCM）应成为众多企业生存和发展的必选动作。作为ISO 22301系列标准的重要组成部分，ISO 22318将ISO 22301和ISO 22313体现的业务连续性原则扩展到供应链管理领域，指导组织制定策略，以更好地为管理供应链连续性做好准备。之前我和一些专家志愿者团队翻译过ISO 22301系列标准的相关资料（见下面译文及链接），这次，我带来了《ISO 22318:2021 – 供应链连续性管理指导方针》的中文简译，供专业人员参考，也请各位专家多提意见。
+《ISO 22301:2019中文简译》
+（2020年11月）
+《ISO 22313:2020中文简译（上）》
+（2020年11月）
+《ISO 22313:2020中文简译（下）》
+（2020年11月）
+《ISO 22361:2022中文简译（上）》
+（2024年4月）
+《ISO 22361:2022中文简译（下）》
+（2024年4月）</p>
+<p>王曙 2024.05.27</p>
+<hr>
+<p>ISO 22318 安全与韧性 – 业务连续性管理体系 – 供应链连续性管理指导方针
+ISO 22318 Security and resilience – Business continuity management systems – Guidelines for supply chain continuity management</p>
+<p>前言（Foreword）</p>
+<p>ISO（国际标准化组织）是国家标准机构（ISO成员机构）组成的全球联盟。编制国际标准的工作通常通过ISO技术委员会进行。每个对已成立技术委员会的主题感兴趣的成员机构都有权派代表参加该委员会。与ISO有联系的国际组织，包括政府和非政府的，也参与了这项工作。ISO与国际电工委员会（IEC）在电工标准化的所有问题上密切合作。
+ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO technical committees. Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee. International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.</p>
+<p>ISO/IEC导则第1部分描述了用于编制本文件和进一步维护的程序。特别地，宜注意不同类型的ISO文件所需的不同批准标准。本文件根据ISO/IEC导则第2部分的编辑规则起草（见www.iso.org/directives）。
+The procedures used to develop this document and those intended for its further maintenance are described in the ISO/IEC Directives, Part 1. In particular, the different approval criteria needed for the different types of ISO documents should be noted. This document was drafted in accordance with the editorial rules of the ISO/IEC Directives, Part 2 (see www.iso.org/directives).</p>
+<p>请注意，本文件的某些要素可能是专利权的主题。ISO不应承担识别任何或所有此类专利权的责任。在文件编制期间识别的任何专利权的详细信息将在引言和/或收到的ISO专利声明清单中（见www.iso.org/patents）。
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights. Details of any patent rights identified during the development of the document will be in the Introduction and/or on the ISO list of patent declarations received (see www.iso.org/patents).</p>
+<p>本文件中使用的任何商品名称都是为了方便用户而提供的信息，不构成背书。
+Any trade name used in this document is information given for the convenience of users and does not constitute an endorsement.</p>
+<p>关于标准自愿性的解释、与合格评定相关的ISO特定术语和表达的含义，以及关于ISO遵守世界贸易组织（WTO）技术贸易壁垒（TBT）原则的信息，请参阅www.iso.org/iso/foreword.html。
+For an explanation of the voluntary nature of standards, the meaning of ISO specific terms and expressions related to conformity assessment, as well as information about ISO's adherence to the World Trade Organization (WTO) principles in the Technical Barriers to Trade (TBT), see www.iso.
+org/iso/foreword.html
+.</p>
+<p>本文件由技术委员会ISO/TC 292（安全和韧性）编制。
+This document was prepared by Technical Committee ISO/TC 292, Security and resilience.</p>
+<p>第二版取消并取代了第一版（ISO/TS 22318:2015），进行了技术修订。主要变化如下：</p>
+<ul>
+<li>文件更新以反映ISO 22301:2019的变更；</li>
+<li>明确了供应链内的上游和下游关系；</li>
+<li>标题更新；</li>
+<li>删除了“关键点”，因为其概念包含在条款中；</li>
+<li>插入了新的图表;</li>
+<li>插入了附件。
+This second edition cancels and replaces the first edition (ISO/ TS 22318:2015), which has been technically revised. The main changes are as follows:</li>
+<li>the document has been updated to reflect changes made to ISO 22301:2019;</li>
+<li>the upstream and downstream relationships within the supply chain have been clarified;</li>
+<li>the title has been updated;</li>
+<li>“key points” have been deleted as their concepts are included in the clauses;</li>
+<li>new diagrams have been inserted;</li>
+<li>annexes have been inserted.</li>
+</ul>
+<p>对本文件的任何反馈或问题都宜直接提交给用户的国家标准机构。这些机构的完整清单可在www.iso.org/members.html上找到。
+Any feedback or questions on this document should be directed to the user's national standards body. A complete listing of these bodies can be found at www.iso.org/members.html.</p>
+<p>引言（Introduction）</p>
+<p>本文件的重点是在组织的供应链中建立适当的连续性水平。它假设寻求建立供应链连续性管理（SCCM）的组织了解业务连续性的原则。它旨在对那些负责供应链连续性的人员提供组织生产和交付其产品和服务所需的资源有用。当组织是供应商时，本文件中给出的指导方针也具有相关性，因为组织可以准备好满足其客户的连续性期望，并考虑依赖单个客户时可能出现的脆弱性。
+The focus of this documenta is on establishing appropriate levels of continuity within an organization's supply chain. It assumes that the organization seeking to establish supply chain continuity management (SCCM) is aware of the principles of business continuity. It is intended to be useful to those with responsibility for the continuity of the supply chain for resources required by the organization to produce and deliver its products and services. The guidelines given in this document also have relevance when the organization is the supplier as the organization can then prepare to meet the continuity expectations of its customers as well as consider vulnerabilities which can arise when dependent on a single customer.</p>
+<p>本文件考虑了如果供应商没有足够的连续性，对组织的连续性的影响。
+This document considers the continuity implications to the organization if its suppliers do not have adequate continuity in place.</p>
+<p>组织依靠资源以商定的质量和成本按时交付。这些包括，例如物料、劳动力、信息和数据、工作场所、设施和相关公用事业、设备、消耗品、信息通信技术（ICT）系统、运输、物流、财务以及支持本组织业务活动所需的其他服务等。这被称为“上游”。
+Organizations rely on resources to be delivered on time and at an agreed quality and cost. These include, for example, materials, labour, information and data, workplace, facilities and associated utilities, equipment, consumables, information communication technology (ICT) systems, transportation, logistics, finance and other services required to support the business activities of the organization. This is referred to as “upstream”.</p>
+<p>组织还依靠能够向其客户（无论他们是供应链的下一个环节还是最终客户）交付其产品和服务。产品和服务交付（如运输、物流、实施服务、机械安装服务）由组织或由组织负责的第三方执行。这被称为“下游”。
+Organizations also rely on being able to deliver their products and services to their customers, whether they are the next link in the supply chain or the end customer. Product and service delivery (e.g. transportation, logistics, implementation services, machinery installation services) is performed by the organization or by a third party under the organization's responsibility. This is referred to as “downstream”.</p>
+<p>组织需要认识到由于供应链扰断而无法在可接受的时间范围内恢复活动的潜在影响。供应商未能按商定的质量和成本按时交付资源，可能会引发业务扰断。组织需要考虑和管理相互冲突的目标，例如通过减少周期时间或缓冲库存来降低供应链成本，以及管理单一来源和准时供应方法引起的供应链连续性风险。组织需要在风险和连续性措施之间取得可接受的平衡。
+An organization needs to recognize the potential impact of not resuming activities within an acceptable time frame due to supply chain disruption. Failure by a supplier to deliver resources on time at an agreed quality and cost can trigger a business disruption. The organization needs to take account of and manage conflicting objectives such as reducing supply chain cost by reducing cycle times or buffer stock and managing the supply chain continuity risk arising from a single source and just-in-time supply approaches. The organization needs to achieve an acceptable balance between risks and continuity measures.</p>
+<p>供应商的重要性和所需的恢复时间在业务连续性管理体系（BCMS）的业务影响分析（BIA）（见 ISO/TS 22317）阶段确定。优先供应商是那些支持优先活动的供应商，如果他们未能交付资源从而影响组织交付自己的产品或服务的能力，则被确定为有最大的影响。
+The criticality of suppliers and the required recovery time is determined during the business impact analysis (BIA) (see
+ISO/ TS 22317
+) phase of the business continuity management system (BCMS). Priority suppliers are those who support prioritized activities and are identified as having the greatest impact if they fail to deliver resources, thereby impacting the organization's ability to deliver its own products or services.</p>
+<p>“供应商层级”定义了供应商与组织的关系。签约供应商（1级）与组织有直接关系，而间接供应商（2级及以上）向签约供应商提供资源，因此更难控制。宜鼓励供应商在其自己的供应链中实施SCCM，这将提高整个供应链的连续性。
+The “supplier tier” defines the supplier's relationship with the organization. A contracted supplier (Tier 1) has a direct relationship with the organization, while an indirect supplier (Tier 2 and beyond) provides resources to a contracted supplier and, as a result, is more difficult to control. Suppliers should be encouraged to implement SCCM within their own supply chain, which will improve the continuity of the whole supply chain.</p>
+<p>本文件明确排除：
+— 客户管理问题，如新客户或流失客户所带来的保留和影响；
+— 组织内的供应链活动；BCMS范围内的内部供应商宜被确定为依赖关系或相互依赖关系，其继续交付的能力宜成为组织BCMS的一部分。
+This document expressly excludes:
+customer management issues, such as retention and impact as a result of new or lost clients;
+supply chain activities within the organization; internal suppliers within the scope of the BCMS should be identified as dependencies or interdependencies and their ability to continue their deliveries should be part of the organization's BCMS.</p>
+<p>遵循本文件的指导将有益于供应链。供应商还可以选择符合ISO 28000供应链安全管理系列标准的要求。符合这些标准将使组织对其供应链的韧性更有信心，并可能降低在购买资源时扰断的风险。
+Following the guidance of this document will be beneficial to the supply chain. Suppliers can also choose to conform to the requirements of the ISO 28000 family of standards for security management within the supply chain. Conforming to these standards will give organizations further confidence in the resilience of their supply chain and potentially reduce the risk of disruption when buying resources.</p>
+<p>1 范围（Scope）</p>
+<p>本文件为理解和扩展ISO 22301和ISO 22313体现的业务连续性原则到管理供应商关系的方法提供了指导。它使组织能够制定和记录策略，以便更好地为管理供应链连续性做好准备。
+This document gives guidance on methods for understanding and extending the principles of business continuity embodied in ISO 22301 and ISO 22313 to the management of supplier relationships. It enables an organization to develop and document the strategy to be better prepared to manage supply chain continuity.</p>
+<p>本文件是通用的，适用于所有组织。它适用于产品、服务和资源的供应商，包括上游和下游。
+This document is generic and applicable to all organizations. It is applicable to suppliers of products, services and resources, both upstream and downstream.</p>
+<p>供应链连续性管理（SCCM）专门考虑依靠资源供应的连续性以及持续交付其产品和服务的能力的组织所面临的问题。SCCM的目标是保护组织的业务活动免受供应链扰断的影响。
+Supply chain continuity management (SCCM) specifically considers the issues faced by an organization which relies on the continuity of supply of resources as well as the ability to continue delivery of its products and services. The objective of SCCM is to protect the organization's business activities from supply chain disruption.</p>
+<p>2 规范性引用（Normative references）</p>
+<p>下列文件中的内容通过文中的规范性引用而构成本文件必不可少的条款。其中，注日期的引用文件，仅该日期对应的版本适用于本文件；不注日期的引用文件，其最新版本（包括所有的修订）适用于本文件。
+ISO 22300，
+安全与韧性 – 术语
+ISO 22301，
+安全与韧性 – 业务连续性管理体系 – 要求
+ISO 22313，
+安全与韧性 – 业务连续性管理体系 – ISO22301使用指南
+The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.
+ISO 22300,
+Security and resilience — Vocabulary
+ISO 22301,
+Security and resilience — Business continuity management systems — Requirements
+ISO 22313,
+Security and resilience — Business continuity management systems — Guidance on the use of ISO 22301</p>
+<p>3 术语和定义（Terms and definitions）</p>
+<p>ISO 22300，ISO 22301和ISO 22313界定的以及下列术语和定义适用于本文件。
+For the purposes of this document, the terms and definitions given in ISO 22300, ISO 22301 and ISO 22313 apply.</p>
+<p>ISO和IEC在以下地址维护用于标准化的术语数据库：
+— ISO在线浏览平台：https://www.iso.org/obp
+— IEC电子百科：http://www.electropedia.org/
+ISO and IEC maintain terminology databases for use in standardization at the following addresses:
+ISO Online browsing platform: available at https://www.iso.org/obp
+IEC Electropedia: available at https://www.electropedia.org/</p>
+<p>4 供应链连续性管理的价值（The value of supply chain continuity management）</p>
+<p>4.1 供应链（The supply chain）</p>
+<p>4.1.1 总则（General）</p>
+<p>供应链的长度和复杂性都在增加。有效的SCCM要求组织确保其供应链中的每个环节都有有效的连续性措施。
+Supply chains are growing in length and complexity. Effective SCCM requires the organization to ensure that each link in its supply chain has effective continuity measures in place.</p>
+<p>供应链超出了组织的直接控制，许多因素决定了控制程度，包括供应商的相对规模和杠杆作用、地理位置以及数量和类型。
+Supply chains extend beyond the organization's direct control, with many factors determining the degree of control including relative size and leverage, geography and the number and type of suppliers.</p>
+<p>除了供应链的直接扰断外，组织还宜考虑全球或本地事件以及市场动态对供求和需求的影响，这些影响可能导致：
+— 供不应求，可能造成资源紧张；
+— 供应普遍过剩，可能导致对组织提供的产品和服务的需求崩溃。
+Besides direct disruptions in the supply chain, the organization should also consider impacts on supply and demand based on global or local events as well as market dynamics which can result in:
+excessive demand over supply which can cause resource constraints;
+widespread excess of supply which can cause a collapse in demand for the products and services that the organization provides.</p>
+<p>由于以下原因，供应链得以扩展：
+— 不断发展的技术提供了成本相对较低的全球通路；
+— 具有成本效益的国际运输；
+— 不断变化的国际贸易壁垒和资本自由流动；
+— 世界各地受过教育且成本相对较低的技术工人的可用性。
+Supply chains have extended due to:
+global access at relatively low cost provided by evolving technology;
+cost-effective international transport;
+changing international trade barriers and the free movement of capital;
+availability of educated and relatively low-cost skilled workers across the world.</p>
+<p>由于专注于核心增值活动，组织变得更加相互依赖，并且趋势是外包活动，例如物流、分销、薪资管理、餐饮、清洁、安保和信息技术。
+Organizations have become more interdependent due to the focus on core value-adding activities and the trend is to outsource activities, such as logistics, distribution, payroll, catering, cleaning, security and IT.</p>
+<p>4.1.2 供应链模型（Supply chain model）</p>
+<p>供应链的广义观点包括供应商向组织提供资源（上游），以及将组织的产品和服务交付给其客户（下游）。它适用于所有类型和规模的组织。图1说明了一个简单的供应链模型，还显示了在本文件范围内组织的关系和直接影响。</p>
+<p><img src="/bcmplus-blog/images/ox15Xh9fr1RTonNRQfZX_Q_01.jpg" alt=""></p>
+<p><img src="/bcmplus-blog/images/ox15Xh9fr1RTonNRQfZX_Q_02.jpg" alt=""></p>
+<p>图1 – 供应链模型
+注1：资源包括组织活动所需的物料、劳动力、信息和数据、工作场所、设施及相关公用事业、设备、消耗品、ICT系统、运输、物流、财务和其他服务。
+注2：产品和服务交付包括由组织或由组织负责的第三方执行的运输、物流、实施、机械安装服务等。
+A broad view of a supply chain includes the provision of resources by suppliers to the organization (upstream), and the delivery of products and services of the organization to its customers (downstream). It applies to organizations of all types and sizes.
+Figure 1
+illustrates a simple supply chain model and also shows the relationships and direct influence of the organization, which is within the scope of this document.</p>
+<p><img src="/bcmplus-blog/images/ox15Xh9fr1RTonNRQfZX_Q_03.jpg" alt=""></p>
+<p>Figure 1 — Supply chain model
+NOTE 1 Resources include materials, labour, information and data, workplace, facilities and associated utilities, equipment, consumables, ICT systems, transportation, logistics, finance and other services required for the activities of the organization.
+NOTE 2 Products and services delivery includes transportation, logistics, implementation, machinery installation services, etc. performed by the organization or by a third party under the organization's responsibility.</p>
+<p>最终用户可能不是产品和服务的直接客户。在某些情况下，组织需要考虑交付后的使用以及提供其产品和服务的后果，除了直接客户之外，还会影响品牌和声誉。组织可以考虑签订合同以控制后续使用，或实施最终用户协议以限制进一步的下游转移。
+It is possible that the end user is not the immediate customer of the products and services. In some circumstances, the organization needs to consider that post-delivery use and consequences of the provision of their products and services, beyond the immediate customer, can impact brand and reputation. The organization can consider contracts to control subsequent use or implement end-user agreements to limit further downstream transfer.</p>
+<p>在供应链中，资源的提供依赖于不受组织直接管理或控制的其他组织。
+A supply chain exists where the provision of resources depends on other organizations that are not under the direct management or control of the organization.</p>
+<p>组织可以拥有不同类型的关系:
+— 上游关系:
+— 长期的提供经常性资源的，如原材料、工作空间、专业服务等；
+— 一次性的用于不经常的资源采购，如特殊项目；
+— 行业协会，如特许经营、供应商协会等；
+— 下游关系:
+— B2B（批发商和零售商）；
+B2C。
+There are different types of relationships that an organization can have:
+upstream relationships:
+long term for recurring resources such as raw material, workspace, professional services;
+one time for infrequent resource acquisition such as special projects;
+professional association such as franchises, supplier associations;
+downstream relationships:
+business-to-business (wholesalers and retailers);
+business-to-customer.</p>
+<p>所有这些关系的基础是满足相关方期望的承诺。这些承诺可以是明确的（如合同或采购订单），或隐含的（如合理预期的内容）。
+The basis for all these relationships is commitments to meet interested parties' expectations. These commitments can either be explicit (e.g. contract or purchase order) or implicit (e.g. what can be reasonably expected).</p>
+<p>供应链中的组织宜考虑到，对基本服务和受到严格监管的供应商的灵活性程度和相关控制可能受到限制，例如国家电力公司、电信、互联网提供商。
+注：以上关系类型仅提供示例，并不完整。
+Organizations in the supply chain should take into account that the degree of flexibility and the related control on essential services and heavily regulated suppliers can be constrained, e.g. national electric companies, telecommunications, internet providers.
+NOTE The above relationship types provide examples only and are not intended to be complete.</p>
+<p>4.2 供应链连续性管理（Supply chain continuity management）</p>
+<p>4.2.1 总则（General）</p>
+<p>SCCM是一个管理过程，用于识别供应链扰断对组织的潜在影响，并提供管理这种影响的方法。供应链连续性对所有组织都很重要，使他们能够交付产品和服务。供应链扰断可能影响甚至阻止组织交付这些产品和服务，从而对其收入、市场份额和声誉产生负面影响。有效的SCCM使组织能够避免或最小化扰断的后果。
+SCCM is a management process that identifies potential impacts to an organization from disruption to its supply chain and provides an approach to manage this. Continuity of the supply chain is important to all organizations, enabling them to deliver products and services. Disruption to the supply chain can impact or even prevent the organization from delivering those products and services with consequent negative effects to its revenue, market share and reputation. Effective SCCM enables the organization to avoid or minimize the consequences of disruption.</p>
+<p>SCCM与供应链管理的目标之间可能存在冲突，例如降低成本避免过多库存和优化交货时间的需要。组织宜认识到，有效管理资源供应将导致加强对供应链的控制，提高效率，并有助于避免严重的扰断。
+There can be conflict between SCCM and the objectives of supply chain management such as the need to reduce costs, avoid excessive inventory and optimization of lead times. Organizations should recognize that effectively managing the supply of resources will lead to increased control of the supply chain, improved efficiency and help to avoid severe disruptions.</p>
+<p>SCCM旨在确定能够对组织产生重大影响的供应商，并确保组织已实施策略和解决方案来解决这些问题。与供应商签订的正式协议宜确保制定适当的业务连续性规定，以满足组织的要求。对一些供应商来说，这是不可能的，如大型供应商坚持使用自己的标准合同条款，在这种情况下，组织宜制定策略和解决方案。
+SCCM seeks to identify those suppliers who can significantly impact the organization and ensure that the organization has implemented strategies and solutions to address these. Formal agreements with suppliers should ensure appropriate business continuity provisions are made that satisfy the organization's requirements. For some suppliers, this will not be possible, e.g. where a large supplier insists on using its own standard contract terms, and in these cases the organization should develop strategies and solutions.</p>
+<p>供应链超出了组织的直接控制。组织可能容易受到远离直接合同关系的供应商（即第2级、第3级等）扰断的影响，因此SCCM旨在向其直接控制之外的组织推广连续性条款。
+Supply chains extend beyond the organization's direct control. The organization can be vulnerable to disruptions in suppliers who are remote from the direct contractual relationship (i.e. in Tiers 2, 3, etc.) and therefore SCCM seeks to promote continuity provisions to those organizations beyond its direct control.</p>
+<p>因此，有效的SCCM需要嵌入到组织自己的供应链管理中；需要理解连续性要求；制定和实施策略和解决方案；与供应商商定的额外合同义务并在必要时公布；检查这些义务是否得到履行，然后确保所有这些都得到监控并接要求更新。
+Effective SCCM, therefore, needs to be embedded in the organization's own supply chain management; continuity requirements need to be understood; strategies and solutions defined and implemented; additional contractual obligations agreed with suppliers and promulgated further where necessary; checks made that these obligations are met and then ensure that this is all monitored and updated as required.</p>
+<p>4.2.2 嵌入SCCM（Embedding SCCM）</p>
+<p>为了使SCCM取得成功，它必须有效地嵌入到组织的现有过程中。供应商的合同存在于采购、运营、审查、续签或终止的生命周期内。签订新合同或续签现有合同为组织提供了一个机会，通过合同和/或服务水平的变化影响未来的供应商行为。相反，长期合同承诺和高昂的供应商转换成本可能会改变组织与其供应商之间的杠杆作用，从而阻碍未来供应商行为的改变。供应链分析（见5.4）将有助于确定高优先级关系以及实施SCCM的要求和机会。见图 2。</p>
+<p><img src="/bcmplus-blog/images/ox15Xh9fr1RTonNRQfZX_Q_04.jpg" alt=""></p>
+<p>图2 – 嵌入SCCM
+For SCCM to be successful it must be effectively embedded within the organization's existing processes. Suppliers' contracts exist within a life cycle of acquisition, operation, review and renewal or discontinuation. Entry into a new contract or renewing an existing contract presents an opportunity for the organization to influence future supplier behaviour through the contract and/or service level changes. Conversely, long-term contractual commitments and high supplier-switching costs can shift the leverage between the organization and its suppliers, creating resistance to changing future suppliers' behaviour. The analysis of the supply chain (see 5.4) will help to identify high-priority relationships and the requirements and opportunities for implementing SCCM. See Figure 2.</p>
+<p><img src="/bcmplus-blog/images/ox15Xh9fr1RTonNRQfZX_Q_05.jpg" alt=""></p>
+<p>Figure 2 — Embedding SCCM</p>
+<p>要嵌入SCCM，以下是必不可少的：
+— 先决条件：
+— 获得最高管理者的承诺，以确保SCCM成为BCMS不可或缺的一部分（见 5.2）；
+— 在整个供应链中传播业务连续性原则，以提高意识和改进效率（见 5.3）；
+— 分析在 BIA 过程中获得的连续性要求，并评估组织面临的风险（见 5.4）；
+— SCCM执行：
+— 确定SCCM的具体策略和解决方案（见 6.2）；
+— 评估优先供应商的连续性合规性，并确保其合同反映商定的连续性措施（见 6.3）；
+— 确立符合组织要求的合同义务（见 6.4）；
+— 评审和更新与每个供应商商定的连续性要求（见 6.5）。
+To embed SCCM, the following are essential:
+prerequisites:
+obtain top management commitment to ensure SCCM is an integral part of the BCMS (see 5.2);
+promulgate business continuity principles throughout the supply chain to promote awareness and improve effectiveness (see 5.3);
+analyse continuity requirements, as obtained during the BIA process, and assess risks to the organization (see 5.4);
+SCCM execution:
+identify SCCM-specific strategies and solutions (see 6.2);
+assess priority suppliers' continuity complicance and ensure that
+their contracts reflect agreed continuity measures (see
+6.3
+);
+establish contractual obligations that meet the organization's requirements (see
+6.4
+);
+review and update the continuity requirements agreed with each supplier (see 6.5).</p>
+<p>4.2.3 收益和机会（Benefits and opportunities）</p>
+<p>有效SCCM对各方的潜在收益包括：
+— 更好地理解供应链以及潜在扰断的影响；
+— 改善供应商关系管理，以减少供应链扰断的影响；
+— 通过与供应商有效合作，改善对供应链扰断的响应；
+— 识别和减轻供应链风险；
+— 改善策划、尽职调查、保证以及与供应商的工作关系；
+— 相对于没有有效SCCM的竞争对手的竞争优势。
+Potential benefits for all parties of effective SCCM include:
+better understanding of the supply chain and the impact of potential disruptions;
+improved supplier relationship management to reduce the impact of supply chain disruption;
+improved response to supply chain disruptions resulting from effective collaboration with suppliers;
+identification and mitigation of supply chain risks;
+improved planning, due diligence, assurance and working relationships with suppliers;
+competitive advantage over competitors who do not have effective SCCM.</p>
+<p>SCCM提供了一些机会，包括：
+— 改进向管理层提供信息的能力，以做出有效决策，分配必要的人员和资源保持SCCM；
+— 通过SCCM所有权在整合组织有效整合SCCM职责（见 4.4）；
+— 了解供应商的连续性能力及其对组织的要求;
+— 建立绩效标准；
+— 参与以加强对1级以上供应商的理解和策略。
+SCCM presents several opportunities, including:
+improved ability to provide management with information to make effective decisions to allocate necessary personnel and resources to maintain SCCM;
+effective integration of SCCM responsibilities across the organization through the SCCM owner (see
+4.4
+);
+understanding the suppliers' continuity capabilities and their requirements of the organization;
+establishment of performance metrics;
+engagement to enhance understanding and strategy relating to suppliers beyond Tier 1.</p>
+<p>4.3 风险所有权（Risk ownership）</p>
+<p>组织拥有并保留作为供应链扰断后果不能一直向客户交付产品和服务的风险。它有责任通过准备好应对供应链扰断来减轻这种风险。客户认为是组织而非其供应商对未能交付产品和服务负责。例如，如果组织的供应链出现问题，其品牌和声誉就有受损的风险。
+The organization owns and retains the risk that it is not always able to deliver its products and services to its customers as a consequence of a disruption in its supply chain. It is responsible for mitigating this risk by being prepared to respond to a supply chain disruption. Customers hold the organization, not its suppliers, responsible for failure to deliver products and services. For example, an organization's brand and reputation are at risk of damage if there is a problem within its supply chain.</p>
+<p>4.4 SCCM所有权（SCCM ownership）</p>
+<p>组织宜确定负责供应商关系管理以及确保和监测供应链连续性保证的人员。
+The organization should identify those with responsibility for supplier relationship management and for securing and monitoring supply chain continuity assurance.</p>
+<p>SCCM所有权宜委托给负责签约和采购业务的人员。该职责宜与组织内更广泛的业务连续性安排密切关联。
+SCCM ownership should be delegated to personnel responsible for contracting and purchasing operations. The responsibility should be closely linked to the wider arrangements for business continuity within the organization.</p>
+<p>SCCM责任人负责：
+— 指派代表管理SCCM任务；
+— 确保将SCCM要求包含在合同、采购订单和其他具有约束力的协议中；
+— 确保供应商遵守其协议条款；
+— 确保供应商合规的证据是适当的，并且任何商定的补救措施都在商定的期限内完成。
+The SCCM owner is responsible for:
+appointing representatives to manage SCCM tasks;
+ensuring SCCM requirements are included in contracts, purchase orders and other binding agreements;
+ensuring suppliers adhere to the terms of their agreements;
+ensuring that evidence of supplier compliance is appropriate and that any agreed remediation is completed within agreed timescales.</p>
+<ol start="5">
+<li>SCCM的BCMS先决条件（BCMS prerequisites for SCCM）</li>
+</ol>
+<p>5.1 总则（General）</p>
+<p>图2（嵌入SCCM）说明了SCCM的BCMS先决条件，包括：
+— 获得最高管理者的承诺（见 5.2）；
+— 在整个供应链中传播组织的业务连续性原则（见 5.3）；
+— 分析连续性要求并评估风险（见 5.4）。
+The BCMS prerequisites for SCCM are illustrated in
+Figure 2
+(embedding SCCM). These are:
+obtain top management commitment (see
+5.2
+);
+promulgate the organization's business continuity principles throughout the supply chain (see
+5.3
+);
+analyse continuity requirements and assess risk (see
+5.4
+).</p>
+<p>5.2 获得最高管理者的承诺（Obtain top management commitment）</p>
+<p>5.2.1 问责制和职责（Accountability and responsibility）</p>
+<p>最高管理层宜分配SCCM管理的问责制和职责，包括：
+— 确保SCCM符合业务连续性方针；
+— 在整个组织内提高对SCCM的认识（见 5.3）；
+— 确保所实施过程的有效性（见第 7 条）；
+— 向最高管理者报告SCCM的绩效，以供审查并作为改进的基础（见7.3和7.4）。</p>
+<p>Top management should allocate accountability and responsibility for the management of SCCM including:
+ensuring SCCM conforms to the business continuity policy;
+promoting awareness of SCCM throughout the organization (see 5.3);
+ensuring the effectiveness of the processes implemented (see Clause 7);
+reporting on the performance of SCCM to top management for review and as the basis for improvement (see 7.3 and 7.4).</p>
+<p>5.2.2 管理SCCM的资源（Resources for managing SCCM）</p>
+<p>最高管理者宜确定并确保管理SCCM所需的资源（如人员、设施、资金）可用，以：
+— 实现其目标；
+— 满足组织不断变化的要求；
+— 在内部和外部就SCCM事务进行有效沟通；
+— 为SCCM持续运作和持续改进提供条件。
+Top management should determine and ensure availability of the resources (e.g. people, facilities, funding) needed to manage SCCM that will:
+achieve its objectives;
+meet the changing requirements of the organization;
+enable effective communication on SCCM matters, internally and externally;
+provide for the ongoing operation and continual improvement of SCCM.</p>
+<p>5.2.3 SCCM框架（SCCM framework）</p>
+<p>最高管理者宜建立一个框架来管理供应链扰断的影响，并在扰断发生时支持供应链的连续性。该框架包括：
+— 范围、目的和目标；
+— 需求分析、风险评估、策略和解决方案（见 5.4 和 6.2）；
+— 演练和测试项目集；
+— 与供应商签订的具体合同条款和适当的服务水平协议 （SLA）；
+— 供应商通知和事件响应程序。
+Top management should establish a framework to manage the impact of supply chain disruption and support the continuity of the supply chain when a disruption occurs. This includes:
+scope, goals and objectives;
+requirements analysis, risk assessment, strategies and solutions (see 5.4 and 6.2);
+exercise and test programme;
+specific contract clauses and appropriate service level agreements (SLAs) with suppliers;
+supplier notification and incident response procedures.</p>
+<p>5.2.4 绩效评价方案（Performance evaluation programme）</p>
+<p>最高管理者宜制定绩效评价方案（见7.3），指导组织建立和保持策略，通过以下方式建设更具韧性的供应链：
+— 将SCCM融入组织所有的适用过程中；
+— 与供应商合作；
+— 确保合同义务得到履行并受到监督；
+— 确保对新产品和服务以及新供应商的供应链连续性风险进行全面评估。
+Top management should establish a performance evaluation programme (see 7.3) guiding the organization to establish and maintain a strategy to build a more resilient supply chain by:
+embedding SCCM in all applicable processes of the organization;
+engaging with suppliers;
+ensuring contractual obligations have been met and are being monitored;
+ensuring complete assessment of supply chain continuity risks for new products and services and new suppliers.</p>
+<p>绩效评价宜：
+— 指定要评价的内容；
+— 确定评价宜以何种方式、何时以及由谁进行；
+— 设定绩效指标，包括定性和定量量度；
+— 如有需要，促进后续的纠正措施分析。
+The performance evaluation should:
+specify what is to be evaluated;
+identify how, when and by whom the evaluation should be performed;
+set performance metrics, including qualitative and quantitative measurements;
+facilitate subsequent corrective action analysis, if needed.</p>
+<p>5.3 在整个供应链传播业务连续性原则（Promulgate business continuity principles throughout the supply chain）</p>
+<p>组织宜在整个供应链中传播其业务连续性原则，提高意识和改进效率。可以通过以下方式实现：
+— 在供应商合同中纳入遵守连续性要求；
+— 根据扰断的影响确定所需的供应商合规水平；
+— 制定监测遵守情况的方法；
+— 要求组织的供应商也在其自己的供应链中传播业务连续性原则。
+The organization should promulgate its business continuity principles throughout its supply chain to promote awareness and improve effectiveness. This can be achieved by:
+including compliance with continuity requirements in suppliers' contracts;
+establishing required supplier compliance levels based on their disruptive impact;
+developing methodologies to monitor compliance;
+requiring that the organization's suppliers also promulgate business continuity principles throughout their own supply chain.</p>
+<p>5.4 分析连续性要求并评估风险（Analyse continuity requirements and assess risk）</p>
+<p>5.4.1 总则（General）</p>
+<p>组织宜确定供应商为满足组织的连续性要求所需的业务连续性。
+The organization should determine the business continuity required from suppliers to meet the organization's continuity requirements.</p>
+<p>组织通常有许多供应商，但并不总是需要对所有这些供应商进行详细分析。组织宜仅重点分析那些可能扰断组织优先活动的供应商。对于选定的供应商，需要结构化的方法。BIA宜提供一份支持优先活动的供应商名单；但是，它可能是不完整或最新的。此过程旨在确保名单是准确的。
+Organizations typically have many suppliers, but it is not always necessary to perform a detailed analysis on all of these. The organization should focus the analysis only on those suppliers which can disrupt the organization's prioritized activities. For selected suppliers, a structured approach is needed. The BIA should provide a list of the suppliers supporting the prioritized activities; however, it is possible that it is not complete or up to date. This process is intended to ensure that the list is accurate.</p>
+<p>5.4.2 连续性要求（Continuity requirements）</p>
+<p>在SCCM中，组织宜：
+a. 整理相关的可用文件，包括BIA、风险评估和现有供应商名单；
+b. 识别支持组织优先活动的供应商，这些成为优先供应商；这可以通过从采购部门获得供应商名单和以下方式实现：</p>
+<ol>
+<li>使用来自BIA的外部依赖关系信息；</li>
+<li>选择提供关键资源的供应商（如公用事业公司、电信提供商）；
+c. 对每个优先供应商，评估：</li>
+<li>提供给组织（上游）的资源或提供的交付服务对于组织产品和服务（下游）的重要性；</li>
+<li>它们是否是单一来源；</li>
+<li>他们已经评估的自己的供应链风险（二级及以上）的程度；</li>
+<li>他们向组织供应的持续能力扰断的风险；</li>
+<li>是否具有有效的业务连续性；</li>
+<li>供应商在其客户名单上分配给组织的优先级；</li>
+<li>他们的恢复时间目标（RTO）是否与他们支持的活动或过程的组织目标一致；
+d. 明确供应商不满足组织要求时要采取的措施；
+e. 确定优先供应商的现有策略和解决方案（见6.2）；
+f. 评估供应商在哪些地方具有共同的依赖关系，这会增加组织的风险；
+示例：如果组织有数个相同产品的供应商，但它们都依靠该产品某个组件的一个供应商（二级及以上），或者每个供应商都位于可能受到单一事件影响的同一地理区域（例如，影响整个地区的洪水，隔离措施引起的行动限制）。
+g. 生成目前没有令人满意的策略或解决方案的优先供应商名单。
+Within SCCM, the organization should:
+a) collate relevant available documentation including the BIA, risk assessments and list of existing suppliers;
+b)
+identify the suppliers supporting the organization's prioritized activities, which become the priority suppliers; this can be achieved by obtaining a list of suppliers from procurement and by:</li>
+<li>using external dependency information from the BIA;</li>
+<li>selecting suppliers	who	provide	critical	resources	(e.g.	utility companies, telecommunication providers);
+c) for each priority supplier, assess:</li>
+<li>the criticality of the resources provided to the organization (upstream) or the delivery service provided regarding the organization's products and services (downstream);</li>
+<li>whether they are a single source;</li>
+<li>the extent to which they have already assessed their own supply chain risks (Tier 2 and beyond);</li>
+<li>the risk of disruption to their continued ability to supply to the organization;</li>
+<li>whether effective business continuity is in place;</li>
+<li>the priority assigned to the organization by the supplier on its list of customers;</li>
+<li>whether their recovery time objective (RTO) is aligned with that of the organization for the activity or process they support;
+d) define the actions to be taken in the event a supplier does not meet the organization's requirements;
+e)
+identify existing strategies and solutions for priority suppliers (see
+6.2
+);
+f)
+assess where suppliers share common dependencies which increases the risk to the organization;
+EXAMPLE If the organization has several suppliers of the same product but they all rely on one supplier of a component of that product (Tier 2 and beyond) or where each supplier is located in the same geographical area which can be impacted by a single incident (e.g. a flood affecting a whole region, movement restrictions arising from quarantine measures).
+g) produce a list of priority suppliers for which there is no satisfactory current strategy or solution.</li>
+</ol>
+<p>然后，这些优先供应商作为策略和解决方案的输入（见6.2），以确定组织希望对每个供应商采取哪些方法以最好地减轻组织的风险，包括在适当的情况下对供应商的合同义务。
+These priority suppliers are then used as input to strategies and solutions (see
+6.2
+) to determine which approaches the organization wishes to take with each of them that best mitigates the risk to the organization, including contractual obligations on the supplier where appropriate.</p>
+<p>5.4.3 风险评估（Risk assessment）</p>
+<p>在选择供应商和确定合同义务时宜考虑风险。
+Risks should be considered when selecting suppliers and establishing contractual obligations.</p>
+<p>SCCM在评估供应商时需要考虑适用的风险。组织的风险评估宜考虑对组织的风险和对供应商的风险。
+SCCM needs to consider applicable risks when evaluating a supplier. The organization's risk assessment should consider both the risks to the organization as well as the risks to the supplier.</p>
+<p>组织可能面临的风险包括以下方面的损失或减少：
+— 及时供应；
+— 质量；
+— 灵活性。
+The possible risks to the organization include loss or reduction of:
+timely supply;
+quality;
+flexibility.</p>
+<p>组织评估确定的供应商可能面临的风险包括：
+— 供应商产能份额；
+— 供应商偿付能力；
+— 供应商已知的供应商风险；
+— 自然灾害和地缘政治风险。
+The possible risks to the supplier as defined by the organization's assessment include:
+share of supplier capacity;
+supplier solvency;
+supplier's known supplier risks;
+natural disasters and geopolitical risks.</p>
+<p>如果优先供应商不认为组织是重要的，这可能会产生重大风险。组织宜确定供应商在扰断发生时分配的优先级。
+If a priority supplier does not consider the organization to be important, this can create a significant risk. The organization should determine the priority assigned by the supplier in case of a disruption.</p>
+<p>组织或其供应商（上游和下游）的扰断可能对供应链的其他部分造成影响，并可能放大对组织的影响。在风险评估期间宜考虑到这一点。组织和下游供应商可以发现能提供互惠互利策略和解决方案的机会。
+A disruption to the organization or its suppliers (upstream and downstream) can cause an impact to other parts of the supply chain and can amplify the impact to the organization. This should be considered during the risk assessment. The organization and downstream suppliers can identify opportunities for strategies and solutions that provide mutual benefit.</p>
+<ol start="6">
+<li>有效的SCCM（Effective SCCM）</li>
+</ol>
+<p>6.1 总则（General）</p>
+<p>第5条描述了SCCM的BCMS先决条件。图2（嵌入SCCM）说明了实现有效SCCM的实施过程，包括：
+— 确定策略和解决方案（见 6.2）；
+— 评估供应商的连续性的合规性（见 6.3）；
+— 确立合同义务（见 6.4）；
+— 审查和更新（见 6.5）。
+Clause 5
+describes the BCMS prerequisites for SCCM. The implementation of processes to achieve an effective SCCM is illustrated in
+Figure 2
+(embedding SCCM). These are:
+identify strategies and solutions (see
+6.2
+);
+assess suppliers' continuity compliance (see 6.3);
+establish contractual obligations (see
+6.4
+);
+review and update (see 6.5).</p>
+<p>这将使SCCM能够设定并满足相关的相关方的期望。
+This will enable SCCM to set and meet the expectations of relevant interested parties.</p>
+<p>6.2 确定策略和解决方案（Identify strategies and solutions）</p>
+<p>6.2.1 总则（General）</p>
+<p>为了选择合适的策略和解决方案，组织宜量化扰断成本，如产出损失、客户赔偿成本以及品牌和声誉损害等方面。要实施的SCCM措施的水平宜与扰断的成本相称。
+To select the appropriate strategies and solutions, the organization should quantify the cost of disruption, e.g. in terms of lost output, cost of customer compensation and damage to brand and reputation. The level of SCCM measures to be implemented should be commensurate with the cost of disruption.</p>
+<p>组织宜使用连续性要求（见5.4.2）和风险评估（见5.4.3）为每个识别的供应商确定适当的SCCM策略和解决方案。
+The organization should use the continuity requirements (see
+5.4.2
+) and risk assessment (see
+5.4.3
+) to identify appropriate SCCM strategies and solutions for each identified supplier.</p>
+<p>确定最合适的策略和解决方案宜是一项共同努力，反映组织内代表的不同观点。它可以包括：
+— SCCM负责人（见 4.4）；
+— 最高管理者；
+— 采购或合同管理部门；
+— 业务连续性团队；
+— 依赖已确定的优先供应商的活动负责人。
+Determining the most appropriate strategies and solutions should be a joint effort reflecting different viewpoints from representatives within the organization. It can include:
+SCCM owner (see
+4.4
+);
+top management;
+procurement or contract management;
+business continuity team;
+activity owners dependent on the identified priority suppliers.</p>
+<p>也可以纳入优先供应商的代表。
+It can also include representatives of priority suppliers.</p>
+<p>宜记录剩余风险并报告给最高管理者。
+Residual risks should be documented and reported to top management.</p>
+<p>解决方案并非相互排斥，并且降低单个供应商产生的风险可能需要实施不止一种方法。实现最佳解决方案可能需要时间。在有机会实施首选解决方案之前，可能需要与一些供应商采取临时方法，特别是在现有合同有相当长的运行时间并且谈判任何条件变更的机会有限的情况下。
+Solutions are not mutually exclusive and mitigating the risk arising from an individual supplier can require more than one approach to be implemented. Achieving an optimum solution can take time. It can be necessary to adopt interim approaches with some suppliers until the opportunity arises to implement the preferred solution, particularly where the existing contract has a considerable time to run and there is limited opportunity to negotiate any change of conditions.</p>
+<p>有不同的选择来实现最适当的解决方案，可能需要几种组合起来。6.2.2到6.2.5中描述了一些选项。
+There are different options to implement the most adequate solutions, which can require several in combination. Some options are described in
+6.2.2
+to
+6.2.5
+.</p>
+<p>6.2.2 选项1 – 降低依赖关系和影响（Option 1 — Reduce dependency and impact）</p>
+<p>组织可以通过以下行动减少对供应商的依赖：
+— 始终确保两个或更多供应源。组织宜检查这些供应商是否不受相同的中断风险的影响，如因为它们位于同一地区，或者它们都使用一个共同的供应商（见图1中的2级和更高级）。
+— 增加组织内部或与中间商的库存水平，以延长扰断影响到组织及其客户之前的时间。
+— 实施务实的应对措施以管理组织不能影响的优先供应商产生的风险，例如提供备用发电机以顶替电力供应损失，或开发多通道通信系统，以减少对单一通道或供应商的依赖。
+— 购买保险。组织可以使用保险来弥补自己所受扰断的影响。同样，组织可以要求供应商购买保险以保护组织。保险单只能保护组织的财务影响；因此，它宜与本文件中给出的其他解决方案结合使用。
+The organization can reduce dependence on (a) supplier(s) by the following actions:
+Ensuring two or more sources of supply at all times. The organization should check that these are not subject to the same risk of disruption, e.g. because they are located in the same region or both use a common supplier themselves (see Tier 2 and beyond in Figure 1).
+Increasing stock levels within the organization or with intermediaries to lengthen the time before a disruption affects the organization and its customers.
+Implementing pragmatic responses to manage risk arising from priority suppliers which the organization is unable to influence, e.g. providing a standby generator to cover for loss of power supplies or developing a multichannel communications systems to reduce dependence on a single channel or supplier.
+Having an insurance policy. The organization can use insurance to indemnify itself against disruption. Similarly, the organization can require that the supplier carries insurance to protect the organization. An insurance policy will only protect the organization's financial impact; therefore, it should be used in conjunction with other solutions given in this document.</p>
+<p>组织还可以决定采用商业解决方案来解决供应商故障问题。这通常由对供应商的商业和财务生存能力的担忧引发，因此，组织需要一个监测优先供应商的商业与财务健康状况的过程。一旦触发，组织可以决定：
+— 通过直接雇用或签约供应商的劳动力来接管供应商的活动，如此考虑，是因为这是可行的应对：
+— 劳动力必须愿意转移，并且可能需要激励才会这样做；
+— 可以与供应商协商提供现有办公场所和IT，或者制定计划迅速将团队快速转移到新的办公场所和系统；
+— 全部或部分收购供应商的业务或其竞争对手，以保持产品和服务的优先供应。
+The organization can also decide to adopt a commercial solution to address the issue of supplier failure. This will usually be triggered by concerns about the commercial and financial viability of the supplier and, consequently, the organization requires a process that monitors the commercial and financial health of priority suppliers. When triggered, the organization can then decide to:
+take over the supplier's activity by employing or contracting the workforce of the supplier directly, taking into consideration that, for this to be a viable response:
+the workforce must be willing to transfer and can need incentivizing to do so;
+provision of existing premises and IT can be agreed with the supplier, or a plan developed for the rapid transfer of the teams to new premises and systems;
+buy the supplier's business or its competitor, either in whole or in part, to maintain the priority supply of products and services.</p>
+<p>6.2.3 选项2 – 依靠组织的业务连续性策略和解决方案（Option 2 — Rely on the organization's business continuity strategies and solutions）</p>
+<p>组织可以决定依靠自己的业务连续性战略和解决方案。在这种情况下，必须考虑以下因素：
+— 在扰断时获得替代供应商。在这种情况下，组织需要确保替代供应商拥有直接替代正常供应商的资源、产品和服务。如果没有，那么需要制定一个计划来在短时间内适应这种变化。
+— 与候补的替代供应商签订合同，例如，通过支付定金以便有在需要时交付的能力。有些专业供应商将以备用合同提供替代办公环境和IT，而另一些供应商可以在短时间内提供发电机等。
+— 更新组织的业务连续性计划，以确保这些策略和解决方案得到实施。
+The organization can decide to rely on its own business continuity strategies and solutions. In this case, it is essential that the following are considered:
+Obtaining an alternative supplier at the time of the disruption. In this case, the organization needs to be sure that the alternative supplier has resources, products and services that are a direct substitute for the normal supplier. If not, then a plan is needed to adapt to this change at short notice.
+Developing a contract with alternative suppliers on standby, e.g. by paying a retainer to have the ability to deliver when required. There are specialist suppliers who will provide alternative office environments and IT on a standby contract, and others that can supply generators at short notice, etc.
+Updating the organization's business continuity plans to ensure those strategies and solutions are implemented.</p>
+<p>为确保替代供应商能够在需要时交付，组织宜做到以下：
+— 验证替代供应商具有在短时间内满足组织需要的能力。一旦扰断发生，组织可以考虑实施紧急采购过程（包括批准预算、授权级别、尽职调查等）。
+— 考虑替代供应商是否有可能受到与正常供应商相同扰断的影响。这可能是因为它们位于同一区域，或者两者都使用共同的供应商。
+To ensure that alternative suppliers can deliver when required, the organization should do the following:
+Verify that alternative suppliers have the capability to meet the needs of the organization at short notice. The organization can consider implementing an emergency procurement process (including approval of budget, authorization levels, due diligence, etc.) in case a disruption occurs.
+Consider whether it is possible that the alternative suppliers will be affected by the same disruption as the normal supplier. This can be because they are located in the same area, or both use a common supplier themselves.</p>
+<p>宜定期演练任何依靠组织业务连续性解决方案应对供应商扰断的情况，以确认其有效和最新。可以组织联合演习，以证明在组织扰断的情况下，供应商和组织都有有效的策略和解决方案。
+Any reliance on the organization's business continuity solutions to respond to supplier disruption should be regularly exercised to confirm that it is effective and current. Joint exercises can be organized to prove that in case of disruption to the organization, the supplier and the organization both have effective strategies and solutions in place.</p>
+<p>6.2.4 选项3 – 依靠供应商的业务连续性策略和解决方案（Option 3 — Rely on the supplier's business continuity strategies and solutions）</p>
+<p>组织可以决定依靠供应商自己的业务连续性策略和解决方案。在这种情况下，必须验证这些符合组织的需要（见附件A）。如下几个步骤：
+a) 如果供应商已获得ISO 22301认证，组织仍需要确保供应商能够特别提供组织所需的产品和服务。组织可以通过以下方式获得一定程度的宽慰：
+1)
+检查认证范围是否涵盖与组织相关的产品、服务和资源；
+2) 与供应商验证其业务连续性响应是否满足组织在资源、产品和服务交付方面的合同要求。
+注：供应商的业务连续性旨在保持其自身业务。这并不一定包括对组织供应的情况。
+b) 如果供应商未获得ISO 22301认证，则宜进行更详细的检查。宜要求供应商解释在扰断后他们将如何继续满足组织的合同要求。只要遇到依靠供应商的业务连续性，组织宜验证其自身的要求是否得到满足。组织可以选择在此阶段协助供应商。例如，供应商可能会减少产能，或提供类似但不相同的产品，或延长供货时间。如果这被认为可接受，那么组织宜将这些约束纳入其业务连续性策略和解决方案（选项2）。
+c) 无论供应商是否宣称符合ISO 22301，组织宜寻求以下保证：</p>
+<ol>
+<li>即使面临扰断，供应宜保持在商定的水平（见6.4.2）；</li>
+<li>有权审核供应商的业务连续性能力，以验证供应商的声称。
+The organization can decide to rely on the supplier's own business continuity strategies and solutions. In this case, it is essential to verify that these meet the needs of the organization (see
+Annex A
+). There are several steps to this, as follows:
+a) Where a supplier is ISO 22301 certified, the organization still needs to assure itself that the supplier can specifically provide the products and services the organization needs. The organization can gain some level of comfort by:</li>
+<li></li>
+</ol>
+<p>checking that the scope of certification covers the products, services and resources that are relevant to the organization;
+2) verifying with the supplier that their business continuity response will meet the contractual requirements of the organization in terms of delivery of resources, products and services.
+NOTE The supplier's business continuity will be designed to maintain its own business. It is not necessarily the case that this includes the supply to the organization.
+b)
+Where a supplier is not ISO 22301 certified, then a more detailed examination should be undertaken. The supplier should be asked to explain how they will continue to meet the organization's contractual requirements after a disruption. Whenever reliance is placed upon the supplier's business continuity, the organization should verify that their own requirements would be met. The organization can choose to assist the supplier in this phase. For instance, it is possible that the supplier will be able to supply at reduced capacity, or with a similar but not an identical product, or with extended time frames. If this is deemed acceptable, then the organization should incorporate these constraints into its business continuity strategies and solutions (option 2).
+c) Regardless of whether the supplier declares conformity to
+ISO 22301
+, the organization should seek assurance that:</p>
+<ol>
+<li>supply should be continued at an agreed level even in the face of disruption (see
+6.4.2
+);</li>
+<li></li>
+</ol>
+<p>it has a right to audit the supplier's business continuity capabilities to verify the supplier's claims.</p>
+<p>经供应商同意，组织可以与供应商的其他客户接触，以验证供应商的业务连续性能力。组织可以考虑选择参加供应商演练或进行联合演练。
+With the consent of the supplier, the organization can engage with other customers of the supplier to validate the supplier's business continuity capability. The organization can consider the option of participating in supplier's exercises or conducting joint exercises.</p>
+<p>组织宜考虑到，即使供应商有经过验证的业务连续性计划，供应商仍有可能出故障，例如因破产。
+The organization should consider that, even if a supplier has a validated business continuity plan, it is possible that the supplier still fails, e.g. through insolvency.</p>
+<p>6.2.5 选项4 – 什么也不做，通过知情决策保留风险（Option 4 — Do nothing and retain the risk by informed decision）</p>
+<p>如果组织选择对优先供应商什么也不做，这宜是由最高管理者批准的知情、记录在案的决定。
+If the organization chooses to do nothing for priority suppliers, this should be an informed, documented decision approved by top management.</p>
+<p>6.3 评估供应商连续性的合规性（Assess suppliers' continuity compliance）</p>
+<p>组织宜评价对每个优先供应商所选择的策略和解决方案
+The organization should evaluate the selected strategies and solutions for each priority supplier.</p>
+<p>SCCM宜确保每个优先供应商都理解既定的连续性要求（见附件A）。供应商宜提供以下证据：
+— 他们满足组织连续性要求的能力，特别是他们根据合同规定的RTO和恢复点目标（RPO）交付的能力；
+— 监测和报告其自己连续性措施的有效性，包括其自己的供应商。
+SCCM should ensure the established continuity requirements are understood by each priority supplier (see
+Annex A
+). Suppliers should provide evidence of:
+their ability to meet the organization's continuity requirements, specifically their ability to deliver according to the RTOs and recovery point objectives (RPOs) as contracted;
+monitoring and reporting the effectiveness of their own continuity measures, including their own suppliers.</p>
+<p>与ISO 22301一致或获得认证有助于此证据。
+Alignment with or certification to
+ISO 22301
+can contribute to this evidence.</p>
+<p>组织的SCCM代表宜确保所有潜在供应商理解既定的连续性要求（见5.4.2）。
+The organization's SCCM representative should ensure the established continuity requirements (see
+5.4.2
+) are understood by all prospective suppliers.</p>
+<p>组织的SCCM代表宜审查供应商在投标期间提供的信息，以了解他们满足组织连续性要求的能力。宜保留所提供的信息，以便在定期审查中进行比较。
+The organization's SCCM representative should review the information provided by the supplier during tendering to understand their ability to meet the organization's continuity requirements. The information provided should be retained for comparison in periodic reviews.</p>
+<p>6.4 确立合同义务（Establish contractual obligations）</p>
+<p>6.4.1 总则（General）</p>
+<p>组织通过合同协议管理其与供应商的关系。同样，供应商管理他们与其供应商的关系。协议宜包括商定的连续性要求（如合同条款、绩效指标、SLA等），以确保供应商具备适当的连续性能力。
+Organizations govern their relationship with their suppliers through contractual agreements. Similarly, suppliers manage their relationship with their suppliers. Agreements should include the agreed continuity requirements (e.g. contractual clauses, performance indicators, SLAs) to ensure suppliers have appropriate continuity capabilities in place.</p>
+<p>6.4.2 在合同中确立连续性要求的原则（Principles to establish the continuity requirements in the contract）</p>
+<p>正式协议宜包括6.3中定义的组织的连续性要求：
+在扰断期间交付符合商定标准的产品和服务；
+供应商在扰断期间分配给组织的优先级的定义；
+在SCCM过程（组织和供应商）的各自负责人之间建立联系；
+管理扰断之前、期间和之后的连续性响应，包括在联合（或相关）演练中；
+定期进行连续性评审和审核。
+Formal agreements should include the organization's continuity requirements as defined in
+6.3
+:
+delivery of products and services to meet agreed criteria during a disruption;
+definition of the priority that would be assigned to the organization by the supplier during a disruption;
+establish links between the respective owners of SCCM processes (organization's and supplier's);
+manage the continuity response before, during and after a disruption, including in joint (or related) exercises;
+periodically conduct continuity reviews and audits.</p>
+<p>组织可以制定适用于新合同的符合连续性要求的标准条款。
+The organization can develop standard clauses to comply with the continuity requirements to be applied to new contracts.</p>
+<p>组织的连续性要求宜反映在新合同中，并成为现有合同重新谈判的一部分。
+The organization's continuity requirements should be reflected in new contracts and form part of contract renegotiation for existing contracts.</p>
+<p>组织连续性要求的变化宜尽快反映在合同中。
+Changes to the organization's continuity requirements should be reflected in contracts as soon as possible.</p>
+<p>6.4.3 连续性要求（Continuity requirements）</p>
+<p>正式协议宜描述连续性要求。
+Formal agreements should describe continuity requirements.</p>
+<p>宜考虑将以下条款纳入SCCM协议：
+— 框架：
+— BCMS和SCCM所有权、任何相关认证的方法和证据（如ISO 22301）的详细信息；
+— 依赖关系：
+— 供应商对组织的重要性；
+— 供应商在扰断情况下分配给组织的优先级；
+— 策略和解决方案：
+— 确保供应商的相关优先活动、相应的RTO和关键解决方案（包括供应商提供的互助解决方案）准备到位以支持组织的连续性要求；
+-- 组织需求意外增加或减少时的要求；
+-- 确保供应商及其优先供应商的要求到位；
+— 供应商与组织之间的沟通过程：
+— 指定的沟通渠道；
+— 升级触发因素和措施，以通知可能危及业务连续性要求的市场变化和关键事件；
+— 调用通知、计划审查、演练和文件修订；
+— 扰断管理（见附件B）：
+— 扰断之前：事件通知的升级触发因素和措施；
+— 扰断期间：危机管理合作，包括沟通；
+— 扰断之后：经验教训、纠正措施，以及必要时对合同的修改；
+— 培训和演练的验证和审查要求（见附件C），例如：
+— 参与联合演练；
+— 审查演练评估报告；
+— 观察供应商的测试；
+— 第三方审核的结果；
+— 管理评审和审核业务连续性要求的规定。
+The following clauses should be considered for inclusion in SCCM agreements:
+framework:
+details of the BCMS and SCCM ownership, approach and evidence of any relevant certifications, e.g.
+ISO 22301
+;
+dependencies:
+supplier's criticality to the organization;
+priority assigned to the organization by the supplier in case of disruption;
+strategies and solutions:
+assurance that the supplier's relevant prioritized activities, corresponding RTOs and key solutions in place (including mutual aid solutions provided by the supplier) support the organization's continuity requirements;
+requirements in case of unforeseen increase or decrease of the organization's needs;
+assurance that requirements of the supplier with its own priority suppliers are in place;
+communication process between the supplier and the organization:
+designated communication channels;
+escalation triggers and measures for notification of market changes and key events that can jeopardize the business continuity requirements;
+notification of invocations, plan reviews, exercises and document revisions;
+disruption management (see
+Annex B
+):
+before a disruption: escalation triggers and measures for notification of an incident;
+during a disruption: crisis management cooperation, including communications;
+after a disruption: lessons learned, corrective actions and, if needed, changes to the contract;
+requirements for validation and review of training and exercises (see
+Annex C
+), for example:
+participation in joint exercising;
+review of exercise evaluation reports;
+observation of the supplier's tests;
+results of third-party audits;
+provisions for management review and audit of business continuity requirements.</p>
+<p>宜考虑不可抗力和潜在终止条款的影响。不可抗力条款在不可抗力事件期间暂停供应商的义务，并可能与连续性要求冲突。组织宜确保这些条款得到明确规定。
+The effects of force majeure and potential termination clauses should be considered. Force majeure clauses suspend the supplier's obligations for the duration of the force majeure event and potentially conflict with the continuity requirements. The organization should ensure that these clauses are clearly specified.</p>
+<p>合同要求宜为人所知，并成为供应商选择过程的一部分。
+The contractual requirements should be made known and be part of the supplier selection process.</p>
+<p>6.5 审查和更新（Review and update）</p>
+<p>组织宜定期审查和更新与各供应商商定的连续性要求。组织宜确认其连续性要求正在得到满足，并且仍然适合其需要。
+The organization should periodically review and update the continuity requirements agreed with each supplier. The organization should confirm that its continuity requirements are being met and are still appropriate to its needs.</p>
+<p>组织应审查以下方面的可用证据：
+— 任何扰断的经验和结果；
+— 任何演练的结果，包括联合演练和测试；
+— 有关业务连续性的审核报告；
+— 遵守商定的绩效标准；
+— 支持供应商按约定进行业务连续性的文件；
+— 补救措施的状态。
+The organization should review available evidence of:
+experience and outcomes of any disruption;
+outcomes of any exercises including joint exercises and tests;
+audit reports concerning business continuity;
+compliance with agreed performance measurements;
+documentation supporting the supplier's ongoing business continuity as agreed;
+status of remediation actions.</p>
+<p>这既适用于组织，也适用于其供应商。
+This applies both to the organization and to its suppliers.</p>
+<p>组织宜审查其连续性要求，包括这些要求在未来一段时间内如何变化，并宜根据需要与供应商就变化达成一致。
+The organization should review its continuity requirements including how these can change in the forthcoming period and should agree on changes with the supplier as required.</p>
+<p>组织宜定期审查供应商的风险状况，特别是：
+— 供应商和组织之间的相互依赖关系；
+— 供应商的偿付能力;
+— 已知的、不断发展的和新出现的供应商风险。
+The organization should periodically review the supplier's risk profile, in particular:
+the interdependencies between the supplier and the organization;
+the supplier's solvency;
+known, evolving and emerging supplier's risks.</p>
+<p>根据这些定期审查的结果，组织宜采取适当的行动来保持和改进其SCCM（见7.2和7.4）。
+Based on the outcome of these periodic reviews, the organization should take the appropriate actions to maintain and improve its SCCM (see
+7.2
+and
+7.4
+).</p>
+<ol start="7">
+<li>保持、绩效和持续改进（Maintenance, performance and continual improvement）</li>
+</ol>
+<p>7.1 总则（General）</p>
+<p>组织宜保持、评价绩效并持续改进其SCCM，以确保有效性，并确定成功之处和需要纠正或改进的领域。宜考虑所有先决条件（见第5条）和确保有效SCCM的过程（见第6条）。这包括审查内部所需并与供应商达成一致的SCCM能力标准。SCCM的适用性、充分性和有效性方面的持续改进宜由BCMS的目的和目标、绩效评价、扰断分析和管理评审来推动。
+The organization should maintain, evaluate the performance and continually improve its SCCM, to ensure effectiveness, and to identify successes and areas requiring correction or improvement. All the prerequisites (see Clause 5) and the processes to ensure effective SCCM (see Clause 6) should be considered. This includes a review of the criteria for SCCM capability required internally and agreed with suppliers. Continual improvement, in terms of the suitability, adequacy and effectiveness of SCCM should be driven by the goals and objectives, performance evaluation, analysis of disruptions and management review of the BCMS.</p>
+<p>7.2 保持（Maintenance）</p>
+<p>保持宜包括：
+— 确保既定先决条件的持续相关（见第 5 条）；
+— 确保定期更新策略和解决方案，以确保其适用（见 6.2）；
+— 纳入审查过程中发现的任何改进（见 6.5）；
+— 实施持续审查过程，以监测供应链的变化，以及（无论是由组织还是由被审查的供应商发起的）改进的实施情况；
+— 实施一个过程，确保与优先供应商签订的所有合同都根据适用的连续性要求进行更新；
+— 回应任何审核问题。
+Maintenance should include:
+ensuring the continuing relevance of the established prerequisites (see Clause 5);
+ensuring strategies and solutions are regularly updated to ensure that they are fit for purpose (see 6.2);
+incorporating any enhancements found in the review process (see 6.5);
+implementing a continuous review process to monitor supply chain changes and implementation of improvements whether initiated by the organization or the supplier being reviewed;
+implementing a process to ensure all contracts with priority suppliers are updated with the applicable continuity requirements;
+responding to any audit issue.</p>
+<p>7.3 绩效评价（Performance evaluation）</p>
+<p>组织宜定期评价其SCCM，以实现持续改进（见7.4），并建立在未达到绩效标准时调用的升级过程。
+The organization should periodically evaluate its SCCM to enable continual improvement (see
+7.4
+) and establish an escalation process to be invoked when the performance criteria are not met.</p>
+<p>绩效评价宜包括：
+— 保持绩效数据；
+— 定期更新分析（见 5.4）；
+— 使用关键绩效指标（KPI）/标准进行持续监测；
+— 设计和使用调查问卷/清单/自评价或组织用于评估绩效的任何其他方法（如适用）；
+— 评价组织的采购过程，以确保包括连续性要求；
+— 评估标准的SCCM合同和进度表条款，以确保它们继续满足组织的需要；
+— 确保按计划时间间隔进行审核；
+— 监测不符合和SCCM绩效和有效性不足的其它证据。
+Performance evaluation should include:
+maintaining the performance data;
+regularly refreshing the analysis (see
+5.4
+);
+ongoing monitoring using key performance indicators (KPIs)/metrics;
+designing and using questionnaires/checklists/self-evaluation or any other methods used to assess performance by the organization, where relevant;
+evaluating the organization's procurement process to ensure continuity requirements are included;
+evaluating standard SCCM contract and schedule clauses to ensure they continue to meet the organization's needs;
+ensuring audits take place at planned intervals;
+monitoring nonconformity and other evidence of deficient SCCM performance and effectiveness.</p>
+<p>该过程的收益是：
+— 通过更好地理解风险和控制，对供应链的韧性更有信心；
+— 评价组织和每个供应商满足组织连续性要求的程度；
+— 可能影响供应链的变化的早期迹象；
+— 确定组织和供应商需要解决的能力差距；
+— 组织和供应商根据 KPI/标准进行监测和绩效测量。
+The benefits of the process are:
+greater confidence in the resilience of the supply chain resulting from a better understanding of the risks and controls;
+evaluation of the extent to which the organization and each supplier meets the organization's continuity requirements;
+an early indication of changes likely to affect the supply chain;
+identification of gaps in capability which the organization and the supplier needs to address;
+organization and supplier monitoring and performance measurement against KPIs/metrics.</p>
+<p>7.4 持续改进（Continual improvement）</p>
+<p>持续改进是SCCM的关键组成部分。这可以通过定期审查、演练和应用经验教训来实现。持续改进宜提高SCCM的有效性和效率。
+Continual improvement is a key component of SCCM. This can be achieved through regular reviews, exercising and applying lessons learned. Continual improvement should enhance the effectiveness and efficiency of SCCM.</p>
+<p>持续改进宜包括：
+— 确定要解决的问题和现状（改进空间）；
+— 确定当前的过程和控制；
+— 决定要实施哪些变更（改进）；
+— 根据变化采取行动，并验证它们得到成功实施。
+Continual improvement should include:
+identifying what to address and the present condition (room for improvement);
+identifying the present process and controls;
+determining what changes to implement (improvement);
+acting upon the changes and verifying they were successfully implemented.</p>
+<p>组织可以通过建立SCCM的先决条件（见第5条）和有效的SCCM（见第6条）来实现改进。组织还宜考虑SCCM的改进机会，例如，来自以下方面的变化：
+— 组织环境及其对BCMS的影响；
+— 组织的内部结构（如获得额外的地点或员工）；
+— 生产或交付手段（如技术变革、基础设施改善）；
+— 不断发展的方法或可用的新恢复方法（如新的备用设施或网络技术）；
+— 技术和实践，包括新工具和技巧。
+The organization can achieve improvement by establishing the prerequisites for SCCM (see
+Clause 5
+) as well as effective SCCM (see
+Clause 6
+). The organization should also consider opportunities for improvement in SCCM, which can come, for example, from changes in:
+the context of the organization and its effect on the BCMS;
+the internal structure of the organization (e.g. acquisition of additional locations or staff);
+the means of production or delivery (e.g. technological change, infrastructure improvements);
+evolving methodologies or the availability of new recovery methods (e.g. new standby facilities or network technology);
+technology and practices, including new tools and techniques.</p>
+<p>宜对其进行评价，以确定他们对组织的潜在收益。
+These should be evaluated to establish their potential benefit to the organization.</p>
+<p>附录A（Annex A）
+资料性附录（informative）</p>
+<p>发送给优先供应商的常见问题示例（
+Example of general questions to be sent to priority
+suppliers）</p>
+<p>这些问题通常会产生回复，从而深入了解供应商的业务连续性环境的状态，这可以在必要时开启对话以获得更多细节。
+— 贵组织有业务连续性管理体系（BCMS）吗？
+— 贵组织有ISO 22301认证吗？如果有，请提供证书。
+— 谁是你们指定的业务连续性经理？他是否拥有业务连续性相关的专业证书？如果没有指定，谁对业务连续性负责？
+— 您的连续性计划多久更新一次？
+— 您多久对组织进行一次业务连续性培训，采用哪种方法？
+— 贵组织有危机管理计划吗？
+— 您上一次业务连续性演练是什么时候进行的？
+— 您上一次业务连续性技术测试是什么时候进行的？
+— 您计划什么时候进行下一次演练和测试？
+— 贵组织是否有专门的指挥中心？
+— 贵组织如何确保ICT服务的连续性？
+— 贵组织是否有替代恢复站点？
+— 替代恢复站点距离主站点有多远？
+— 贵组织有其他相关的认证吗？例如：
+— ISO 9001质量管理体系；
+— ISO 28000供应链安全管理体系；
+— ISO/IEC 27001 信息安全管理体系；
+— 其他行业特定标准。
+— 请提供发生扰断时继续履行合同义务的策略的详细信息，例如：
+— 货物/产品/服务交付的地点；
+— 如果其中一个地点扰断，请概述贵组织打算如何继续供应；
+— 您以与正常情况相同的数量/质量/规格/时间范围提供资源的能力。
+These questions typically generate answers that give insights into the state of the supplier's business continuity environment, and this can open a dialogue to obtain more details where necessary.
+Does your organization have a business continuity management system (BCMS)?
+Does your organization have a certification to
+ISO 22301
+? If yes, supply the certification.
+Who is your designated Business Continuity Manager? Do they have business-continuity-related professional certifications? If not, who has responsibility for business continuity?
+How often are your continuity plans updated?
+How often and by which method(s) do you train your organization in business continuity?
+Does your organization have a crisis management plan?
+When did you conduct your last business continuity exercise?
+When did you run your last business continuity technology test?
+When have you planned the next exercise(s) and test(s)?
+Does your organization have a dedicated command centre?
+How does your organization ensure ICT service continuity?
+Does your organization have an alternate recovery site?
+How far is the alternate recovery site from your primary site?
+Does your organization have additional relevant certifications, such as:
+ISO 9001
+quality management system;
+ISO 28000
+security management system for the supply chain;
+ISO/ IEC 27001
+information security management system;
+other industry specific standards.
+Provide details on strategy to continue to meet contract obligations if there is a disruption, for example:
+the locations from which goods/products/services will be delivered;
+if one of these locations is disrupted, outline how your organization intends to continue to supply;
+your ability to supply resources to the same quantity/quality/specification/timescale as normal.</p>
+<p>在合同谈判期间，可以寻求更多证据来验证回复。
+During contract negotiation, more evidence can be sought to validate the responses.</p>
+<p>附录B（Annex B）
+资料性附录（informative）</p>
+<p>管理优先供应商的扰断（
+Managing priority suppliers
+'
+disruptions）</p>
+<p>B.1 总则（General）</p>
+<p>供应链扰断可能由以下引起：
+— 扰乱组织的供应商；
+— 扰乱供应商的组织。
+A disruption in the supply chain can be caused by:
+the supplier disrupting the organization;
+the organization disrupting the supplier.</p>
+<p>无论哪种情况，对扰断的有效响应都集中在沟通上。
+In either case, the effective response to the disruption is focused on communications.</p>
+<p>这种重点沟通（见6.4.3）需要在组织和供应商的连续性计划中明确。根据合同安排，组织和供应商宜定期演练，以确保这些沟通渠道正常工作。宜制定适当的标准，对其进行监测，以预警潜在的扰断。
+This focused communication (see
+6.4.3
+) needs to be defined in both the organization's and the supplier's continuity plans. As per contractual agreements, the organization and the supplier(s) should exercise periodically to ensure these communication channels work. There should be metrics in place that are monitored to warn of potential disruptions.</p>
+<p>B.2 事前（Before the incident）</p>
+<p>在扰断发生前，组织宜与每家供应商就以下内容达成一致：
+— 触发点和阈值；
+— 启用先前既定沟通渠道的方法；
+— 演练和测试供应商策略和解决方案。
+Before a disruption occurs, the organization should agree on the following with each supplier:
+trigger points and thresholds;
+how to activate previously established communication channels;
+exercise and test supply chain strategies and solutions.</p>
+<p>B.3 事中（During an incident）</p>
+<p>在事件期间，组织和涉及的供应商宜：
+— 启用连续性特定的沟通渠道；
+— 调用和协调适当的策略和解决方案；
+— 监测不断变化的态势及其对组织连续性的影响。
+During the incident, the organization and the suppliers involved should:
+activate continuity specific communications channels;
+invoke and coordinate the appropriate strategies and solutions;
+monitor the changing situation and the implications to the organization's continuity.</p>
+<p>B.4 事后（After the incident）</p>
+<p>事后，组织宜进行联合审查。组织和每个供应商宜：
+— 编制并评价事后报告；
+— 记录经验教训、发现的改进领域和不符合；
+— 记录纠正措施；
+— 安排跟进以确保纠正措施的实施。
+After the incident, the organization should undertake joint reviews. Both the organization and each supplier should:
+produce and evaluate post-incident reports;
+document lessons learned, identified improvement areas and nonconformities;
+document the corrective actions;
+schedule follow-ups to ensure the implementation of corrective actions.</p>
+<p>附录C（Annex C）
+资料性附录（informative）</p>
+<p>与供应商联合演练的示例（
+Examples of joint exercises with suppliers）</p>
+<p>与供应商联合演练的示例：
+— 恢复计划穿行演练：召开会议，讨论双方要采取的具体行动；
+— 现场或远程桌面演练：基于场景的脚本演练，旨在审查参与者对特定动态情况下所需行动的了解；
+— 模拟：根据特定扰断需要实际执行恢复计划的有计划的演练。
+注：演练可以与单个供应商或多个供应商同时进行。
+Examples of joint exercises with suppliers:
+Recovery planning walk-through: a meeting to discuss the specific actions to be taken by both parties;
+Tabletop exercise onsite or remotely: scripted scenario-based exercises designed to review the participants' knowledge of required actions in specific dynamic situations;
+Simulation: a planned exercise based on specific disruptions requiring the actual implementation of recovery plans.
+NOTE Exercises can be performed with a single supplier or multiple suppliers simultaneously.</p>
+<p>参考文献（Bibliography）</p>
+<p>[1]
+ISO 9001
+,
+Quality management systems — Requirements
+[2]	ISO 22316,
+Security and resilience — Organizational resilience — Principles
+and attributes
+[3]
+ISO/TS 22317
+,
+Security and resilience — Business continuity management systems — Guidelines for business impact analysis
+[4]
+ISO/TS 22331
+,
+Security and resilience — Business continuity management systems — Guidelines for business continuity strategy
+[5]
+ISO 22398
+,
+Societal security — Guidelines for exercises
+[6]
+ISO 28000
+,
+Specification for security management systems for the supply chain
+[7]
+ISO 31000
+,
+Risk management — Guidelines
+[8]
+ISO/IEC 27001
+,
+Information technology — Security techniques — Information security management systems — Requirements</p>
+<p>如需要，可到知识星球下载本中英文对照的PDF版（排版会易读一些）。</p>
+<hr>
+<p>本公众号（ID：bcmplus）专注于业务连续性和韧性知识的传播和普及，关注业务连续性、应急和危机管理的朋友可关注本公众号。</p>
+<p>腾讯近期开始内测放开公众号的留言功能，公众号从4月份也获得了内测资格，欢迎对内容感兴趣的朋友们踊跃留言，让更多的朋友们了解到你的想法和意见。</p>
+<p>此外，需要获取更多相关资料的朋友，可长按以下二维码加入知识星球留言和讨论（另，公众号每月只能发4次文章，会有一些内容直接在知识星球分享而不在公众号发布）。</p>
+<p><img src="/bcmplus-blog/images/ox15Xh9fr1RTonNRQfZX_Q_06.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/ox15Xh9fr1RTonNRQfZX_Q">原文链接</a></em></p>

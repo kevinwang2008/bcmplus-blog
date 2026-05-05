@@ -1,0 +1,620 @@
+<p>第一部分 From 引言 To Ⅳ.B 沟通
+(因中英文对照翻译版约7.8万字，内容较多，故将其分为三部分发布)</p>
+<p>写在前面
+：金融业是业务连续性管理监管要求和实践水平最高的行业之一，FFIEC业务连续性管理检查分册是美国联邦金融机构检查委员会(FFIEC)为协助检查人员评估金融机构和服务提供商的业务连续性管理提供的指导。2019年11月，FFIEC发布了该检查分册的第3个版本，“反映了客户和行业对运营韧性期望的变化”。本中文简译稿是为了方便关注金融行业业务连续性管理的朋友们了解、学习国外行业监管要求和最佳实践，由多名专业人员组成的公益翻译团队共同翻译完成。2020年底前，我在公众号和朋友圈征集公益翻译人员，很快由陈燕、陈阳、董晓礼、傅盛、康馨月、米顺强、刘松林、刘宇、马骏、卜善梅、盛琳、孙书强、燕波涛、袁洪波、翟红波、翟晓羽、张锋等专业人员组成了翻译团队，在2021年3月完成翻译初稿。</p>
+<p>以下是公益翻译团队成员
+(排名不分前后，按姓氏拼音排序)：
+陈燕(深圳，cheny105@163.com)
+陈阳(中国银行欧洲信息中心，chenyang@bankofchina.com)
+董晓礼(上海，db2forz@qq.com)
+傅盛(广州赛宝认证中心，sanarcher@qq.com)
+康馨月(天津外国语大学，2368074522@qq.com)
+米顺强(北京)
+刘松林(渤海银行，lslinbest@163.com)
+刘宇(北京，13316880733@189.cn)
+马骏(大连，patrick.ma2018@outlook.com)
+卜意淳(和君咨询，653809172@qq.com)
+盛琳(杭州，linmuxuanzi@163.com)
+孙书强(中科博安，HSDJL2@126.com)
+燕波涛(华北科技学院，18618264196@qq.com)
+袁洪波(环球影城，yuanhongbobo@126.com)
+翟红波(北京，25354646@qq.com)
+翟晓羽(北京，zxy0264@126.com)
+张锋(北京，zhangfeng76@wo.cn)
+王曙(新常安科技，kevinwang@vip.sina.com)</p>
+<p>感谢公益翻译团队的各位专业人员在疫情期间抽出个人休息时间进行翻译工作。以下译文由我负责最终统一审校定稿，如译文中有任何不准确或理解错误的地方，都是由于我的原因造成，与诸位翻译人员无关。如对译文有意见或修改建议，请给我留言。</p>
+<p>王曙(kevinwang) 2021.06.10</p>
+<hr>
+<p>“业务连续性管理”分册是联邦金融机构检查委员会(FFIEC)信息科技(IT)检查手册系列组成分册中的一本。该分册为协助检查人员评估金融机构和服务提供商的风险管理流程提供指导，以确保关键金融服务的可用性。
+This &quot;Business Continuity Management&quot; booklet is one in a series of booklets that comprise the Federal Financial Institutions Examination Council (FFIEC) Information Technology (IT) Examination Handbook. This booklet provides guidance to assist examiners in evaluating financial institution and service provider risk management processes to ensure the availability of critical financial services.</p>
+<p>引言(Introduction)</p>
+<p>“业务连续性管理”(BCM)分册是
+联邦金融机构检查委员会(FFIEC)
+[1]
+信息科技检查手册(IT Handbook)
+系列组成分册之一。该IT手册为检查人员准备
+[2]
+。FFIEC成员机构用本分册的发布取代了2015年2月发布的“业务连续性规划”分册。从“业务连续性规划”到“业务连续性管理”的变化反映了客户和行业对运营韧性期望的变化。
+The “Business Continuity Management” (BCM) booklet is one in a series of booklets that comprise the
+Federal Financial Institutions Examination Council (FFIEC)
+[1]
+Information Technology Examination Handbook (IT Handbook)
+. The IT Handbook is prepared for use by examiners
+[2]
+. With the publication of this booklet, the FFIEC member agencies replace the “Business Continuity Planning” booklet issued in February 2015. The change from business continuity planning to business continuity management reflects the changes in customer and industry expectations for the resilience of operations.
+注1：依据《1978年金融机构监管和利率管制法》(Pub. L. 95-630)第X部分，FFIEC成立于1979年3月10日。FFIEC的成员包括美国联邦储备委员会(the Board of Governors of the Federal System，FRB）、消费者金融保护局(the Consumer Financial Protection Bureau，CFPB)、联邦存款保险公司(the Federal Deposit Insurance Corporation, FDIC)、国家信用社管理局(the National Credit Union Administration，NCUA）、货币监理署(the Office of the Comptroller of the Currency，OCC)和国家联络委员会(the State Liaison Committee，SLC)。
+注2：FFIEC各成员机构可使用本分册中概述的原则，并与成员机构的监管机构保持一致。</p>
+<p>BCM分册描述了安全和稳健的IT和运营、消费者金融保护、以及遵守适用法律法规等方面的原则和实践。BCM分册还概述了帮助检查人员评估管理层处理关键金融产品和服务可用性相关风险的BCM原则。本分册讨论了BCM治理及其相关要素，包括韧性策略和计划编制；培训和意识；演练和测试；维护和改进；向包括董事会在内的所有层级管理层的报告。
+The BCM booklet describes principles and practices for IT and operations for safety and soundness, consumer financial protection, and compliance with applicable laws and regulations. The BCM booklet also outlines BCM principles to help examiners evaluate how management addresses risk related to the availability of critical financial products and services. This booklet discusses BCM governance and its related components, including resilience strategies and plan development; training and awareness; exercises and tests; maintenance and improvement; and reporting for all levels of management, including the board of directors.</p>
+<p>本修订分册的重点是企业级、面向流程的方法，这些方法考虑了对整个实体连续性至关重要的技术、业务运营、测试以及沟通策略。但是，业务连续性不宜只关注事发后恢复行动的规划流程，它还宜包括持续维护系统以及对运营韧性的控制。业务连续性宜被纳入实体所有系统、流程和运营的风险管理生命周期中。
+The focus of this revised booklet is on enterprise-wide, process-oriented approaches that consider technology, business operations, testing, and communication strategies critical to the continuity of the entire entity. However, business continuity should not be focused only on the planning process to recover operations after an event, but rather it should include the continued maintenance of systems and controls for the resilience of operations. Business continuity should be incorporated into the risk management life cycle of all systems, processes, and operations of an entity.</p>
+<p>就IT手册而言，术语“实体”包括存款类金融机构
+[3]
+、非银行金融机构
+[4]
+、银行控股公司
+[5]
+和第三方服务提供商
+[6]
+。本分册并未对实体提出要求。相反，本分册描述了检查人员可用于评估实体BCM功能的实践。
+For
+IT Handbook
+purposes, the term “entities” includes depository financial institutions,
+[3]
+nonbank financial institutions,
+[4]
+bank holding companies,
+[5]
+and third-party service providers.
+[6]
+This booklet does not impose requirements on entities. Instead, this booklet describes practices that examiners may use to assess an entity’s BCM function.
+注3：存款类金融机构，包括国民银行、联邦储蓄协会、州储蓄协会、州成员银行、州非成员银行和信贷联盟。
+注4：非银行金融机构，包括消费者金融保护局(CFPB)管辖并接受消费者金融保护局监督检查的非存款类金融机构。
+注5：银行控股公司，包括控制任何银行的公司，或控制《银行控股公司法》所定义的已成为银行控股公司的任何公司。
+注6：第三方服务提供商，包括提供银行服务的实体，这些实体须接受《银行服务公司法》、《1933年业主贷款法》、《多德-弗兰克华尔街改革和消费者保护法》或其他相关法律的检查。</p>
+<p>本分册附录A提供了基于目标的检查程序。原则和相关检查程序的应用宜因实体的复杂程度和风险状况而不同。检查人员宜根据其代理监管机构评估实体。
+Appendix A
+of this booklet provides objectives-based examination procedures. The application of the principles and related examination procedures should vary according to an entity’s complexity and risk profile. Examiners should evaluate entities in accordance with their agency’s regulatory authority.</p>
+<p>Ⅰ 业务连续性管理Business Continuity Management</p>
+<p>BCM是管理层监督和实施韧性、连续性和响应能力以保护员工、客户以及产品和服务的流程。诸如网络事件、自然灾害或人为事件之类的破坏可能会中断实体的运营，并可能对金融行业造成更广泛的影响。韧性包含了减轻破坏性事件和评估实体恢复能力的主动措施。实体的BCM项目(BCM program)宜与其战略目标相一致。管理层在开发业务连续性项目(BCM program)时宜考虑实体在整体金融服务行业中的角色以及对整体金融服务行业的影响。
+BCM is the process for management to oversee and implement resilience, continuity, and response capabilities to safeguard employees, customers, and products and services. Disruptions such as cyber events, natural disasters, or man-made events can interrupt an entity’s operations and can have a broader impact on the financial sector. Resilience incorporates proactive measures to mitigate disruptive events and evaluate an entity’s recovery capabilities. An entity’s BCM program should align with its strategic goals and objectives. Management should consider an entity’s role within and impact on the overall financial services sector when it develops a BCM program.</p>
+<p>图1：业务连续性管理周期(Figure 1: Business Continuity Management Cycle)</p>
+<p><img src="/bcmplus-blog/images/eJQuB7UCVluZkc6qu8vn0w_01.jpg" alt=""></p>
+<p>Ⅱ 业务连续性管理治理Business Continuity Management Governance</p>
+<p>本节提供有关BCM治理的具体信息，包括董事会和高级管理层的职责。有关治理和风险管理的一般信息包含在IT手册的“管理”分册和FFIEC成员的检查手册中。
+This section provides specific information about BCM governance, including board and senior management responsibilities. General information about governance and risk management is contained in the
+IT Handbook
+’s “Management” booklet and the FFIEC members’ examination handbooks.</p>
+<p>BCM治理宜包括：
+使BCM实践与风险偏好保持一致；
+确定所需的连续性水平，与运营(operation)的关键程度一致；
+建立业务连续性方针和计划；
+为BCM活动分配资源；
+为项目实施提供能干的管理层；
+监视和评估与这些目标相关的业务连续性绩效。
+BCM governance should include:
+Aligning BCM practices with the risk appetite.
+Identifying the continuity level needed, consistent with the operation’s criticality.
+Establishing business continuity policy and plans.
+Allocating resources to BCM activities.
+Providing competent management to implement the program.
+Monitoring and assessing business continuity performance relative to these goals.</p>
+<p>图1
+描绘了一个实体可遵循的、持续管理业务连续性风险的典型BCM周期。为管理这些风险，实体可根据实体运营的规模和复杂程度，制定一个包罗万象的方针或为不同功能制定独特的政策和计划。业务连续性相关政策的有效实践至少应解决以下问题：BCM范围和职责，问责，权力，以及制定和维护有效BCM的指导。
+Figure 1
+depicts a typical BCM cycle that entities may follow to manage business continuity risks on an ongoing basis. To manage these risks, the entity may develop a single encompassing BCM policy or individual policies and plans for different functions, depending on the size and complexity of the entity’s operations. An effective practice for business continuity-related policies is to address, at a minimum, the following areas: scope and responsibilities within BCM, accountability, authority, and guidance to develop and maintain effective BCM.</p>
+<p>Ⅱ.A 董事会和高级管理层的职责Board and Senior Management Responsibilities</p>
+<p>行动概要Action Summary</p>
+<p>董事会和高级管理层通过明确职责和问责以及为业务连续性分配充足的资源来管理(govern)业务连续性。
+The board and senior management govern business continuity through defining responsibilities and accountability, and by allocating adequate resources to business continuity.</p>
+<p>检查人员宜审查以下内容：
+BCM要素与实体的战略目标保持一致；
+董事会监督；
+BCM相关职责的管理分配；
+BCM策略制定。
+Examiners should review for the following:
+Alignment of BCM elements with the entity’s strategic goals and objectives.
+Board oversight.
+Management assignment of BCM-related responsibilities.
+Development of BCM strategies.</p>
+<p>董事会
+[7]
+和高级管理层在管理业务连续性时宜设定“高层基调”，并考虑实体的整体运营，包括由关联公司和第三方服务提供商执行的功能。管理层宜评估连续性风险，设定短期和长期连续性目标，采取政策和程序来降低连续性风险，评估连续性绩效，并根据测试结果和实际事件调整运营(operation)。
+The board and senior management should set the “tone at the top” and consider the entity’s entire operations, including functions performed by affiliates and third-party service providers, when managing business continuity. Management should evaluate continuity risk, set short- and long-term continuity objectives, adopt policies and procedures to mitigate continuity risk, evaluate continuity performance, and adjust operations in response to test results and actual events.
+注7：大多数金融机构都有董事会；然而，并非所有第三方服务提供商也这样。当一个实体没有董事会时，高层领导可以承担本分册所述的董事会职责。</p>
+<p>管理层可以通过评估风险、规划、测试计划以及结合从测试和事件中学到的经验教训来加强韧性。此外，管理层宜考虑业务功能以及新产品和服务设计中的韧性。
+Management can strengthen resilience by assessing risk, planning, testing the plans, and incorporating lessons learned from tests and events. Furthermore, management should consider resilience in business functions and the design of new products and services.</p>
+<p>董事会监督宜包括：
+分配BCM职责和问责；
+分配资源给BCM；
+使BCM与实体的业务战略和风险偏好保持一致；
+了解业务连续性风险，采用政策和计划来管理事件；
+通过管理报告、测试和审计来审查业务连续性运营结果和绩效；
+向负责BCM流程的管理层提出可信的挑战
+[8]
+。
+Board oversight should include:
+Assigning BCM responsibility and accountability.
+Allocating resources to BCM.
+Aligning BCM with the entity’s business strategy and risk appetite.
+Understanding business continuity risks and adopting policies and plans to manage events.
+Reviewing business continuity operating results and performance through management reporting, testing, and auditing.
+Providing a credible challenge
+[8]
+to management responsible for the BCM process.
+注8：可信的挑战包括积极参与、提出缜密思考过的问题、以及行使独立判断。</p>
+<p>管理层监督宜包括：
+确定BCM角色、职责和继任计划；
+分配有知识的人员
+[9]
+和足够的财务资源；
+核实人员了解他们的业务连续性角色和职责；
+制定评估业务连续性绩效所依据的可衡量目标，例如准备水平和韧性目标等；
+设计和实施业务连续性演练策略；
+确认演练、测试和培训是全面的，并且与BCM策略相一致；
+解决在演练、测试和培训中发现的超出实体风险偏好的弱点；
+定期与指定的协调员或业务连续性委员会举行会议，讨论方针变更、演练、测试、以及培训计划；
+评估和更新业务连续性策略和计划，反映当前的业务状况和运营环境以进行持续改进；
+与外部团体协调计划和响应（如
+Ⅳ.B，“沟通”中所述
+）。
+Management oversight should include:
+Defining BCM roles, responsibilities, and succession plans.
+Allocating knowledgeable personnel
+[9]
+and sufficient financial resources.
+Validating that personnel understand their business continuity roles and responsibilities.
+Establishing measurable goals against which business continuity performance is assessed, such as levels of preparedness and resilience targets.
+Designing and implementing a business continuity exercise strategy.
+Confirming that exercises, tests, and training are comprehensive and consistent with the BCM strategy.
+Resolving weaknesses identified in exercises, tests, and training that exceed the entity’s risk appetite.
+Meeting regularly with a designated coordinator or a business continuity committee to discuss policy changes, exercises, tests, and training plans.
+Assessing and updating business continuity strategies and plans to reflect the current business conditions and operating environment for continuous improvement.
+Coordinating plans and responses with external groups (as described in
+IV.B, “Communications”
+).
+注9：此处“人员”包括长期和临时工作人员。</p>
+<p>Ⅱ.B 审计Audit</p>
+<p>行动概要Action Summary</p>
+<p>董事会和高级管理层宜使内部审计或独立人员参与审查和验证BCM项目(BCM program)的设计和运营效能。审计宜向董事会报告，并提供对管理层管理和控制连续性和韧性相关风险的能力的评估。
+The board and senior management should engage internal audit or independent personnel to review and validate the design and operating effectiveness of the BCM program. Audit should report to the board and provide an assessment of management’s ability to manage and control risks related to continuity and resilience.</p>
+<p>检查人员宜审查以下内容：
+BCM相关审计活动的范围；
+给董事会的BCM相关活动的审计报告；
+董事会对审计报告的复核；
+审计发现的跟踪和解决情况；
+管理层对系统和组织控制(SOC)
+[10]
+和第三方服务提供商审计报告的复核。
+Examiners should review the following:
+Scope of BCM-related audit activities.
+Audit reporting of BCM-related activities to the board.
+Board review of audit reports.
+Tracking and resolution of audit findings.
+Management’s review of system and organization controls (SOC)
+[10]
+and third-party service provider audit reports.
+注10：2017年，美国注册会计师协会(American Institute of Certified Public Accountants，AICPA)引入术语“系统和组织控制”(SOC)，指从业人员提供的与服务组织的系统级控制以及与其他组织的系统级或实体级控制相关的一系列服务。SOC原来指的是服务组织的控制。通过重新定义该缩写，AICPA引入了新的内部控制检查，这些检查可以(a)针对服务组织以外的其他类型的组织，以及(b)针对此类组织的系统级或实体级控制。”，(AICPA，SOC 2检查和网络安全SOC检查：了解关键区别)</p>
+<p>董事会和高级管理层宜使内部审计(或独立审查)参与评估BCM设计的有效性，包括政策和程序以及控制措施的有效性。审计宜向董事会报告，并提供对管理层监督和控制连续性和韧性相关风险的能力的评估。审计员宜具备资格并独立于BCM流程。审计范围和频度取决于实体的复杂程度、风险状况以及企业可能正在经历的变化。大型、复杂的实体可进行多次审计，以涵盖BCM项目(BCM program)的各个部门或各个方面。不太复杂的实体可将其业务连续性活动包括在IT通用控制审计中。
+The board and senior management should engage internal audit (or an independent review) to assess the BCM design effectiveness, including policies and procedures, and the effectiveness of controls. Audit should report to the board and provide an assessment of management’s ability to oversee and control risks related to continuity and resilience. Auditors should be qualified and independent of BCM processes. Audit scope and frequency depend on the entity’s complexity, risk profile, and changes the entity may be experiencing. Large, complex entities may have multiple audits, covering various departments or aspects of the BCM program. Less complex entities may have their business continuity activities included within an IT general controls audit.</p>
+<p>BCM项目的内部审计宜提供管理层监督实体连续性和韧性风险的能力的独立评估。审计员宜：
+评估业务影响分析(BIA)和风险评估的合理性、关键功能识别，以及不同事件的可能性和对运营的潜在影响；
+评估连续性和韧性相关控制的可靠性、充分性和有效性；
+酌情利用第三方服务提供商的SOC报告和其他外部工件(artifacts)；
+将实体的固有风险水平和风险缓释措施的有效性与实体的风险偏好相比较；
+核实测试计划是否达到宣称的目标；
+监视BCM测试，以核实问题(例如，偏离测试计划和失败目标)是否得到适当识别和升级；
+评估BCM项目的有效性。
+The internal audit of the BCM program should provide an independent assessment of management’s ability to oversee the entity’s continuity and resilience risk. Auditors should:
+Evaluate the business impact analysis (BIA) and risk assessment for reasonableness, identification of critical functions, and the likelihood of different events and the potential impact on operations.
+Evaluate controls for reliability, adequacy, and effectiveness regarding continuity and resilience.
+Leverage SOC reports and other external artifacts from third-party service providers, as appropriate.
+Compare the entity’s inherent risk level and the effectiveness of risk mitigation against the entity’s risk appetite.
+Verify whether test plans achieve the stated objectives.
+Monitor BCM testing to verify that issues (e.g., deviation from test plans and failed objectives) are appropriately identified and escalated.
+Assess the BCM program’s effectiveness.</p>
+<p>有关更多信息，请参阅IT手册的“审核”分册。
+Refer to the
+IT Handbook
+’s “Audit” booklet for additional information.</p>
+<p>Ⅲ 风险管理Risk Management</p>
+<p>业务连续性风险管理专注于操作风险因子的一个子集，其中资本和储备本身不能保护实体，并涉及管理危及关键系统
+[11]
+的事件的可能性。BIA和风险评估是BCM的基础。如图2所示，BCM宜与实体的全面风险管理(Enterprise Risk Management，ERM)
+[12]
+相结合，以便识别和管理整个实体的风险。BCM使管理层制定战略，以有效缓解破坏性事件带来的风险。BCM和ERM集成的水平和形式宜与实体的复杂程度和风险状况相称。
+Business continuity risk management focuses on a subset of operational risk factors, against which capital and reserves alone may not protect an entity, and involves managing the possibility of an event that jeopardizes critical systems
+[11]
+. The BIA and risk assessment represent the foundation of BCM. As illustrated in figure 2, BCM should integrate with an entity’s enterprise risk management (ERM)
+[12]
+, which allows for the identification and management of risk across the entire entity. BCM allows management to set strategy to effectively mitigate risks posed by disruptive events. The level and formality of BCM and ERM integration should be commensurate with the entity’s complexity and risk profile.
+注11：请参阅美国财政部和国土安全部(DHS)2015年金融服务业具体计划(Financial Service Sector-Specific Plan 2015)。
+注12：全面风险管理，即企业风险管理(ERM)是“一个流程，由企业的董事会、管理层和其他人员实施，应用于战略制定和整个企业，旨在识别可能影响实体的潜在事件，并在风险偏好范围内管理风险，为实现企业目标提供合理保障。”(COSO，企业风险管理-综合框架(执行摘要)，2004年9月)</p>
+<p>图2：业务连续性管理要素(与全面风险管理)</p>
+<p><img src="/bcmplus-blog/images/eJQuB7UCVluZkc6qu8vn0w_02.jpg" alt=""></p>
+<p>管理层宜使用BIA和风险管理流程来识别和监视实体的连续性风险。一旦管理层确定了风险，就有四种常见的策略来应对风险：风险接受、风险缓释、风险转移和风险规避。风险转移，如获得保险，可以使管理层弥补事件造成的财务损失或费用，是一种有效的资本管理工具；然而，保险不宜取代有效的控制或连续性和韧性规划。管理层的连续性和韧性规划工作宜侧重于风险缓释和规避策略，以及在适当时的风险接受策略。这些策略在本分册中有更深入的介绍。有关更多信息，请参阅IT手册的“管理”分册。
+Management should use the BIA and risk management processes to identify and monitor continuity risks for an entity. Once management determines the risk, there are four common strategies to address that risk: risk acceptance, risk mitigation, risk transference, and risk avoidance. Risk transference, such as obtaining insurance, may allow management to recover financial losses or expenses resulting from an event and can be an effective capital management tool; however, insurance should not be a substitute for effective controls or continuity and resilience planning. Management’s continuity and resilience planning efforts should focus on risk mitigation and avoidance strategies, and where appropriate, risk acceptance strategies. These strategies are covered more in depth throughout this booklet. Refer to the IT Handbook’s “Management” booklet for additional information.</p>
+<p>大型和系统重要性实体失败可能引发更广泛的金融混乱，管理层宜评估中断的可能性和对实体及整体金融行业的影响。这些实体是更广泛的金融体系的关键组成部分，宜将影响金融行业的中断情景纳入实体的BCM流程中。
+Management at large and systemically important entities whose failure could trigger a broader financial disruption should assess the likelihood and impact of a disruption, both to the entity and the entire financial sector. These entities are a critical component of the broader financial system and should incorporate scenarios of disruptions impacting the financial sector into the entity’s BCM processes.</p>
+<p>《加强美国金融体系韧性稳健实践的跨机构白皮书》(稳健实践白皮书)
+[13]
+概述了针对关键金融市场执行清算和结算活动的金融行业参与者(核心机构)以及在关键金融市场中处理很大一部分交易的机构(重要机构)的实践。监管机构已通知符合稳健实践白皮书中所述核心或重要机构定义的所有参与者。由于核心机构和重要机构参与一个或多个关键金融市场，而且它们在工作日结束前不能开展关键活动可能会给金融体系带来系统性风险，因此它们在金融市场中的角色宜作为业务连续性规划流程的一部分加以处理。
+The Interagency Paper on Sound Practices to Strengthen the Resilience of the U.S. Financial System (Sound Practices Paper)
+[13]
+outlines practices for financial industry participants that perform clearing and settlement activities for critical financial markets (core firms) and institutions that process a significant share of transactions in critical financial markets (significant firms). Regulators have notified all participants that meet the definition of a core or significant firm as set forth in the Sound Practices Paper. Because core and significant firms participate in one or more critical financial markets, and their failure to perform critical activities by the end of a business day could present systemic risk to financial systems, their role in financial markets should be addressed as part of the business continuity planning process.
+注13：请参阅SR Letter 03-9(FRB)、Bulletin 2003-14(OCC)和Release No.34-47638美国证券交易委员会(SEC)发布的关于加强美国金融体系韧性稳健实践的跨机构白皮书，也可参阅68 Fed.Reg 17809。</p>
+<p>Ⅲ.A 业务影响分析Business Impact Analysis</p>
+<p>行动概要Action Summary</p>
+<p>管理层宜开展BIA以识别所有业务功能并按关键程度进行优先级排序，分析业务流程和系统之间的相关相互依赖关系，并通过既定的指标评估中断的影响。BIA宜确定关键流程的恢复优先级和资源依赖。
+Management should develop a BIA that identifies all business functions and prioritizes them in order of criticality, analyzes related interdependencies among business processes and systems, and assesses a disruption’s impact through established metrics. The BIA should define recovery priorities and resource dependencies for critical processes.</p>
+<p>检查人员宜在BIA流程中审查以下内容：
+关键业务功能的识别；
+跨业务单元的相互依赖关系的识别；
+中断事件的识别和分析；
+恢复目标的合理性；
+BIA结果在全实体的沟通；
+管理层BIA复核的全面性。
+Examiners should review the following as part of the BIA process:
+Identification of critical business functions.
+Identification of interdependencies across business units.
+Identification and analysis of disruptive events.
+Reasonableness of recovery objectives.
+Communication of BIA results throughout the entity.
+Comprehensiveness of management’s BIA review.</p>
+<p>BIA是识别破坏性事件对实体功能和流程的潜在影响的流程。BIA允许管理层识别和分析关键流程中的缺口，这些缺口会阻止实体满足其业务需求。BIA通常列出关键流程的恢复优先级和所依赖(例如，工作流分析
+[14]
+)的资源。通过BIA流程，管理层宜使用受到的最大干扰来识别关键运营、部门、人员、服务和功能之间的相互依赖关系。管理层宜识别这些功能和流程所依赖的资源以及需要采取进一步保护措施的风险。此外，BIA宜包括恢复(recover)和复原(restore)业务功能和流程所需的财务和其他资源成本(如业务损失、以及法律和监管后果等)。
+A BIA is the process of identifying the potential impact of disruptive events to an entity’s functions and processes. A BIA allows management to identify and analyze gaps in critical processes that would prevent the entity from meeting its business requirements. The BIA generally lists recovery priorities and resources on which critical processes depend (e.g., work flow analysis
+[14]
+). Through the BIA process, management should identify interdependencies among critical operations, departments, personnel, services, and the functions with the greatest exposure to interruption. Management should identify resources on which these functions and processes depend and exposures that would warrant further protective measures. Furthermore, the BIA should include financial and other resource costs (e.g., the loss of business, and exposure to legal and regulatory consequences) needed to recover and restore business functions and processes.
+注14：工作流分析可以帮助记录关键操作、部门、人员和服务之间的相互依赖关系。</p>
+<p>完成BIA的时间和资源取决于实体的规模和复杂程度。复杂的实体可能因不同的业务条线、子公司或其它组织划分有多个BIA。ERM(全面风险管理)的信息，如业务流程和风险偏好等，会推动BIA的开展。
+The time and resources to complete the BIA depends on the entity’s size and complexity. Complex entities may have multiple BIAs for various business lines, subsidiaries, or other organizational separations. Information from the ERM, such as business processes and risk appetites, may facilitate the BIA development.</p>
+<p>Ⅲ.A.1 关键业务功能识别Identification of Critical Business Functions</p>
+<p>完成BIA通常涉及收集有关业务功能、中断影响以及业务相互依赖关系的信息；分析这些信息；确定恢复目标。可以采用多种方式分析关键业务功能[15]，包括支持活动(如服务台、呼叫中心、人力资源、以及发工资等)，系统以及相互关系。工作流、访谈、组织结构图、网络图/拓扑、数据流图、继任计划、或关键人员的授权委托可以帮助管理层确定业务流程和层次结构。
+Completing the BIA generally involves gathering information regarding business functions, impacts from disruptions, and business interdependencies; analyzing this information; and establishing recovery objectives. Critical business functions,
+[15]
+including support activities (e.g., help desk, call center, human resources, and payroll), systems, and interrelationships may be analyzed in several ways. Work flows, interviews, organizational charts, network diagrams/topologies, data flow diagrams, succession plans, or delegations of authority for key personnel may help management identify business processes and hierarchies.
+注15：“功能”可由一个或多个流程组成。</p>
+<p>管理层宜清点实体的关键资产(如人员、硬件、软件、数据、信息和现金等)和基础设施(如网络连接、通信线路、设施，以及公用事业等)，包括由第三方服务提供商提供的。此外，管理层宜考虑支持性活动(如技术支持、发工资、签合同等)和软件(如电子邮件、办公生产力套件等)、地理位置和独特的方面(如专用硬件和软件、文档或其他专门物资）。管理层还宜清点第三方服务提供商，包括他们提供的具体服务。使用的方法宜具有可重复性，从而允许管理层在重大变化后重新评估信息。
+Management should inventory the entity’s critical assets (e.g., people, hardware, software, data, information, and cash) and infrastructure (e.g., network connectivity, communication lines, facilities, and utilities), including those provided by third-party service providers. Furthermore, management should consider supporting activities (e.g., technology support, payroll, contracting) and software (e.g., email, office productivity suites), geographic locations, and unique aspects (e.g., proprietary hardware and software, documentation, or other specialized supplies). Management should also inventory third-party service providers, including specific services they provide. The methodology used should be repeatable, allowing management to reevaluate information after significant changes.</p>
+<p>Ⅲ.A.2 相互依赖关系分析Interdependency Analysis</p>
+<p>BIA流程使管理层能够识别、分析业务功能和系统之间的相互依赖关系并排定优先级，以与韧性和恢复目标保持一致。该分析使管理层能够评估相互依赖的业务功能、系统和共享资源。
+The BIA process allows management to identify, analyze, and prioritize interdependencies among business functions and systems for alignment with resilience and recovery objectives. The analysis allows management to evaluate interdependent business functions, systems, and shared resources.</p>
+<p>在分析期间，管理层宜识别单点故障，其中可包括通信线路、分支机构之间的网络连接、损坏的备份、对单一电力源的依赖，或地理接近的数据中心位置。如果没有交叉培训的人员后备其职责，那么人员可以是单点故障。宜考虑的重要相互依赖关系包括：
+内部系统和业务功能，可能包括客户服务、生产流程、硬件、软件、应用程序编程接口(即允许两个程序相互通信的代码)、数据以及法律/法定或流程必备资料的重要记录的文件编制。
+第三方服务提供商(如核心处理、在线和移动银行、结算活动和灾难恢复服务)、关键供应商(如硬件、软件和公用事业提供商)，以及业务合作伙伴和他们在韧性和恢复中的角色和责任。
+During its analysis, management should identify single points of failure, which may include telecommunication lines, network connections between branches, backups that become corrupted, reliance on one power source, or data center locations in close geographic proximity. Personnel can be a single point of failure if there are no cross-trained personnel to back up their responsibilities. Important interdependencies that should be considered include the following:
+Internal systems and business functions, which could include customer services, production processes, hardware, software, application programming interfaces (i.e., code that allows two programs to communicate with each other), data, and documentation of vital records for legal/statutory or process documentation.
+Third-party service providers (e.g., core processing, online and mobile banking, settlement activities, and disaster recovery services), key suppliers (e.g., hardware, software, and utility providers), and business partners and their roles and responsibilities for resilience and recovery.</p>
+<p>BIA将协助管理层组织合同和服务水平协议(SLA)要求，以确保每项服务的可用性和可靠性。对现存的合同和SLA，管理层宜确认合同和SLA要求与管理层和客户的连续性和韧性期望保持一致。
+The BIA will assist management in forming contract and service-level agreement (SLA) requirements for availability and reliability of each service. For pre-existing contracts and SLAs, management should confirm that the contract and SLA requirements align with management’s and the customer’s continuity and resilience expectations.</p>
+<p>Ⅲ.A.3 中断的影响Impact of Disruption</p>
+<p>通过BIA流程，管理层宜评估破坏性事件的潜在影响，包括运营、财务和声誉影响。管理层宜在确定中断的影响后制定恢复目标。常见的度量包括恢复点目标(RPO)、恢复时间目标(RTO)和最大可容忍中断时间(MTD)。适用时，宜评估这些度量与第三方服务提供商签约的恢复期望的一致性。
+Through the BIA process, management should evaluate the potential impact of disruptive events, including operational, financial, and reputational impacts. Management should establish recovery objectives after determining a disruption’s impact. Common measurements include recovery point objective (RPO), recovery time objective (RTO), and maximum tolerable downtime (MTD). Where applicable, these measurements should be evaluated for alignment with third-party service providers’ contracted recovery expectations.</p>
+<p>图3：恢复目标(对于事件) Figure 3: Recovery Objectives (Relative to an Event)</p>
+<p><img src="/bcmplus-blog/images/eJQuB7UCVluZkc6qu8vn0w_03.jpg" alt=""></p>
+<p>如图3所示，RPO表示中断前的时间点，在中断后数据能够恢复到该时间点(可得到的该数据的最近备份副本)。有关备份的更多信息，请参阅第IV.A.2节“数据和网络韧性”。
+As illustrated in figure 3, the RPO represents the point in time, before a disruption, to which data can be recovered (given the most recent backup copy of the data) after an outage. Refer to section
+IV.A.2, “Data and Cyber Resilience,”
+for additional information regarding backups.</p>
+<p>如图3所示，RTO定义了在对其他系统资源和业务流程产生不可接受的影响之前，系统资源能够保持不可用的最长时间。确定RTO对于选择合适的技术和策略非常重要。当无法满足RTO时，管理层宜核实RTO是否现实，启动行动计划和里程碑以记录情况，并在适当时计划缓释措施。管理层宜为每个业务功能考虑相关的RTO，以确定中断造成的总中断时间。制定现实的RTO有助于管理层确定恢复的关键路径和层次。举个例子，具有较短RTO的流程依赖于具有较长RTO的流程，可能表明宜进一步分析差距。
+As illustrated in figure 3, the RTO defines the maximum amount of time that a system resource can remain unavailable before there is an unacceptable impact on other system resources and business processes. Determining the RTO is important for selecting appropriate technologies and strategies. When it is not feasible to meet an RTO, management should verify whether the RTO is realistic, initiate an action plan and milestone(s) to document the situation, and, when appropriate, plan for its mitigation. Management should consider interrelated RTOs for each business function to determine the total downtime caused by a disruption. Establishing realistic RTOs assists management in determining a critical path and hierarchy for recovery. For example, a process with a shorter RTO that is dependent upon on a process with a longer RTO may indicate a gap that should be analyzed further.</p>
+<p>无论是受客户期望还是技术进步的推动，以前被设定为数小时的RTOs，现在可能需要接近实时恢复。因此，管理层宜重新评估当前可接受的RTO。
+Whether driven by customer expectations or technological advancement, previously established RTOs that were a few hours in duration may now require near real-time recovery. Therefore, it may be appropriate for management to reevaluate currently acceptable RTOs.</p>
+<p>如图3所示，MTD表示系统所有者或授权官员愿意接受的业务流程中断总时间，其中包括所有影响因素。在应急规划人员(contingency planner)选择适当的恢复方法和制定恢复程序的范围和深度时，MTD很重要。检查人员可能会遇到描述MTD的其他术语(如最大允许中断时间)。
+As illustrated in figure 3, the MTD represents the total amount of time the system owner or authorizing official is willing to accept for a business process disruption and includes all impact considerations. The MTD is important for contingency planners when selecting an appropriate recovery method and developing the scope and depth of recovery procedures. Examiners may encounter other terminology to describe MTD (e.g., maximum allowable downtime).</p>
+<p>无法满足RPO、RTO和MTD等既定的指标可能带来运营影响，包括中断或服务水平下降，无法满足安全要求，工作流中断，供应链中断以及业务计划推迟。财务影响可能包括收入损失，成本增加，或罚款和处罚。
+Failure to meet established metrics, such as RPO, RTO, and MTD, may have operational impacts, including discontinued or reduced service levels, inability to meet security requirements, workflow disruptions, supply chain disruptions, and delays of business initiatives. The financial impact could include the loss of revenue, increased costs, or fines and penalties.</p>
+<p>Ⅲ.B 风险评估Risk Assessment</p>
+<p>行动概要Action Summary</p>
+<p>管理层宜评估潜在中断和事件的可能性和影响。作为此评估的一部分，管理层宜考虑实体经营所在的地理区域。此外，管理层宜考虑可能影响实体的第三方服务提供商的风险和威胁。一旦管理层确定了情景；评估了对控制、策略和计划的具体威胁；并了解实体的风险敞口，管理层宜根据实体的风险偏好制定风险处置策略(包括风险接受或风险转移)。
+Management should evaluate the likelihood and impact of potential disruptions and events. As part of this evaluation, management should consider the geographical area where the entity operates. Additionally, management should consider the risks and threats that could affect the entity’s third-party service providers. Once management identifies scenarios; evaluates specific threats to the controls, strategies, and plans; and understands the entity’s risk exposure, management should develop risk treatment strategies (including risk acceptance or risk transfer) based on the entity’s risk appetite.</p>
+<p>检查人员宜审查风险评估，并确定它是否处理了实体的信息服务、技术、人员、设施和第三方提供服务中断的影响和可能性。具体而言，检查人员宜审查风险评估中是否包括以下类型的事件：
+自然事件，如火灾，洪水，恶劣天气，空气污染和危险品泄露；
+技术事件，如通信故障，电力故障，设备和软件故障，运输系统中断和供水系统中断；
+恶意活动，包括欺诈、盗窃、勒索、蓄意破坏、网络攻击、以及恐怖主义；
+可能影响服务的国际事件(如政治动荡和经济混乱)；
+低频高损事件(如恐怖袭击或大流行事件)。
+Examiners should review the risk assessment and determine whether it addresses the impact and likelihood of disruptions of the entity’s information services, technology, personnel, facilities, and services provided by third parties. Specifically, examiners should review whether the following types of events are included in the risk assessment:
+Natural events such as fires, floods, severe weather, air contaminants, and hazardous spills.
+Technical events such as communication failure, power failure, equipment and software failure, transportation system disruptions, and water system disruptions.
+Malicious activity, including fraud, theft, blackmail, sabotage, cyber attacks, and terrorism.
+International events that may affect services (e.g., political instability and economic disruptions).
+Low likelihood and high impact events (e.g., terrorist attacks or pandemic events).</p>
+<p>风险评估是识别运营、组织资产、个人和其他组织的风险的流程。风险评估结合了威胁和脆弱性分析并提出适当的缓释措施。作为风险评估流程的一部分，可以利用ERM中的信息，如业务流程文档、关键风险、影响和容忍度等。对BIA识别的关键功能和流程，管理层宜使用风险评估识别、衡量并降低其风险敞口。此外，风险评估流程可能会导致BIA变更。举个例子，管理层可能会根据业务流程对战略目标的重要性以及安全和稳健实践来排定优先级；然而，在建立威胁模型后，该结果可能迫使立即改变初始优先级或恢复计划。
+Risk assessment is the process of identifying risks to operations, organizational assets, individuals, and other organizations. Risk assessments incorporate threat and vulnerability analyses and address the appropriate mitigations. As part of risk assessment processes, information from the ERM can be leveraged, such as business process documentation, critical risks, impacts, and tolerances. Management should use risk assessments to identify, measure, and mitigate risk exposures to critical functions and processes identified by the BIA. Furthermore, the risk assessment process may result in changes to the BIA. For example, management may prioritize business processes based on their importance to strategic goals and safe and sound practices; however, after developing threat models, results may necessitate prompt alteration of initial priorities or recovery plans.</p>
+<p>Ⅲ.B.1 风险识别Risk Identification</p>
+<p>管理层进行风险评估时，业务连续性风险识别的重点是实体的韧性。尽管事件的原因可能相差很大，但许多影响却并非如此。根据联邦紧急事务管理局(FEMA)，威胁和危险可分为自然的、技术的、对抗的或人为的[16]。举个例子，每种威胁和危险都可以细分为内部的(如恶意的内部人员或人为错误)或外部的，系统的或非系统的，故意的或无意的，以及有或没有预警。尽管每种危险和威胁的特征(如发作速度，受影响区域的大小)可能不同，但恢复行动的通用任务却是相同的。管理层宜在业务连续性计划(BCP)中提出通用的运作功能，而非针对每种危险或威胁制定独特的计划。对所有威胁和危险进行规划，可确保在提出应急功能时，规划人员可以确定通用任务以及负责完成任务的人员。
+While management performs risk assessments, the focus of business continuity risk identification is on the resilience of the entity. While the causes of events can vary greatly, many of the effects do not. According to the Federal Emergency Management Agency (FEMA), threats and hazards can be categorized as natural, technological, and adversarial or human-caused.
+[16]
+Each of these threats and hazards can be subcategorized, for example as internal (e.g., malicious insider or human error) or external, systemic or non-systemic, deliberate or inadvertent, and with or without warning. Although the characteristics of each hazard and threat (e.g., speed of onset, size of the affected area) may be different, the general tasks for recovering operations are the same. Management should address common operational functions in the business continuity plan (BCP) instead of having unique plans for every type of hazard or threat. Planning for all threats and hazards ensures that, when addressing emergency functions, planners identify common tasks and the personnel responsible for accomplishing the tasks.
+注16：请参阅联邦应急管理署FEMA的综合准备指南(CPG)101 2.0版。非FFIEC文件仅用于说明常见风险，并非监管期望。</p>
+<p>管理层宜评估实体所在地理区域的可能风险。举个例子，实体可能位于洪水易发区、地震区、恐怖分子目标，或受龙卷风或飓风影响的地区。除地理区域外，管理层还宜评估地缘政治风险和报复性网络攻击的可能性。例如，美国对一个民族国家的制裁可能增加关键基础设施受到网络攻击的风险。
+Management should evaluate potential risks that are in the entity’s geographic area. For example, entities could be located in flood-prone areas, earthquake zones, terrorist targets, or areas affected by tornados or hurricanes. In addition to geographic areas, management should also assess geopolitical risk and the potential for retaliatory cyber attacks. For example, U.S. sanctions against a nation-state could increase the risk of cyber attacks against critical infrastructure(s).</p>
+<p>管理层宜协调全实体的业务连续性风险识别工作。较大实体中的个别业务单元宜协调风险识别活动，以识别对整个实体的系统性威胁。管理层宜识别并清点实体的内外部资产、威胁和危险类型，以及现有控制措施，作为有效风险识别的重要组成部分。有关更多信息，请参阅IT手册的“管理”分册。
+Management should coordinate business continuity risk identification efforts throughout the entity. Individual business units within larger entities should coordinate risk identification activities to identify systemic threats to the overall entity. Management should identify and inventory the entity’s internal and external assets, types of threats and hazards, and existing controls as an important part of effective risk identification. Refer to the IT Handbook’s “Management” booklet for additional information.</p>
+<p>此外，管理层宜识别网络安全风险(有关更多信息，请参阅IT手册的“信息安全”分册)，这些风险宜作为风险评估流程的一部分进行收集。如实施Gramm-Leach-Bliley法案(GLBA)的《建立信息安全标准的跨机构指导方针》(Interagency Guidelines Establishing Information Security Standards)
+[17]
+所述，网络安全可能会对客户信息带来风险。
+Furthermore, management should identify cyber security risks (refer to the IT Handbook’s “Information Security” booklet for additional information), which should be gathered as part of the risk assessment process. Cyber security can pose risk to customer information as discussed in the Interagency Guidelines Establishing Information Security Standards
+[17]
+that implement the Gramm-Leach-Bliley Act (GLBA).
+注17：请参阅美国联邦法规12第364部分(12 CFR 364)附录B(FDIC)发布的《建立信息安全标准的跨机构间指导方针》；美国联邦法规12第208部分(12 CFR 208)附录D-2和美国联邦法规12第225部分(12 CFR 225)附录F(FRB)；以及美国联邦法规12第30部分(12 CFR 30)附录B(OCC)。另请参阅《保护成员信息指导》，美国联邦法规12第748部分(12 CFR 748)附录A(NCUA)。</p>
+<p>管理层宜与外部来源协调，以获取有关危险和威胁的信息。外部来源包括行业信息共享团体(例如，金融服务信息共享和分析中心(FS-ISAC))，以及地方、州和联邦当局[18]，它们提供有关危险和威胁的及时和动态的信息。此外，共享实体事件的信息可以帮助其他方识别、评估和缓解网络安全威胁和漏洞。关于危险和威胁的信息宜在BIA、风险评估和其他BCM流程中予以考虑。有关更多信息，请参阅IT手册的“信息安全”分册。
+Management should coordinate with external sources to obtain information about hazards and threats. External sources include industry information-sharing groups (e.g., Financial Services Information Sharing and Analysis Center (FS-ISAC)), and local, state, and federal authorities
+[18]
+that provide timely and actionable information about hazards and threats. In addition, sharing information about events at an entity may help others identify, evaluate, and mitigate cybersecurity threats and vulnerabilities. Information about hazards and threats should be considered in the BIA, risk assessment, and other BCM processes. Refer to the IT Handbook’s “Information Security” booklet for additional information.
+注18：示例包括第一芝加哥县(ChicagoFirst county)和州政府，国土安全部的国家恐怖主义警报系统、联邦应急管理署和世界卫生组织。</p>
+<p>风险识别流程中的一个组成部分是威胁情报(美国国家标准与技术研究所(NIST)将其定义为“经过聚合、转换、分析、解释或丰富的信息，为决策流程提供必要的背景”)的收集和评估。管理层宜将其威胁情报流程与BCM功能相结合。
+One component in the risk identification process is the gathering and assessment of threat intelligence, which National Institute of Standards and Technology (NIST) defines as “information that has been aggregated, transformed, analyzed, interpreted, or enriched to provide the necessary context for decision-making processes.” Management should integrate its threat-intelligence process with the BCM function.</p>
+<p>当实体与其第三方服务提供商紧密互连时，威胁可能会被放大。影响一个实体或第三方服务提供商的事件可能会导致连锁影响，从而迅速影响其他服务提供商、机构或行业。BCM中的术语“供应链风险”可以用于表示与实体和其他实体之间的互联性有关的风险。第三方服务提供商的严重故障可能会造成大范围影响。管理层宜识别实体与其第三方服务提供商之间以及其他实体与第三方服务提供商之间的互连点。记录事务流，如开发正式的流程图等，可以帮助管理层识别相互依赖关系和端到端的流程。
+Threats are potentially magnified when entities and their third-party service providers are tightly interconnected. An incident affecting one entity or third-party service provider can result in cascading impacts that quickly affect other service providers, institutions, or sectors. The term “supply chain risk” in BCM may be used to represent the risk related to the interconnectivity among the entity and others. A critical failure at a third-party service provider could have large-scale consequences. Management should identify interconnectivity points between the entity and its third-party service providers, as well as between other entities and third-party service providers. Documenting the flow of transactions, such as developing formal process diagrams, may help management identify interdependencies and end-to-end processes.</p>
+<p>Ⅲ.B.2 可能性和影响Likelihood and Impact</p>
+<p>管理层宜评估破坏性事件的可能性和影响。风险范围从发生可能性高、影响小(如短暂停电)的风险，到发生概率低、影响大(如大流行)的风险。最难处理的风险是那些可能对实体有很大影响但发生概率很低的风险。国土安全部(DHS)的国家基础设施保护计划[19]提供了帮助分析风险的风险度量流程和方法的示例。
+Management should evaluate the likelihood and impact of disruptive events. Risks may range from those with a high likelihood of occurrence and low impact, such as brief power interruptions, to those with a low probability of occurrence and high impact, such as pandemics. The most difficult risks to address are those that may have a high impact on the entity but a low probability of occurrence. The Department of Homeland Security’s (DHS) National Infrastructure Protection Plan
+[19]
+provides examples of risk measurement processes and methodologies to help analyze risks.
+注19：请参见国土安全部的国家基础设施保护计划《National Infrastructure Protection Plan》</p>
+<p>作为评估的一部分，管理层宜量化影响，并将损失标准明确为定量(财务)或定性(如对客户的影响、声誉影响等)。BCM风险评估宜与实体的风险和复杂程度相称，并宜包括合理可预见的事件。最坏情况的情景，如设施毁坏和生命损失等，宜得到处理。州和地方当局可协助管理层识别地理位置特定的风险或敞口，以及进入紧急区域的特别要求。
+As part of the assessment, management should quantify the impacts and define loss criteria as either quantitative (financial) or qualitative (e.g., impact to customers, reputational impact). The BCM risk assessment should be commensurate with the entity’s risk and complexity and should include reasonably foreseeable events. Worst-case scenarios, such as destruction of the facilities and loss of life, should be addressed. State and local authorities may assist management with identifying specific risks or exposures for geographic locations, and special requirements for accessing emergency zones.</p>
+<p>管理层还宜评估其第三方服务提供商是否根据设施的地理位置、其对威胁的敏感性(如位于洪泛平原),以及与关键基础设施(如电网，通信，核电站，机场，主要公路和铁路)的接近程度考虑中断的可能性。
+Management should also assess whether its third-party service providers consider the likelihood of a disruption based on the geographic location of facilities, their susceptibility to threats (e.g., location in a flood plain), and the proximity to critical infrastructure (e.g., power grids, telecommunications, nuclear power plants, airports, major highways, and railroads).</p>
+<p>管理层在评估中断的可能性和影响时，宜确定威胁的潜在严重性，并估计各种威胁情景下中断的影响。结果可以是定量评分(如基于数字排名)或定性评分(如高、中、低)，然后排序。有关更多信息，请参阅IT手册的“管理”分册。
+Management should determine the potential severity of threats and estimate the disruption’s impact under various threat scenarios as it assesses the likelihood and impact of a disruption. The results may be scored quantitatively (e.g., based on a numerical ranking) or qualitatively (e.g., high, medium, and low) and then prioritized. Refer to the IT Handbook’s “Management” booklet for additional information.</p>
+<p>一旦管理层确定了情景，宜评估对实体的控制、策略和计划的具体威胁。来自可能预见威胁带来的风险，与当前控制措施提供的缓释之间的差异或差距，代表了风险敞口。管理层宜根据实体的风险偏好制定风险管理策略，可包括风险缓释、规避、接受或风险转移。
+Once management identifies scenarios, it should evaluate specific threats to the entity’s controls, strategies, and plans. The difference, or the gap, between the risks from likely foreseeable threats and the mitigation provided by current controls, represents the risk exposure. Management should develop strategies to manage risk, which could include risk mitigation, avoidance, acceptance, or risk transfer, based on the entity’s risk appetite.</p>
+<p>Ⅳ 业务连续性策略Business Continuity Strategies</p>
+<p>行动概要Action Summary</p>
+<p>董事会和高级管理层宜制定有效的策略，实现韧性和恢复目标。有效的监督通常包括实现确定的业务连续性目标的指导方针。
+The board and senior management should develop effective strategies to meet resilience and recovery objectives. Effective oversight generally includes guidelines to achieve defined business continuity objectives.</p>
+<p>检查人员宜应审查BCM策略，并确定策略是否：
+解决人员、流程、技术和设施问题；
+解决运营环境中的关键业务风险(例如减轻特定或独特的威胁，如网络威胁或失去关键的第三方服务提供商等)；
+概述数据保护的备份、复制和存储方法的组合；
+为通信基础设施中提供高冗余等级；
+详述在整个实体中一致的变更管理流程；
+包括任何专有系统的替代方案；
+适用时，包括适当的国际商业活动的规定。
+Examiners should review BCM strategies and determine whether the strategies:
+Address personnel, processes, technology, and facility issues.
+Address critical business risks in the operating environment (e.g., mitigate specific or unique threats, such as cyber threats or loss of critical third-party service providers).
+Outline a combination of backup, replication, and storage methods for data protection.
+Provide for high redundancy levels in the telecommunications infrastructure.
+Detail a consistent change management process throughout the entity.
+Include alternatives for any proprietary systems.
+Include provisions for appropriate international business activities, where applicable.</p>
+<p>业务连续性策略是在BIA和风险评估流程之后制定的。这些策略宜基于风险并应对所有可预见的风险，包括非技术风险(如交易、流动性和声誉风险)。策略宜包括分配资源以实现韧性和恢复目标。宜验证策略，确认它们可行并足以应对峰值工作量。举个例子，对技术的依赖和互连性的增加，使长时间手工操作(如果有的话)对许多实体变得不太可行。
+Business continuity strategies are developed after the BIA and risk assessment process. These strategies should be risk-based and address all foreseeable risks, including non-technology risks (e.g., transaction, liquidity, and reputation risks). Strategies should include allocation of resources to meet resilience and recovery objectives. Strategies should be validated to confirm that they are viable and sufficient for peak work volumes. For example, the increased reliance on and interconnectivity of technology makes it less feasible for many entities to operate manually for an extended period, if at all.</p>
+<p>策略宜包括对人员、流程、技术、设施和数据的可能影响。人员相关的策略可以包括物流安排，以将人员运送或安置在备用设施。此外，管理层可以建立与员工、客户和外部各方沟通的替代方法。流程相关的策略可以包括用于业务条线运营或手工流程的冗余工作站点。技术相关的策略可以包括装备齐全的备份数据中心或云提供商。备份策略宜包括数据文件、操作系统、应用程序和实用程序。设施相关的策略可以包括地域多样性或多电源，以降低单点故障风险。
+Strategies should include the potential impact to personnel, processes, technology, facilities, and data. Personnel-related strategies may include logistical arrangements to transport or house staff at alternate facilities. In addition, management may establish alternate methods for communicating with employees, customers, and external parties. Process-related strategies may include redundant work sites for business-line operations or manual processes. Technology-related strategies may include fully equipped backup data centers or cloud providers. Backup strategies should include data files, operating systems, and applications and utilities. Facilities-related strategies may include geographic diversity or multiple power sources to reduce single point of failure risk.</p>
+<p>数据保护策略通常包括备份、复制和存储的组合，以实现不同级别的连续性和韧性。举个例子，部署更自动化、可扩展的解决方案可能是合适的，例如将数据复制到云。管理层宜制定保护数据的综合策略，例如：
+集成运营、连续性和韧性策略，以基于恢复目标保护数据；
+设计一个流程来保护数据的完整性和可用性不受威胁；
+监视数据保护解决方案的效能和效率。
+Data protection strategies typically include a combination of backup, replication, and storage to achieve different levels of continuity and resilience. For example, it may be appropriate to deploy more automated, scalable solutions, such as data replication to a cloud. Management should develop comprehensive strategies to protect data, such as:
+Integrating operational, continuity, and resilience strategies to protect data based on recovery objectives.
+Designing a process to preserve the integrity and availability of data from threats.
+Monitoring the effectiveness and efficiency of data protection solutions.</p>
+<p>策略宜解决运营环境中的关键业务风险。管理层宜考虑减轻特定或独特威胁(如网络威胁或失去关键第三方服务提供商)的策略。应对事件的具体策略可能因实体的能力而有所不同。鉴于对实体业务活动的重大和独特风险，管理层宜确定专有系统的替代方案。举个例子，一些实体使用内部开发的资产(如电子表格或其他工具)，这些资产对业务部门内的某些计算至关重要，在风险评估和BIA流程中，这些资产常常被忽略，包括它们存储的位置和方式。此外，管理层还宜考虑语音和数据的访问能力，将技术基础设施与员工需求对应，以及内部和外部能力(包括远程能力)，以确定远程办公策略是否足够。
+Strategies should address critical business risks in the operating environment. Management should consider strategies to mitigate specific or unique threats, such as cyber threats or loss of critical third-party service providers. The specific strategy in response to an event may be different based on the entity’s capabilities. Management should determine what alternatives exist for proprietary systems given the significant, unique risks to an entity’s business activities. For example, some entities use internally developed assets (e.g., spreadsheets or other tools) that are critical for certain calculations within a business unit, which are often overlooked, including where and how they are stored, during the risk assessment and BIA processes. Furthermore, management should also consider access capabilities for voice and data, mapping technology infrastructure to employee needs, and internal and external capacity (including remote capacity) to determine whether telecommuting strategies are sufficient.</p>
+<p>策略可能包括云架构、虚拟化和其他技术。云解决方案可以提供经济高效的高可用性环境。独立于为体系结构和数据保护选择的策略，管理层仍宜负责数据完整性和总体韧性。基于云的灾难恢复服务[20]可以被视为韧性项目(resilience program)的一部分。有关更多信息，请参阅第V.E.1节“数据中心恢复替代方案”。
+Strategies could include cloud architectures, virtualization, and other technologies. Cloud solutions may provide a cost-effective and high-availability environment. Independent of the strategies selected for architecture and data protection, management should still be responsible for data integrity and overall resilience. Cloud-based disaster recovery services
+[20]
+may be considered as part of resilience programs. Refer to section
+V.E.1, “Data Center Recovery Alternatives,”
+for additional information.
+注20：请参阅FFIEC关于外包云计算的声明。</p>
+<p>Ⅳ.A 韧性Resilience</p>
+<p>行动概要Action Summary</p>
+<p>管理层宜评估是否有适当的资源来确保韧性，包括可访问的场外软件、配置设置，相关文档、适当的数据备份的存储库，以及运行恢复系统的场外基础设施。
+Management should evaluate whether there are appropriate resources to ensure resilience, including an accessible, off-site repository of software, configuration settings, and related documentation, appropriate backups of data, and off-site infrastructure to operate recovery systems.</p>
+<p>此外，管理层宜与实体的第三方服务提供商讨论可能的灾难情景，为事件做准备。随后，管理层宜评估实体即时或短期的空间需求，承担或转移运营故障的系统和人员能力。此外，管理层宜评估关键第三方服务提供商对同时攻击的敏感度，并核实其韧性能力。
+Furthermore, management should discuss potential disaster scenarios with the entity’s third-party service providers to prepare for an event. Subsequently, management should assess the entity’s immediate or short-term space requirements, systems, and personnel capacity to assume or transfer failed operations. Additionally, management should assess critical third-party service providers’ susceptibility to simultaneous attacks and verify their resilience capabilities.</p>
+<p>检查人员宜审查以下内容：
+韧性实践的适宜性，包括恢复基础设施和备份流程的充分性；
+与灾难恢复服务集成，以防止数据破坏；
+评估实体与关键第三方服务提供商之间的备用数据通信基础设施；
+在韧性规划、测试和恢复策略中评估实体对多种威胁情景的敏感度；
+任命应急人员，包括关键业务流程级别的员工。
+Examiners should review the following:
+Appropriateness of resilience practices, including the adequacy of recovery infrastructure and backup processes.
+Integration with disaster recovery services to protect against data destruction.
+Assessment of alternate data communications infrastructure between the entity and critical third-party service providers.
+Evaluation of the entity’s susceptibility to multiple threat scenarios in resilience planning, testing, and recovery strategies.
+Designation of emergency personnel, including for critical business process-level employees.</p>
+<p>韧性是“准备和适应不断变化的环境，能够承受并迅速从干扰中恢复的能力。韧性包括抵御蓄意攻击、事故或自然发生的威胁或事件并从中恢复的能力。”[21]业务战略，而非技术解决方案宜推动韧性。韧性超出恢复能力的范围，它结合了降低运营和流程总体设计中破坏性事件风险的主动措施。韧性策略(包括维护安全标准)，宜扩展到包括外包活动的整个业务。管理层宜评估该实体是否具有韧性相当的资源(如人力、财力、时间)。在制定实体的韧性策略时，管理层宜考虑从以往事件中吸取的教训。
+Resilience is “the ability to prepare for and adapt to changing conditions and withstand and recover rapidly from disruptions. Resilience includes the ability to withstand and recover from deliberate attacks, accidents, or naturally occurring threats or incidents.”
+[21]
+The business strategy, not technology solutions, should drive resilience. Resilience extends beyond recovery capabilities to incorporate proactive measures for mitigating the risk of a disruptive event in the overall design of operations and processes. Resilience strategies, including maintaining security standards, should extend across the entire business, including outsourced activities. Management should evaluate whether the entity has appropriate resources (e.g., human, financial, time) for resilience. When developing the entity’s resilience strategies, management should consider lessons learned from previous events.
+注21：请参阅总统政策令/PPD-21，《总统政策指令--关键基础设施安全与韧性》(Presidential Policy Directive – Critical Infrastructure Security and Resilience)，2013年2月12日。</p>
+<p>Ⅳ.A.1 物理Physical</p>
+<p>物理韧性是实现业务连续性的传统方法，包括IT架构、基础设施、设施和通信。为避免中断后出现故障的可能性，管理层宜尽可能使通信线路多样化，在分支机构和数据中心之间建立冗余连接，创建备份，确定多个电力源，并核实关键实体位置的地理多样性。
+Physical resilience is the traditional approach to business continuity and includes IT architecture, infrastructure, facilities, and communications. To avoid the potential for failures after a disruption, management, when possible, should diversify telecommunication lines, establish redundant connections between branches and data centers, create backups, identify multiple power sources, and verify geographic diversity of key entity locations.</p>
+<p>Ⅳ.A.2 网络韧性Cyber Resilience</p>
+<p>网络韧性面临的一个挑战是，尽管风险不断变化(如恶意软件、数据或系统破坏和损坏，以及通信基础设施中断)，仍要维持运营。网络攻击的复杂性和频率增加了数据和系统中断和破坏的可能性。考虑到网络威胁的广泛性和日益增长的范围，韧性措施宜足够灵活以适应各种各样的事件。举个例子，网络攻击可能同时影响生产和备份设施，导致它们都不能运行，无论托管在内部还是第三方服务提供商。
+A challenge for cyber resilience is maintaining operations despite ever-changing risks (e.g., malware, data or system destruction and corruption, and communications infrastructure disruption). The sophistication and frequency of cyber attacks increase the potential for disruption and destruction of data and systems. Given the broad and increasing spectrum of cyber threats, resilience measures should be flexible enough to adapt to a diverse range of events. For example, a cyber attack could impact both production and backup facilities simultaneously, potentially rendering both inoperable, whether hosted internally or by a third-party service provider.</p>
+<p>此外，对手可发起二次干扰(如最初的干扰可能是飓风的影响，二次干扰是虚假交易或访问敏感数据)。或者，对手可能发起同时攻击(如结合分布式拒绝服务(DDoS)攻击与电子转账损害)。因此，即使在发生破坏性事件期间，管理层宜坚持既定的安全和隐私政策和流程，以遵守适用的法规。
+In addition, adversaries may initiate a secondary disruption (e.g., the original disruption could be the impact of a hurricane with the secondary disruption being false transactions or accessing sensitive data). Alternatively, adversaries can launch simultaneous attacks (e.g., a distributed denial of service (DDoS) attack combined with a wire transfer compromise). Therefore, management should adhere to established security and privacy policies and processes to comply with applicable regulations, even during disruptive events.</p>
+<p>Ⅳ.A.3 数据备份和复制Data Backup and Replication</p>
+<p>管理层宜为数据的所有迭代(包括数据备份和复制)维护数据的机密性、完整性和可用性，而不只是关注生产环境。在发生中断事件时，数据备份和重新创建对于恢复关键业务功能很重要。备份文件通常以电子方式创建，可以在异地镜像，备份在可移动媒介上、在异地轮换之前临时存储在网络服务器上，或备份到云环境。备份宜易于访问，并遵守实体的信息安全策略。
+Management should maintain data confidentiality, integrity, and availability for all iterations of data, including data backup and replication, not just focused on the production environment. Data backup and re-creation are important to recovering critical business functions in the event of disruptions. Backup files are commonly created electronically and can be mirrored at an off-site location, backed up on removable media, stored temporarily on network servers until rotated off-site, or backed up to a cloud environment. Backups should be readily accessible and adhere to the entity’s information security policy.</p>
+<p>随着技术和威胁环境的发展，管理层宜重新评估备份和恢复策略。对于实时或大容量系统，采用高级复制和备份方法可能是合适的。这些高级方法(包括云和镜像)提供了高可用性，详见第V.C.1节“数据中心恢复替代方案”。
+Management should reassess backup and recovery strategies as the technology and threat environments evolve. For real-time or high-volume systems, it may be appropriate to have advanced duplication and backup methods. These advanced methods, including cloud and mirroring, provide high availability and are detailed in section
+V.C.1, “Data Center Recovery Alternatives.”</p>
+<p>管理层宜维护一个可访问的、场外的软件、配置设置和相关文档的存储库。即使标准软件配置也可能因位置而发生变化。差异可能包括参数设置和更改、安全配置文件、报告选项、帐户信息、自定义软件变更或其他选项。未备份软件配置可能导致无法运行或恢复延迟。因此，重要的是全面备份关键软件。软件备份通常包括以下部分：
+操作系统；
+应用程序；
+实用程序；
+数据库；
+BIA中识别的其他关键软件。
+Management should maintain an accessible, off-site repository of software, configuration settings, and related documentation. Even standard software configurations can vary from one location to another. Differences could include parameter settings and modifications, security profiles, reporting options, account information, customized software changes, or other options. Failure to back up software configurations could result in inoperability or could delay recovery. Therefore, a comprehensive backup of critical software is important. Software backups generally consist of the following components:
+Operating systems.
+Applications.
+Utility programs.
+Databases.
+Other critical software identified in the BIA.</p>
+<p>管理层宜建立有效程序来恢复关键网络和系统。这些程序可以解决以下问题：
+备份类型(物理的或虚拟的)；
+备份级别(全备份，增量备份或差异备份)；
+更新和保留周期频率；
+软件和硬件兼容性审查；
+数据传输控制；
+数据存储库维护。
+Management should establish effective procedures to recover critical networks and systems. Procedures may address the following:
+Backup types (physical or virtual).
+Backup levels (full, incremental, or differential).
+Updates and retention cycle frequencies.
+Software and hardware compatibility reviews.
+Data transmission controls.
+Data repository maintenance.</p>
+<p>有关更多信息，请参阅IT手册的“运营”分册。
+Refer to the IT Handbook’s “Operations” booklet for additional information.</p>
+<p>数据复制(也称为数据同步或镜像)是复制数据的流程，通常目的是在不同的地理位置维护相同的数据集。在任何环境中，复制对于韧性都是重要的。此外，管理层宜考虑复制期间的完整性控制，以便将生产、开发和质量保障环境中的数据变更应用于整个网络。
+Data replication (also referred to as data synchronization or mirroring) is the process of copying data, usually with the objective of maintaining identical data sets in separate locations. Replication is important in any environment for resilience. Furthermore, management should consider integrity controls during replication so that data changes in production, development, and quality assurance environments are applied throughout the network.</p>
+<p>用于信息系统的两种常见数据复制流程是同步和异步。同步复制表示通过同时应用更改来直接应用数据。实际上，同步复制允许数据以连续流的形式传输，并最大程度地减少了数据丢失；但是，这需要大量的通信带宽，并且由于延迟问题，在传输数据的距离方面存在限制。同步复制通常用于关键业务功能，这些功能中几乎不能容忍有数据丢失。相反，异步复制是通过在传输前对日志进行更改来间接应用数据。实际上，异步复制允许间歇性地传输数据。虽然异步复制增加了数据丢失的可能性，因为需要几分之一秒传输数据，但由于降低了延迟问题，这个流程需要较少的通信带宽，在数据进行较长距离传输时很有用。
+Two common data replication processes used for information systems are synchronous and asynchronous. Synchronous replication represents the direct application of the data by applying changes at the same time. In practice, synchronous replication allows data to be transmitted in a continuous stream and minimizes data loss; however, it requires significant communication bandwidth and has limitations on the distance data can be transported due to latency issues. Synchronous replication is typically used for critical business functions where little or no data loss can be tolerated. Conversely, asynchronous replication is the indirect application of data through applying changes to a log before transit. In practice, asynchronous replication allows data to be transmitted in intermittent batches. While asynchronous replication increases the potential for data loss related to the fractions of a second required to transmit the data, this process requires less communication bandwidth and is useful for data transport over longer distances, due to reduced latency issues.</p>
+<p>管理层宜为数据备份的每次迭代确定适当的保存期。实体宜防止复制恶意软件和破坏数据。使用近实时数据复制系统会增加这种风险，因为恶意软件可能因未被发现而被复制了。即使使用诊断工具，管理层也可能直到事件发生后才发现导致数据完整性问题的事件，因为数据可能看起来没有损坏，但后来被确定为不准确。管理层可以确定关键数据文件的备份宜保存更长的时间，以确保能够在损坏事件发生之前恢复备份。
+Management should determine the appropriate retention periods for each iteration of data backup. Entities should safeguard against replicating malware and data corruption. This risk is heightened with the use of near real-time data replication systems, as malware can be replicated undetected. Even with diagnostic tools, management could be unaware of an event that causes data integrity issues until well after it happens, as data could appear uncorrupted but later determined to be inaccurate. Management may determine that the backup of critical data files should be subject to longer retention periods to ensure the ability to recover a backup prior to a corruption event.</p>
+<p>即使在主要和备用设施无法运作或损坏的情况下，实体的客户仍希望能够访问其帐户。实体宜制定适当的网络韧性流程(如恢复数据和业务运营，重建网络功能并复原数据)，以在机构或其关键服务提供商遭受破坏性网络攻击或类似事件的损害时，恢复关键服务。BCM宜具有保护离线数据备份不受破坏性恶意软件或其他可能破坏生产和在线备份数据版本的威胁的能力。避风港(Sheltered Harbor)[22]是帮助解决客户帐户信息韧性的行业计划的一个示例。
+Even in situations when the primary and backup facilities are inoperable or corrupted, customers of the entities expect to be able to access their accounts. Entities should develop appropriate cyber resilience processes (e.g., recovery of data and business operations, rebuilding network capabilities and restoring data) that enable restoration of critical services if the institution or its critical service providers fall victim to a destructive cyber attack or similar event. BCM should include the ability to protect offline data backups from destructive malware or other threats that may corrupt production and online backup versions of data. An example of an industry initiative to assist in addressing the resilience of customer account information is Sheltered Harbor.
+[22]
+注22：避风港是2015年在公共和私营部门之间进行的一系列网络安全模拟演练(称为汉密尔顿系列)之后发起的一项自愿行业倡议。拟议的避风港标准旨在促进金融业的稳定和韧性，并维护公众对金融体系的信心。避风港标准建议将关键客户账户信息的安全数据库与全面的韧性计划相结合，以便在系统长时间中断或破坏性网络攻击期间，为客户提供及时访问其账户信息和基础资金的机会。</p>
+<p>Ⅳ.A.4 人员</p>
+<p>韧性取决于人员的可用性来维持关键的业务流程。人员可能会不可用，或者在诸如自然灾害、恶劣天气或大流行病[23]等事件期间分心。虽然任何一个员工的角色都不能被指定为任务关键型，但管理层宜为事件或中断期间大规模缺勤制定计划。先前的灾难性事件(如卡特里娜飓风[24])表明人员可用性会影响及时恢复。
+Resilience is dependent upon personnel availability to maintain critical business processes. Personnel could be unavailable or distracted during such events as natural disasters, severe weather events, or pandemics.
+[23]
+While any one employee’s role may not be designated as mission critical, management should plan for mass absenteeism during an event or disruption. Previous catastrophic events (e.g., Hurricane Katrina
+[24]
+) demonstrate that personnel availability affects timely recovery.
+注23：请参阅FFIEC的《FFIEC精选大流行病准备指南》(FFIEC Highlights Pandemic Preparedness Guidance)。
+注24：请参阅FFIEC《从卡特里娜飓风中吸取的教训：为灾难性事件做好准备》(Lessons Learned From Hurricane Katrina：Preparing Your Institution for a Catastrophic Event)
+。</p>
+<p>管理层宜为可能导致人员无法进入设施和中断后关键人员无法立即到岗的事件做出计划。公共基础设施和交通系统可能无法运行，通信系统可能负载过多且不可用。因此，管理层宜考虑：
+业务连续性相关的关键功能运营所需的人员和技能；
+无家可归员工及其家庭的住宿安排；
+为无家可归员工提供的基本必需品和服务，包括水，食物，衣服，育儿，交通和现金；
+现场医疗支持和移动指挥中心；
+如果员工在其他地方工作确保通信畅通；
+指定的应急人员，包括关键业务流程级别的员工。
+Management should plan for events during which personnel may not be able to access facilities and critical personnel may not be available immediately after the disruption. Public infrastructure and transportation systems may not be operating, and telecommunication systems may be overburdened and unavailable. Therefore, management should consider:
+Staffing and skills needed to operate critical functions related to business continuity.
+Lodging arrangements for displaced employees and their families.
+Basic necessities and services for displaced employees, including water, food, clothing, childcare, transportation, and cash.
+On-site medical support and mobile command centers.
+Secure telecommunication options if employees work from an alternate location.
+Designated emergency personnel, including critical business process-level employees.</p>
+<p>Ⅳ.A.5 第三方服务提供商Third-Party Service Provider</p>
+<p>许多实体都依赖第三方服务提供商来执行或支持关键运营。这些服务交付的中断可能对实体的韧性产生直接影响。广泛使用的第三方服务提供商的严重故障可能会造成大规模影响。管理层宜评估关键的第三方服务提供商对多个事件情景的敏感度，并核实此类第三方的韧性能力。如果管理层未考虑替代供应商或其他应急计划，则实体的第三方服务提供商可能成为单点故障。如果没有随时可用的备选的第三方服务提供商，管理层宜考虑选择继续业务运营，并随着情况的变化定期重新评估韧性方案。韧性规划宜与第三方服务提供商紧密协调。
+Many entities depend on third-party service providers to perform or support critical operations. A disruption in the delivery of those services can have a direct impact on entities’ resilience. A critical failure at a widely used third-party service provider could have large-scale consequences. Management should assess critical third-party service providers’ susceptibility to multiple event scenarios and verify such third parties’ resilience capabilities. An entity’s third-party service provider can be a single point of failure if management has not considered alternative providers or other contingency plans. If an alternative third-party service provider is not readily available, management should consider options to continue business operations and reevaluate resilience options periodically as conditions may change. Resilience planning should be closely coordinated with third-party service providers.</p>
+<p>与第三方服务提供商建立明确的期望对业务韧性很重要。与第三方服务提供商的合同和SLA宜详细说明各方的角色和责任，以增强韧性。对实体的第三方服务提供商的持续监控有助于管理层识别第三方服务提供商的韧性中可能的弱点，这些弱点可能会影响实体的运营。
+Establishing well-defined expectations with third-party service providers is important to business resilience. Contracts and SLAs with third-party service providers should detail roles and responsibilities of each party to promote resilience. Ongoing monitoring of the entity’s third-party service providers helps management identify potential weaknesses in the third-party service provider’s resilience that could affect the entity’s operations.</p>
+<p>管理层对实体的第三方服务提供商的BCM项目(BCM program)的审查可包括独立的审计报告或SOC报告。SOC报告可以包含有关第三方服务提供商的产品和流程的有价值的信息。[25]如果管理层依赖SOC报告，则应核实是否对业务连续性活动进行了审计，包括审查的范围和深度是否足以使管理层评估第三方服务提供商的控制环境。根据审核测试的范围，可能还需要进行其他查询和活动，以了解第三方服务提供商的韧性。
+Management’s review of an entity’s third-party service provider’s BCM program may include independent audit reports or SOC reports. SOC reports can contain valuable information about the third-party service provider’s products and processes. If management relies on SOC reports, it should verify whether business continuity activities are audited, including whether the scope and depth of review are sufficient to allow management to evaluate the third-party service provider’s control environment.
+[25]
+Depending on the scope of the audit testing, additional inquiry and activities may be appropriate to understand the resilience of the third-party service provider.
+注25：SOC 1报告涵盖了影响财务报告的第三方服务提供商的控制措施。业务连续性活动通常在SOC 1报告中未经审核的部分中报告，因为除非审核期间发生事件，否则这些活动通常与财务报表的编制没有直接关系。SOC 2报告涵盖信任服务标准，并包括诸如安全性、机密性、可用性、隐私性和完整性等活动。审核机构通常不会对业务连续性活动的质量发表意见，因为很难预测在实际事件中会发生什么。与业务连续性相关的活动(如复制、预案编制和测试)可能包含在涵盖可用性的SOC 2报告中。</p>
+<p>管理层宜考虑其实体自己的内部BCP中概述的与第三方服务提供商有关的相同风险，以及：
+第三方服务提供商满足协议中与其他客户需求有关的客户恢复目标的能力；
+能够与第三方服务提供商一起参与恢复测试并获得测试结果；
+能够将外部流程移至内部或其他服务提供商；
+无法提供主要服务时的备选资源选项(如人员和系统等)；
+数据机密性、完整性和可用性(如可传输性和互操作性等)；
+继续履行合同义务的财务能力；
+服务集中在少数的第三方服务提供商中。
+Management should consider the same risks outlined in their entity’s own internal BCP(s) in relation to third-party service providers, as well as:
+Capacity of third-party service provider to meet client recovery objectives in the agreements, relative to other clients’ needs.
+Ability to participate in recovery testing with third-party service providers and access to testing results.
+Ability to move outsourced processes either in-house or to another third-party service provider.
+Alternative resource options (e.g., personnel and systems) for when primary services cannot be delivered.
+Data confidentiality, integrity, and availability (e.g., transportability and interoperability).
+Financial capacity to continue meeting contractual obligations.
+Services concentrated in a limited number of third-party service providers.</p>
+<p>合同和SLA中与业务连续性相关的规定可包括以下内容：
+订约服务的时间参数；
+适当的基准指标描述了管理层的韧性和恢复期望(如事件响应指标，以确保对影响业务连续性和韧性的事件做出及时响应)；
+定期进行服务审查，以确保与有关各方保持最新协议。
+Business continuity-related provisions found in contracts and SLAs may include the following:
+Time parameter(s) for contracted service(s).
+Appropriate baseline metrics describing management’s resilience and recovery expectations (e.g., an incident response metric to ensure timely response to events impacting business continuity and resilience).
+Periodic service reviews to ensure up-to-date agreements with all parties involved.</p>
+<p>如果某个第三方服务提供商结束运营，大多数应用程序切换到备选系统所需的时间可能超过合理的RTO。管理层宜尽可能为支持关键运营的第三方服务提供商的韧性制定计划。
+If operations at a third-party service provider cease, the length of time required to convert to an alternate system would, for most applications, exceed a reasonable RTO. To the extent possible, management should establish plans for the resilience of third-party service providers supporting critical operations.</p>
+<p>Ⅳ.A.6 通信Telecommunications</p>
+<p>考虑到通信的关键性质，管理层宜确保实体通信基础设施具备适当的冗余等级。实体的通信基础设施可能包含单个实体无法控制的单点故障。管理层宜了解该实体的第三方通信提供商基础设施的局限性。举个例子，多个运营商可能依赖同一个通信骨干网。在建立通信冗余时，管理层宜考虑的关键方面包括：
+识别并减轻整个实体基础设施中的单点故障；
+与实体的主要第三方服务提供商一起制定和维护解决通信线路中断问题的计划；
+通过合同安排，与实体的每个第三方服务提供商建立冗余的通信线路，以使任何一方都能将连接切换到备选通信线路。
+审查实体第三方服务提供商的计划，确定关键服务是否能够在可接受的时间范围内恢复；
+根据实体的规模、复杂程度和风险状况，制定相应的指导方针，使连接多样化，以降低通信故障风险；
+针对单点故障，评估适合通信服务提供商与实体之间传输距离(有时称为“最后一英里”)的通信技术；
+监控与通信提供商的关系，以管理风险；
+查询通信提供商使用的物理链路，并核实已恰当实施了系统冗余。
+Given the critical nature of telecommunications, management should ensure appropriate redundancy levels in the entity’s telecommunications infrastructure. The entity’s telecommunications infrastructure may contain single points of failure that are outside the control of a single entity. Management should understand the limitations of the entity’s third-party telecommunications providers’ infrastructure. For example, multiple carriers may rely on the same telecommunications backbone. Key aspects management should consider in establishing telecommunication redundancy include:
+Identifying and mitigating single points of failure across the entity’s infrastructure.
+Developing and maintaining a plan to address an outage in the telecommunications lines with the entity’s primary third-party service providers.
+Establishing redundant telecommunications links with each of the entity’s third-party service providers through a contractual arrangement, which allows either party to switch its connection to an alternate communication path.
+Reviewing the entity’s third-party service providers’ plans and determining whether critical services can be restored within acceptable time frames.
+Developing guidelines, commensurate with the entity’s size, complexity, and risk profile, to diversify connections to mitigate the risk of a telecommunications failure.
+Assessing the communications technology that bridges the transmission distance between the telecommunications service provider and the entity, sometimes referred to as the “last mile,” for single points of failure.
+Monitoring relationships with telecommunications providers to manage risks.
+Inquiring about the physical paths used by telecommunications providers and verifying that system redundancies have been properly implemented.</p>
+<p>通信对金融服务行业和其他行业至关重要。因此，管理层宜考虑联邦政府提供的以下服务。在波及范围较大的事件中，这些服务能使参与者优先获得通信服务。
+通信服务优先级(TSP)[26]项目；
+政府紧急通信服务(GETS)[27]；
+无线优先服务(WPS)[28]，是政府紧急通信服务GETS的无线补充。
+Communication is critical to the financial services sector and other industries. Therefore, management should consider the following services provided by the federal government. These services give participants priority access to telecommunications during a wide-spread event.
+The Telecommunications Service Priority (TSP)
+[26]
+program.
+Government Emergency Telecommunications Service (GETS).
+[27]
+Wireless Priority Service (WPS),
+[28]
+which is the wireless complement to GETS.
+注26：请参阅国土安全部的“通信服务优先权”(TSP)网页。TSP项目(TSP Program)向服务供应商提供了联邦通信委员会的授权，通过确定对国家安全和应急准备至关重要的服务来确定请求的优先顺序。TSP指定的线路在紧急情况下首先恢复。管理层可联系该实体的主要联邦监管机构，以获取有关TSP计划以及该实体是否符合TSP指定资格的信息。如果实体符合条件，管理层应将TSP项目整合到实体的BCP中。
+注27：请参阅国土安全部的“政府紧急电讯服务”(GETS)网页。GETS提供“在固定电话网络的本地和长途段中的优先访问和优先处理，极大地提高了呼叫完成的概率。”它用于在紧急或危机情况下，当固定电话网络拥塞，完成正常呼叫的概率降低时。管理层可以通过向实体的主要联邦监管机构提交申请来申请GETS。
+注28：请参阅国土安全部的“无线优先服务”网页。</p>
+<p>Ⅳ.A.7 电力Power</p>
+<p>金融行业依靠电力来运行其技术基础设施并向人员和客户提供基本必需服务。长期停电会对实体的韧性产生负面影响。管理层宜采取措施，在短期电力中断事件中提供电力。此外，管理层宜制定在长期电力中断事件中的供电计划。作为短期和长期计划的一部分，管理层宜考虑以下内容：
+备选能源来源(如发电机，多电网)；
+燃料需求，包括库存燃料和与供应商签订的在事件期间交付的燃料，以及获取燃料的任何可能障碍；
+发电机的负载能力(如时间长度、使用寿命、提供的功率水平等)；
+发电机的持续维护；
+发电机测试。
+The financial industry is dependent on power to run its technology infrastructure and to supply basic necessities to personnel and customers. A long-term power outage can negatively impact an entity’s resilience. Management should implement measures to provide electricity in the event of a short-term power disruption. Furthermore, management should develop plans to provide electricity in the event of a long-term power disruption. As part of its short-term and long-term plans, management should consider the following:
+Alternate energy sources (e.g., generators, multiple power grids).
+Fuel requirements, both for fuel on-hand and contracts with suppliers for deliveries during events, and any potential impediments to obtaining fuel.
+Load capacity of generators (e.g., length of time, useful life, level of power supplied).
+Continued maintenance of generators.
+Testing of generators.</p>
+<p>Ⅳ.A.8 变更管理Change Management</p>
+<p>管理层宜在整个实体中实施并协调一致的变更管理流程，并确保包括BCM。在正常业务流程中对生产系统和业务流程进行变更时，宜在备选地理位置的恢复系统和文档进行类似更新，以反映生产和主系统的变更。
+Management should implement and align a consistent change management process throughout the entity, making sure to include BCM. As changes are made to production systems and business processes during the normal course of business, recovery systems and documentation at alternate locations should similarly be updated to reflect production and primary system changes.</p>
+<p>变更管理流程宜允许在事件期间权宜实施紧急变更，如为排除故障和分析问题变更访问控制列表以提供快速访问。事件解决后，宜审查变更工单和相应活动的适宜性。即使在事件期间，变更仍宜得到适当授权、监控和记录。紧急变更管理不善可能导致进一步破坏。此外，系统相互关联的性质会复合破坏先前未受影响的系统。做出的所有变更宜在紧急事件后更新系统文档。变更管理要素在IT手册中的“开发与获取”和“运营”分册中有更详细的说明。
+The change management process should allow for expedient implementation of emergency changes during an event, such as changing an access control list to provide rapid access for troubleshooting and analysis. Change tickets and corresponding activity should be reviewed for appropriateness once the event has been resolved. Even during events, changes should still be properly authorized, monitored, and documented. Poorly administered emergency changes can result in further disruption. Additionally, the interrelated nature of systems can compound disruptions to previously unaffected systems. After an emergency event, systems documentation should be updated for any changes made. Change management elements are addressed in more detail in the IT Handbook’s “Development and Acquisition” and “Operations” booklets.</p>
+<p>Ⅳ.B 沟通Communications</p>
+<p>管理层宜考虑、计划并准备多种与他方沟通的机制。举个例子，当传统的语音交流和通信受损或无法使用时，管理层可以考虑使用备选的通信系统，如通过雇主提供和员工的移动电话收发文本消息，个人电子邮件和即时通信工具等。其他常见解决方案包括呼入热线电话，信息网页或双向轮询电话系统等。无论使用哪种通信设备，都宜维护适当的控制以保护客户和其他敏感信息。
+Management should consider, plan for, and prepare multiple mechanisms to communicate with others. For example, when traditional voice communications and telecommunications are impaired or inoperable, management may consider alternative communications systems such as text messaging through employer-provided and personal mobile phones, personal email, and instant messaging. Other common solutions include an inbound hotline number, an informational webpage, or a two-way polling phone system. Regardless of the communication device used, appropriate controls to safeguard customer and other sensitive information should be maintained.</p>
+<p>BCM宜包括沟通协议和联络清单，以通知利益相关方。管理层宜考虑开发此类协议和模板的内容和流程。沟通协议宜体现战略沟通和危机管理方法，并与公共事务或外部沟通(如准备好的公开/新闻公报，媒体响应计划，管理社交媒体等)合作。沟通协议为客户、第三方服务提供商和其他外部群体提供了在正常渠道不能使用时进行沟通的方式。外部群体可包括以下：
+监管机构(联邦和州)；
+应急响应人员；
+执法机关；
+金融行业同业公会(商会)；
+客户，第三方服务提供商和其他第三方(如交易对手，清算和结算合作伙伴，支付系统运营商等)；
+信息共享组织(如，FS-ISAC)。
+BCM should include communication protocols and contact lists to notify stakeholders. Management should consider the content and process for developing such protocols and templates. Communication protocols should incorporate strategic communications and crisis management approaches in concert with public affairs or external communications (e.g., prepared public/press statements, media response plans, managing social media, etc.). Communication protocols provide customers, third-party service providers, and other external groups a means to communicate when normal channels are inoperable. External groups could include the following:
+Regulatory agencies (federal and states).
+Emergency responders.
+Law enforcement.
+Financial sector trade associations.
+Customers, third-party service providers, and other third parties (e.g., counterparties, clearing and settlement partners, payment system operators).
+Information-sharing entities (e.g., FS-ISAC).</p>
+<hr>
+<p>本公众号
+(ID: bcmplus)
+专注于业务连续性管理知识的传播和普及，关注应急、连续性和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时正处于腾讯政策调整，未能开通留言功能，希望交流和讨论业务连续性管理问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(公众号1月只能发4次文章，也会有一些小观点直接在知识星球而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/eJQuB7UCVluZkc6qu8vn0w_04.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/eJQuB7UCVluZkc6qu8vn0w">原文链接</a></em></p>

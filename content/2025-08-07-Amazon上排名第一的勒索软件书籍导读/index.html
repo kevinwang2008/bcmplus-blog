@@ -1,0 +1,312 @@
+<p>在过去十年，勒索软件（ransomware）已从边缘威胁演化为影响全球企业、医院、政府机构和基础设施的主流网络攻击手段。
+《Ransomware: Understand. Prevent. Recover.》是一本聚焦实务的勒索软件防御手册
+，
+在Amazon网站的勒索软件书籍排名第一，
+由资深情报专家 Allan Liska 撰写，提供了从
+勒索软件从
+历史演变、攻击模式、防护策略到响应恢复的完整视图。</p>
+<p>与一般技术指南不同，
+该
+书强调
+“现实主义防御”
+：作者并不鼓吹“零
+中断
+”，而是围绕“
+理解攻击者思维、识别组织盲点、构建韧性体系、做好失败后的恢复
+”四个核心原则展开，内容系统、案例详实、观点直接，适合CISO、安全主管、BCM经理、SOC团队、应急响应人员、政府与关键行业管理者阅读。</p>
+<p>章节导览与要点摘要（按章节顺序）</p>
+<p><img src="/bcmplus-blog/images/ze3RvjI4b8P68wt90L7Z4w_01.jpg" alt=""></p>
+<p>Chapter 1
+｜
+How We Got Here: A History of Ransomware
+内容：</p>
+<ul>
+<li>回顾自1989年 AIDS Trojan 起，勒索软件的发展历程；</li>
+<li>典型攻击（如WannaCry、
+NotPetya
+、
+SamSam
+、Colonial Pipeline）分析；</li>
+<li>引出“Big Game Hunting”（攻击大型组织）、RaaS与多重勒索趋势。
+Takeaways：</li>
+<li></li>
+</ul>
+<p>勒索软件攻击已高度产业化、组织化；
+*
+历史中反复出现的“未修复漏洞 + 弱身份控制”仍是主因；
+*
+国家背景攻击持续上升，勒索逻辑不再仅为“赚钱”。</p>
+<p>Chapter 2
+｜
+Cryptocurrency, RaaS, and the Extortion Ecosystem
+内容：
+*
+勒索支付方式的演变：从现金、礼品卡到加密货币；
+*
+RaaS（勒索软件即服务）降低入场门槛；
+*
+介绍双重、三重、四重勒索模式及攻击服务外包链。
+Takeaways：
+*
+加密货币让“收款-洗钱-分红”流程标准化；
+*
+攻击团伙不再“
+独
+狼作战”，而是“供应链协作”
+；
+*
+金融支付与谈判成为防线的一部分。</p>
+<p>Chapter 3
+｜
+Tabletop Exercises
+内容：
+*
+桌面演练（Tabletop Exercise）如何设计；
+*
+场景构建、关键人员参与、验证假设与复盘改进。
+Takeaways：
+*
+桌面演练不是“走形式”，而是验证组织是否能在“混乱”中做出正确反应；
+*
+常设、跨部门、多级别演练是关键；
+*
+没有后续改进的演练=失败。</p>
+<p>Chapter 4
+｜
+Disaster Recovery and Incident Response Plans
+内容：
+*
+区分 DR（灾难恢复）与 IR（事件响应）；
+*
+制定与存储计划的建议，包括离线副本、模拟推演等。
+Takeaways：
+*
+没有经过演练和更新的预案等于纸上谈兵；
+*
+IR聚焦“止损”，DR聚焦“恢复”
+；
+*
+“谁负责”、“谁有权限”必须预定义。</p>
+<p>Chapter 5
+｜
+Ransomware Backup Strategy
+内容：
+*
+如何构建“
+抗
+勒索”
+的
+备份；
+*
+离线备份、多版本策略、恢复测试等。
+Takeaways：
+*
+不测试的备份=没有备份；
+*
+攻击者优先找的就是你的备份；
+*
+备份要做到“物理隔离 + 恶意删除防护”。</p>
+<p>Chapter 6
+｜
+Anatomy of a Modern Ransomware Attack
+内容：
+*
+分阶段剖析攻击流程：初始访问 → 横向移动 → 数据外泄 → 加密部署 → 勒索威胁。
+Takeaways：
+*
+勒索攻击是“多阶段+多角色协同”的作战；
+*
+MITRE ATT&amp;CK框架可用于理解和建模攻击链；
+*
+越早发现攻击链，代价越低。</p>
+<p>Chapter 7
+｜
+Credential Markets and Initial Access Brokers
+内容：
+*
+初始访问代理（IAB）如何提供企业入口；
+*
+被盗凭证市场的结构与定价机制。
+Takeaways：
+*
+弱密码、暴露RDP、旧账号是IAB赚钱工具；
+*
+攻击者“买入访问权”，专业化程度极高；
+*
+密码管理与外部暴露监控是高ROI防御手段。</p>
+<p>Chapter 8
+｜
+Phishing Attacks
+内容：
+*
+钓鱼邮件的演进与实战战术；
+*
+培训、钓鱼仿真测试、防钓鱼技术建议。
+Takeaways：
+*
+钓鱼攻击仍是勒索软件主要入口之一；
+*
+培训要“实战化”+“定期化”；
+*
+技术防护（如DMARC、反钓鱼网关）不可忽视。</p>
+<p>Chapter 9
+｜
+RDP and Remote Login Attacks
+内容：
+*
+疫情后暴露的远程访问攻击面（如RDP、VPN）；
+*
+如何防止远程登录成为勒索入口。
+Takeaways：
+*
+攻击者爱用“弱密码+暴露RDP”；
+*
+限制暴露、启用MFA、端口随机化是防护关键；
+*
+零信任架构是远程访问的长期方向。</p>
+<p>Chapter 10
+｜
+Exploitation
+内容：
+*
+攻击者如何利用未打补丁的漏洞；
+*
+0-day 与 N-day 的勒索化利用实例。
+Takeaways：
+*
+漏洞不是最大问题，“补丁拖延”才是；
+*
+自动化漏洞扫描与补丁基线应成为常规动作。</p>
+<p>Chapter 11
+｜
+The Handoff from IABs to Ransomware Affiliates
+内容：
+*
+初始访问后如何“交接”给勒索团队；
+*
+攻击“流水线”与“角色分离”的实战剖析。
+Takeaways：
+*
+IAB
+s
+（Initial Access Brokers）
+与勒索团伙之间的“商业协作”高度成熟；
+*
+蓝队防护应设法在“交接点”之前识别入侵迹象。</p>
+<p>Chapter 12
+｜
+Threat Hunting
+内容：
+*
+威胁狩猎基础与关键方法；
+*
+攻击者用的工具 vs 防御者的工具；
+*
+Sysmon 作为推荐工具。
+Takeaways：
+*
+狩猎不是检测，是“主动找异常
+”；
+*
+日志的深度与结构决定狩猎成败；
+*
+Sysmon + EDR 是现代威胁狩猎的好搭档。</p>
+<p>Chapter 13
+｜
+Ransomware and Active Directory
+内容：
+*
+攻击者如何渗透与利用AD域控；
+*
+Mimikatz
+、
+AdFind
+、DC爆破等技术。
+Takeaways：
+*
+AD 是勒索攻击的“皇冠宝座”
+；
+*
+分段隔离、最小权限、ADC监控是关键防线。</p>
+<p>Chapter 14
+｜
+Honeypots and
+Honeyfiles
+内容：
+*
+蜜罐
+系统与文件如何用于“早期预警”；
+*
+实施建议与监控集成方式。
+Takeaways：
+*
+低成本高收益的检测手段；
+*
+“
+蜜罐
+触发”比“攻击成功”更早。</p>
+<p>Chapter 15
+｜
+This Is Your Last Chance
+内容：
+*
+攻击者删除快照、启动加密的“最后阶段
+”；
+*
+如何自动阻断并调用应急脚本。
+Takeaways：
+*
+这是“真正的红线”；
+*
+要部署EDR/XDR + 自动化触发器。</p>
+<p>Chapter 16–17
+｜
+Initial Response + Implementing DR/IR
+内容：
+*
+发现攻击后的第一小时到第一天如何应对
+；
+*
+团队、技术、沟通、法律的多线并行。
+Takeaways：
+*
+控制恐慌是第一步；
+*
+响应计划必须是“跑得动”的，不是“写得美”的
+。</p>
+<p>Chapter 18
+｜
+Outside Help
+内容：
+*
+如何判断需要外援；
+*
+专家能做/不能做的事，如何协作。
+Takeaways：
+*
+有专家 ≠ 放弃责任；
+*
+选对专家、讲清目标、同步信息很关键。</p>
+<p>Chapter 19
+｜
+Should We Pay the Ransom?
+内容：
+*
+深度探讨是否支付赎金的判断因素；
+*
+法律、伦理、实务、恢复能力等多维考量。
+Takeaways：
+*
+没有“应该”或“不该”，只有“是否经过理性评估”；
+*
+决策机制比决策本身更重要；
+*
+谈判要专业，付款要合法。</p>
+<p>《Ransomware: Understand. Prevent. Recover.》
+电子版请到知识星球下载
+，链接
+：
+https://wx.zsxq.com/group/48888218424548/topic/8852121118884812
+。</p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/ze3RvjI4b8P68wt90L7Z4w">原文链接</a></em></p>

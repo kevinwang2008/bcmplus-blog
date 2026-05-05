@@ -1,0 +1,363 @@
+<p>写在前面
+：越来越多的人们开始关注运营韧性。事实上，虽然该领域还在快速的发展中，但已经凝聚了一些共识。金融行业是最为关注运营韧性的行业之一，近几年来，英美等国的金融监管机构以及巴塞尔银行监管委员陆续发布/修订了运营韧性(Operational Resilience)和业务连续性管理方面的正式文件。为让更多的专业人员者和爱好者了解国外运营韧性领域的进展，学习并实践运营韧性的良好实践，在2021年中期，我组织了一个公益翻译小组，对运营韧性相关资料进行翻译，并于去年发布了以下资料：
+《运营韧性原则》中文简译
+(2021年11月23日)
+《操作风险稳健管理原则修订》中文简译
+(2021年11月29日)
+之后，我再次组织了一个公益翻译小组，对英国金融监管机构的运营韧性资料进行翻译，今年春节前后，翻译小组成员陆续将翻译文稿发送给我，经历了种种耽搁和拖延之后，我近日终于将这些资料审校完成，接下来会陆续在公众号发布出来。</p>
+<p>以下是参与本系列资料的公益翻译小组成员
+(排名不分前后，按姓氏拼音排序)：
+安晓冬(上海，
+anton_6@163.com
+)
+陈阳(中国银行欧洲信息中心，
+chenyang@bankofchina.com
+)
+马骏(大连埃森哲，
+patrick.ma2018@outlook.com
+)
+彭水娟(江阴长电先进，
+shuijuan2006@126.com
+)
+王舵(大连，BCM咨询Freelancer，
+prepkids@163.com
+)
+吴小林(苏州银行，
+66886629@163.com
+)
+巫文湘(开泰银行(中国)有限公司，
+michael_woo_sz@hotmail.com
+)
+孙宁莉(韧安咨询，resil-safe
+@outlook.com
+)
+徐文静(DNV，
+wen.jing.xu@dnv.com
+)
+翟红波(北京，
+25354646@qq.com
+)
+周可政(上海，
+wikikivv@gmail.com
+)
+王曙(新常安科技，
+kevinwang@vip.sina.com
+)</p>
+<p>感谢公益翻译小组的各位专业人员在疫情期间抽出个人休息时间进行翻译工作。以下译文由我负责最终统一审校定稿，因为对英国金融业了解深度不够，如译文中有任何不准确或理解错误的地方，都是由于我的原因造成，与诸位翻译人员无关。如对译文有意见或修改建议，请给我留言。</p>
+<p>王曙(kevinwang) 2022.11.25</p>
+<hr>
+<p>下文是由英格兰银行、审慎监管局(PRA)和金融行为监管局(FCA)于2021年3月29日发布的关于运营韧性的联合说明文件(joint covering paper)，原文见：
+https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/publication/2021/building-operational-resilience-impact-tolerances-for-important-business-services.pdf</p>
+<hr>
+<p>运营韧性：重要业务服务的影响容忍度
+Operational resilience: Impact tolerances for important business services</p>
+<p>英格兰银行对与FMIs有关的征求意见稿的回应 | 英格兰银行(Bank)
+对征求意见稿29/19的回应 | 审慎监管局(PRA)
+对征求意见稿19/32的回应 | 金融行为监管局(FCA)
+Response to Bank CPs relating to FMIs | Bank of England(Bank)
+Responses to CP29/19 | Prudential Regulation Authority(PRA)
+Responses to CP19/32 | Financial Conduct Authority</p>
+<p>前言(Foreword)</p>
+<p>在发布各自征求意见文件时我们写道，英格兰银行、审慎监管局(PRA)和金融行为监管局(FCA)的一个关键优先事项是建立更强有力的监管框架，以促进机构和金融市场基础设施机构(FMIs)的运营韧性。我们再次从行业和消费者获得了令人印象深刻的参与，我们希望在我们的最终政策文件中解决这一反馈。
+As we wrote when we published our respective consultation documents, a key priority for the Bank of England, Prudential Regulation Authority (PRA), and Financial Conduct Authority (FCA) is to put in place a stronger regulatory framework to promote the operational resilience of firms and financial market infrastructures firms (FMIs). We have again received an impressive level of engagement from industry and consumers and we have looked to address this feedback in our final policy documents.</p>
+<p>从征求意见过程中得到的一个关键信息是，机构和FMIs支持当局的联合方法。受PRA和FCA共同监管的机构尤其表达了强烈的愿望，希望当局不要产生分歧或造成重复工作。最终的政策框架就是考虑到这一点而设计的。为满足一个监管机构的要求而做的工作，应当被用来满足另一个监管机构的要求。我们认为我们各自政策的设计和目标是相同的，同时尊重各自不同的目的和法律框架。我们计划将这种方法应用到监管中。
+A key message from the consultation process is that firms and FMIs support the authorities’ joined-up approach. Firms regulated by both the PRA and the FCA in particular expressed a strong desire for the authorities not to diverge or create duplicative work. The final policy frameworks are designed with this in mind. Work done to meet the requirements of one regulator should be leveraged to meet those of the other. We view the design and goals of our respective policies as the same, while respecting our different objectives and legal frameworks. We plan to carry this approach through into supervision.</p>
+<p>我们认识到，Covid-19大流行对机构和FMIs产生了重大影响。Covid-19造成的扰断表明，为什么机构了解其提供的服务并投资于韧性以保护自己、消费者和金融体系免受扰断至关重要。大多数机构和FMIs都能够在这段压力巨大的时期保持服务的连续性，并在很大程度上表现出应对大流行的韧性。随着我们从大流行中走出来，一些运营配置和工作实践可能会发生永久性变化，这些变化需要纳入运营韧性规划。我们期待与机构和FMIs合作，执行我们的政策，并持续提高其运营韧性。
+We recognise that the Covid-19 pandemic has had a significant impact on firms and FMIs. The disruption caused by Covid-19 has shown why it is critically important for firms to understand the services they provide and invest in their resilience to protect themselves, their consumers, and the financial system from disruption. Most firms and FMIs have been able to maintain continuity of service during this period of significant stress and have seen a good degree of resilience to the pandemic. Some operational configurations and working practices may change permanently as we emerge from the pandemic and these changes will need to be incorporated into operational resilience planning. We look forward to working with firms and FMIs as they implement our policies and continue to improve their operational resilience.</p>
+<p>Nikhil Rathi 					Jon Cunliffe Sam Woods
+FCA首席执行官				 英格兰银行副行长				 副行长，PRA首席执行官</p>
+<p>1 引言(Introduction)</p>
+<p>1.1 本文件由统称为“监管当局”的审慎监管局(PRA)、金融行为监管局(FCA)和英格兰银行(“银行”)以监管金融市场基础设施机构(FMIs)的资格联合发布。
+1.1 This paper is issued jointly by the Prudential Regulation Authority (PRA), the Financial Conduct Authority (FCA), and the Bank of England (‘the Bank’) in its capacity of supervising financial market infrastructures firms (FMIs), collectively ‘the supervisory authorities’.</p>
+<p>1.2 监管当局的一个关键优先事项是建立更强有力的监管框架，以促进机构和FMIs的运营韧性。为此，监管当局于2018年发布了《运营韧性》(联合讨论稿)，提出了运营韧性方法。此后，监管当局于2019年12月发布了一套征求意见文件(“征求意见稿”)，将此方法纳入政策
+[1]
+。
+1.2 A key priority for the supervisory authorities is to put in place a stronger regulatory framework to promote the operational resilience of firms and FMIs. To this end, the supervisory authorities published a joint Discussion Paper on Operational Resilience in 2018 setting out an approach to operational resilience. Following this, the supervisory authorities published a suite of consultation documents (‘the consultations’) in December 2019 to embed this approach into policy.</p>
+<p>1.3 这些提议旨在提高机构和FMIs的运营韧性，保护消费者、更广泛的金融部门和英国经济免受运营扰断的影响。征求意见稿对机构和FMIs提出了以下要求和期望：
+通过认真考虑其提供业务服务的中断如何产生超出其自身商业利益的影响，确定其重要业务服务；
+为每个重要业务服务设定扰断容忍度(影响容忍度)；和
+确保它们能够持续提供重要业务服务，以及在严重(或对FMIs，极端
+[2]
+)但合理的情景中保持在其影响容忍度范围内。
+1.3 The proposals were designed to improve the operational resilience of firms and FMIs and protect consumers, the wider financial sector and UK economy from the impact of operational disruptions. The consultations proposed requirements and expectations for firms and FMIs to:
+identify their important business services by considering how disruption to the business services they provide can have impacts beyond their own commercial interests;
+set a tolerance for disruption for each important business service (an impact tolerance); and
+ensure they can continue to deliver their important business services and are able to remain within their impact tolerances during severe (or in the case of FMIs, extreme) but plausible scenarios.</p>
+<p>1.4 监管当局的运营韧性方法基于会发生中断的假设，这将使机构和FMIs无法正常运营，并导致它们在一段时间内不能提供服务。监管当局认为，许多机构和FMIs目前可能没有基于会发生扰断进行充分地规划，因此，当发生扰断时，会无法有效管理。监管当局提出政策的目的是确保机构和FMIs进行规划，改进其运营韧性，以确保在发生扰断时能够有效应对。
+1.4 The supervisory authorities’ approach to operational resilience is based on the assumption that disruptions will occur, which will prevent firms and FMIs from operating as usual, and result in them being unable to provide their services for a period. The supervisory authorities consider that many firms and FMIs currently may not sufficiently plan on the basis that disruptions will occur, and therefore would not be able to manage effectively when they do. The aim of the policy that the supervisory authorities proposed is to ensure that firms and FMIs do this planning and deliver improvements to their operational resilience to ensure they are able to respond effectively if a disruption does occur.</p>
+<p>1.5 监管当局收到很高的征求意见参与度。总体而言，回应者支持提案中给出的方法。
+1.5 The supervisory authorities received an excellent level of engagement with the consultations. Overall, respondents were supportive of the approach set out in the proposals.</p>
+<p>1.6 反馈意见的一个主要主题是，回应者要求更详细地说明如何应用这些提议，以及更明确的定义。回应者表示，这样可使政策执行更明确，并使监管更加一致。监管当局认同对政策关键原则的共同理解很重要，并且每个监管机构都提供了更多的解释和示例，说明他们期望政策如何执行(如相关)。
+1.6 A major theme from the feedback was respondents asking for more detail on how they might apply the proposals and clearer definitions. Respondents suggested that such an approach would make the policy clearer to implement and enable more consistent supervision. The supervisory authorities agree that a common understanding of the key principles of the policy is important, and each authority has provided more explanation and examples of how they expect the policy to be implemented, where relevant.</p>
+<p>1.7 然而，监管当局认为，坚持基于结果的方法是有益的。一家机构或FMIs的重要业务服务可能不适合另一家。由于客户群性质和规模不同，机构和FMIs可能会对类似的业务服务得出不同的影响容忍度。当局认为，鼓励董事会和高级管理层在选择其重要业务服务和设定影响容忍度时做出判断，将有助于机构和FMI在建立其运营韧性过程中更好地进行决策。
+1.7 However, the supervisory authorities believe that there are benefits in maintaining an outcomes-based approach. An important business service for one firm or FMI may not be appropriate for another. Firms and FMIs may arrive at different impact tolerances for similar business services due to differences in the nature and scale of their client bases. The authorities believe that encouraging boards and senior management to make judgements in the selection of their important business services and the setting of impact tolerances will facilitate better decision-making as firms and FMIs build their operational resilience.</p>
+<p>1.8 虽然最终政策在定义重要业务服务清单和设定具体的影响容忍度方面并没有过多规定，但监管当局认为最佳实践会随着时间推移而出现，并将密切关注其发展。监管当局鼓励机构和FMIs将该政策视为相称的最低标准，并根据此标准制定方法。随着机构和FMIs将政策付诸实施，机构和FMIs以及监管当局都将从中学习。
+1.8 While the final policy is not overly prescriptive in terms of defining lists of important business services and setting specific impact tolerances, the supervisory authorities expect best practice will emerge over time, and will take a close interest as it develops. The supervisory authorities encourage firms and FMIs to view the policy as a proportionate minimum standard and develop their approach based on this standard. Both firms and FMIs and the supervisory authorities will learn as firms and FMIs put the policy into practice.</p>
+<p>1.9 在本文件中，监管当局进一步总结了对政策建议的共同回应和政策决定。
+1.9 In this document, the supervisory authorities summarise further common responses to the policy proposals and their policy decisions.</p>
+<p>1.10 应当指出的是，每个监管机构都收到了与该监管机构更为相关的其他意见，这些意见在本联合文件中并未提及。这些意见和每个监管机构方法的具体细节包含在各个监管机构的文件中。
+[3]
+1.10 It should be noted that each supervisory authority received other comments which were more exclusively relevant to that supervisory authority, and these have not been addressed in this joint document. Those comments and the particular detail of each supervisory authority’s approach are instead covered in the respective supervisory authorities’ documents.3</p>
+<p>2 重要业务服务(Important business services)</p>
+<p>综述(Overview)</p>
+<p>2.1 征求意见稿提出，机构和FMIs应当确定那些一旦扰断，会影响监管当局目标，进而影响这些目标所代表的公众利益的服务，并确定其优先顺序。这些服务被称为重要业务服务。这代表了从考虑单个系统和运营资源的韧性向考虑机构和FMIs为其外部最终用户、客户或参与者提供服务的连续性的转变。
+2.1 The consultations proposed that firms and FMIs would be required to identify and prioritise the services that, if disrupted, would impact the supervisory authorities’ objectives and thereby the public interest as represented by those objectives. These were termed important business services. This represented a shift away from thinking about the resilience of individual systems and operational resources to considering the continuity of the services that firms and FMIs provide to their external end users, customers, or participants.</p>
+<p>内部服务(Internal Services)</p>
+<p>2.2 许多回应者要求澄清内部服务是否包括在重要业务服务的定义中。机构表示，如果内部服务(如人力资源或薪水发放)扰断，可能对最终向外部最终用户、客户或参与者提供服务产生重大影响。
+2.2 A number of respondents asked for clarity as to whether internal services were included within the definition of important business service. Firms suggested that, if disrupted, internal services such as human resources or payroll might have significant impact on the ultimate delivery of services to external end users, customers, or participants.</p>
+<p>2.3 在最终政策中，监管当局规定，人力资源或薪水发放等内部服务不应被视为重要业务服务。这些服务被视为重要业务服务的赋能者。政策的重点是向外部最终用户提供具体的成果或服务。因此，监管当局要求机构优先开展工作，建设这些重要业务服务的运营韧性。机构应当确定最关键的服务，并认真考虑必需交付的内容。监管当局认为，链条中最关键的部分应当具备运营韧性。如果将内部服务定义为独立的重要业务服务，将会扩大政策的覆盖面，并可能减少对最重要外部服务的关注。监管当局认为，对这些外部服务设定最低期望是适当的，但如果机构愿意，可以对此进行扩展。
+2.3 In the final policy, the supervisory authorities have set out that internal services such as human resources or payroll should not be identified as an important business service. These services constitute enablers of the important business service. The policy is focused on delivery of specific outcomes or services to external end users. The supervisory authorities are therefore requiring firms to prioritise work to build the operational resilience of those important business services. Firms should identify the most critical services and consider what is required for delivery. The supervisory authorities consider that the most critical parts of the chain should be operationally resilient. If internal services were defined as important business services on a standalone basis, this would expand the coverage of the policy, and could reduce focus on the most important external services. The supervisory authorities believe it appropriate to set minimum expectations on these external services, but firms can expand on this should they so wish.</p>
+<p>2.4 为向机构和FMIs进一步澄清，监管当局在政策文件的一些案例中包括了示例，以说明机构内部服务部门开展的活动需要纳入其重要业务服务交付的活动链。
+2.4 To provide further clarity for firms and FMIs, in some cases the supervisory authorities have included examples in the policy documents to illustrate where activities performed by internal services within a firm would need to be included in the chain of activities for the delivery of their important business services.</p>
+<p>定义(Definitions)</p>
+<p>对齐监管当局之间的定义(Aligning definitions between supervisory authorities)</p>
+<p>2.5 监管当局在各自的征求意见稿中对包括重要业务服务和影响容忍度在内的术语给出了定义。这些定义旨在根据各监管机构的目标澄清有关术语。
+2.5 The supervisory authorities set out definitions for terms including important business services and impact tolerances in their respective consultations. These definitions were intended to provide clarity in relation to the terms in line with the respective authorities’ objectives.</p>
+<p>2.6 一些回应者评论说，定义中使用不同的措辞造成混淆，因此需要加强监管当局之间的协调。
+2.6 Some respondents commented that the use of different wording within the definitions caused some confusion and that greater harmonisation between the supervisory authorities was needed.</p>
+<p>2.7 在收到回应后，监管当局作出了一些修改，以尽可能澄清和更好地对齐定义。
+2.7 Following the responses, the supervisory authorities have made some changes to clarify and better align the definitions where possible.</p>
+<p>2.8 定义的差异是由多种原因造成的，包括不同的目标和法律框架，但PRA和FCA认为各自的结果和政策是一致的。对于受PRA和FCA监管的机构，监管当局期望，为满足一个监管机构要求所做的工作应当被用来满足另一个监管机构的要求，并鼓励机构避免重复工作。差异仍然存在的一个示例包括，为了与PRA规则手册中使用的语言一致，PRA选择使用“人员”而不是“客户”一词；然而，FCA不受此限制。
+2.8 Differences in the definitions are driven by a number of reasons, including differing objectives and legal frameworks, but the PRA and the FCA consider that the respective outcomes and policies are aligned. For firms regulated by the PRA and the FCA, the supervisory authorities expect that work done to meet the requirements of one regulator should be leveraged to meet those of the other, and would encourage firms to avoid duplicative work. An example of where differences remain include where the PRA has chosen to use the word ‘person’ rather than ‘client’ in order to align with the language used in the PRA Rulebook; however, the FCA is not subject to this constraint.</p>
+<p>2.9 为了加强监管当局之间的协调，并确保第三方被纳入政策，PRA在“重要业务服务”的定义中增加了“由机构或代表机构的其他人提供的服务”。
+2.9 To provide greater harmonisation between the supervisory authorities and to ensure third parties are captured in the policy, the PRA has added ‘services provided by a firm, or by another person on behalf of the firm’ to their definition of an ‘important business service’.</p>
+<p>2.10 监管当局在维护金融稳定方面有着共同的目标，这反映在它们各自对“重要业务服务”的定义中。PRA和FCA的目标在《2000年金融服务和市场法》(FSMA)中有明确规定。PRA致力于促进其监管机构的安全和稳健，并协助为投保人或可能成为保险投保人的人士确保适当程度的保障。PRA也有一些次要的战略目标。
+2.10 The supervisory authorities have a shared goal of maintaining financial stability, which is reflected in their respective definitions of ‘important business service’. The PRA’s and FCA’s objectives are defined in the Financial Services and Markets Act 2000 (FSMA). The PRA seeks to promote the safety and soundness of the firms it supervises, and contribute to securing an appropriate degree of protection for those who are or may become insurance policyholders. The PRA also has a secondary competition objective.</p>
+<p>2.11 FCA的战略目标是确保相关市场运转良好。为了推进其战略目标，FCA有三个运营目标：确保消费者得到适当程度的保护，保护和增强英国更广泛金融部门的诚信，以及为消费者利益促进有效的竞争。这反映在其对“重要业务服务”定义的第(1)部分。
+2.11 The FCA has a strategic objective to ensure relevant markets work well. To advance its strategic objective, the FCA has three operational objectives: to secure an appropriate degree of protection for consumers, to protect and enhance the integrity of the UK’s wider financial sector, and to promote effective competition in the interests of consumers. This is reflected in part (1) of its definition of ‘important business service’.</p>
+<p>2.12 重要业务服务的定义已更新，详见下表。修改部分用下划线表示。PRA的定义见PRA规则手册的运营韧性部分，FCA的定义见FCA手册的术语表。
+2.12 Where definitions for important business services have been updated, these are detailed in the table below. The areas which have been amended are underlined. The PRA definitions are in the Operational Resilience Parts of the PRA Rulebook, and the FCA definitions are in the Glossary of the FCA Handbook</p>
+<p>术语
+Term
+审慎监管局
+[4]
+PRA
+金融行为监管局
+FCA
+重要业务服务
+Important Business Service
+机构或代表机构的另一人为其它人提供的服务，一旦扰断，可能会对以下方面造成风险：
+(1)(机构是O-SII/机构是相关偿付II型)英国金融系统的稳定性；
+(2)机构的安全和稳健；或
+(3)(对于偿付II型机构)为投保人或可能成为机构的投保人的人员提供适当程度的保护
+a service provided by a firm, or by another person on behalf of the firm, to another person which, if disrupted, could pose a risk to:
+(1) (where the firm is an O-SII/where the firm is a relevant Solvency II firm) the stability of the UK financial system;
+(2) the firm’s safety and soundness; or
+(3) (for Solvency II firms) an appropriate degree of protection for those who are or may become the firm’s policyholders.
+指机构或代表机构的另一人向该机构的一个或多个客户提供的服务，一旦扰断，可能：
+(1)对机构的任一或多个客户造成无法容忍的伤害；或
+(2)对英国金融体系的稳健、稳定或韧性，或金融市场的有序运行构成风险。
+means a service provided by a firm, or by another person on behalf of the firm, to one or more clients of the firm which, if disrupted, could:
+(1) cause intolerable levels of harm to any one or more of the firm’s clients; or
+(2) pose a risk to the soundness, stability or resilience of the UK financial system or the orderly operation of the financial markets.</p>
+<p>3 影响容忍度(Impact tolerances)</p>
+<p>综述(Overview)</p>
+<p>3.1 征求意见稿提出，机构和FMIs应当为其每个重要业务服务设定影响容忍度。影响容忍度度量重要业务服务的最大可容忍扰断水平。
+3.1 The consultations proposed that firms and FMIs would be expected to set an impact tolerance for each of their important business services. The impact tolerance would measure the maximum tolerable level of disruption to an important business service.</p>
+<p>PRA-FCA双重监管机构的影响容忍度(Impact tolerances for PRA-FCA dual-regulated firms)</p>
+<p>3.2 PRA和FCA在征求意见稿同时发布了一份联合说明文件，解释了如果同一个业务服务在PRA和FCA规则下都被定义为重要业务服务，那么考虑到两个监管当局的目标
+[5]
+，机构应当有独立的影响容忍度。PRA和FCA规定，独立的影响容忍度可能相同，也可能不同。
+3.2 The PRA and FCA issued a joint covering document accompanying their consultation papers. This explained that if the same business service is defined as an important business service under both PRA and FCA rules, the firm should have separate impact tolerances in consideration of the objectives of the two supervisory authorities. The PRA and FCA set out that the separate impact tolerances may be the same or they may differ.</p>
+<p>3.3 PRA和FCA收到的回应是，为双重监管机构设定独立的影响容忍度不切实际而且繁重。回应者要求提供更多关于机构应当采取的预期行动的详细信息，以确保其能够保持在两个容忍度范围内。一些回应者要求当局不要强制要求所有重要业务服务都应有独立的影响容忍度。
+3.3 The PRA and FCA received responses that setting separate impact tolerances for dual-regulated firms would be impractical and burdensome. Respondents requested more detail on the expected action firms should take to ensure they can remain within both tolerances. Some requested that the authorities do not mandate that all important business services should have separate impact tolerances set.</p>
+<p>3.4 PRA和FCA希望强调，在适当的情况下，机构可将其对特定重要业务服务的PRA影响容忍度同时设定为其FCA影响容忍度，反之亦然。PRA和FCA希望，为满足一个监管机构要求所做的工作应当被用来满足另一个监管机构要求，并鼓励机构避免重复工作。PRA和FCA认为其各自政策的设计和目标是相同的。
+3.4 The PRA and FCA would like to emphasise that, if appropriate, a firm may set its PRA impact tolerance for a given important business service at the same point as its FCA impact tolerance or vice versa. The PRA and FCA expect that work done to meet the requirements of one regulator should be leveraged to meet those of the other, and encourage firms to avoid duplicative work. The PRA and FCA view the design and goals of their respective policies as the same.</p>
+<p>3.5 然而，各监管机构必须以推进其法定目标的方式建构其政策。因此，监管当局的政策方针没有改变。
+3.5 However, each supervisory authority must construct their policy in such a way as to advance their own statutory objectives. For this reason, the policy approaches of the supervisory authorities have not changed.</p>
+<p>3.6 PRA和FCA希望机构理解可能导致机构超出其各自PRA与FCA影响容忍度的情景是否不同(无论这些影响容忍度是否一致)，并采取措施保持在影响容忍度范围内。
+3.6 The PRA and FCA expect firms to understand whether the scenarios that may cause firms to exceed their respective PRA and FCA impact tolerances would differ (whether or not those impact tolerances are aligned) and to take action to remain within impact tolerances.</p>
+<p>3.7 PRA和FCA理解，在实践中，机构可能会集中精力确保其能够保持在更严格的容忍度范围内。因此，最终政策规定，采取行动保障机构保持在更严格的容忍度范围内是可接受的，如果企业能够证明：
+(i) 在设定其影响容忍度时，它们如何考虑PRA和FCA的目标；
+(ii) 它们的恢复和应对安排如何也适用于更长的影响容忍度(恢复和应对安排必须对更短和更长的时间段也有效)；以及
+(iii)情景测试时考虑了更长的影响容忍度，因为更短的影响容忍度可能会限制机构可能考虑的严重但合理可信事件的范围。
+3.7 The PRA and FCA understand that in practice firms may concentrate their efforts in ensuring they can remain within the more stringent tolerance. Therefore, the final policies state that taking action to ensure firms can remain within the more stringent tolerance will be acceptable if a firm can demonstrate:
+(i) how they have considered each of the PRA and FCA’s objectives when setting their impact tolerances;
+(ii) how their recovery and response arrangements are also appropriate for the longer impact tolerance (recovery and response arrangements must be viable for both shorter and longer time periods); and
+(iii) that scenario testing has been performed with the longer impact tolerance in mind as a shorter impact tolerance might constrain the universe of severe but plausible events a firm might consider.</p>
+<p>多个业务服务扰断(Disruption to multiple business services)</p>
+<p>3.8 征求意见稿建议机构为其每个重要业务服务设定影响容忍度。
+3.8 The consultations proposed that firms set an impact tolerance for each of their important business services.</p>
+<p>3.9 监管当局收到的回应说明它们各自的法定目标更可能受到多个业务服务中断的影响，而不是受到单个重要业务服务重大中断的影响。
+3.9 The supervisory authorities received responses commenting that their respective statutory objectives are more likely to be impacted by a disruption to multiple business services rather than by significant disruptions to individual important business services.</p>
+<p>3.10 在认真考虑了回应后，监管当局保留了提议的为单个重要业务服务设定影响容忍度的要求。机构和FMIs应当了解一个重要业务服务扰断可以容忍的最长时间，或者超出后扰断不可容忍的时间点。这将为机构和FMIs提供它们应当如何行动以保持在这些容忍度范围内的明确信息。
+3.10 Having considered the responses, the supervisory authorities are retaining the requirement, as proposed, for impact tolerances to be set for individual important business services. Firms and FMIs should understand the maximum amount of time for which disruption to an important business service can be tolerated, or a point in time beyond which disruption cannot be tolerated. This will provide clarity for firms and FMIs on how they should act to remain within these tolerances.</p>
+<p>3.11 然而，监管当局也认识到，多个重要业务服务的扰断可能会显著加剧扰断的影响。因此，对政策进行修订，纳入期望机构和FMIs在为单个重要业务服务设定影响容忍度时考虑其它相关重要业务服务故障的影响。这些可能是相关的，因为，举个例子，它们共享支持重要业务服务交付的公共资源，或者同时中断可能对类似的外部最终用户、客户或参与者产生复合影响。监管当局希望机构在进行评估时采取相称的方法，并且只考虑在建设运营韧性方面有重大好处的额外复杂性。
+3.11 However, the supervisory authorities also recognise that disruptions to multiple important business services could significantly compound the impacts of disruptions. Therefore, the policy has been amended to include an expectation for firms and FMIs to take into account the impact of failure of other related important business services when setting impact tolerances for an individual important business service. These may be related because, for example, they share common resources which support the delivery of the important business services or where simultaneous disruption could have compounding impacts on similar external end users, customers, or participants. The supervisory authorities expect firms to take a proportionate approach in making this assessment, and only to consider extra layers of complexity where there are significant benefits in terms of building operational resilience.</p>
+<p>度量影响容忍度(Measuring impact tolerances)</p>
+<p>3.12 在定义重要业务服务的影响容忍度时，征求意见稿建议机构和FMIs需要至少应指明该重要业务服务或重要集团业务服务可以容忍的中断时间长度(即对所有影响容忍度使用“基于时间的”度量)。
+3.12 When defining impact tolerances for important business services, the consultations proposed that firms and FMIs would be required to, at a minimum, specify the length of time for which a disruption to that important business service or important group business service can be tolerated (ie use a ‘time-based’ metric for all impact tolerances).</p>
+<p>3.13 一些回应者表示担心，要求所有影响容忍度采用基于时间的指标，可能导致机构和FMIs将影响容忍度视为合规活动。
+3.13 Some respondents raised concerns that requiring a time-based metric for all impact tolerances could result in firms and FMIs treating impact tolerances as a compliance exercise.</p>
+<p>3.14 监管当局承认回应者的担忧。监管当局认为，有必要使用基于时间的指标，以确保机构围绕重要业务服务的连续性进行规划，并确保制定应急计划限制扰断的程度。这种对所有影响容忍度的通用方法也将实现最低程度的一致性--这一想法得到了回应者意见的支持。然而，监管当局也理解根据所讨论的重要业务服务的类型考虑其他指标的重要性。
+3.14 The supervisory authorities acknowledge the concerns of the respondents. The supervisory authorities consider that the use of a time-based metric is necessary to ensure that firms plan around the continuity of important business services, and ensure that there are contingency plans in place to limit the extent of disruption. This common approach to all impact tolerances would also enable a minimum level of consistency – an idea that was supported by respondents’ comments. However, the supervisory authorities also understand the importance of considering other metrics depending on the type of the important business service in question.</p>
+<p>3.15 监管当局希望澄清，基于时间的指标可以用不同的方式定义，并且在适当情况下，必须与其他指标结合使用。影响容忍度应当规定，特定重要业务服务不应扰断超过某个时间段或时间点。例如，可以是数小时/天或某个时间点(如1天结束时)，再结合某一水平的客户投诉或中断交易量。
+3.15 The supervisory authorities would like to clarify that a time-based metric can be defined in different ways and, where appropriate, must be used in conjunction with other metrics. The impact tolerance should specify that a particular important business service should not be disrupted beyond a certain period of or point in time. As an example, this could be a number of hours/days or a point in time, such as the end of the day, in conjunction with, for example, a certain level of customer complaints or volume of interrupted transactions.</p>
+<p>监管当局之间的影响容忍度定义(Definition of impact tolerances between supervisory authorities)</p>
+<p>3.16 监管当局在各自的文件中提出了影响容忍度的定义。这些定义旨在根据各自监管机构的目标，对该术语提供明确的说明。
+3.16 The supervisory authorities proposed definitions for impact tolerances in their respective documents. These definitions were intended to provide clarity in relation to the term in line with the respective supervisory authorities’ objectives.</p>
+<p>3.17 许多回应者评论说，定义之间缺乏一致性造成了一些混乱，需要加强监管机构之间的协调。
+3.17 A number of respondents commented that the lack of consistency between the definitions caused some confusion and that greater harmonisation between the supervisory authorities was needed.</p>
+<p>3.18 在收到回应后，尽可能修改定义进行对齐。在定义的措辞上仍然存在一些差异，反映了监管机构不同目标和法律框架。
+3.18 Following these responses, changes have been made to align the definitions where possible. Some differences in the wording of the definitions remain to reflect the differing objectives and legal frameworks of the supervisory authorities.</p>
+<p>3.19 影响容忍度定义的更新，在下表中概述，并反映在最终规则中。FCA根据对“重要业务服务”定义的修订，对“影响容忍度”的定义做了相应修改，删除了“不可容忍”风险的提法。修订部分在下表中用下划线标出。PRA定义见PRA规则手册的运营韧性部分，FCA定义见FCA手册的术语表。
+3.19 Where definitions for impact tolerances have been updated, these are outlined in the table below and are reflected in the final rules. The FCA has, in line with amendments to the ‘important business service’ definition, made a corresponding change to its definition of ‘impact tolerance’ to remove the reference to ‘intolerable’ risk. The areas which have been amended have been underlined in the table below. The PRA definitions are in the Operational Resilience Parts of the PRA Rulebook, and the FCA definitions are in the Glossary of the FCA Handbook.</p>
+<p>术语
+Term
+审慎监管局
+PRA
+金融行为监管局
+FCA
+影响容忍度
+Impact Tolerance
+对重要业务服务或重要集团业务服务中断的最大
+可接受的
+容忍水平，除其他相关指标外，以时间长度来度量。
+The maximum
+acceptable
+tolerable level of disruption to an important business service or an important group business service as measured by a length of time in addition to any other relevant metrics.
+指对重要业务服务的最大可容忍中断水平，以时间长度
+和
+任何其他相关指标来度量，反映了重要业务服务的任何进一步中断可能对机构的一个或多个客户，或对机构的稳健、稳定，或英国金融体系的韧性或金融市场的有序运行，造成无法容忍的伤害。
+means the maximum tolerable level of disruption to an important business service, as measured by a length of time
+and
+in addition to any other relevant metrics, reflecting the point at which any further disruption to the important business service could
+pose
+cause intolerable harm to any one or more of the firm’s clients or pose a
+intolerable
+risk to the soundness, stability, or resilience of the UK financial system or the orderly operation of the financial markets.</p>
+<p>4 实施时间表(Implementation timeline)</p>
+<p>4.1 征求意见稿提议，机构和FMIs将在最终政策发布后的12个月内实施政策。在征求意见时，拟议的实施日期是2021年下半年。随后，为应对Covid-19大流行，征求意见期延长了6个月。征求意见稿还提议，机构和FMIs需要确保出现严重但合理可信的运营扰断时，它们能够保持在其影响容忍度范围内。拟议的规则要求机构和FMIs在合理的时间内达到后一个结果，但不得迟于政策生效后3年。
+4.1 The consultations proposed that firms and FMIs would have 12 months from the publication of final policy to implement the policy. At the time of consultation, the proposed implementation date for the proposals was the second half of 2021. The consultation period was subsequently extended by six months in response to the Covid-19 pandemic. The consultations also proposed that firms and FMIs would be required to ensure they could remain within their impact tolerances in the event of a severe but plausible disruption to operations. The proposed rules would have required firms and FMIs to meet this latter outcome within a reasonable time, but no later than three years after the policy came into force.</p>
+<p>4.2 许多回应者询问实施时间表是否有灵活性。机构和FMIs询问是否也应在这12个月内完成映射和测试，意思是它们是资源密集型的，可能很难在这段时间内实施。回应者还要求在影响容忍度范围内保持灵活性，理由是运营韧性并非最终状态，弥补运营缺陷可能需要远超3年的时间。
+4.2 A number of respondents enquired as to whether there would be flexibility within the timelines for implementation. Firms and FMIs queried if mapping and testing should also be completed in these 12 months, suggesting they are resource intensive and may be difficult to implement within such timeframe. Respondents also requested flexibility around remaining within impact tolerances, citing that operational resilience is not an end-state and that remediating operational shortfalls can take significantly longer than three years.</p>
+<p>4.3 机构和FMIs需要在2022年3月31日(星期四)之前确定其重要业务服务并设定影响容忍度。为了实现这一目标，并发现其运营韧性中的任何漏洞，机构和FMIs应当映射其重要业务服务并着手情景测试计划。预计机构和FMIs在这段时间内不会完成映射和所有复杂的情景测试。映射和情景测试是持续进行的过程，预计机构和FMIs随着时间推移以不同的复杂程度执行它们。监管当局期望，机构和FMIs的映射和情景测试方法应当随时间推移而发展。
+4.3 Firms and FMIs will need to have identified their important business services and set impact tolerances by Thursday 31 March 2022. In order to achieve this, and to identify any vulnerabilities in their operational resilience, firms and FMIs should have mapped their important business services and commenced a programme of scenario testing. Firms and FMIs are not expected to have performed mapping and scenario testing to the full extent of sophistication within this time. Both mapping and scenario testing are ongoing processes, and firms and FMIs are expected to perform them at varying levels of sophistication over time. The supervisory authorities expect that firms’ and FMIs’ approach to both mapping and scenario testing should evolve over time.</p>
+<p>4.4 高级管理层应当负责交付政策成果。机构和FMIs应制定战略或计划，说明如何符合监管当局的要求和期望。为了使战略有效，应当在2022年3月31日(星期四)之前执行。作为战略或计划的一部分，机构和FMI应当优先考虑映射和情景测试，以便能够有充裕的时间发现漏洞并采取措施补救。机构和FMIs，尤其是规模更大、更复杂的机构，需要选择并优先考虑交付政策成果的最终目标。
+4.4 Senior management are expected to take responsibility for delivering the policy outcomes. Firms and FMIs are expected to have a strategy or plan which sets out how they will comply with the supervisory authorities’ requirements and expectations. In order for the strategy to be effective, it should be put into effect before Thursday 31 March 2022.As part of the strategy or plan, firms and FMIs should prioritise their efforts on mapping and scenario testing so that they will be able to identify vulnerabilities in sufficient time so that measures can be taken to remediate them. Firms and FMIs, particularly larger more complex ones, will need to make choices and prioritise with the ultimate goal of delivering the outcomes of the policy.</p>
+<p>4.5 修补漏洞的速度应当与扰断可能造成的潜在影响相称，并将成为监管的重点领域。
+4.5 The speed at which vulnerabilities are remediated should be commensurate with the potential impact that a disruption would cause, and will be an area of supervisory focus.</p>
+<p>4.6 在2025年3月31日(星期一)之后，保持运营韧性将成为一项动态活动。彼时，机构和FMIs应当拥有稳健、有效和全面的策略、流程和系统，使它们能够在发生严重但合理可信的扰断(或极端扰断)时，处理对每个重要业务服务的能力的风险，使其保持在其影响容忍度范围内。
+4.6 After Monday 31 March 2025, maintaining operational resilience will be a dynamic activity. By this point, firms and FMIs should have sound, effective, and comprehensive strategies, processes, and systems that enable them to address risks to their ability to remain within their impact tolerance for each important business service in the event of a severe but plausible disruption (or extreme disruption).</p>
+<p>4.7 在Covid-19大流行的早期阶段，监管当局决定将征求意见截止日期推迟到2020年10月1日(星期四)。有鉴于此，监管当局保持了原来的时间表(12个月后三年)，但将时间表开始日期推迟。政策将于2022年3月31日(星期四)生效，并有一个固定的三年实施时间表，在此期间，政策将全面实施。
+4.7 In the early stages of the Covid-19 pandemic, the supervisory authorities decided to postpone the consultation close date to Thursday 1 October 2020. In light of this, the supervisory authorities have maintained the same timeline (12 months followed by three years), but the date the timeline starts has been pushed back. The policy will take effect on Thursday 31 March 2022 with a fixed three year implementation timeline within which the policy will become fully operational.</p>
+<p>4.8 监管当局认真考虑了实施时间表，认为迫切需要机构和FMIs建立合理可行的运营韧性并安排优先顺序。监管当局进一步认为，对机构和FMIs提出符合运营韧性要求的“合理时间”的期望是相称和灵活的。
+4.8 The supervisory authorities have considered the implementation timelines carefully and consider that there is urgency for firms and FMIs to build and prioritise their operational resilience as soon as reasonably practicable. The supervisory authorities further believe they are being proportionate and flexible in their expectation for firms and FMIs to propose to their supervisors what a ‘reasonable time’ is for them to comply with operational resilience requirements.</p>
+<p>5 交付运营韧性(Delivering operational resilience)</p>
+<p>综述Overview</p>
+<p>5.1 政策要求机构和FMIs制定并采取行动，以满足运营韧性标准，该标准包含监管当局目标所代表的公共利益。机构和FMIs应当专注于其重要业务服务，并确保它们在严重但合理可信(或极端)的情景中有能力保持在影响容忍度范围内。机构需要求映射交付重要业务服务必要的资源、人员、流程、技术和设施，无论其在交付服务时是否使用第三方，并测试其保持在其影响容忍度范围内的能力。
+5.1 The policy requires firms and FMIs to set, and take actions to meet, standards of operational resilience that incorporate the public interest as represented by supervisory authorities’ objectives. Firms and FMIs should focus on their important business services and ensure they have the ability to remain within impact tolerances in severe but plausible (or extreme) scenarios. Firms will be required to map the resources, people, processes, technology and facilities necessary to deliver important business services, irrespective of whether or not they use third parties in the delivery of these services, and test their ability to remain within their impact tolerances.</p>
+<p>映射(Mapping)</p>
+<p>5.2 征求意见稿建议，机构或FMIs需要识别并记录交付其每个重要业务服务必需的人员、流程、技术和信息。特别是，建议映射应当使机构和FMIs能够实现以下成果：
+(i) 发现在影响容忍度范围内交付重要业务服务的漏洞；和
+(ii)测试其保持在影响容忍度范围内的能力。
+5.2 The consultations proposed that a firm or FMI would be required to identify and document the necessary people, processes, technology and information required to deliver each of its important business services. In particular, it was proposed that mapping should enable firms and FMIs to deliver the following outcomes:
+(i) identify vulnerabilities in delivery of important business services within an impact tolerance; and
+(ii) test their ability to remain within impact tolerances.</p>
+<p>5.3 一些机构和FMIs回应要求监管当局通过适当的方法进一步详细说明这些期望。监督当局认为，最适当和有效的方法是坚持基于结果的方法。机构和FMIs应当以最适合其情况的方式实现这些结果。监管当局期望机构和FMIs掌握如何将映射与其现有方法结合以及如何使用它来发现漏洞的主动权。在监管政策时，监管当局期望机构和FMIs达成与其规模、范围和复杂程度相称的政策成果。
+5.3 Some firms and FMIs responded requesting that the supervisory authorities set out further detail on these expectations through a proportionate approach. The supervisory authorities consider that the most proportionate and effective approach is maintaining the outcomes-based approach. Firms and FMIs are expected to meet these outcomes in ways most appropriate for their circumstances. The supervisory authorities expect firms and FMIs to take ownership of how mapping may fit into their existing approaches and how they could use it to identify vulnerabilities. In supervising the policy, the supervisory authorities expect firms and FMIs to meet the outcomes of the policy proportionate to their size, scale, and complexity.</p>
+<p>5.4 一些机构和FMIs请求澄清通过映射确定分包依赖关系。监管当局注意到，政策并未规定这种级别的映射。然而，机构和FMIs应当了解对分包安排的依赖，以及这些安排是否对其运营韧性构成威胁。机构和FMIs至少应当监测参与提供重要业务服务的分包商，包括它们在机构影响容忍度范围内提供机构重要业务服务的能力。
+5.4 Some firms and FMIs requested clarity on identifying sub-outsourcing dependencies through mapping. The supervisory authorities note that the policy does not prescribe this level of mapping. However, firms and FMIs should understand the reliance placed on sub-outsourcing arrangements, and if these arrangements pose a threat to their operational resilience. Firms and FMIs should, at a minimum, monitor sub-outsourced providers involved in the provision of important business services, including their ability to deliver the firm’s important business services within the firm’s impact tolerances.</p>
+<p>PRA-FCA双重监管机构的情景测试(scenario testing for PRA-FCA dual-regulated firms)</p>
+<p>5.5 根据最终政策，机构需要记录其遵守政策的自评估。机构应当：
+总结他们发现的交付其重要业务服务的漏洞；并
+概述所执行的情景测试和测试结果。
+5.5 Under the final policy, firms will be required to document a self-assessment of their compliance with the policy. Firms are expected to:
+summarise the vulnerabilities they have identified to the delivery of their important business services; and
+outline the scenario testing performed and the findings from the tests.</p>
+<p>5.6 除上述内容外，FCA还要求机构开展“经验教训”活动，以确定、排定优先顺序并投资于尽可能有效地应对和从中断中恢复的能力。
+5.6 In addition to the above, the FCA has set an expectation for firms to conduct ‘lessons learned’ exercises to identify, prioritise and invest in their ability to respond and recover from disruptions as effectively as possible.</p>
+<p>5.7 机构表示，FCA征求意见稿中的情景测试中引入进行“经验教训”活动的附加概念，并未在PRA提案中明确提出。回应者要求监管当局在这方面使用一致的术语。
+5.7 Firms indicated that the introduction of the additional concept of undertaking a ‘lessons learned’ exercise during scenario testing in the FCA’s consultation was not drawn out specifically in PRA proposals. The respondents requested that the supervisory authorities use consistent terminology in this regard.</p>
+<p>5.8 为使监管当局使用的术语保持一致，PRA修订政策纳入期望机构将“经验教训”包含在其自评估文件。机构应当确定在进行情景测试或通过实践经验获得的任何经验教训，并把为应对风险所采取的行动包括在其自评估文件中。
+5.8 To provide consistency in the terminology used across the supervisory authorities, the PRA has amended its policy to include an expectation for firms to include ‘lessons learned’ within their self-assessment document. Firms should identify any lessons learned when undertaking scenario testing or via practical experience, and include the actions taken to address the risks in their self-assessment document.</p>
+<p>严重/极端但合理可信的定义(severe/extreme but plausible definition)</p>
+<p>5.9 政策规定，机构和FMIs应当明确说明扰断的具体最大程度，包括在严重但合理可信的扰断后，能够恢复交付重要业务服务的时间限制。机构和FMIs还需要采取行动，确保在严重/极端但合理的情景中，它们保持在影响容忍度范围内。对于FMIs，术语“极端但合理可信”用于避免与其监管方法的其他部分混淆。
+5.9 The policy sets out that firms and FMIs should articulate specific maximum levels of disruption, including time limits within which they will be able to resume the delivery of important business services following severe but plausible disruptions. Firms and FMIs are also required to take action to ensure they remain within impact tolerances in severe/extreme but plausible scenarios. In the case of FMIs, the terminology ‘extreme but plausible’ is used to avoid confusion with other parts of their supervisory approach.</p>
+<p>5.10 许多机构和FMIs要求澄清关于“严重/极端但合理可信”的情景，并要求在政策中给出定义。
+5.10 A number of firms and FMIs asked for clarity regarding the ‘severe/extreme, but plausible’scenarios, and requested a definition be set out in the policy.</p>
+<p>5.11 为使机构和FMIs在其运营韧性方法中具有灵活性，最终政策期望机构和FMIs确定其用于测试的严重/极端但合理的情景。在设定严重/极端但合理的情景时，机构和FMIs可以考虑组织内部、整个金融部门以及其他部门和司法管辖区的先前事件或未遂事件。测试计划应当包括现实的假设，并随着机构从先前的测试中学习而发展。
+5.11 To allow flexibility for firms and FMIs in their approach to operational resilience, the final policy expects that firms and FMIs identify the severe/extreme but plausible scenarios they use for testing. When setting severe/extreme but plausible scenarios, firms and FMIs could consider previous incidents or near misses within the organisation, across the financial sector and in other sectors and jurisdictions. A testing plan should include realistic assumptions and evolve as the firm learns from previous testing.</p>
+<p>5.12 监管当局将这一领域视为机构和FMI以及监管当局利益一致的领域 — 如果机构或FMI选择的情景不够严重/极端，董事会和高级管理层可能会在经营业务时承担不适当的风险。适合机构使用的情景的性质和严重程度可能因其规模和复杂程度而异。因此，政策不包括详细的指导。然而，监管当局预计，这将是监管讨论的一个共同领域，包括发展如何以及为什么选择情景的理解。监管当局期望随着时间推移发展出最佳实践，而机构和FMIs以及监管当局都会随时间推移而学到更多。
+5.12 The supervisory authorities see this area as one where the interest of firms and FMIs and the supervisory authorities should be aligned – if a firm or FMI chooses scenarios that are insufficiently severe/extreme, boards and senior management might be taking inappropriate risks with the running of their businesses. The nature and severity of scenarios it is appropriate for firms to use may vary according to their size and complexity. As a result, the policy does not include detailed guidance. However, the supervisory authorities anticipate that this will be a common area for supervisory discussion, including developing an understanding of how and why scenarios have been selected. The supervisory authorities expect best practice to develop over time and that both firms and FMIs, and the supervisory authorities will learn more over time.</p>
+<p>审查测试(Review of testing)</p>
+<p>5.13 征求意见稿提议，机构和FMIs需要开展定期测试，测试在发生严重但合理可信的运营扰断时其每个重要业务服务保持在其影响容忍度范围内的能力。
+5.13 The consultations proposed that firms and FMIs would be required to carry out regular scenario testing of their ability to remain within their impact tolerances for each of their important business services in the event of a severe but plausible disruption of their operations.</p>
+<p>5.14 许多机构和FMI要求明确随着过程的逐渐成熟，定期测试的范围、级别和性质。其它回应者表示，定期测试可能太过繁重，并请求对这一要求进行审查。
+5.14 A number of firms and FMIs requested clarity on the extent, level and nature of testing on a regular basis as processes mature over time. Other respondents suggested that regular testing could be too burdensome and have requested a review of the requirement.</p>
+<p>5.15 虽然监管当局认同测试不应变得过于繁重，但监管当局认为，要求至少每年审查映射一次并定期测试的过程，使机构和FMIs更好地理解其系统和发现任何需要补救的漏洞。监管当局已酌情在各自的政策文件中阐述了它们的期望。
+5.15 While the supervisory authorities agree that testing should not become unduly burdensome, the supervisory authorities consider that the process of reviewing mapping at least annually and testing regularly is required for firms and FMIs to better understand their systems and identify any vulnerabilities that need remediation. Where appropriate, the supervisory authorities have set out their expectations in their respective policy documents.</p>
+<p>5.16 最终政策要求机构和FMIs适度优先排序并缩小情景，以确保有效测试不会过于繁重。机构和FMIs还需要定期测试其在严重/极端但合理的情景中保持在影响容忍度范围内的能力。最终政策规定，监管当局还希望机构和FMIs每年至少一次，或在重大变化发生后，更新其映射。
+5.16 The final policy expects firms and FMIs to prioritise and narrow their scenarios appropriately to ensure effective testing that is not unduly burdensome. Firms and FMIs will also need to test regularly their ability to remain within impact tolerances in severe/extreme but plausible scenarios. The final policy states that supervisory authorities would also expect firms and FMIs to update their mapping annually at a minimum, or following significant change if sooner.</p>
+<p>PRA-FCA双重监管机构的自评估模板和指导(Self-assessment templates and guidance for PRA-FCA dual-regulated firms)</p>
+<p>5.17 征求意见稿提出机构应当：总结其发现的交付重要业务服务方面的漏洞；并概述所执行的情景测试和测试结果。机构需要说明计划采取哪些行动来提高其保持在影响容忍度范围内的能力，并证明采取这些行动的时机是合理的，并与机构重要业务服务的系统重要性相称。PRA和FCA将该文件定义为自评估。
+5.17 The consultations proposed an expectation for firms to: summarise the vulnerabilities they have identified to the delivery of their important business services; and outline the scenario testing performed and the findings from the tests. Firms would need to indicate what actions are planned to improve their ability to remain within impact tolerances and demonstrate that the timing for these is reasonable and in proportion to the systemic importance of the firm’s important business service. The PRA and FCA define this documentation as self-assessment.</p>
+<p>5.18 回应者要求提供自评估过程的额外指导或模板。机构还要求进一步明确该文件所要求的详细程度。
+5.18 Respondents requested additional guidance or a template for the self-assessment process. Firms also requested further clarity on the level of detail required for the document.</p>
+<p>5.19 PRA和FCA认为，机构应当进行定制的自评估，以反映其独特的重要业务服务和情景测试。自评估应当记录必要的信息，以便做出满足政策成果所需的决策。因此，详细程度应当适合机构将要做的决策。考虑到机构在结构方面的差异，设定确切的最低标准是不合适的。
+5.19 The PRA and FCA consider that firms should undertake bespoke self-assessments which reflect their individual important business services and scenario testing. A self-assessment should document the necessary information to make decisions required to meet the outcomes of the policy. The level of detail should therefore be appropriate for the decisions firms will make. Setting exact minimum standards would not be proportionate given the differences in the structures of individual firms.</p>
+<p>外包和使用第三方(Outsourcing and the use of third parties)</p>
+<p>5.20 征求意见稿建议，机构和FMIs需要映射其重要业务服务，并测试其保持在影响容忍度范围内的能力，以建设运营韧性。无论运营资源是全部还是部分由第三方提供，都是意料之中的。对第三方进行映射和测试，对于机构或FMI以及监管机构获得对其运营韧性的准确理解是必要的。
+5.20 The consultations proposed that firms and FMIs would be required to map their important business services and test their ability to remain within impact tolerances for the purposes of building operational resilience. This would be expected regardless of whether the operational resources are being provided wholly or in part by a third party. Mapping and testing on third parties is necessary for the firm or FMI and the supervisor to obtain an accurate understanding of their operational resilience.</p>
+<p>5.21 一些回应者对第三方供应商可能不愿意分享映射和测试所需的信息表示担忧，尤其是在一些机构与大型供应商相比谈判能力较弱的情况下。
+5.21 Some respondents raised concerns relating to third party suppliers which may be reluctant to share information necessary for mapping and testing, particularly where some firms have low negotiating power in relation to large suppliers.</p>
+<p>5.22 监管机构预计，保险机构和FMIs从第三方供应商获得的有关重要业务服务的保障水平应当与机构或FMI的规模和复杂程度相称，并反映外包和第三方安排的重要性和风险。签订外包或第三方协议的机构仍然完全有责任符合所有的监管义务。作为其保障的一部分，机构或FMIs可以要求第三方提供映射或情景测试数据，但并非所有情况下都需要这样做，尤其是在其他保障机制有效和更相称的情况下。
+5.22 The supervisory authorities expect that the level of assurance firms and FMIs receive from third party suppliers relating to important business services should be proportionate to the size and complexity of the firm or FMI and reflect the materiality and risk of the outsourcing and third party arrangement. Firms that enter into outsourcing or third party arrangements remain fully accountable for complying with all their regulatory obligations. As part of their assurance, firms or FMIs may ask third parties to provide mapping or scenario testing data but this is not required in all cases, particularly if other assurance mechanisms are effective and more proportionate.</p>
+<p>6 国际一致性(International Alignment)</p>
+<p>6.1 许多回应者对英国的建议与国际方法的不同发表了意见。他们还要求澄清不同的术语与潜在国际标准的关系，例如巴塞尔银行监管委员会(BCBS)正在制定的标准。
+6.1 A number of respondents commented on the UK’s proposals differing from international approaches. They also asked for clarification regarding the differing terminology and the relationship to potential international standards, such as those being developed by the Basel Committee on Banking Supervision (BCBS).</p>
+<p>6.2 监管当局认识到机构和FMIs的全球性和互联的性质，以及监管协调的重要性，并致力于与其他监管机构密切合作，以确保运营韧性的监管方法得到良好协调。
+6.2 The supervisory authorities recognise the global and interconnected nature of firms and FMIs and the importance of supervisory coordination, and are committed to working closely with other regulators to ensure that supervisory approaches on operational resilience are well coordinated.</p>
+<p>6.3 2020年8月，BCBS发布了运营韧性原则的征求意见稿
+[6]
+。英国监管当局利用从制定国内政策提案中获得的见解，为起草这些原则做出了重大贡献。
+6.3 In August 2020 the BCBS published its consultation on principles for Operational Resilience. The UK’s supervisory authorities have made a significant contribution to drafting these principles, using insights gained from developing their domestic policy proposals.</p>
+<p>6.4 将其政策与BCBS征求意见稿比较，尽管在术语上存在一些差异，但监管当局认为核心原则是一致的：
+区分操作风险和运营韧性；
+运营韧性作为一种结果，机构和FMIs需要不断努力实现；
+运营韧性对金融稳定以及机构和FMIs的安全和稳健的重要性；
+风险或影响容忍度的概念，定义了不假设零故障的可接受范围；以及
+使用情景测试来确保韧性。
+6.4 Comparing their policy with the BCBS consultation, despite some differences in terminology, the supervisory authorities consider that there is alignment on the core principles:
+a distinction between operational risk and operational resilience;
+operational resilience as an outcome, that firms and FMIs continually need to work towards;
+the importance of operational resilience for both financial stability and the safety and soundness of firms and FMIs;
+the concept of a risk or impact tolerance to define what might be acceptable that does not assume zero failure; and
+the use of scenario testing to assure resilience.</p>
+<p>6.5 英国监管当局将继续参与国际政策制定过程。假设在执行方面存在地方差异是现实的。不同的司法管辖区对他们认为关键或重要的东西会有不同的看法，这是合理的。但只要原则一致，监管当局认为，机构和FMIs以及其监管机构应当能够有效地跨国界工作。
+6.5 The UK’s supervisory authorities will continue to engage with international policy development processes. It is realistic to assume that there will be local differences in implementation. And it is reasonable that different jurisdictions will have different views on what they consider critical or important. But as long as the principles are aligned, the supervisory authorities consider firms and FMIs and their supervisors should be able to work effectively across borders.</p>
+<p>7 结论(Conclusion)</p>
+<p>7.1 监管当局感谢在制定运营韧性政策方面的征求意见反馈。他们受到了行业和消费者高度参与的鼓舞。
+7.1 The supervisory authorities are grateful for the consultation feedback in developing the operational resilience policy. They are encouraged by the high level of engagement they have received from industry and consumers.</p>
+<p>7.2 监管当局期望机构按照上文第4.3至4.8段规定的时间表开始执行政策要求。最终政策现载于各监管机构的政策文件，详情如下：
+PRA – 政策声明 6/21：“运营韧性：重要业务服务的影响容忍度”；
+FCA – 政策声明 21/3 “构建运营韧性”；和
+英格兰银行 - 英格兰银行关于FMI运营韧性的政策。
+7.2 The supervisory authorities expect firms to begin implementing the policy requirements in line with the timeline as set out in paragraphs 4.3 to 4.8 above. The final policy is now set out in the individual supervisory authorities’ policy documents, which are detailed below:
+PRA - PS6/21: ‘Operational resilience: Impact tolerances for important business services’;
+FCA - PS21/3 ‘Building operational resilience’; and
+Bank - Bank of England policy on Operational Resilience of FMIs.</p>
+<p>7.3 确定重要业务服务和设定影响容忍度将是新的运营韧性框架的第一步。监管当局认识到，随着监管当局和行业在运营韧性这一共同目标上取得进展，将有更多经验需要学习。
+7.3 Identifying important business services and setting impact tolerances will be the first steps in the new framework for operational resilience. The supervisory authorities recognise there will be more to learn as the supervisory authorities and industry progress on the shared goal of operational resilience.</p>
+<p>7.4 监管当局发现，与机构、FMIs、安全以及其他公共和私营部门组织的合作，为提高运营韧性提供了建设性的方法。他们打算继续这一战略，与权威机构和行业论坛中的其他组织合作。监管当局认为，这一领域的合作对于实现良好的运营韧性成果至关重要。
+7.4 The supervisory authorities have found that collaboration with firms, FMIs, security, and other public and private sector organisations provides a constructive approach to promoting operational resilience. They intend to continue this strategy, working with other organisations in both authorityled and industry fora. The supervisory authorities believe that cooperation in this area is vital to achieving good operational resilience outcomes.
+PRA 征求意见稿29/19 “运营韧性：重要业务服务的影响容忍度”，FCA 征求意见稿19/32:构建运营韧性：重要业务服务的影响容忍度及对讨论稿18/04的反馈，英格兰银行征求意见稿 “运营韧性：中央对手方”，英格兰银行征求意见稿 “运营韧性:中央证券存管机构”，以及英格兰银行征求意见稿 “运营韧性：公认的支付系统和特定服务提供商”。PRA CP29/19 ‘Operational resilience: Impact tolerances for important business services’, FCA CP19/32: Building operational resilience: impact tolerances for important business services and feedback to DP18/04, Bank CP ‘Operational Resilience: Central counterparties’, Bank CP ‘Operational Resilience: Central securities depositories’, and Bank CP ‘Operational Resilience: Recognised Payment Systems and Specified Service providers’.
+↑
+注：对于FMIs，术语“极端但合理可信”用于避免与其监管方法的其他部分混淆。Note: for FMIs the terminology ‘extreme but plausible’ is used to avoid confusion with other parts of their supervisory approach.
+↑
+见PRA政策声明6/21：《运营韧性：重要业务服务的影响容忍度》；英格兰银行关于FMIs运营韧性的政策；FCA政策声明21/3 《构建运营韧性》。Available at: PRA PS6/21: Operational resilience: Impact tolerances for important business services
+;
+Bank of England policy on Operational Resilience of FMIs; FCA PS21/3 ‘Building operational resilience’.
+↑
+此表总结了运营韧性部分中列出的CRR和偿付能力II机构的重要业务服务定义。This table summarises the important business services definitions for CRR and Solvency II firms set out in the Operational Resilience Parts.
+↑
+December 2019: https://www.bankofengland.co.uk/prudential-regulation/publication/2018/building-the-uk-financial-sectorsoperational-resilience-discussion-paper.
+↑
+巴塞尔银行监管委员会：运营韧性原则。BCBS Principles for operational resilience (https://www.bis.org/bcbs/publ/d509.pdf).
+↑</p>
+<hr>
+<p>本公众号(ID: bcmplus)专注于业务连续性和运营韧性知识的传播和普及，关注业务连续性、应急和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时腾讯已调整政策，未能开通留言功能，希望交流和讨论业务连续性管理问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(公众号1月只能发4次文章，也会有一些观点直接在知识星球而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/mDwTrYgPKN5q1vLczK8vkg_01.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/mDwTrYgPKN5q1vLczK8vkg">原文链接</a></em></p>

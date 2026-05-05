@@ -1,0 +1,473 @@
+<p>写在前面
+：越来越多的人们开始关注运营韧性。事实上，虽然该领域还在快速的发展中，但已经凝聚了一些共识。金融行业是最为关注运营韧性的行业之一，近几年来，英美等国的金融监管机构以及巴塞尔银行监管委员陆续发布/修订了运营韧性(Operational Resilience)和业务连续性管理方面的正式文件。为让更多的专业人员者和爱好者了解国外运营韧性领域的进展，学习并实践运营韧性的良好实践，在2021年中期，我组织了一个公益翻译小组，对运营韧性相关资料进行翻译，并于去年发布了以下资料：
+《运营韧性原则》中文简译
+(2021年11月23日)
+《操作风险稳健管理原则修订》中文简译
+(2021年11月29日)</p>
+<p>之后，我再次组织了一个公益翻译小组，对英国金融监管机构的运营韧性资料进行翻译，今年春节前后，翻译小组成员陆续将翻译文稿发送给我，经历了种种耽搁和拖延之后，我近日终于将这些资料审校完成，接下来会陆续在公众号发布出来。</p>
+<p>以下是参与本系列资料的公益翻译小组成员
+(排名不分前后，按姓氏拼音排序)：
+安晓冬(上海，
+anton_6@163.com
+)
+陈阳(中国银行欧洲信息中心，
+chenyang@bankofchina.com
+)
+马骏(大连埃森哲，
+patrick.ma2018@outlook.com
+)
+彭水娟(江阴长电先进，
+shuijuan2006@126.com
+)
+孙宁莉(韧安咨询，
+resil-safe@outlook.com
+)
+王舵(大连，BCM咨询Freelancer，
+prepkids@163.com
+)
+吴小林(苏州银行，
+66886629@163.com
+)
+巫文湘(开泰银行(中国)有限公司，
+michael_woo_sz@hotmail.com
+)
+徐文静(DNV，
+wen.jing.xu@dnv.com
+)
+翟红波(北京，
+25354646@qq.com
+)
+周可政(上海，
+wikikivv@gmail.com
+)
+王曙(新常安科技，
+kevinwang@vip.sina.com
+)</p>
+<p>感谢公益翻译小组的各位专业人员在疫情期间抽出个人休息时间进行翻译工作。以下译文由我负责最终统一审校定稿，因为对英国金融业了解深度不够，如译文中有任何不准确或理解错误的地方，都是由于我的原因造成，与诸位翻译人员无关。如对译文有意见或修改建议，请给我留言。</p>
+<p>王曙(kevinwang) 2022.11.25</p>
+<hr>
+<p>下文是英国审慎监管局(PRA)运营韧性政策声明附件2 – 审慎监管局监管声明SS1/21，由英国审慎监管局于2021年3月29日发布，原文见：
+https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/supervisory-statement/2021/ss121-march-22.pdf</p>
+<hr>
+<p>PRA监管声明 | SS1/21 “运营韧性：重要业务服务的影响容忍度”
+PRA Supervisory Statement | SS1/21 ‘Operational Resilience: Impact tolerances for important business services’</p>
+<p>1 引言(Introduction)</p>
+<p>1.1 本监管声明(SS)阐明了审慎监管局(PRA)对机构重要业务服务的运营韧性的预期，要求其设定影响容忍度。政策目标是提高机构和更广泛的金融部门对运营扰断的运营韧性。
+1.1 This Supervisory Statement (SS) sets out the Prudential Regulation Authority’s (PRA) expectations for the operational resilience of firms’ important business services, for which they are required to set impact tolerances. The policy objective is to improve the resilience to operational disruptions of both firms and the wider financial sector.</p>
+<p>1.2 政策解决了金融体系的相互关联性和机构经营所处的复杂和动态环境对运营韧性带来的风险。PRA认为，有必要制定适当的最低运营韧性标准，以激励机构为扰断做好准备，并在需要的地方进行投资。扰断会影响机构的安全和稳健，危害投保人保护，在某些情况下，还会影响金融稳定。
+1.2 The policy addresses risks to operational resilience from the interconnectedness of the financial system and the complex and dynamic environment in which firms operate. The PRA considers that there is a need for a proportionate minimum standard of operational resilience that incentivizes firms to prepare for disruptions and to invest where needed. Disruptions can affect firms’ safety and soundness, undermine policyholder protection, and, in some cases, affect financial stability.</p>
+<p>1.3 本监管声明与以下所有方面相关：
+英国银行、建房互助会和PRA指定的投资机构(以下简称银行)；和
+英国偿付能力II机构、劳合社社团，及其管理代理公司(以下简称保险公司)。
+1.3 This SS is relevant to all:
+UK banks, building societies, and PRA-designated investment firms (hereafter banks); and
+UK Solvency II firms, the Society of Lloyd’s, and its managing agents (hereafter insurers).</p>
+<p>1.4 在本监管政策中，银行和保险公司统称为“机构”。
+1.4 Banks and insurers are collectively referred to as ‘firms’ in this SS.</p>
+<p>1.5 本监管声明中的运营韧性是指机构和金融部门作为一个整体预防、适应、应对、从运营扰断中恢复和学习的能力。PRA的运营韧性方法基于这样一种假设，即有时会发生扰断，这将使机构无法正常运营，并在一段时间内无法提供服务。
+1.5 Operational resilience in this SS refers to the ability of firms and the financial sector as a whole to prevent, adapt, respond to, recover from, and learn from operational disruptions. The PRA’s approach to operational resilience is based on the assumption that, from time to time, disruptions will occur which will prevent firms from operating as usual and see them unable to provide their services for a period.</p>
+<p>1.6 随着更广泛的金融部门变得更具活力、更复杂、更依赖技术和第三方，董事会和高级管理层对其机构运营韧性的明确关注将变得越来越重要。此外，国际互联正在增加，例如，英国机构可能会外包给在许多不同国家运营的云计算提供商。虽然这可以提高机构的韧性，但也会给PRA期望机构有效管理的运营带来新的风险。
+1.6 A clear focus by boards and senior management on their firm’s operational resilience will become increasingly important as the wider financial sector becomes more dynamic, complex, and reliant on technology and third parties. Moreover, international interconnectedness is increasing, for example as UK firms may outsource to cloud computing providers operating in a number of different countries. While this can improve firms’ resilience, it also gives rise to new risks to operations which the PRA expects firms to manage effectively.</p>
+<p>1.7 为了应对运营韧性不足带来的日益增长的风险，PRA规则手册
+[1]
+的运营韧性部分要求机构为其提供的服务制定并满足明确的标准，并测试其满足这些标准的能力。要求机构审查其现有方法，并在必要时进行改进。
+1.7 To address the growing risk a lack of operational resilience poses, the Operational Resilience Parts of the PRA Rulebook1 require firms to set and meet clear standards for the services they provide and test their ability to meet those standards. Firms are required to review their existing approaches and make improvements where necessary.</p>
+<p>1.8 政策支持PRA将运营韧性纳入其审慎框架。政策为PRA评估机构的运营韧性和PRA的监管人员与他们监管的机构进行知情对话以及在必要时推动它们变革提供了客观基础。
+1.8 The policy supports the PRA in embedding operational resilience into its prudential framework. The policy provides an objective basis for the PRA to assess firms’ operational resilience and for the PRA’s supervisors to have an informed dialogue with the firms they supervise and drive them to implement change where necessary.</p>
+<p>1.9 本监管声明补充并应当结合以下内容阅读：
+PRA银行监管方法或PRA保险监管方法；
+[2]
+PRA规则手册基本规则部分；
+[3]
+运营韧性部分；
+PRA运营韧性政策说明；
+[4]
+和
+监管声明2/21外包和第三方风险管理
+[5]
+。
+1.9 This SS complements, and should be read in conjunction with:
+‘The PRA’s approach to banking supervision’ or ‘The PRA’s approach to insurance supervision’;
+the Fundamental Rules Part of the PRA Rulebook;
+the Operational Resilience Parts;
+the PRA Statement of Policy ‘Operational resilience’; and
+SS2/21 ‘Outsourcing and third-party risk management’.</p>
+<p>2 重要业务服务(Important Business Services)</p>
+<p>2.1 业务服务是机构提供的服务。业务服务向机构外部的可识别用户交付特定的结果或服务，并应当与业务线区分开来，业务线是服务和活动的集合。
+2.1 A business service is a service that a firm provides. Business services deliver a specific outcome or service to an identifiable user external to the firm and should be distinguished from business lines, which are a collection of services and activities.</p>
+<p>2.2 如运营韧性部分所述，机构必须确定其重要业务服务。运营韧性部分
+[6]
+将重要业务服务定义为机构提供的服务，一旦扰断，可能会对机构的安全和稳健构成风险，或者如果机构符合运营韧性部分
+[7]
+中规定的标准，会对英国的金融稳定构成风险。运营韧性部分
+[8]
+规定，保险公司还必须确定可能对投保人保护构成风险的重要业务服务。
+2.2 As set out in the Operational Resilience Parts, firms must identify their important business services. The Operational Resilience Parts define important business services as the services a firm provides which, if disrupted, could pose a risk to a firm’s safety and soundness or, if a firm meets the criteria set out in the Operational Resilience Parts,7 the financial stability of the UK. The Operational Resilience Parts8 set out that insurers must also identify important business services that may pose a risk to policyholder protection.</p>
+<p>2.3 PRA期望机构确定重要业务服务，考虑其扰断对金融稳定(如适用)、机构的安全和稳健，以及(对保险公司而言)投保人保护造成的风险。机构的重要业务服务将是一个较短的面向外部的服务清单，机构选择为其建立高水平的运营韧性，以应对运营扰断。
+2.3 The PRA expects firms to identify important business services considering the risk their disruption poses to financial stability (where applicable), the firm’s safety and soundness and, in the case of insurers, policyholder protection. A firm’s important business services will be a relatively short list of external-facing services for which the firm has chosen to build high levels of operational resilience in anticipation of operational disruption.</p>
+<p>2.4 机构应当考虑如何确定其重要业务服务的实用性。例如，它们应该确定重要业务服务，以便：
+可以应用和测试影响容忍度；和
+董事会和高级管理层可以做出优先排序和投资决策。
+2.4 Firms should also consider the practicalities of how they identify their important business services. For example, they should identify important business services so that:
+an impact tolerance can be applied and tested; and
+boards and senior management can make prioritisation and investment decisions.</p>
+<p>2.5 在评估业务服务对金融稳定(如适用)、机构安全和稳健或投保人保护构成的风险时，PRA期望机构考虑以下因素：
+(a) 金融稳定 — 对更广泛的金融部门和英国经济的影响，包括：
+抑制更广泛经济运行的可能性，特别是监管声明19/13处置规划
+[9]
+中列出的经济功能；
+对交易对手，特别是提供金融市场基础设施或关键国家基础设施的交易对手，造成连锁效应的可能性；和
+该服务是否包含在英格兰银行金融政策委员会设定的影响容忍度范围内。
+(b) 机构的安全和稳健 — 对机构自身的影响，包括：
+对机构损益的影响；
+可能造成声誉损害；和
+可能引起法律或监管谴责。
+(c) 就保险公司而言，适当程度的投保人保护 — 服务扰断对受影响的投保人的影响，包括考虑：
+产品类型、投保人类型及其当前或未来利益；
+被保险风险对投保人的重要性；
+可为投保人提供类似保护水平的替代产品的可用性；和
+如果保险被撤销或保单不兑现，对投保人可能造成的重大不利影响。
+2.5 When assessing the risk a business service poses to financial stability (where applicable), the firm’s safety and soundness, or policyholder protection, the PRA expects firms to consider the following factors:
+(a) Financial stability – the impact on the wider financial sector and UK economy, including:
+the potential to inhibit the functioning of the wider economy, in particular the economic functions listed in SS19/13 ‘Resolution planning’;
+the potential to cause knock-on effects for counterparties, particularly those that provide financial market infrastructure or critical national infrastructure; and
+whether the service is covered by an impact tolerance set by the Bank’s Financial Policy Committee.
+(b) The firm’s safety and soundness – the impact on the firm itself, including the:
+impact on the firm’s profit and loss;
+potential to cause reputational damage; and
+the potential to cause legal or regulatory censure.
+(c) In the case of insurers, an appropriate degree of policyholder protection – the impact on policyholders affected by a disruption to the service, including consideration of:
+the type of product, type of policyholder, and their current or future interests;
+the significance to the policyholder of the risk insured;
+the availability of substitute products that would offer a policyholder a similar level of protection; and
+the potential for significant adverse effects on policyholders if cover were to be withdrawn or policies not honoured.</p>
+<p>2.6 在评估是否可以对重要业务服务应用影响容忍度时，机构应当考虑服务的用户是否可识别。这意味着扰断的影响应当是明确的。服务的用户可能包括零售客户、企业客户、其他法律实体、受托人、市场参与者、监管当局或受监管的实体集团的其他成员。
+2.6 When assessing if an impact tolerance can be applied to an important business service, firms are expected to consider if the users of the service are identifiable. This means that the impacts of disruption should be clear. The users of the service may include retail customers, business customers, other legal entities, trustees, market participants, the supervisory authorities, or other members of a regulated entity’s group.</p>
+<p>2.7关注运营扰断对机构安全和稳健、金融稳定和投保人保护的影响意味着机构不应将内部服务(例如人力资源或薪资发放的服务)单独确定为重要业务服务。这些内部服务，如果为重要业务服务交付所必需，将包括在PRA要求机构执行的映射、情景测试和任何补救工作中。
+2.7 The focus on the implications of operational disruption for firms’ safety and soundness, financial stability, and policyholder protection means that firms should not identify internal services alone (for example those provided by human resources or payroll) as important business services. Such internal services, if necessary for the delivery of important business services, would be included in the mapping, scenario testing, and any remediation work the PRA requires firms to perform.</p>
+<p>2.8 重要业务服务向可识别的用户交付特定的结果或服务，并应当与业务线(如抵押贷款)区分开来，后者是服务和活动的集合。它们会因机构而异。机构应当从承担服务交付的责任考虑构成重要业务服务的活动链，并确定链中对重要业务服务交付至关重要的那些部分。PRA期望链的关键部分应当具有运营韧性，机构应当将工作重点放在交付必要的资源上。以下是机构内部服务部门开展的活动需要纳入活动链的示例(注意，在以下示例中，根据本政策的条款，风险管理功能本身不需要具有运营弹性)：
+交易执行：如果交易执行需要风险管理职能部门的批准，则批准流程被纳入构成重要业务服务一部分的活动链中，提供批准所需的运营资源需要具有运营韧性。在本示例中，如果批准流程运营扰断，重要业务服务(交易执行)就不能交付。
+2.8 Important business services deliver a specific outcome or service to an identifiable user and should be distinguished from business lines, such as mortgages, which are a collection of services and activities. They will vary from firm to firm. Firms should consider the chain of activities which make up the important business service, from taking on an obligation to delivery of the service, and determine those parts of the chain that are critical to delivery of the important business service. The PRA expects that the critical parts of the chain should be operationally resilient, and that firms should focus their work on the resources necessary to deliver them. Below is an example of where activities performed by internal services within a firm would need to be included in the chain of activities (note, in the example below, the risk management function itself is not required to be operationally resilient in the terms of this policy):
+Trade execution: Where trade execution requires clearance from the risk management function, the clearance process would be included in the chain of activities that form part of the important business service, and the operational resources needed to provide that clearance would need to be operationally resilient. In this example, the important business service (trade execution) could not be delivered if the clearance process was operationally disrupted.</p>
+<p>2.9 在评估董事会和高级管理层是否能够为重要业务服务排定优先顺序和进行投资决策时，机构应当考虑重要业务服务的数量是否与其业务相称。大型机构可能会比小型机构确定更多的重要业务服务。
+2.9 When assessing if boards and senior management can make prioritisation and investment decisions for an important business service, firms are expected to consider whether the number of important business services is proportionate to their business. It is likely that larger firms will identify a larger number of important business services than smaller firms.</p>
+<p>2.10 PRA期望机构每年至少审查其重要业务服务1次，如果发生重大变化，则尽早进行审查，并确定是否需要修改其重要业务服务清单。
+2.10 The PRA expects firms to review their important business services annually at a minimum, or sooner if a significant change occurs, and to determine whether any changes are required to their list of important business services.</p>
+<p>3 影响容忍度(Impact tolerance)</p>
+<p>设定影响容忍度(Setting an impact tolerance)</p>
+<p>3.1 运营韧性部分要求机构为其每个重要业务服务设定影响容忍度。运营韧性部分
+[10]
+将影响容忍度定义为重要业务服务的最大可容忍扰断水平，由时间长度以及任何其他相关指标度量。
+3.1 The Operational Resilience Parts require firms to set an impact tolerance for each of their important business services. The Operational Resilience Parts define an impact tolerance as the maximum tolerable level of disruption to an important business service as measured by a length of time in addition to any other relevant metrics.</p>
+<p>3.2 运营韧性部分
+[11]
+要求机构将其影响容忍度设定为对重要业务服务的任何进一步扰断将对机构的安全和稳健，(对保险公司而言)投保人保护构成风险的时间点，如果机构符合运营韧性部分
+[12]
+给出的标准，则为英国的金融稳定。
+3.2 The Operational Resilience Parts require firms to set their impact tolerances at the point at which any further disruption to the important business service would pose a risk to the firm’s safety and soundness, and in the case of insurers, policyholder protection, and, if a firm meets the criteria as set out in the Operational Resilience Parts,12 the financial stability of the UK.</p>
+<p>3.3 在为单个重要业务服务设定影响容忍度时，PRA期望机构考虑其他相关重要业务服务失败的影响。这些可能是相关的，因为，例如它们共享支持重要业务服务交付，或者同时扰断可能会对类似的外部最终用户产生复合影响的公共资源。PRA期望机构在进行评估时采取适当的方法，并且只考虑在建设运营韧性方面有重大好处的额外复杂性。
+3.3 When setting an impact tolerance for an individual important business service, the PRA expects firms to take into account the impact of failure of other related important business services. These may be related because, for example, they share common resources which support the delivery of the important business services or where simultaneous disruption could have compounding impacts on similar external end users. The PRA expects firms to take a proportionate approach in making this assessment, and only to consider extra layers of complexity where there are significant benefits in terms of building operational resilience.</p>
+<p>3.4 影响容忍度为董事会和高级管理层提供了一个标准，用于排定投资优先次序和做出恢复和响应安排(见本监管声明第4章至第6章)。它们可能有助于在运营扰断期间为决策提供信息，届时它们将与有效管理事件有关的其它信息一起被考虑。
+3.4 Impact tolerances provide a standard which boards and senior management should use for prioritising investment and making recovery and response arrangements (see Chapters 4 to 6 of this SS). They may be helpful in informing decision-making during operational disruptions, when they would be considered alongside other information relevant to managing an incident effectively.</p>
+<p>3.5 PRA期望在假定将发生扰断的情况下设定影响容忍度。机构在设定其影响容忍度时不应考虑扰断的原因或可能性。
+3.5 The PRA expects impact tolerances to be set on the assumption that a disruption will occur. Firms should not consider the cause or probability of disruption when setting their impact tolerances.</p>
+<p>3.6 在所有情况下，影响容忍度必须
+[13]
+包括基于时间的指标，以衡量对重要业务服务的可容忍扰断水平。机构还需要考虑
+[14]
+是否应将基于时间的影响容忍度与其他指标结合使用，例如机构在扰断期间可以容忍中断的交易量或价值。有关影响容忍度指标的更多信息，请参见第3.10至3.16段。
+3.6 An impact tolerance must, in all cases, include a time-based metric to measure the tolerable level of disruption to an important business service. Firms are also required to consider whether time-based impact tolerances should be used in conjunction with additional metrics, such as the volume or value of transactions that the firm can tolerate being interrupted for that period of disruption. See paragraphs 3.10 to 3.16 for more on impact tolerance metrics.</p>
+<p>3.7 机构可以通过假设一个重要业务服务在指定的一段时间不可用并判断其可能产生的潜在影响，来选择设定其影响容忍度。如果这种扰断不会对机构的安全和稳健、(在保险公司的情况下)投保人保护以及(如适用)英国的金融稳定造成风险，机构可以考虑更长扰断的影响。例如，如果机构判断一个重要业务服务不可用5天后，将对英国的金融稳定造成风险，那么这将是机构设定其影响容忍度的临界点。
+3.7 Firms may choose to set their impact tolerances by assuming an important business service is unavailable for a specified period of time and judging the potential impact this would have. If this disruption would not pose a risk to the firm’s safety and soundness, (in the case of insurers) policyholder protection, and (if applicable) the financial stability of the UK, the firm could consider the impact of a longer disruption. If, for example, the firm judges that after an important business service has been unavailable for five days, there would be a risk to the financial stability of the UK, this would be the point within which the firm would set its impact tolerance.</p>
+<p>3.8 在判断哪个时间点对安全和稳健、(保险公司的情况下)投保人保护或(如适用)英国金融稳定构成风险时，机构应当考虑确定定量和定性指标。在确定指标时，机构应当考虑本监管声明第2.5段中确定的因素。
+3.8 When judging the point at which safety and soundness, (in the case of insurers) policyholder protection, or (if applicable) the financial stability of the UK is at risk, firms should consider identifying quantitative and qualitative indicators. In identifying indicators, firms should consider the factors identified in paragraph 2.5 of this SS.</p>
+<p>3.9 影响容忍度定义为最大可容许的扰断程度，应适用于峰值时间和正常情况。因此，在设定影响容忍度时，机构可能希望考虑导致重业务服务中的活动显著增加的一天中的不同时间、一年中的不同时间或更广泛的因素。
+3.9 Impact tolerances are defined as the maximum tolerable amount of disruption and should apply at peak times as well as in normal circumstances. As such, when setting impact tolerances, firms may wish to consider different times of the day, different points in the year, or broader factors which may lead to activity within the important business service significantly increasing.</p>
+<p>影响容忍度指标(Impact tolerance metrics)</p>
+<p>3.10 机构应当使用明确的指标说明其影响容忍度。机构应当为其确定每个重要业务服务设置至少一个影响容忍度。
+3.10 Firms should state their impact tolerances using clear metrics. Firms should set at least one impact tolerance for each important business service they have identified.</p>
+<p>3.11 PRA要求
+[15]
+机构对所有影响容忍度使用基于时间的指标，但在适当情况下，机构应当将基于时间的指标与其他指标结合使用。例如，机构可以将其影响容忍度设定为由于机构重要业务服务扰断而中断的特定交易量，同时扰断持续一定的小时数。
+3.11 The PRA requires firms to use a time-based metric for all impact tolerances, but, where appropriate, firms should use a time-based metric in conjunction with other metrics. For example, a firm could set its impact tolerance at a certain volume of interrupted transactions due to the disruption of the firm’s important business service, in conjunction with the disruption continuing after a certain number of hours.</p>
+<p>3.12 基于时间的影响容忍度指标应当规定，一个特定的重要业务服务不应扰断超过某一时间段或时间点，例如24小时后或一天结束时。将时间与数量和/或价值指标结合在一起的影响容忍度能表明，机构不会容忍业务服务在指定时间段内交付的运营能力低于正常运营能力的某个百分比。
+3.12 A time-based metric for an impact tolerance should specify that a particular important business service should not be disrupted beyond a certain period of or point in time, for example after 24 hours or at the end of the day. An impact tolerance that combines time with a volume and/or value metric might state that the firm will not tolerate the business service delivering less than a certain percentage of normal operating capacity for a specified period of time.</p>
+<p>3.13 影响容忍度不应考虑运营扰断可能发生的频率。相反，他们应当专注于设定机构可以容忍的单个扰断的影响限度。
+3.13 Impact tolerances should not consider the frequency at which operational disruptions are likely to occur. Rather, they should be focused on setting the limit of the impact the firm can tolerate from a single disruption.</p>
+<p>3.14 设定影响容忍度使机构能够评估有助于交付重要业务服务所需的人员、流程、技术、设施和信息(“资源”)的状态，并为其设定韧性要求。这些要求可能包括容量规格、恢复时间目标和恢复点目标。应当设定这些要求以使机构能够在其影响容忍度范围内交付重要业务服务。
+3.14 Setting an impact tolerance enables firms to assess the status of, and set resilience requirements for, the necessary people, processes, technology, facilities, and information (the ’resources’) that contribute to the delivery of important business service. These requirements might include capacity specifications, recovery time objectives, and recovery point objectives. These requirements should be set to enable the firm to deliver the important business service within its impact tolerance.</p>
+<p>3.15 在某些情况下，机构在扰断中继续交付服务可能会比暂停服务产生更不利的影响。这方面的一个例子是，机构不能充分保证支持重要业务服务的数据的完整性时。
+3.15 There may be circumstances when a firm continuing to deliver a service through disruption may have a more adverse impact than suspending it. An example of this is where the firm cannot sufficiently assure the integrity of data underpinning an important business service.</p>
+<p>3.16 PRA的基本规则
+[16]
+将继续与运营扰断期间的决策相关，包括暂停或恢复重要业务服务的决策。在设定影响容忍度时，PRA期望机构考虑扰断时可能存在的情况，以帮助它们做出明智的恢复和应对决策，以及它们可能决定在规定时间内不恢复其重要业务服务的运行。PRA期望，在发生扰断时，机构不应因其影响容忍度而被迫采取不适当的行动。
+3.16 The PRA’s Fundamental Rules16 will remain relevant to decision making during operational disruptions, including decisions about when an important business service is suspended or restored. When setting impact tolerances, the PRA expects firms to consider the circumstances that might be prevailing at the time of the disruption to help them make informed recovery and response decisions and when they may decide not to resume the functioning of their important business services within the specified time. The PRA expects firms should not be forced into inappropriate actions because of their impact tolerances in the event of a disruption.</p>
+<p>4 保持在影响容忍度范围内的行动(Actions to remain within impact tolerance)</p>
+<p>4.1 运营韧性部分
+[17]
+要求机构确保在严重但合理可信的情景中，能够在影响容忍度范围内交付其重要业务服务。映射和测试重要业务服务的交付将使机构能够确定它们是否以及如何能够保持在影响容忍度范围内。
+4.1 The Operational Resilience Parts require firms to ensure they are able to deliver their important business services within impact tolerances in severe but plausible scenarios. Mapping and testing the delivery of important business services will equip firms to establish whether and how they can remain within impact tolerances.</p>
+<p>4.2 PRA期望机构在发现其交付重要业务服务的能力在影响容忍范围内存在限制的地方采取行动。PRA不太可能将复杂的商业模式或跨境服务提供视为机构无法采取行动确保其能够保持在影响容忍度范围内的充分理由 — 这些因素本身就是PRA期望机构处理的脆弱性。然而，诸如快速技术变化之类的事件可能是机构无法保持在影响容忍度范围内的原因，因为在这些条件下可能需要时间来提高韧性。
+4.2 The PRA expects firms to take action where they identify a limitation in their ability to deliver important business services within impact tolerances. The PRA is unlikely to consider complicated business models or the provision of services across borders as good reasons for a firm not to be able to act to ensure they can remain within an impact tolerance – these factors are themselves vulnerabilities that the PRA expects firms to address. However, incidents such as rapid technological change may be a reason for a firm to not be able to remain within an impact tolerance, as it may take time to improve resilience under those conditions.</p>
+<p>4.3 PRA期望机构为无法保持在其影响承受范围内的重要业务服务制定并实施有效的补救计划。机构应当在其无法保持在影响承受范围内的情况下立即采取行动，因此这些计划应当包括进行必要改进的适当时机。
+4.3 The PRA expects firms to develop and implement effective remediation plans for the important business services that would not be able to remain within their impact tolerance. Firms should take prompt action where they cannot remain within the impact tolerance, so these plans should include appropriate timing for the necessary improvements.</p>
+<p>4.4 在制定这些计划以提高韧性和确定工作的优先顺序时，机构还应当考虑：：
+重要业务服务扰断可能对金融稳定(如适用)、安全和稳健以及(对于保险公司)适当程度的投保人保护带来的风险的性质和规模。机构应当优先考虑那些带来最大风险的重要业务服务。
+重要业务服务的时间关键性，当影响容忍度设置为短时间时，时间关键性很高。PRA期望机构提前进行规划并建立恢复和响应安排，以便能够在扰断发生时迅速做出反应。
+保持在影响容忍度范围内所需的改进规模。一个远未保持在影响容忍范围内的重要业务服务，可能需要比在严重但合理可信的扰断中几乎保持在其影响容忍范围之内的业务被优先考虑。
+4.4 In developing these plans to improve resilience and prioritising their work, firms should also consider the:
+nature and scale of the risk that disruption to the important business service could have on financial stability (if applicable), safety and soundness, and (in the case of insurers) the appropriate degree of policyholder protection. Firms should prioritise those that pose the greatest risk.
+time-criticality of the important business service, which is high when the impact tolerance is set for a short amount of time. The PRA expects firms to have undertaken planning and set up recovery and response arrangements in advance to be able to respond quickly to disruptions when they occur.
+scale of improvement necessary to remain within the impact tolerance. An important business service that is far from remaining within the impact tolerance may need to be prioritised over a business service that could nearly remain within its impact tolerance in a severe but plausible disruption.</p>
+<p>4.5 PRA期望机构能够保持在重要业务服务的影响容忍度范围内，不论其是否使用第三方提供这些服务。这意味着机构应当有效管理其对第三方的使用，以确保它们能够达到所需的运营韧性标准。
+4.5 The PRA expects firms to be able to remain within impact tolerances for important business services, irrespective of whether or not they use third parties in the delivery of these services. This means that firms should effectively manage their use of third parties to ensure they can meet the required standard of operational resilience.</p>
+<p>4.6 尽管机构可能假设，如果服务提供商是其自身集团的一部分，那么这种安排的风险就会低一些，但事实往往并非如此。PRA期望机构管理风险，并做出适当的安排，以便能够保持在影响容忍度范围内，无论是使用集团内的其他实体还是外部供应商的第三方。
+4.6 Although firms may assume that an arrangement is inherently less risky where the service provider is part of its own group, this is often not the case. The PRA expects firms to manage risk and make appropriate arrangements to be able to remain within impact tolerance, whether using third parties that are other entities within their group or external providers.</p>
+<p>4.7 PRA期望机构为内部和外部相关方制定沟通策略，作为其应对运营扰断计划的一部分。应当制定这些沟通计划，以减少对交易对手和其他市场参与者的伤害，并支持对机构和金融部门的信心。PRA期望机构的计划包括他们在事件期间管理沟通使用的升级路径并确定适当的决策者。例如，该计划应说明如何联系关键人员、运营人员、供应商和适当的监管人员。
+4.7 The PRA expects firms to develop communication strategies for both internal and external stakeholders as part of their planning for responding to operational disruptions. These communication plans should be developed with a view to reducing harm to counterparties and other market participants and supporting confidence in both the firm and financial sector. The PRA expects firms’ plans to include the escalation paths they would use to manage communications during an incident and to identify the appropriate decision makers. For example, the plan should address how to contact key individuals, operational staff suppliers, and the appropriate regulators.</p>
+<p>4.8 PRA要求
+[18]
+机构在设定影响容忍度时考虑PRA的目标。它还意识到，在重要业务服务交付也与FCA的目标相关时，双重监管机构必须为其重要业务服务确定单独的影响容忍度。在适当的情况下，机构可以将给定重要业务服务的PRA影响容忍度设定为与FCA影响容忍度相同的点。PRA期望，为符合一个监管机构的要求所做的工作应当被用来满足另一个监管机构的要求，并鼓励机构避免重复工作。
+4.8 The PRA requires firms to consider PRA objectives when setting impact tolerances. It is also aware that dual-regulated firms must identify a separate impact tolerance for their important business services, where the delivery of the important business service is also relevant to the FCA’s objectives. Where appropriate, a firm may set its PRA impact tolerance for a given important business service at the same point as its FCA impact tolerance. The PRA expects that work done to meet the requirements of one regulator should be leveraged to meet those of the other, and would encourage firms to avoid duplicative work.</p>
+<p>4.9 PRA期望双重监管机构解释可能导致机构超出各自PRA和FCA影响容忍度的情景是否不同(无论这些影响容忍度是否一致)，并酌情采取行动保持在其PRA影响容忍度范围内。
+4.9 The PRA expects dual-regulated firms to understand whether the scenarios that may cause firms to exceed their respective PRA and FCA impact tolerances would differ (whether or not those impact tolerances are aligned), and to take action to remain within their PRA impact tolerances as appropriate.</p>
+<p>4.10 PRA理解，在实践中，机构可能会集中精力确保其能够保持在更严格的容忍度范围内。在双重监管机构的PRA和FCA影响容忍度不同时，如果机构能够证明以下情况，采取行动确保机构能够保持在更严格的容忍度就是可以接受的：
+在设定其影响容忍度时，它们如何考虑PRA的目标；
+其响应和恢复安排如何确保机构能够保持在PRA的影响容忍度范围内；和
+在执行情景测试时考虑到PRA的影响容忍度。
+4.10 The PRA understands that in practice firms may concentrate their efforts on ensuring they can remain within the more stringent tolerance. Where the PRA and FCA impact tolerances differ for a dual-regulated firm, taking action to ensure firms can remain within the more stringent tolerance will be acceptable if a firm can demonstrate:
+how they have considered the PRA’s objectives when setting their impact tolerances;
+how their response and recovery arrangements ensure firms are able to remain within the PRA impact tolerance; and
+that scenario testing has been performed with the PRA impact tolerance in mind.</p>
+<p>4.11 以下是一个示例，说明了机构如何有效地集中精力，确保对给定的重要业务服务其能够保持在更严格的影响容忍度范围内：
+如果一家为中小型资产管理公司和投资机构提供托管服务的机构将为客户保管证券视为一个重要业务服务，它可能会判断：(a)在扰断6小时后，这影响了客户结算交易的能力，从而造成消费者损害的风险；以及(b)扰断8小时后，这会造成声誉风险，威胁到它们的安全和稳健。该机构发现了其防护系统中的漏洞，从而增加投资以提高其系统的健壮性，使其保持在较短的影响容忍度范围内，这也有助于满足较长的影响容忍度。
+4.11 Below is an example illustrating how firms could effectively concentrate their efforts on ensuring they can remain within the more stringent impact tolerance for a given important business service:
+Where a firm providing custodian services to small and medium-sized asset managers and investment firms identifies the safekeeping of securities for customers as an important business service, it may judge that: (a) after six hours of disruption, this impacts customers’ abilities to settle transactions and thus poses a risk of consumer harm; and (b) after eight hours of disruption, this creates a reputational risk which threatens their safety and soundness. The firm identifies vulnerabilities in its safeguarding systems and thus increases its investment to improve the robustness of its systems to allow it to remain within the shorter impact tolerance, which also serves to meet the longer impact tolerance.</p>
+<p>政策执行(Policy implementation)</p>
+<p>4.12 运营韧性部分自2022年3月31日(星期四)起生效。彼时，机构必须确定其重要业务服务并设定影响容忍度。为实现这一目标，并发现其运营韧性中的任何漏洞，机构应当映射其重要业务服务，并开始情景测试计划。
+4.12 The Operational Resilience Parts are effective from Thursday 31 March 2022. By this point, firms must have identified their important business services and set impact tolerances. In order to achieve this, and to identify any vulnerabilities in their operational resilience, firms should have mapped their important business services and commenced a programme of scenario testing.</p>
+<p>4.13 预计到2022年3月31日(星期四)，机构不会完成所有复杂程度的映射和情景测试。映射和情景检测都是持续进行的过程，机构应当随着时间推移在不同的复杂程度上执行它们。PRA期望机构的映射和情景测试方法应随着时间推移而发展。
+4.13 Firms are not expected to have performed mapping and scenario testing to the full extent of sophistication by Thursday 31 March 2022. Both mapping and scenario testing are ongoing processes, and firms are expected to perform them at varying levels of sophistication over time. The PRA expects that firms’ approaches to both mapping and scenario testing should evolve over time.</p>
+<p>4.14 高级管理层应当负责交付政策成果。机构应当制定一份优先计划，说明它们将如何符合要求，能够在合理的时间内保持在其影响容忍度范围内，不迟于2025年3月31日(星期一)。
+[19]
+为了使机构的计划有效，机构必须在2022年3月31日(星期四)之前开始实施该计划。作为该计划的一部分，机构应当优先考虑定期的映射和情景测试，以便能够在足够的时间内发现漏洞，从而采取措施进行补救。机构，尤其是规模更大、更复杂的机构，需要做出选择，优先考虑交付政策成果的最终目标。
+4.14 Senior management are expected to take responsibility for delivering the policy outcomes. Firms are expected to have a prioritised plan which sets out how they will comply with the requirement to be able to remain within their impact tolerances within a reasonable time, and no later than Monday 31 March 2025. For a firm’s plan to be effective, firms must have started putting the plan into effect by Thursday 31 March 2022. As part of this planning, firms should prioritise their regular mapping and scenario testing so that they will be able to identify vulnerabilities in sufficient time so that measures can be taken to remediate them. Firms, particularly larger, more complex ones, will need to make choices and prioritise with the ultimate goal of delivering the outcomes of the policy.</p>
+<p>4.15 修补漏洞的速度应当与扰断可能造成的潜在影响相称，并将成为是监管的重点领域。
+4.15 The speed at which vulnerabilities are remediated should be commensurate with the potential impact that a disruption would cause, and will be an area of supervisory focus.</p>
+<p>4.16 在2025年3月31日(星期一)之后，保持运营韧性将是一项动态活动。彼时，机构应当拥有稳健、有效和全面的策略、流程和系统，使它们能够在发生严重但合理可信的扰断时，处理对每个重要业务服务的能力的风险，使其保持在其影响容忍度范围内。
+4.16 After Monday 31 March 2025, maintaining operational resilience will be a dynamic activity. By this point, firms should have sound, effective and comprehensive strategies, processes, and systems that enable them to address risks to their ability to remain within their impact tolerance for each important business service in the event of a severe but plausible disruption.</p>
+<p>5 映射(Mapping)</p>
+<p>5.1 运营韧性部分
+[20]
+要求机构识别并记录交付其重要业务服务所需的必要人员、流程、技术、设施和信息(“资源”)。这个识别过程被称为“映射”。
+5.1 The Operational Resilience Parts require firms to identify and document the necessary people, processes, technology, facilities, and information (the ‘resources’) required to deliver each of their important business services. This identification process is referred to as ‘mapping’.</p>
+<p>5.2 充分的映射应当使机构能够达到以下成果：
+(a) 发现漏洞。映射重要业务服务应当使机构识别对交付重要业务服务至关重要的资源，确定这些资源是否适合使用，并考虑如果资源不可用会发生什么。
+(b) 测试保持在影响容忍度范围内的能力。映射应当有助于测试机构在影响容忍度范围内交付重要业务服务的能力。为了设计和理解情景的全部含义，相关业务服务的映射是必要的。测试方法的进一步信息将在第6章中概述。
+5.2 Adequate mapping should enable firms to meet the following outcomes:
+(a) The identification of vulnerabilities. Mapping an important business service should allow a firm to identify the resources that are critical to delivering an important business service, ascertain whether they are fit for purpose, and consider what would happen if resources were to become unavailable.
+(b) Test ability to remain within impact tolerances. Mapping should facilitate the testing of a firm’s ability to deliver important business services within impact tolerances. To design and understand the full implications of scenarios, a map of the relevant business service is necessary. Further information on the approach to testing is outlined in Chapter 6.</p>
+<p>5.3 为满足运营韧性部分
+[21]
+的要求，PRA期望机构在发现漏洞或测试突显了保持在影响容忍度范围内的局限性时采取行动。
+5.3 To meet the requirements in the Operational Resilience Parts, the PRA expects firms to take action where a vulnerability is identified, or testing highlights a limitation to remaining within impact tolerances.</p>
+<p>5.4 PRA期望机构将其重要业务服务映射到必要的详细程度，以使用映射来发现漏洞并测试保持在影响容忍范围内的能力。
+5.4 The PRA expects firms to map their important business services to the level of detail necessary to use the mapping to identify vulnerabilities and test ability to remain within impact tolerances.</p>
+<p>5.5 PRA期望机构映射交付重要业务服务所需的资源，无论这些资源全部或部分由第三方(可能是集团内部或外部服务提供商)提供。机构应当了解其外包和第三方依赖关系如何支持重要业务服务。
+5.5 The PRA expects firms to map the resources necessary to deliver important business services irrespective of whether the resources are being provided wholly or in part by a third party, which may be an intragroup or external service provider. Firms should understand how their outsourcing and third party dependencies support important business services.</p>
+<p>5.6 机构应当了解对分包安排的依赖，以及这些安排是否对其运营韧性构成威胁。监管声明2/21第9.5段规定，机构应当评估分包是否符合监管声明2/21中第5章所列的重要性标准，其中包括对机构运营韧性和提供重要业务服务的潜在影响。监管声明2/21第9.6段规定，机构应当确保服务提供商有能力和容量在持续的基础上适当监督符合机构相关政策的重大分包。
+5.6 Firms should understand the reliance placed on sub-outsourcing arrangements and if these arrangements pose a threat to their operational resilience. Paragraph 9.5 of SS2/21 sets out that firms should assess whether sub-outsourcing meets materiality criteria set out in Chapter 5 of SS2/21, which includes the potential impact on the firm’s operational resilience and the provision of important business services. Paragraph 9.6 of SS2/21 sets out that firms should ensure that the service provider has the ability and capacity on an ongoing basis to appropriately oversee any material sub-outsourcing in line with the firm’s relevant policy or policies.</p>
+<p>5.7 如监管声明2/21所述，“签订外包协议的机构仍对遵守其所有监管义务负有完全责任”。这是构成外包和其它第三方安排的所有要求和期望的基础的关键原则。因此，如果机构所依赖的第三方供应商(无论是全部还是部分)提供重要业务服务，未能保持在影响容忍范围内或导致机构未能保持在影响容忍度范围内，则机构将承担责任。监管声明2/21阐明了详细的期望，机构应当如何在整个外包生命周期内从第三方获得保证，或在相关情况下，从其它第三方安排获得保证。PRA期望的保证水平应当与机构的规模和复杂程度相称，并反映外包和第三方安排的重要性和风险。作为这种保证的一部分，机构可以要求第三方提供映射，但并非在所有情况下都需要，特别是在其它保证机构有效和更适当的情况下。
+5.7 As set out in SS2/21, ‘firms that enter into outsourcing arrangements remain fully accountable for complying with all their regulatory obligations’. This is a key principle underlying all requirements and expectations regarding outsourcing and other third party arrangements. Therefore, a firm will remain responsible if a third party provider on whom it relies, whether wholly or in part, to provide an important business service, fails to remain within impact tolerances or causes the firm to do so. SS2/21 sets out detailed expectations on how firms should obtain assurance from third parties throughout the lifecycle of an outsourcing or, where relevant, other third party arrangement. The level of assurance that the PRA expects should be proportionate to the size and complexity of the firm and reflect the materiality and risk of the outsourcing and third party arrangement. As part of this assurance, firms may ask third parties to provide mapping, but this is not required in all cases, particularly if other assurance mechanisms are effective and more proportionate.</p>
+<p>5.8 映射信息应当便于机构获取和使用。机构应当以与其规模、范围和复杂程度相称的方式记录其映射。机构应当为映射制定自己的方法和假设，以最适合其业务。
+5.8 Mapping information should be accessible and usable for the firm. Firms should document their mapping in a way that is proportionate to their size, scale, and complexity. Firms are expected to develop their own methodology and assumptions for mapping to best fit their business.</p>
+<p>5.9 PRA期望机构每年至少更新其映射一次，或在发生重大变化时尽快更新。
+5.9 The PRA expects firms to update their mapping annually at a minimum, or following significant change if sooner.</p>
+<p>6 情景测试(Scenario testing)</p>
+<p>6.1 运营韧性部分
+[22]
+要求机构定期测试其在严重合理的扰断情景中保持在影响容忍度范围内的能力。影响容忍度假设发生了扰断，因此测试保持在影响容忍度范围内的能力不应专注于预防事件发生。PRA期望机构将重点放在恢复和应对安排上。
+6.1 The Operational Resilience Parts require firms to test regularly their ability to remain within impact tolerances in severe but plausible disruption scenarios. Impact tolerances assume a disruption has occurred, and so testing the ability to remain within impact tolerances should not focus on preventing incidents from occurring. The PRA expects firms to focus on recovery and response arrangements.</p>
+<p>6.2 机构应当确定其用于测试的严重但合理可信的情景。在设定情景时，机构可以考虑组织内部、整个金融部门以及其他部门和司法管辖区内的先前事件或未遂事件。测试计划应当包括现实的假设，并随着机构从之前的测试中学习而发展。
+6.2 Firms should identify the severe but plausible scenarios they use for testing. When setting scenarios, firms could consider previous incidents or near misses within the organisation, across the financial sector, and in other sectors and jurisdictions. A testing plan should include realistic assumptions and evolve as the firm learns from previous testing.</p>
+<p>6.3 运营韧性部分
+[23]
+要求机构准备一份书面的自评估，以评估其是否符合运营韧性部分的要求。PRA期望机构记录其情景测试的详细信息，包括与情景设计相关的假设，以及对机构保持在影响容忍度范围内的能力的任何已识别风险。
+6.3 The Operational Resilience Parts require firms to prepare a written self-assessment of compliance with the Operational Resilience Parts. The PRA expects firms to document details of their scenario testing, including assumptions made in relation to scenario design and any identified risks to the firm’s ability to remain within impact tolerances.</p>
+<p>6.4 随着时间推移，PRA期望机构的情景测试将变得更加复杂，因为机构为每个重要业务服务制定了运营韧性。机构应当测试更严重但合理可信的情景，与机构和每个重要业务的运营韧性程度相称。
+6.4 Over time, the PRA expects a firm’s scenario testing to become more sophisticated as firms develop operational resilience for each important business service. Firms would be expected to test against more severe but plausible scenarios, proportionate to the firm and the degree of operational resilience each important business service has.</p>
+<p>6.5 在为排定测试优先顺序考虑重要业务服务时，机构应当考虑其对金融稳定(如适用)、安全和稳健以及(对保险公司而言)适当程度的投保人保护所构成的相对风险。
+6.5 When considering the important business services to prioritise for testing, firms should consider the relative risk they pose to financial stability (if applicable), safety and soundness, and (in the case of insurers) the appropriate degree of policyholder protection.</p>
+<p>6.6 PRA期望机构制定一份测试计划，详细说明它们如何确保其能够保持在重要业务服务的影响容忍度范围内。机构测试的性质和频率应当与扰断可能造成的潜在影响以及支持重要业务服务的运营资源是否发生重大变化相称。在制定测试计划时，机构应当考虑以下因素：
+情景测试的类型，可能包括基于纸面评估、模拟或工作系统测试；
+情景测试的频率 — 更频繁地实施运营变更的机构应当更频繁地进行情景测试；
+测试的重要业务服务数量 — 确定了更多重要业务服务的机构应当进行更多情景测试以反映这一点；和
+测试资源的可用性和完整性 — 影响容忍度与重要业务服务的持续提供有关。可以继续提供但完整性不足的重要业务服务不在影响容忍度范围内。机构应当根据其规模和复杂程度，测试其恢复计划的可用性和完整性场景；和
+它们的环境如何变化，这是否会导致不同的脆弱性。
+6.6 The PRA expects firms to develop a testing plan that details how they will gain assurance that they can remain within impact tolerances for important business services. The nature and frequency of a firm’s testing should be proportionate to the potential impact that disruption could cause and whether the operational resources supporting an important business service have materially changed. When developing a testing plan, firms should consider the following:
+the type of scenario testing, which may include paper-based assessments, simulations, or live-systems testing;
+the frequency of the scenario testing – firms that implement changes to their operations more frequently should undertake more frequent scenario testing;
+the number of important business services tested – firms that have identified more important business services should undertake more scenario testing to reflect this; and
+testing the availability and integrity of resources – impact tolerances are concerned with the continued provision of important business services. An important business service that can continue to be provided but has insufficient integrity is not within the impact tolerance. Firms should test their recovery plans for both availability and integrity scenarios, proportionate to their size and complexity; and
+how their environment is changing and whether this will give rise to different vulnerabilities.</p>
+<p>6.7 情景测试不应构成造成扰断的重大风险。当机构认为工作系统测试是最适合于情景测试其保持在影响容忍度范围的能力时，机构应当评估情景测试可能对重要业务服务交付造成扰断的风险。PRA基本规则
+[24]
+将继续与机构如何进行情景测试的决策相关。机构应当以应有的技能、谨慎和勤勉地进行情景测试，审慎行事，制定有效的风险策略和风险管理，并负责任和有效地控制其事务。
+6.7 Scenario testing should not pose a material risk of creating a disruption. Where firms consider that live-systems testing is most appropriate for scenario testing their ability to remain within impact tolerances, firms should assess the risk that the scenario testing may create a disruption to the delivery of important business services. The PRA’s Fundamental Rules will remain relevant to decision making for how firms approach their scenario testing. Firms should conduct scenario testing with due skill, care, and diligence, act prudently, have effective risk strategies and risk management, and control their affairs responsibly and effectively.</p>
+<p>6.8 在制定测试计划时，应当考虑已识别为重要业务服务的整个活动链。
+6.8 The entire chain of activities that have been identified as the important business service should be considered when developing testing plans.</p>
+<p>6.9 机构用于测试的场景的严重程度可以通过增加交付重要业务服务的不可用资源的数量或类型，或延长特定资源不可用的时间来改变。机构进行的映射工作可能有助于告知他们如何使它们的场景变得更加困难。
+6.9 The severity of scenarios used by firms for their testing could be varied by increasing the number or type of resources unavailable for delivering the important business service, or extending the period for which a particular resource is unavailable. The mapping work that firms will undertake is likely to be useful in informing them how their scenarios could be made more difficult.</p>
+<p>6.10 PRA认识到，要求机构在超出严重或不合理可信的情况下能够保持在影响容忍度范围内是不适当的。有些情景，机构会发现他们无法在其影响容忍范围内交付特定的重要业务服务。例如，如果非常重要的基础设施(如电力、交通或通信)不可用，一些机构可能无法在其影响容忍度范围内交付其重要业务服务。
+6.10 The PRA recognises that it would not be proportionate to require firms to be able to remain within impact tolerances in circumstances which are beyond severe or implausible. There will be scenarios where firms find they could not deliver a particular important business service within their impact tolerance. For example, if essential infrastructure (such as power, transport, or telecommunications) were unavailable, some firms may not be able to deliver their important business services within their impact tolerance.</p>
+<p>6.11 由于在设定影响容忍度时，假定会发生扰断，我们不期望机构花太多时间考虑事件发生的相对概率。
+6.11 As impact tolerances are set on the assumption that disruptions will occur, we do not expect firms to devote too much time to considering the relative probability of incidents occurring.</p>
+<p>6.12 机构应当测试一系列情景，包括他们预计超过其影响容忍度的情景。了解不可能保持在影响容忍度范围内的情况，将为机构管理层及其监管机构提供有用的信息。董事会和高级管理层需要判断在特定情况下未能保持在影响容忍度范围内是否可以接受，并能够向监管机构解释其理由。
+6.12 Firms should test a range of scenarios, including those in which they anticipate exceeding their impact tolerance. Understanding the circumstances where it is impossible to stay within an impact tolerance will provide useful information to firms’ management and to their supervisors. Boards and senior management will need to judge whether failing to remain within the impact tolerance in specific scenarios is acceptable and be able to explain their reasoning to supervisors.</p>
+<p>6.13 监管声明2/21第5至第10章详细阐述了机构应当如何进行尽职调查，并从第三方获得有效和适当的保证，包括通过情景测试。特别是，PRA期望重大外包安排的合同协议包括“双方实施和测试业务应急计划的要求。对于机构来说，这些应当考虑到机构对重要业务服务的影响容忍度。在适当的情况下，双方应当承诺采取合理步骤，支持此类计划的测试”。监管声明2/21进一步指出，机构的业务连续性和重大外包安排的退出计划应当“在可能和相关的情况下……与机构的运营韧性情景测试保持一致、支持甚至成为其一部分。例如，机构可能选择进行测试的一个严重但合理可信的情景可能涉及第三方或其供应链的故障或扰断，基于组织内部、整个金融部门以及其他部门和司法管辖区的先前事件或未遂事件”。
+6.13 Chapters 5 to 10 of SS2/21 set out detailed expectations on how firms should perform due diligence and obtain effective and proportionate assurance from third parties, including through scenario testing. In particular, the PRA expects contractual agreements for material outsourcing arrangements to include ‘requirements for both parties to implement and test business contingency plans. For the firm, these should take account of firms’ impact tolerances for important business services. Where appropriate, both parties should commit to take reasonable steps to support the testing of such plans’. SS2/21 further notes that firms’ business continuity and exit plans for material outsourcing arrangements should ‘where possible and relevant … align to, support, or even be a component of firms’ scenario testing for operational resilience. For instance, one of the severe but plausible scenarios that firms may select for this testing could involve a failure or disruption at a third party, or their supply chain, based on previous incidents or near misses within the organisation, across the financial sector, and in other sectors and jurisdictions’.</p>
+<p>7 治理(Governance)</p>
+<p>董事会责任(Board responsibilities)</p>
+<p>7.1 特别要求董事会批准为其机构确定的重要业务服务以及为每个服务设定的影响容忍度。运营韧性部分
+[25]
+要求机构董事会必须批准并定期审查机构的重要业务服务、影响容忍度和书面自评估(见本监管声明第8章)。在履行这一职责时，董事会必须定期审查对机构重要业务服务的评估、影响容忍度，以及对其保持在这些重要业务服务影响容忍度范围内的能力的情景分析。
+7.1 Boards are specifically required to approve the important business services identified for their firm and the impact tolerances that have been set for each of these. The Operational Resilience Parts require that a firm’s board must approve and regularly review the firm’s important business services, impact tolerances, and written self-assessment (see Chapter 8 of this SS). In delivering this responsibility, boards must regularly review assessments of the firm’s important business services, impact tolerances, and the scenario analyses of its ability to remain within the impact tolerance for these important business services.</p>
+<p>7.2 虽然不要求董事会是运营韧性方面的技术专家，但PRA期望董事会确保他们拥有适当的管理信息。董事会还应当集体拥有足够的知识、技能和经验，向高级管理层提出建设性质疑，并告知影响运营韧性的决策。
+[26]
+7.2 While individual board members are not required to be technical experts on operational resilience, the PRA expects boards to ensure that they have the appropriate management information. Boards should also collectively possess adequate knowledge, skills, and experience to provide constructive challenge to senior management and inform decisions that have consequences for operational resilience.</p>
+<p>管理层责任(Management responsibilities)</p>
+<p>7.3 机构应当为运营韧性的管理建立明确的问责制和责任，包括在这里所列政策的执行。PRA期望机构以对业务最有效的方式构建对运营韧性的监督，利用现有的委员会和角色，或在必要时建立新的委员会和角色。
+7.3 Firms should establish clear accountability and responsibility for the management of operational resilience, including implementation of the policy set out here. The PRA expects firms to structure their oversight of operational resilience in the most effective way for their business, using existing committees and roles or establishing new ones if necessary.</p>
+<p>7.4 如果存在
+[27]
+，首席运营高级管理职能部门(SMF)24应当全面负责实施运营韧性政策并向董事会报告。与监管声明28/15：加强银行业
+[28]
+个人责任第2.11G段和监管声明35/15：加强保险业
+[29]
+个人责任第2.22L段一致，SMF24的职能可以由两个或多个个人共同或分担承担。这是建立在这样的基础上：分拆准确反映了机构的组织结构，运营和技术的综合责任没有被消弱。然而，如果机构只有一名全面负责内部运营和技术的高级人员，则只能将该人员批准为SMF24。当SMF24职能被拆分时，PRA不希望拆分给超过3个人员。关于SMF24职能的更多信息，请参见上述监管声明。
+7.4 Where it exists, the Chief Operations Senior Management Function (SMF) 24 should hold overall responsibility for implementing operational resilience policies and reporting to the board. Consistent with paragraph 2.11G of SS28/15 ‘Strengthening individual accountability in banking’ and paragraph 2.22L of SS35/15 ‘Strengthening individual accountability in insurance’, the SMF24 function may be shared or split among two or more individuals. This is on the basis that the split accurately reflects the firm’s organisational structure and that comprehensive responsibility for operations and technology is not undermined. However, firms that have a single senior individual with overall responsibility for internal operations and technology should only have that individual approved as the SMF24. Where the SMF24 function is split, the PRA does not expect it to be split among more than three individuals. Further information on the SMF24 function is contained in the aforementioned Supervisory Statements.</p>
+<p>7.5 如果机构没有董事会，高级管理层应当负责运营弹性部分
+[30]
+。
+7.5 Where a firm does not have a board, senior management should take responsibility for the Operational Resilience Parts.</p>
+<p>8 自评估(Self-assessment)</p>
+<p>8.1 运营韧性部分
+[31]
+要求机构记录其符合运营韧性部分的自评估。机构还应当记录其用于开展这些活动的方法。机构董事会对这些文件中提供的信息负责并应当予以批准。PRA期望董事会和高级管理层寻求建立韧性，以获得高水平的保证，确保其机构能够在影响容忍范围内交付重要业务服务。机构应当以自评估的形式记录这些信息。
+8.1 The Operational Resilience Parts31 require firms to document a self-assessment of their compliance with the Operational Resilience Part. Firms are also expected to document the methodologies they have used to undertake these activities. Firms’ boards are accountable for and should approve the information provided in these documents. The PRA expects boards and senior management to seek to build resilience so that they gain a high level of assurance that their firm is able to deliver its important business services within impact tolerances. Firms should document this information in the form of a self-assessment.</p>
+<p>8.2 自评估应当直接针对运营韧性部分
+[32]
+所列的要求。机构运营韧性的更广泛的要素，例如操作风险管理和业务连续性规划，只应当在与运营韧性部分
+[33]
+直接相关的情况下引用。机构韧性更广泛的元素应当在现有的机构实践中体现。
+8.2 A self-assessment should directly address the requirements set out in the Operational Resilience Parts. Broader elements of firms’ operational resilience, for example, operational risk management and business continuity planning, should only be referenced where they directly pertain to the Operational Resilience Parts. Broader elements of firms’ resilience should be captured in existing firm practices.</p>
+<p>8.3 在记录自评估以满足运营韧性部分
+[34]
+，机构应当：
+列出其重要业务服务，并说明每项服务被确定的原因，参考PRA在本监管声明第2章的期望；
+具体说明为这些重要业务服务设定的影响容忍度及设定原因，参考本监管声明第3章的期望；
+详细说明它们映射重要业务服务的方法。PRA期望这包括机构如何识别有助于交付重要业务服务的资源，以及它们如何体现这些资源之间的关系。机构还应当记录它们如何使用映射来发现漏洞并支持测试活动；
+描述它们的策略，以测试它们通过严重但合理的情景测试在影响容忍度范围内交付重要业务服务的能力。机构还当应描述所使用的场景、进行的测试类型，并具体说明机构无法保持在其影响容忍范围内的场景；
+确定在进行情景测试或通过实践经验获得的任何经验教训，包括为解决遇到的问题或突显的风险而采取的行动；以及发现威胁其在影响容忍度范围内交付重要业务服务能力的漏洞。机构应当尽一切努力修补这些漏洞，详细说明已采取或计划采取的行动以及完成时间的理由。完成时间应当与机构的规模和复杂程度相称，PRA期望大型和复杂的机构迅速采取行动。
+8.3 When documenting a self-assessment to meet the Operational Resilience Parts,34 firms should:
+list their important business services and state why each of these have been identified, with reference to the PRA’s expectations in Chapter 2 of this SS;
+specify the impact tolerances set for these important business services and why each impact tolerance has been set, with reference to the expectations in Chapter 3 of this SS;
+detail their approach to mapping important business services. The PRA expects this to include how the firm has identified the resources that contribute to the delivery of important business services and how they have captured the relationships between these. Firms should also document how they have used mapping to identify vulnerabilities and to support testing activity;
+describe their strategy for testing their ability to deliver important business services within impact tolerances through severe but plausible scenarios. Firms should also describe the scenarios used, the types of testing undertaken, and specify the scenarios under which firms could not remain within their impact tolerances;
+identify any lessons learned when undertaking scenario testing or via practical experience, including the actions taken to address the issues encountered or risks highlighted; and identify the vulnerabilities that threaten their ability to deliver important business services within impact tolerances. Firms should make every effort to remediate these vulnerabilities, detailing the actions taken or planned and justifications for their completion time. The completion time should be appropriate to the size and complexity of the firm, and the PRA will expect large and complex firms to take prompt action.</p>
+<p>9 集团(Group)</p>
+<p>9.1 PRA期望机构在集团层面确定一定比例数量的重要集团业务服务以及各自的影响容忍度。从集团层面看待运营韧性，确保考虑到整个集团的风险，包括集团中不受个别要求约束的部分。
+9.1 The PRA expects firms to identify a proportionate number of important group business services and respective impact tolerances at the level of the group. Taking a group level view of operational resilience ensures the risks to the whole group, including parts of the group that are not subject to the individual requirements, are taken into account.</p>
+<p>9.2 重要集团业务服务
+[35]
+是由机构集团成员向外部最终用户
+[36]
+提供的服务，一旦扰断，可能(通过对整个集团的影响)对英国的金融稳定、英国机构的安全和稳健，或(就受PRA监管的保险公司而言)投保人保护构成风险。例如，如果有一家英国集团的子公司、分支机构或业务部门向英国以外的客户提供服务，一旦扰断，可能会对英国集团的安全和稳健或英国金融稳定构成风险，集团应当将该服务确定为一个重要集团业务服务，并评估每个重要集团业务服务在发生严重但合理保信的运营扰断时是否能够保持在影响容忍度范围内。
+9.2 An important group business service is a service provided by a member of the firm’s group to an external end user which if disrupted, could (via their impact on the group as a whole) pose a risk to financial stability in the UK, the UK firm’s safety and soundness, or (in the case of PRA-regulated insurers) policyholder protection. For example, where there is a UK group that has a subsidiary, branch, or business unit providing a service to customers outside the UK, which could, if disrupted, pose a risk to the safety and soundness of the UK group or UK financial stability, the group should identify that service as an important group business service and assess whether each important group business service could remain within the impact tolerance in the event of a severe but plausible disruption to its operations.</p>
+<p>9.3 应当以与单个机构相同的方式设定影响容忍度。董事会和高级管理层应当考虑对集团生存能力构成威胁的扰断程度，从而对英国的金融稳定、机构的安全和稳健，或(就受PRA监管的保险公司而言)对投保人或可能成为投保人的人员提供适当程度的保护构成风险。
+9.3 Impact tolerances should be set in the same way as they are for an individual firm. Boards and senior management should consider the level of disruption that would represent a threat to the viability of the group and therefore pose a risk to financial stability in the UK, a firm’s safety and soundness, or (in the case of PRA-regulated insurers) there being an appropriate degree of protection for those who are or may become the firm’s policyholders.</p>
+<p>9.4 运营韧性部分
+[37]
+要求机构确保其集团层面的策略、流程和系统使机构能够评估重要集团业务服务是否能够在严重但合理的情景中保持在其影响容忍度范围内。如果一个重要集团业务服务可能无法在其影响容忍度范围内交付，机构应当与集团其他成员合作采取行动。机构应当在自评估中纳入这一分析。
+9.4 The Operational Resilience Parts require that firms ensure that the strategies, processes, and systems at the level of their group enable the firm to assess whether important group business services are able to remain within their impact tolerances in severe but plausible scenarios. A firm would be expected to work with other members of its group to take action, should it be likely that an important group business service could not be delivered within its impact tolerance. Firms are required to include this analysis in their self-assessments.</p>
+<p>注释：
+运营韧性 - CRR机构；运营韧性 - 偿付能力II机构；和PRA规则手册中集团监管部分的规则22。英文原文：Operational Resilience – CRR Firms; Operational Resilience – Solvency II Firms; and Rule 22 in the Group Supervision Part of the PRA Rulebook.
+↑
+Available at: https://www.bankofengland.co.uk/prudential-regulation/publication/pras-approach-to-supersion-of-the-banking-and-insurance-sectors.
+↑
+基本规划2，3，5和6尤其相关。英文原文：Fundamental Rule 2, 3, 5, and 6 are particular relevant.
+↑
+March 2021: https://www.bankofengland.co.uk/prudential-regulatioin/publication/2021/march/operational-resilience-sop.
+↑
+March 2021: https://www.bankofengland.co.uk/prudential-regulatioin/publication/2021/march/outsourcing-and-third-party-risk-management-ss/.
+↑
+运营韧性 – CRR 机构 2.1；运营韧性 - 偿付能力II机构2.1；英文原文：Operational Resilience – CRR Firms 2.1, Operational Resilience – Solvency II Firms 2.1.
+↑
+运营韧性 – CRR 机构 2.3；运营韧性 - 偿付能力II机构2.3；英文原文：Operational Resilience – CRR Firms 2.3, Operational Resilience – Solvency II Firms 2.3.
+↑
+“重要业务服务”的定义在运营韧性-偿付能力II机构部分。英文原文：The definition of ‘important business service’ is in the Operational Resilience – Solvency II Firms Part.
+↑
+June 2018: https://www.bankofengland.co.uk/prudential-regulation/publication/2013/resoluton-planning-ss.
+↑
+运营韧性 – CRR机构 2.2；运营韧性 – 偿付能力II机构 2.2。英文原文：Operational Resilience – CRR Firms 2.2, Operational Resilience – Solvency II Firms 2.2.
+↑
+运营韧性 – CRR 机构 2.3；运营韧性 - 偿付能力II机构2.3；英文原文：Operational Resilience – CRR Firms 2.3, Operational Resilience – Solvency II Firms 2.3.
+↑
+运营韧性 – CRR 机构 2.3；运营韧性 - 偿付能力II机构2.3；英文原文：Operational Resilience – CRR Firms 2.3, Operational Resilience – Solvency II Firms 2.3.
+↑
+运营韧性 – CRR 机构 2.4；运营韧性 - 偿付能力II机构2.4；英文原文：Operational Resilience – CRR Firms 2.4, Operational Resilience – Solvency II Firms 2.4.
+↑
+运营韧性 – CRR 机构 2.4；运营韧性 - 偿付能力II机构2.4；英文原文：Operational Resilience – CRR Firms 2.4, Operational Resilience – Solvency II Firms 2.4.
+↑
+运营韧性 – CRR 机构 2.4；运营韧性 - 偿付能力II机构2.4；英文原文：Operational Resilience – CRR Firms 2.4, Operational Resilience – Solvency II Firms 2.4.
+↑
+基本规则2，3，5和6与本示例特别相关。英文原文：Fundamental Rules 2, 3, 5, and 6 are particularly relevant for this example.
+↑
+运营韧性 – CRR 机构 2.5；运营韧性 - 偿付能力II机构2.5；英文原文：Operational Resilience – CRR Firms 2.5, Operational Resilience – Solvency II Firms 2.5.
+↑
+运营韧性 – CRR 机构 2.3；运营韧性 - 偿付能力II机构2.3；英文原文：Operational Resilience – CRR Firms 2.3, Operational Resilience – Solvency II Firms 2.3.
+↑
+运营韧性 – CRR 机构 2.5，2.6；运营韧性 - 偿付能力II机构2.5，2.6；英文原文：Operational Resilience – CRR Firms 2.5, 2.6, Operational Resilience – Solvency II Firms 2.5, 2.6.
+↑
+运营韧性 – CRR 机构 4.1；运营韧性 - 偿付能力II机构4.1；英文原文：Operational Resilience – CRR Firms 4.1, Operational Resilience – Solvency II Firms 4.1.
+↑
+运营韧性 – CRR 机构 2.5；运营韧性 - 偿付能力II机构2.5；英文原文：Operational Resilience – CRR Firms 2.5, Operational Resilience – Solvency II Firms 2.5.
+↑
+运营韧性 – CRR 机构 5.1；运营韧性 - 偿付能力II机构5.1；英文原文：Operational Resilience – CRR Firms 5.1, Operational Resilience – Solvency II Firms 5.1.
+↑
+运营韧性 – CRR 机构 6.1；运营韧性 - 偿付能力II机构6.1；英文原文：Operational Resilience – CRR Firms 6.1, Operational Resilience – Solvency II Firms 6.1.
+↑
+基本规则2，3，5和6与本示例特别相关。英文原文：Fundamental Rules 2, 3, 5 and 6 are particularly relevant for this example.
+↑
+运营韧性 – CRR 机构 7；运营韧性 - 偿付能力II机构7；英文原文：Operational Resilience – CRR Firms 7, Operational Resilience – Solvency II Firms 7.
+↑
+PRA规则手册(CRR机构)一般组织要求部分规则5.2；PRA规则手册(偿付能力II机构)管理业务条件部分规则2.7。共同英文原文：Rule 5.2 in the General Organizational Requirements Part of the PRA Rulebook (CRR firms), Rule 2.7 in the Conditions Governing Business Part of the PRA Rulebook (Solvency II firms).
+↑
+PRA规则手册中高级管理职能部分规则3.8(CRR机构)，PRA规则手册中保险-高级管理职能部分规则3.7(偿付能力II机构)。英文原文：Rule 3.8 in the Senior Management Functions Part of the PRA Rulebook (CRR firms), Rule 3.7 in the Insurance – Senior Management Functions Part of the PRA Rulebook (Solvency II firms).
+↑
+December 2020: https://www.bankofengland.co.uk/prudential-regulation/publication/2015/strengthening-individual-accountability-in-banking-ss.
+↑
+February 2020: https://www.bankofengland.co.uk/prudential-regulation/publication/2015/strengthening-individual-accountability-in-insurance-ss.
+↑
+运营韧性 – CRR机构7，运营韧性 – 偿付能力II机构7。英文原文：Operational Resilience – CRR Firm 7, Operational Resilience – Solvency II Firms 7.
+↑
+运营韧性 – CRR机构6，运营韧性 – 偿付能力II机构6。英文原文：Operational Resilience – CRR Firm 6, Operational Resilience – Solvency II Firms 6.
+↑
+运营韧性 – CRR机构6，运营韧性 – 偿付能力II机构6。英文原文：Operational Resilience – CRR Firm 6, Operational Resilience – Solvency II Firms 6.
+↑
+运营韧性 – CRR机构6，运营韧性 – 偿付能力II机构6。英文原文：Operational Resilience – CRR Firm 6, Operational Resilience – Solvency II Firms 6.
+↑
+运营韧性 – CRR机构6，运营韧性 – 偿付能力II机构6。英文原文：Operational Resilience – CRR Firm 6, Operational Resilience – Solvency II Firms 6.
+↑
+重要集团业务服务的定义在运营韧性- CRR机构和集团监管部分。英文原文：The definition of important group business services in in the Operational Resilience – CRR Firms and Group Supervision Part.
+↑
+集团外部最终用户的定义在运营韧性 - CRR机构部分和运营韧性 - 偿付能力II机构部分。英文原文：The definition of group external end user is in the Operational Resilience – CRR Firms Part and Operational Resilience – Solvency II Firm Part.
+↑
+运营韧性 – CRR机构8.4，集团监管22.5。英文原文：Operational Resilience – CRR Firm 8.4, Group Supervision 22.5.
+↑</p>
+<hr>
+<p>本公众号(ID: bcmplus)专注于业务连续性和运营韧性知识的传播和普及，关注业务连续性、应急和危机管理的朋友可关注本公众号。</p>
+<p>由于公众号注册时腾讯已调整政策，未能开通留言功能，希望交流和讨论业务连续性管理问题，或获取相关资料的朋友，可长按以下二维码加入知识星球留言和讨论(公众号1月只能发4次文章，也会有一些观点直接在知识星球而不在公众号发布)。</p>
+<p><img src="/bcmplus-blog/images/6O5PsP9mO8Q1gtTThNtLJA_01.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/6O5PsP9mO8Q1gtTThNtLJA">原文链接</a></em></p>

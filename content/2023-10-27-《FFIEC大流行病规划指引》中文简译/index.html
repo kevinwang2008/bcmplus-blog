@@ -1,0 +1,280 @@
+<p>写在前面
+：越来越多的人们开始关注运营韧性。事实上，虽然该领域还在快速的发展中，但已经凝聚了一些共识。金融行业是最为关注运营韧性的行业之一，近几年来，多个发达国家/地区的金融监管机构和巴塞尔银行监管委员会陆续发布/修订了运营韧性(Operational Resilience)和业务连续性管理方面的正式文件。为让更多的专业人员和爱好者了解国际运营韧性领域的进展，学习并实践运营韧性的良好实践，在过去两年，我组织了两期公益翻译活动，翻译了巴塞尔银行监管委员会和英国金融监管机构的运营韧性相关资料，包括：
+《运营韧性原则》中文简译
+（巴塞尔银行监管委员会）（2021年11月23日）
+《操作风险稳健管理原则修订》中文简译
+（巴塞尔银行监管委员会）（2021年11月29日）
+《运营韧性：重要业务服务的影响容忍度》中文简译
+（英格兰银行、英国审慎监管局（PRA）和英国金融行为监管局（FCA）联合说明文件）（2022年11月26日）
+《政策声明|PS6/21 – 运营韧性：重要业务服务的影响容忍度》中文简译
+（英国审慎监管局（PRA）运营韧性政策声明）（2022年11月27日）
+《PRA规则手册：CRR机构，Solvency II机构：运营韧性文书2021》中文简译
+（英国审慎监管局（PRA）运营韧性政策声明附件1 — PRA规则手册运营韧性部分）（2022年11月28日）
+《PRA监管声明|SS1/21 “运营韧性：重要业务服务的影响容忍度”》中文简译
+（英国审慎监管局（PRA）运营韧性政策声明附件2 — PRA监管声明SS1/21）（2022年12月1日）
+《PRA“运营韧性”政策说明》中文简译
+（英国审慎监管局（PRA）运营韧性政策声明附件3 — 运营韧性政策说明）（2022年12月2日）</p>
+<p>今年3月，我再次组织了一个公益翻译小组，对美国、爱尔兰、澳大利亚、新加坡和香港等地金融监管机构的运营韧性相关资料进行翻译。7月份前后，翻译小组成员陆续将翻译文稿发送给我，近期我会将这些资料审校完成，陆续在公众号发布。</p>
+<p>以下是参与第三期运营韧性资料公益翻译小组的成员
+(排名不分前后，按姓氏拼音排序)：
+高洋（ICBC，william.yang.gao@gmail.com）
+江磊（深圳龙华，2014595@qq.com）
+刘琪岳（北京）
+刘宇（深圳，13316880733@189.cn）
+刘元锋（北京农商银行总行，liuyf@bjrcb.com）
+林喆（广州，674441632@qq.com）
+马骏（埃森哲/大连，patrick.ma2018@outlook.com）
+孙宁莉（深圳市韧安咨询服务有限公司，115947186@qq.com）
+王舵（大连童安应急管理科技有限公司，prekids@163.com）
+徐文静（DNV，wen.jing.xu@dnv.com）
+薛春娟（浙江省舟山市，793571689@qq.com）
+张锋（北京，zhangfeng76@wo.cn）
+周可政（上海，wikikivv@gmail.com）
+王曙（新常安科技，kevinwang@vip.sina.com）</p>
+<p>感谢公益翻译小组的各位专业人员抽出个人时间进行翻译工作。以下译文由我负责最终统一审校定稿，如译文中有任何不准确或理解错误的地方，都是由于我的原因造成，与诸位翻译人员无关。如对译文有意见或修改建议，请给我留言。</p>
+<p>王曙(kevinwang) 2023.10.26</p>
+<hr>
+<p>这份文件由美国联邦金融机构检查委员会（FFIEC）于2020年3月6日发布，原文见：
+https://www.ffiec.gov/press/PDF/FFIEC%20Statement%20on%20Pandemic%20Planning.pdf
+。</p>
+<p>通过这份大流行病准备指引，FFIEC确定了金融机构应当采取的行动，以尽量减少大流行病的潜在不利影响。FFIEC指出，大流行病准备是金融机构业务连续性规划的重要组成部分。该指引给出了委员会的审慎期望，即受监管机构应当定期审查相关的风险管理计划，包括连续性计划，以确保其能够在各种情景中持续交付产品和服务，并将扰乱降至最低。机构在大流行病发生前，进行合理的规划有助于最大限度地减少对消费者、企业和社区服务的扰断。</p>
+<hr>
+<p>大流行病规划跨机构声明
+Interagency Statement on Pandemic Planning</p>
+<p>目的（PURPOSE）</p>
+<p>联邦金融机构检查委员会（FFIEC）代表其成员机构
+[1]
+发布指引，提醒金融机构业务连续性计划应当处理大流行病爆发的威胁及其对关键金融服务交付的潜在影响。本指引是对《大流行病规划跨机构声明2007》，联邦储备委员会、联邦存款保险公司、货币监理署和储蓄机构管理局在2006年3月15日发布的《流感大流行跨机构建议》，以及国家信用社管理局在2006年3月发布的《致信用社06-CU-06的函：流感大流行准备》的更新。
+The Federal Financial Institutions Examination Council (FFIEC) on behalf of its member agencies
+1
+are issuing guidance to remind financial institutions that business continuity plans should address the threat of a pandemic outbreak and its potential impact on the delivery of critical financial services. This guidance is an update to the 2007 Interagency Statement on Pandemic Planning as well as the “Interagency Advisory on Influenza Pandemic Preparedness” issued on March 15, 2006 by the Board of Governors of the Federal Reserve System, the Federal Deposit Insurance Corporation, the Office of the Comptroller of the Currency, and the Office of Thrift Supervision, as well as the “Letter to Credit Union 06-CU-06- Influenza Pandemic Preparedness” issued by the National Credit Union Administration in March 2006.</p>
+<p>本指引确定了金融机构应当采取的行动，以最大限度地减少大流行病的潜在不利影响。具体而言，机构的业务连续性计划（BCP）应当处理大流行病，并规定了预防项目、根据大流行病爆发阶段编制的成文战略、确保关键业务持续运行的综合框架、测试项目和确保计划得到审查和更新的监督项目。BCP的大流行病部分必须足够灵活，以应对大流行病可能造成的广泛影响，并反映机构的规模、复杂性和业务活动。
+This guidance identifies actions that financial institutions should take to minimize the potential adverse effects of a pandemic. Specifically, the institution’s business continuity plan(s) (BCP) should address pandemics and provide for a preventive program, a documented strategy scaled to the stages of a pandemic outbreak, a comprehensive framework to ensure the continuance of critical operations, a testing program, and an oversight program to ensure that the plan is reviewed and updated. The pandemic segment of the BCP must be sufficiently flexible to address a wide range of possible effects that could result from a pandemic, and also be reflective of the institution’s size, complexity, and business activities.</p>
+<p>背景（BACKGROUND）</p>
+<p>大流行病被定义为在广泛地理区域的疾病爆发，影响的人口比例极高，可能是全世界。历史上发生过几次大流行病，专家预测，本世纪我们将至少经历一次大流行病爆发。
+Pandemics are defined as an outbreak of a disease that occurs over a wide geographic area and affects an exceptionally high proportion of the population, possibly worldwide. Several pandemics have occurred throughout history and experts predict that we will experience at least one pandemic outbreak in this century.</p>
+<p>目前尚不清楚传染病的爆发是否会导致大流行病。病毒或传染病的广泛传播性及其变异的可能性引起了对人际传播和可能造成毁灭性后果的担忧。
+It is unknown if an infectious disease outbreak will result in a pandemic. The widespread nature of a virus or infectious disease and the possibility that it may mutate raises concerns about transmission among humans, with potentially devastating consequences.</p>
+<p>大流行病的不利经济影响在国家和国际上可能都是巨大的。由于其重要的金融和经济作用，金融机构应当制定计划，说明它们如何应对大流行病事件。合理的规划应当最大程度地减少对地方和国家经济的干扰，并有助于机构保持客户的信任和信心。
+The adverse economic effects of a pandemic could be significant, both nationally and internationally. Due to their crucial financial and economic role, financial institutions should have plans in place that describe how they will manage through a pandemic event. Sound planning should minimize the disruptions to the local and national economy and should help the institution maintain the trust and confidence of its customers.</p>
+<p>传统业务连续性规划与大流行病规划的不同（DIFFERENCES BETWEEN TRADITIONAL BUSINESS CONTINUITY PLANNING AND PANDEMIC PLANNING）</p>
+<p>大流行病规划与传统业务连续性规划之间存在明显不同。在制定业务连续性计划时，金融机构管理层通常会根据其严重程度考虑各种自然或人为灾害的影响。这些灾害可能是可预测的，也可能不是可预测的,但它们通常持续时间短或范围有限
+[2]
+。在大多数情况下，恶意活动、技术中断和自然/人为灾害一般只会影响特定的地理区域、设施或系统。这些威胁通常可以通过重视韧性和恢复因素来缓解。
+There are distinct differences between pandemic planning and traditional business continuity planning. When developing business continuity plans, financial institution management typically considers the effect of various natural or man-made disasters that may differ in their severity. These disasters may or may not be predictable, but they are usually short in duration or limited in scope.
+2
+In most cases, malicious activity, technical disruptions, and natural/man-made disasters typically will only affect a specific geographic area, facility, or system. These threats can usually be mitigated by focusing on resiliency and recovery considerations.</p>
+<p>大流行病规划给金融机构管理提出了独特的挑战。与自然灾害、技术灾难、恶意行为或恐怖主义事件不同，由于规模和持续时间的预期差异，大流行病的影响更加难以确定。全球经济的特点实质上确定了大流行病事件的影响是广泛的，威胁到不只有限的地理区域或地区，而是可能到每个大陆。此外，虽然传统的灾害和扰断通常持续时间有限，但大流行病一般会出现多轮流行，每轮持续两到三个月。因此，没有任何个人或组织能够免受大流行病事件可能带来的不利影响。专家预测，严重的大流行病事件可能带来的最重大挑战将是缺勤造成的人员短缺。这些差异和挑战突出表明，所有金融机构，无论规模大小，在制定BCP时都需要为大流行病事件做好计划。
+Pandemic planning presents unique challenges to financial institution management. Unlike natural disasters, technical disasters, malicious acts, or terrorist events, the impact of a pandemic is much more difficult to determine because of the anticipated difference in scale and duration. The nature of the global economy virtually ensures that the effects of a pandemic event will be widespread and threaten not just a limited geographical region or area, but potentially every continent. In addition, while traditional disasters and disruptions normally have limited time durations, pandemics generally occur in multiple waves, each lasting two to three months. Consequently, no individual or organization is safe from the adverse effects that might result from a pandemic event. Experts predict that perhaps the most significant challenge likely from a severe pandemic event will be staffing shortages due to absenteeism. These differences and challenges highlight the need for all financial institutions, no matter their size, to plan for a pandemic event when developing their BCP.</p>
+<p>大流行病计划应当足够灵活，以有效应对大流行病可能导致的广泛影响。大流行病计划需要反映机构的规模、复杂性和业务活动。大流行病对金融机构关键金融服务交付的潜在影响应当纳入持续地业务影响分析和风险评估过程。
+Pandemic plans should be sufficiently flexible to effectively address a wide range of possible effects that could result from a pandemic. Pandemic plans need to reflect the institution’s size, complexity, and business activities. The potential impact of a pandemic on the delivery of a financial institution’s critical financial services should be incorporated into the ongoing business impact analysis and risk assessment processes.</p>
+<p>如果需要，机构的BCP应当进行修订，以反映其业务影响分析和风险评估的结论。
+The institution’s BCP should then be revised, if needed, to reflect the conclusions of its business impact analysis and risk assessment.</p>
+<p>为应对大流行病带来的独特挑战，金融机构的BCP应当规定：
+1.预防项目，以降低机构运营受到大流行病严重影响的可能性，包括：监测潜在大流行病的爆发，教育员工，与关键服务提供商和供应商的沟通和协调，以及为员工提供适当的卫生培训和工具。
+2.成文策略，规定机构的大流行病应对分级，使其与大流行病爆发特定阶段的影响保持一致，如疾病控制和预防中心描述的6个间隔（CDC，https://www.cdc.gov/flu/pandemic-resources/national-strategy/ intervals-
+framework.html
+）。策略还需要概述计划，说明如何从一轮大流行病中恢复，以及为任何后一轮大流行病采取的适当准备。此外，策略应当包括人员重新进入工作场所的计划。
+3.设施、系统或程序的综合框架，在机构大量
+[3]
+员工长时间无法工作的情况下，使组织有能力继续其关键运营。此类程序可包括保持社交距离以最大程度减少员工接触，远程办公，将客户从分支机构转移到电子银行服务，或在备用场所开展业务。还应当考虑访客程序，以及是否应对访客进入设施实施限制。框架应当考虑客户反应的影响，以及对网上银行、电话银行、自动取款机和呼叫支持服务的潜在需求和日益依赖。此外，还应当考虑公共卫生和其它政府部门可能采取的、会影响金融机构关键业务功能的行动。
+4.测试项目，用以确保机构的大流行病规划做法和能力有效，使关键运营能够持续。
+5.确保对大流行病计划持续审查和更新的监督项目，使政策、标准和程序包括政府来源或机构检测项目提供的最新相关信息。
+To address the unique challenges posed by a pandemic, the financial institution’s BCP should provide for:</p>
+<ol>
+<li>A preventive program to reduce the likelihood that an institution’s operations will be significantly affected by a pandemic event, including: monitoring of potential outbreaks, educating employees, communicating and coordinating with critical service providers and suppliers, in addition to providing appropriate hygiene training and tools to employees.</li>
+<li>A documented strategy that provides for scaling the institution’s pandemic efforts so they are consistent with the effects of a particular stage of a pandemic outbreak, such as the 6 intervals described by the Center for Disease Control and Prevention (CDC) (https://www.cdc.gov/flu/pandemic-resources/national-strategy/intervalsframework.html). The strategy will also need to outline plans describing how to recover from a pandemic wave and proper preparations for any following wave(s). Furthermore, the strategy should include plans for re-entering personnel into the workplace.</li>
+<li>A comprehensive framework of facilities, systems, or procedures that provide the organization the capability to continue its critical operations in the event that large numbers
+3
+of the institution’s staff are unavailable for prolonged periods. Such procedures could include social distancing to minimize staff contact, telecommuting, redirecting customers from branch to electronic banking services, or conducting operations from alternative sites. Consideration should be given toward visitor procedures and whether restrictions should be implemented for visitors accessing the facilities. The framework should consider the impact of customer reactions and the potential demand for, and increased reliance on, online banking, telephone banking, ATMs, and call support services. In addition, consideration should be given to possible actions by public health and other government authorities that may affect critical business functions of a financial institution.</li>
+<li>A testing program to ensure that the institution’s pandemic planning practices and capabilities are effective and will allow critical operations to continue.</li>
+<li>An oversight program to ensure ongoing review and updates to the pandemic plan so that policies, standards, and procedures include up-to-date, relevant information provided by governmental sources or by the institution’s monitoring program.</li>
+</ol>
+<p>FFIEC业务连续性管理（BCM）手册
+[4]
+中详细介绍的方法，为机构制定和/或更新其大流行病计划提供了一个健全的框架，也为将这些关键活动纳入最终的大流行病计划提供了一种方法。
+The methodologies detailed in the FFIEC’s Business Continuity Management (BCM) booklet
+4
+provide a sound framework for institutions developing and/or updating their pandemic plan, as well as a means to integrate these key activities into the final pandemic plan.</p>
+<p>美国政府和行业协会已经发布了广泛和全面的指导意见，以协助所有类型的机构制定应对大流行病事件的计划。机构应当复查以下内容：
+联邦政府发布的《流感大流行国家战略》（国家战略）和《流感大流行国家战略实施计划》（全国实施计划）为大流行病规划提供了完整的指导。该文件可在以下网址查阅：https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/national-
+strategy-planning.html
+国土安全部（DHS）发布了《针对关键基础设施和关键资源的流感大流行准备、应对和恢复指南》。该文件是国土安全部为加强大流行病规划而开发的工具之一。它提供了主要政府机构和流感大流行的特定背景材料、参考资料和联系方式的源列表。机构可能会发现运营连续性基础（COP-E）规划过程特别有用。该文件可在以下网址查阅：https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/national-strategy-planning.html
+美国卫生与公众服务部疾病控制中心于2017年发布了《预防流感大流行的社区缓解指南》。该文件提供了在疫苗和抗病毒药物供应短缺或无法获得时，为限制流感大流行影响可采取的社区行动的信息。金融机构计划可能会被要求使用已确定的干预措施，帮助限制大流行的传播，预防疾病和死亡，减轻对经济的影响，并保持社会运转。该文件可在以下网址查阅：
+https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/national-strategy-planning.html
+美国卫生与公众服务部（DHHS）发布了一系列检查清单，旨在帮助社会各阶层以协调一致的方式做好大流行病准备，其中包括面向州和地方政府、有海外业务的美国企业、工作场所、个人和家庭、学校、医疗保健和社区组织的清单。可在以下网址查阅：http://www.pandemicflu.gov/。
+The U.S. Government and industry associations have issued extensive and comprehensive guidance to assist institutions of all types in developing plans for pandemic events. Institutions should review the following:
+• The National Strategy for Pandemic Influenza (National Strategy) and the Implementation Plan for the National Strategy for Pandemic Influenza (National Implementation Plan) issued by the federal government provide a complete guide to pandemic planning. The documents can be found at:
+https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/nationalstrategy-planning.html
+• The Department of Homeland Security (DHS) published The Pandemic Influenza Preparedness, Response, and Recovery Guide for Critical Infrastructure and Key Resources. This document is one of the tools DHS developed to enhance pandemic planning. It provides a source listing of primary government and pandemic influenza-specific background material, references, and contacts. Institutions may find the Continuity of Operations – Essential (COP-E) planning process especially useful. The document can be found at:
+https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/nationalstrategy-planning.html
+• The Department of Health and Human Services Center for Disease Control published Community Mitigation Guidelines To Prevent Pandemic Influenza –United States, 2017. This document provides information about community actions that may be taken to limit the impact from pandemic influenza when vaccine and antiviral medications are in short supply or unavailable. Financial institutions may be asked to plan for the use of the identified interventions to help limit the spread of a pandemic, prevent disease and death, lessen the impact on the economy, and keeps society functioning. The document can be found at:
+https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/nationalstrategy-planning.html
+• The Department of Health and Human Services (DHHS) has published a series of checklists that are intended to aid preparation for a pandemic in a coordinated and consistent manner across all segments of society. Included are checklists for state and local governments, for U.S. businesses with overseas operations, for the Workplace, for Individuals and Families, for Schools, for Health Care, and for Community Organizations. They can also be found at:
+http://www.pandemicflu.gov/
+.</p>
+<p>分阶段：规划、准备、响应和恢复（PHASES: PLANNING, PREPARING, RESPONDING, AND RECOVERING）</p>
+<p>传统业务连续性规划和大流行病规划都要求管理层遵循规划、准备、响应和恢复的周期性过程。然而，大流行病规划需要采取额外行动，以确定机构内部和跨业务部门的基本功能、员工和资源并确定其优先级。下面讨论的问题强调了管理层面临的具体挑战以及在制定大流行病计划时应当考虑的缓解性控制。
+Traditional business continuity planning and pandemic planning require management to follow a cyclical process of planning, preparing, responding, and recovering. However, pandemic planning requires additional actions to identify and prioritize essential functions, employees, and resources within the institution and across other business sectors. The issues discussed below highlight the specific challenges faced by management and the mitigating controls that should be considered when developing a pandemic plan.</p>
+<p>董事会和高级管理层的职责（BOARD AND SENIOR MANAGEMENT RESPONSIBILITIES）</p>
+<p>与其他BCM活动一样，大流行病规划不应当仅被视为信息技术问题，而是对整个业务的重大风险。因此，机构的大流行病规划活动应当纳入所有职能、业务和产品领域（包括行政、人力资源、法律、IT支持功能和关键产品线）的高级业务管理人员。
+As with other BCM activities, pandemic planning should not be viewed as solely an Information Technology (IT) issue, but rather as a significant risk to the entire business. As such, an institution’s pandemic planning activities should involve senior business management from all functional, business and product areas, including administrative, human resources, legal, IT support functions, and key product lines.</p>
+<p>机构董事会负责监督大流行病计划的制定。董事会或委员会也应当批准机构的书面计划，并确保高级管理层在规划、监测和测试最终计划上投入足够的资源。
+An institution’s board of directors is responsible for overseeing the development of the pandemic plan. The board or a committee thereof should also approve the institution’s written plan and ensure that senior management is investing sufficient resources into planning, monitoring, and testing the final plan.</p>
+<p>高级管理层负责制定大流行病计划，并将该计划转化为具体的政策、过程和程序。高级管理层还负责在整个机构内传达该计划，以确保对该计划的关键要素理解一致，并确保员工了解他们在应对大流行病事件中的角色和职责。最后，高级管理层负责任确保该计划定期进行测试，并与机构运营的范围和复杂性相适应。
+Senior management is responsible for developing the pandemic plan and translating the plan into specific policies, processes, and procedures. Senior management is also responsible for communicating the plan throughout the institution to ensure consistent understanding of the key elements of the plan and to ensure that employees understand their role and responsibilities in responding to a pandemic event. Finally, senior management is responsible for ensuring that the plan is regularly tested and remains relevant to the scope and complexity of the institution’s operations.</p>
+<p>将大流行病风险纳入业务影响分析（INCORPORATING PANDEMIC RISK INTO THE BUSINESS IMPACT ANALYSIS）</p>
+<p>大流行病的潜在影响应当成为金融机构整体BCM业务影响分析（BIA）的一部分。BIA应当：
+评估可能受到大流行病影响的基本业务功能和过程并排定优先级；
+确定大流行病对机构基本业务功能
+[5]
+和过程以及支持资源的潜在影响；
+确定大流行病对客户的潜在影响：受到最大影响的客户和对（当地）经济产生最大影响的客户；
+确定机构业务功能和过程的法律法规要求；
+估计在大流行病期间机构业务功能和过程可能发生的最大停机时间；
+评估针对关键业务岗位和过程进行的交叉培训；以及
+评价关键服务提供商在大流行病期间运营的计划。金融机构应当评价计划并监测服务，以确保关键服务可用。金融机构可能希望有后备安排来减轻任何风险。应当特别关注机构进入租赁场所的能力，以及当远程办公作为关键的风险缓解策略时，是否有足够的互联网访问容量。
+The potential effects of a pandemic should be a part of the financial institution’s overall BCM business impact analysis (BIA). The BIA should:
+• Assess and prioritize essential business functions and processes that may be affected by a pandemic;
+• Identify the potential impact of a pandemic on the institution's essential business functions
+5
+and processes, and supporting resources;
+• Identify the potential impact of a pandemic on customers: those that could be most affected and those that could have the greatest impact on the (local) economy;
+• Identify the legal and regulatory requirements for the institution’s business functions and processes;
+• Estimate the maximum downtime associated with the institution’s business functions and processes that may occur during a pandemic;
+• Assess cross training conducted for key business positions and processes; and
+• Evaluate the plans of critical service providers for operating during a pandemic. Financial institutions should evaluate the plans and monitor the servicers to ensure critical services are available. Financial institutions may wish to have back-up arrangements to mitigate any risk. Special attention should be directed at the institution’s ability to access leased premises and whether sufficient internet access capacity is available if telecommuting is a key risk mitigation strategy.</p>
+<p>将大流行病风险的影响纳入机构的BCP涉及额外的复杂性，因为典型的灾难或应急响应机制和方法可能不可行。例如，将员工转移到通常在自然灾害或其他紧急情况下使用的备用设施，可能不是在大流行病中持续运营的适当或可行的方法。可能缺乏可供重新安置的员工，备用场所也可能受到大流行病的影响。国土安全部提供了12个规划假设的清单，机构在进行影响分析时应当考虑。
+[6]
+Incorporating the impact of pandemic risk into the institution’s BCP involves additional complexity since typical disaster or emergency response mechanisms and methods may not be feasible. For example, moving employees to an alternate facility that is typically used during a natural disaster or other emergency, may not be an appropriate or feasible way to continue operations in a pandemic. There may be a shortage of available staff to relocate and it is possible that an alternate site might also be affected by the pandemic. DHS provides a list of twelve planning assumptions that institutions should consider when developing the impact analysis.
+6</p>
+<p>影响分析中考虑的大流行病问题还应当包括预测员工缺勤，考虑可能影响业务运营的家庭护理问题。[7]
+[7]
+国土安全部认为，缺勤率取决于大流行病的严重程度。在严重的大流行病中，因疾病、需要照顾生病的家庭成员和对感染的恐惧而导致的缺勤率在社区爆发的高峰周期间可能达到40%，在高峰前后几周缺勤率则较低。某些公共卫生措施（如关闭学校、隔离感染者的家庭接触，或改变或停止公共交通时间表）可能会增加缺勤率。
+The pandemic issues considered in the impact analysis also should involve forecasting employee absenteeism and considering family care issues that may affect business operations.
+7
+DHS believes rates of absenteeism will depend on the severity of the pandemic. In a severe pandemic, absenteeism attributable to illness, the need to care for ill family members and fear of infection may reach 40 percent during the peak weeks of a community outbreak, with lower rates of absenteeism during the weeks before and after the peak. Certain public health measures (e.g. closing schools, quarantining household contacts of infected individuals, or altering or ceasing public transportation schedules) are likely to increase the rate of absenteeism.</p>
+<p>机构应对大流行病的BIA的一个关键部分是检查外部因素。例如，评估关键相互依赖关系的影响涉及根据外部服务的可用性进行规划假设，并优先考虑可能的中断的影响。此外，卫生和应急管理官员实施的潜在旅行限制可能会限制对这些服务的访问,即使它们仍在运行。
+A key part of an institution’s BIA that addresses pandemics is to examine external factors. For example, assessing the impact of critical interdependencies will involve making planning assumptions regarding the availability of external services and prioritizing the effect of possible disruptions. In addition, potential travel restrictions imposed by health and emergency management officials may limit access to those services, even if they are still operating.</p>
+<p>风险评估/风险管理（RISK ASSESSMENT/RISK MANAGEMENT）</p>
+<p>正如本手册正文所述，机构的风险评估过程至关重要，对BCM工作是否成功具有重大影响。对大流行病规划重要的有巨大价值的风险评估和风险管理步骤包括：
+根据大流行病对运营的影响估计和发生可能性，对造成的潜在业务扰断的严重程度进行重要性排序；
+进行“差距分析”，将现有的业务过程和程序与为缓解大流行病造成的潜在业务中断的严重程度所需的流程和程序进行比较；
+制定书面的大流行病计划，以在可能发生的大流行病事件中遵循；
+董事会或委员会以及高级管理层至少每年审查和批准大流行病计划；以及
+向员工传达和传播该计划以及大流行病的当前状况。
+As noted in the main body of this booklet, the institution’s risk assessment process is critical and has a significant bearing on whether BCM efforts will be successful. Important risk assessment and risk management steps that are important for pandemic planning include:
+• Prioritizing the severity of potential business disruptions resulting from a pandemic, based on the institution’s estimate of impact and probability of occurrence on operations;
+• Performing a “gap analysis” that compares existing business processes and procedures with what is needed to mitigate the severity of potential business disruptions resulting from a pandemic;
+• Developing a written pandemic plan to follow during a possible pandemic event;
+• Reviewing and approving the pandemic plan by the board or a committee thereof and senior management at least annually; and
+• Communicating and disseminating the plan and the current status of the pandemic to employees.</p>
+<p>由大流行病引起的具体风险评估和风险管理行动包括以下内容：
+协调第三方(Coordination with Third Parties)
+与包括关键服务提供商在内的第三方进行公开沟通和协调是大流行病规划的一个重要方面。金融机构应当通过参与商业和社区工作组协调信息共享工作，并与外部各方建立联盟，在大流行病期间为重要服务提供支持和维护。这些工作可以包括考虑在机构的地理商圈内与其他金融机构的合作安排。此外，管理层应当与当地公共卫生和应急管理团队协调其大流行病规划工作，确定可以采取特定行动的政府机构（例如，谁有能力关闭建筑物或调整交通），并计划提醒地方和州机构注意突然爆发的大流行病可能引起严重员工缺勤。与客户和媒体的沟通对于确保传播有关业务运营的准确信息也至关重要。
+关键的相互依赖关系挑战要求管理层确保充足的基本物资储备，并主动管理设备的维护以确保服务扰断期间的可持续性。管理层还应当监测其服务提供商，确定服务和供应链的潜在弱点，并开发获得关键服务和物资的可能备用方案。
+Specific risk assessment and risk management actions arising from a pandemic include the following:
+Coordination with Third Parties
+Open communication and coordination with third parties, including critical service providers, is an important aspect of pandemic planning. Financial institutions should coordinate information sharing efforts through participation in business and community working groups and develop coalitions with outside parties to provide support and maintenance for vital services during a pandemic. Efforts could include consideration of cooperative arrangements with other financial institutions within the institution’s geographical trade area. In addition, management should coordinate its pandemic planning efforts with local public health and emergency management teams, identify authorities that can take specific actions (e.g., who has the ability to close a building or alter transportation), and plan to alert local and state agencies regarding significant employee absenteeism that may be caused by a sudden pandemic outbreak. Communication with customers and the media is also critical to ensure that accurate information is disseminated about business operations.
+Critical interdependency challenges require management to ensure an adequate reserve of essential supplies and to proactively manage maintenance of equipment to ensure sustainability during service disruptions. Management should also monitor its service providers, identify potential weaknesses in the service and supply chains, and develop potential alternatives for obtaining critical services and supplies.</p>
+<p>识别触发事件(Identification of Triggering Events)
+当环境变化发生需要管理层根据大流行病警报状态实施应对计划时，触发事件出现。各种开发了监测系统监测病毒爆发进展的组织都可能发布警报。根据警报的严重程度，管理层可能需要迅速采取行动，实施其大流行病应对计划的要素。因此，监测国家和国际大流行病新闻来源对管理层了解潜在的疫情是很重要的。管理层应当监测国家医疗保健事项的专用网站，找到应急和医疗保健组织的关键联系人，并评估发生大流行病对金融机构的潜在影响。管理层还应当与员工和关键服务提供商沟通，在特定触发点计划采取的行动。
+Identification of Triggering Events
+A triggering event occurs when an environmental change takes place that requires management to implement its response plans based on the pandemic alert status. Alerts may be issued by various organizations that have developed surveillance systems to monitor the progression of viral outbreaks. Depending on the severity of the alert, management may need to act quickly to implement elements of its pandemic response plans. Therefore, it is important for management to monitor national and international pandemic news sources in order to be aware of potential outbreaks. Management should monitor websites devoted to national health care issues, identify key points of contact for emergency and health care organizations, and assess potential implications for the financial institution if a pandemic occurs. Management also should communicate to employees and key service providers the actions it plans to take at specific triggering points.</p>
+<p>员工保护策略(Employee Protection Strategies)
+员工保护策略对于在大流行病期间维持充足的在职员工至关重要。机构应当通过传播大流行病爆发的风险，讨论员工可用于降低感染病毒可能性的措施，来提高员工意识。应当考虑以下风险管理策略：
+宣传疾病控制和预防中心的“咳嗽时请捂住口鼻”和“请清洁您的双手”项目或其他通用卫生项目；
+鼓励员工避开拥挤的地方和公共交通系统；
+通过使用电话会议、视频会议、灵活工作时间、远程办公，鼓励客户使用在线或电话银行服务、自动取款机和免下车窗口，实施“社交距离”技术，最大程度地减少平常的面对面接触；以及
+审查并考虑使用疾病控制和预防中心制定的其它非药物干预（更多信息请访问：
+http://www.pandemicflu.gov/plan/community/commitigation.html）。
+Employee Protection Strategies
+Employee protection strategies are crucial to sustain an adequate workforce during a pandemic. Institutions should promote employee awareness by communicating the risks of a pandemic outbreak and discussing the steps employees can take to reduce the likelihood of contracting a pandemic virus. The following risk management strategies should be considered:
+• Publicize the Centers for Disease Control and Prevention “Cover Your Cough” and “Clean Your Hands” programs or other general hygiene programs;
+• Encourage employees to avoid crowded places and public transportation systems;
+• Implement “social distancing” techniques to minimize typical face-to-face contact through the use of teleconference calls, video conferencing, flexible work hours, telecommuting, encouraging customers to use online or telephone banking services, ATMs and drive-up windows; and
+• Review and consider the use of other non-pharmaceutical interventions developed by the Centers for Disease Control and Prevention (more information is available at: http://www.pandemicflu.gov/plan/community/commitigation.html).</p>
+<p>缓解性控制(Mitigating Controls)
+尽管大流行病带来了独特的挑战，但管理层可以实施一些控制过程来减轻大流行病的风险和影响。例如，为了克服人员方面的挑战，管理层应当确保员工得到交叉培训，并制定了继任计划。机构可能能够利用已经建立的作为业务连续性规划一部分的计划。
+Mitigating Controls
+Despite the unique challenges posed by a pandemic, there are control processes that management can implement to mitigate risk and the effects of a pandemic. For example, to overcome some of the personnel challenges, management should ensure that employees are cross-trained and that succession plans have been developed. The institution may be able to leverage plans already established as part of traditional business continuity planning.</p>
+<p>远程访问(Remote Access)
+大流行病期间，可能会有对员工远程办公的高度依赖，这可能会给远程访问能力带来压力，比如：容量、带宽和身份验证机制。此外，通常在现场工作的员工可能没有远程访问权限或居家办公所需的技术基础设施。有必要分析远程访问能力，了解大流行病期间员工需要的相关技术基础设施的信息，评估社区层面的基础设施，并考虑内部和外部容量以帮助确保远程办公策略在大流行病期间会起作用。
+Remote Access
+During a pandemic there may be a high-reliance on employee telecommuting, which could put a strain on remote access capabilities such as capacity, bandwidth, and authentication mechanisms. Moreover, employees who typically work onsite may not have remote access authority or the necessary technology infrastructure to work at home. Analysis of remote access capabilities, mapping of related technology infrastructure to employee needs during a pandemic, assessing the infrastructure at the neighborhood level, and considering internal and external capacity are necessary to help ensure telecommuting strategies will work during a pandemic.</p>
+<p>风险监测和测试（RISK MONITORING AND TESTING）</p>
+<p>随着来自于医学和政府专家关于大流行病原因和影响的信息不断演变，机构的大流行病计划必须足够灵活，以纳入新的信息和风险缓解方法。因此，大流行病计划的风险监测和测试对整体规划过程很重要。管理层面临的一个关键挑战是开发一个高保障度的测试项目，使包括支持基础设施、系统和应用程序在内的关键业务过程即使在严重的大流行病期间也会起作用。一个稳健的项目应当包括测试：
+管理层、员工、关键供应商和客户的角色和职责；
+关键的大流行病规划假设；
+对网上银行、电话银行和呼叫中心服务的日益依赖；以及
+远程访问和远程办公能力
+As information from medical and governmental experts about the causes and effects of a pandemic continues to evolve, an institution’s pandemic plan must be sufficiently flexible to incorporate new information and risk mitigation approaches. As a result, risk monitoring and testing of the pandemic plan is important to the overall planning process. A key challenge for management is developing a testing program that provides a high degree of assurance that critical business processes, including supporting infrastructure, systems, and applications, will function even during a severe pandemic. A robust program should incorporate testing:
+• Roles and responsibilities of management, employees, key suppliers, and customers;
+• Key pandemic planning assumptions;
+• Increased reliance on online banking, telephone banking, and call center services; and
+• Remote access and telecommuting capabilities.</p>
+<p>测试结果应当向管理层报告，并对大流行病计划和测试项目进行适当更新
+Test results should be reported to management, with appropriate updates made to the pandemic plan and testing program.</p>
+<p>大流行病测试可能需要改变传统灾难恢复和业务连续性测试的范围，因为潜在的测试场景很大可能不同。
+Testing for a pandemic may require variations to the scope of traditional disaster recovery and business continuity testing, as potential test scenarios will most likely be different.</p>
+<p>大流行病测试的可选方法可以包括：精心策划的关键和重要员工“居家办公”时间以测试远程访问能力和基础设施；危机管理团队沟通演练；测试与缺勤率上升相关的各种情景的桌面演练；额外或修改的呼叫树演练；以及与金融服务部门成员进行的社区、区域或行业级演练，以测试金融部门应对大流行病类危机的能力。
+Alternatives for pandemic testing can include: well-orchestrated “work at home” days for critical and essential employees to test remote access capabilities and infrastructure; crisis management team communication exercises; table top exercises that test various scenarios related to escalated absenteeism rates; additional or modified call-tree exercises; and community, regional or industry-wide exercises with members of the financial services sector to test the financial sector’s ability to respond to a pandemic-like crisis.</p>
+<p>参考文献REFERENCES</p>
+<p>除了上述参考资料外，机构可能会发现这些网站对其大流行病规划活动有帮助：
+In addition to references included above, institutions may find these web sites helpful in their pandemic planning activities:</p>
+<p>美国疾病控制中心（CDC）
+https://www.cdc.gov/DiseasesConditions/
+Centers for Disease Control (CDC)
+https://www.cdc.gov/DiseasesConditions/</p>
+<p>世界卫生组织（WHO）
+https://www.who.int/
+World Health Organization (WHO)
+https://www.who.int/</p>
+<p>美国劳工部：职业安全与健康管理局（OSHA）
+https://www.osha.gov/Publications/influenza_pandemic.html
+U.S. Department of Labor: Occupational Safety and Health Administration (OSHA)
+https://www.osha.gov/Publications/influenza_pandemic.html</p>
+<p>美国国务院
+https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/
+U.S. Department of State
+https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/</p>
+<p>美国退伍军人事务部
+https://www.publichealth.va.gov/flu/pandemic/
+U.S. Department of Veterans Affairs (VA)
+https://www.publichealth.va.gov/flu/pandemic/</p>
+<p>美国卫生与公众服务部（DHHS）
+http://www.dhhs.gov/nvpo/pandemics/index.html
+U.S. Department of Health and Human Services (DHHS)
+http://www.dhhs.gov/nvpo/pandemics/index.html</p>
+<p>FFIEC由联邦储备委员会、联邦存款保险公司、国家信用社管理局、货币监理署、消费者金融保护局和州联络委员会的负责人组成。（The FFIEC comprises principals of the Board of Governors of the Federal Reserve System, Federal Deposit Insurance Corporation, National Credit Union Administration, Office of the Comptroller of the Currency, Consumer Financial Protection Bureau, and the State Liaison Committee.）
+↑
+正如卡特里娜飓风所证明的那样，虽然特定自然灾害的持续时间可能相对较短，但从这种事件中恢复社会和经济可能是长期的。（As evidenced by Hurricane Katrina, while the duration of a specific natural disaster may be relatively brief, the social and economic recovery from such events can be prolonged.）
+↑
+《流感大流行国家战略实施计划》中的一项规划假设是，缺勤率将取决于流感大流行的严重程度。在严重的大流行病中，因疾病、需要照顾生病的家庭成员和对感染的恐惧而导致的缺勤率在社区爆发的高峰周期间可能达到40%，在高峰前后几周缺勤率则较低。某些公共卫生措施(关闭学校、隔离家庭)可能会增加缺勤率。（A planning assumption from The Implementation Plan for the National Strategy for Pandemic Influenza is that rates of absenteeism will depend on the severity of the pandemic. In a severe pandemic, absenteeism attributable to illness, the need to care for ill family members, and fear of infection may reach 40 percent during the peak weeks of a community outbreak, with lower rates of absenteeism during the weeks before and after the peak. Certain public health measures (closing schools, quarantining household) are likely to increase rates of absenteeism.）
+↑
+该指导文件于2019年更新。FFIEC的业务连续性规划手册被重新命名为业务连续性管理（BCM）。该手册通过以下网址访问：
+https://ithandbook.ffiec.gov/media/296178/ffiec_itbooklet_businesscontinuitymanagement.pdf
+。（This guidance was updated in 2019. The FFIEC’s Business Continuity Planning booklet was renamed as Business Continuity Management (BCM). The booklet can be accessed at:
+https://ithandbook.ffiec.gov/media/296178/ffiec_itbooklet_businesscontinuitymanagement.pdf
+.）
+↑
+《国土安全部（DHS）流感大流行准备，响应和恢复指南》可通过以下网址访问：
+https://www.dhs.gov/sites/default/files/publications/cikrpandemicinfluenzaguide.pdf
+。（The Department of Homeland Security (DHS) Pandemic Influenza Preparedness, Response, and Recovery Guide and is available at:
+https://www.dhs.gov/sites/default/files/publications/cikrpandemicinfluenzaguide.pdf
+）
+↑
+请参阅《国家实施计划》（
+http://www.pandemicflu.gov/plan/community/commitigation.html
+）。（See The National Implementation Plan at
+http://www.pandemicflu.gov/plan/community/commitigation.html
+.）
+↑
+出处同前。
+↑</p>
+<hr>
+<p>本公众号（ID：bcmplus）专注于业务连续性和运营韧性知识的普及和传播，关注业务连续性、应急和危机管理的朋友请关注本公众号。</p>
+<p>由于公众号注册时腾讯已调整政策，未能开通留言功能，希望交流和讨论业务连续性和运营韧性问题、或获取相关资料的朋友，可长按以下二维码加入知识星球参与讨论（另，公众号每月只能发4次文章，会有一些内容直接在知识星球分享而不在公众号发布）。</p>
+<p><img src="/bcmplus-blog/images/wrPd3wiP5yZKQoHz6csYvA_01.jpg" alt=""></p>
+<hr>
+<p><em>原文发表于公众号&quot;业务连续性+&quot; | <a href="https://mp.weixin.qq.com/s/wrPd3wiP5yZKQoHz6csYvA">原文链接</a></em></p>
