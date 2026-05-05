@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+<article>
+  <h2>{{ title }}</h2>
+  <p style="color:#888;font-size:14px;margin-bottom:20px;">
+    {{ date | default('') | slice(0, 10) }}
+    &nbsp;|&nbsp;
+    <a href="{{ original_url }}" target="_blank" style="color:#a4c639;">公众号原文</a>
+  </p>
+  
+  {{ content | safe }}
+
+  <p style="margin-top:40px;padding-top:20px;border-top:1px solid #eee;font-size:13px;color:#999;">
+    <a href="{{ original_url }}" target="_blank">查看公众号原文</a>
+    &nbsp;|&nbsp; 发表于 {{ date | default('未知') | slice(0, 10) }}
+  </p>
+</article>
