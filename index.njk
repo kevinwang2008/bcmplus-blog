@@ -16,7 +16,7 @@ pagination:
 
 {% for post in pagePosts %}
 <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #f0f0f0;">
-  <a href="/{{ post.page.fileSlug }}/" style="font-size:16px;color:#333;text-decoration:none;display:block;">
+  <a href="{{ post.url | url }}" style="font-size:16px;color:#333;text-decoration:none;display:block;">
     <strong>{{ post.data.title }}</strong>
   </a>
   <div style="font-size:13px;color:#999;margin-top:4px;">
@@ -28,10 +28,10 @@ pagination:
 {% if pagination.pageLinks.length > 1 %}
 <div style="margin-top:30px;text-align:center;">
   {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}" style="margin-right:15px;color:#a4c639;">← 上一页</a>
+    <a href="{{ pagination.href.previous | url }}" style="margin-right:15px;color:#a4c639;">← 上一页</a>
   {% endif %}
   {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}" style="color:#a4c639;">下一页 →</a>
+    <a href="{{ pagination.href.next | url }}" style="color:#a4c639;">下一页 →</a>
   {% endif %}
 </div>
 {% endif %}
