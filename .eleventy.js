@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
   // Fix image paths in HTML output (images/ -> /bcmplus-blog/images/)
   eleventyConfig.addTransform("fix-images", function(content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {
-      return content.replace(/(src|href)="images\//g, '$1="/bcmplus-blog/images/');
+      return content.replace(/(src|href)="images\//g, '$1="/blog/images/');
     }
     return content;
   });
@@ -23,7 +23,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/bcmplus-blog/",
+    pathPrefix: "/blog/",
     dir: {
       input: ".",
       output: "_site",
